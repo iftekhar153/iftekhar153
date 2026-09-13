@@ -39,11 +39,7 @@
           <span id="anonVerifyStatus" class="anon-badge-unverified">Unverified</span>
         </div>
 
-        <!-- Firebase Live Status Pill -->
-        <div id="firebasePill" class="firebase-pill" title="Click to configure Firebase Firestore">
-          <span id="firebaseDot" class="status-dot local"></span>
-          <span id="firebaseStatusText">Local Database</span>
-        </div>
+
 
         <!-- Theme Toggle -->
         <button id="themeToggle" class="theme-toggle-btn" title="Toggle Light/Dark Theme">🌙</button>
@@ -359,52 +355,7 @@
     </div>
   </div>
 
-  <!-- 5. Firebase Cloud Settings Modal -->
-  <div id="firebaseModal" class="modal-overlay">
-    <div class="modal-card" style="max-width: 580px;">
-      <div class="modal-header">
-        <div class="modal-title-wrap">
-          <span>🔥</span>
-          <h3 class="modal-title">Firebase Cloud Setup</h3>
-        </div>
-        <button id="firebaseCloseBtn" class="btn-close-modal">&times;</button>
-      </div>
-      <div class="modal-body">
-        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.25rem;">
-          Connect your free Firebase Firestore database so reviews are saved across all devices and live for everyone on GitHub Pages! If left empty, the site operates in <strong>Local Storage Mode</strong> automatically.
-        </p>
 
-        <div class="input-group">
-          <label class="input-label">API Key</label>
-          <input type="text" id="fbApiKey" class="text-input" placeholder="AIzaSy...">
-        </div>
-
-        <div class="input-group">
-          <label class="input-label">Project ID</label>
-          <input type="text" id="fbProjectId" class="text-input" placeholder="my-buet-rating-app">
-        </div>
-
-        <div class="input-group">
-          <label class="input-label">Auth Domain (Optional)</label>
-          <input type="text" id="fbAuthDomain" class="text-input" placeholder="my-buet-rating-app.firebaseapp.com">
-        </div>
-
-        <div class="input-group">
-          <label class="input-label">App ID</label>
-          <input type="text" id="fbAppId" class="text-input" placeholder="1:123456789:web:abcdef">
-        </div>
-
-        <div style="background: var(--bg-input); padding: 0.75rem; border-radius: var(--radius-sm); font-size: 0.75rem; color: var(--text-muted); margin-bottom: 1rem;">
-          💡 <strong>Tip for Free Firebase Firestore:</strong> Create a project at <a href="https://console.firebase.google.com" target="_blank" style="color: var(--accent-cyan); text-decoration: underline;">console.firebase.google.com</a>, enable Cloud Firestore in Test Mode or with read/write rules, and paste the web app config here.
-        </div>
-
-        <div class="modal-footer" style="justify-content: space-between;">
-          <button id="fbResetBtn" class="btn-secondary">Reset to Local Mode</button>
-          <button id="fbSaveBtn" class="btn-primary">Save &amp; Connect</button>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- 6. Suggest / Add Teacher Modal -->
   <div id="addTeacherModal" class="modal-overlay">

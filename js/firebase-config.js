@@ -1,54 +1,38 @@
 // Firebase Configuration and Database Service
-// Clean architecture: Never seeds mock/dummy reviews into Firebase.
-// If the database is empty, zero reviews are displayed.
+// Clean architecture: Hardcoded Firebase configuration.
+// No in-app settings modal or public key editor. If database is empty, zero reviews are displayed.
 
 (function () {
-  // Default placeholder config - users can edit this here or via the in-app "Firebase Settings" modal
-  window.DEFAULT_FIREBASE_CONFIG = {
-    apiKey: "",
-    authDomain: "",
-    projectId: "",
-    storageBucket: "",
-    messagingSenderId: "",
-    appId: ""
+  // =========================================================================
+  // HARDCODED FIREBASE CONFIGURATION
+  // Replace the placeholder values below with your actual Firebase project keys:
+  // =========================================================================
+  const FIREBASE_CONFIG = {
+    apiKey: "AIzaSyDQUWu0V9b55-Kg8wi3QMfm404ZguMPdwA",
+    authDomain: "megamindratings.firebaseapp.com",
+    projectId: "megamindratings",
+    storageBucket: "megamindratings.firebasestorage.app",
+    messagingSenderId: "343564257626",
+    appId: "1:343564257626:web:8ae672e7d5e44ea2458b63"
   };
 
-  const STORAGE_KEY_CONFIG = 'buet_eval_firebase_config';
   const STORAGE_KEY_TEACHERS = 'buet_eval_teachers_clean_v1';
 
   class DatabaseService {
     constructor() {
       this.isFirebaseActive = false;
       this.db = null;
-      this.listeners = [];
-      this.loadConfig();
-    }
-
-    loadConfig() {
-      const saved = localStorage.getItem(STORAGE_KEY_CONFIG);
-      if (saved) {
-        try {
-          this.config = JSON.parse(saved);
-        } catch (e) {
-          this.config = { ...window.DEFAULT_FIREBASE_CONFIG };
-        }
-      } else {
-        this.config = { ...window.DEFAULT_FIREBASE_CONFIG };
-      }
-    }
-
-    saveConfig(newConfig) {
-      this.config = { ...newConfig };
-      localStorage.setItem(STORAGE_KEY_CONFIG, JSON.stringify(this.config));
-      return this.initFirebase();
+      this.config = FIREBASE_CONFIG;
     }
 
     hasValidConfig() {
       return !!(
         this.config &&
         this.config.apiKey &&
+        this.config.apiKey !== "YOUR_API_KEY_HERE" &&
         this.config.apiKey.length > 10 &&
         this.config.projectId &&
+        this.config.projectId !== "YOUR_PROJECT_ID" &&
         this.config.projectId.length > 2
       );
     }
@@ -56,8 +40,7 @@
     async initFirebase() {
       if (!this.hasValidConfig()) {
         this.isFirebaseActive = false;
-        this.notifyStatusChange('local');
-        return { success: false, mode: 'local', message: 'Using Local Storage mode (No Firebase keys entered).' };
+        return { success: false, mode: 'local', message: 'Local mode active (Enter your Firebase keys in js/firebase-config.js to connect to Cloud).' };
       }
 
       try {
@@ -77,22 +60,13 @@
         this.db = getFirestore(app);
         this.firestoreOps = { collection, getDocs, doc, setDoc, addDoc, getDoc, updateDoc, serverTimestamp, query, where, orderBy };
         this.isFirebaseActive = true;
-        this.notifyStatusChange('connected');
-        return { success: true, mode: 'firebase', message: 'Successfully connected to Firebase Firestore!' };
+        console.log('Successfully connected to Firebase Firestore.');
+        return { success: true, mode: 'firebase', message: 'Connected to Firebase Firestore.' };
       } catch (err) {
-        console.warn('Firebase init failed, reverting to local mode:', err);
+        console.warn('Firebase init failed, reverting to local fallback:', err);
         this.isFirebaseActive = false;
-        this.notifyStatusChange('error', err.message);
         return { success: false, mode: 'error', message: err.message };
       }
-    }
-
-    onStatusChange(callback) {
-      this.listeners.push(callback);
-    }
-
-    notifyStatusChange(status, error = null) {
-      this.listeners.forEach(cb => cb(status, error));
     }
 
     // LocalStorage helper: initialize clean teachers directory with 0 reviews
@@ -104,7 +78,7 @@
           if (Array.isArray(list) && list.length > 0) {
             return list;
           }
-        } catch (e) {}
+        } catch (e) { }
       }
       const initial = (window.INITIAL_TEACHERS || []).map(t => ({
         ...t,
@@ -132,7 +106,7 @@
       if (this.isFirebaseActive && this.db) {
         try {
           const { collection, getDocs } = this.firestoreOps;
-          
+
           // Base faculty directory with clean 0-review states
           const baseTeachers = (window.INITIAL_TEACHERS || []).map(t => ({
             ...t,
@@ -178,7 +152,6 @@
           // Fetch genuine student reviews from Firestore
           const reviewsSnap = await getDocs(collection(this.db, 'reviews'));
           if (!reviewsSnap.empty) {
-            // Reset reviews array before populating from Firestore
             teacherMap.forEach(t => { t.reviews = []; });
             reviewsSnap.forEach(rDoc => {
               const rev = rDoc.data();
@@ -333,4 +306,5 @@
   }
 
   window.dbService = new DatabaseService();
+  window.FIREBASE_CONFIG = FIREBASE_CONFIG;
 })();

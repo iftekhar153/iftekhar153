@@ -49,9 +49,6 @@
       anonMascot: document.getElementById('anonMascot'),
       anonName: document.getElementById('anonName'),
       anonVerifyStatus: document.getElementById('anonVerifyStatus'),
-      firebasePill: document.getElementById('firebasePill'),
-      firebaseDot: document.getElementById('firebaseDot'),
-      firebaseStatusText: document.getElementById('firebaseStatusText'),
       
       // Hero
       heroVerifyBtn: document.getElementById('heroVerifyBtn'),
@@ -107,15 +104,6 @@
       redStarLabel: document.getElementById('redStarLabel'),
       tagChipsContainer: document.getElementById('tagChipsContainer'),
 
-      firebaseModal: document.getElementById('firebaseModal'),
-      firebaseCloseBtn: document.getElementById('firebaseCloseBtn'),
-      fbApiKey: document.getElementById('fbApiKey'),
-      fbProjectId: document.getElementById('fbProjectId'),
-      fbAuthDomain: document.getElementById('fbAuthDomain'),
-      fbAppId: document.getElementById('fbAppId'),
-      fbSaveBtn: document.getElementById('fbSaveBtn'),
-      fbResetBtn: document.getElementById('fbResetBtn'),
-
       addTeacherModal: document.getElementById('addTeacherModal'),
       addTeacherCloseBtn: document.getElementById('addTeacherCloseBtn'),
       addTeacherForm: document.getElementById('addTeacherForm'),
@@ -133,7 +121,6 @@
     
     // Attempt Firebase connection (or local fallback)
     await window.dbService.initFirebase();
-    updateFirebaseBadge();
 
     // Load data
     await loadTeachers();
@@ -719,52 +706,6 @@
     }
   }
 
-  // Firebase Setup Modal
-  function openFirebaseModal() {
-    const cfg = window.dbService.config || {};
-    el.fbApiKey.value = cfg.apiKey || '';
-    el.fbProjectId.value = cfg.projectId || '';
-    el.fbAuthDomain.value = cfg.authDomain || '';
-    el.fbAppId.value = cfg.appId || '';
-    openModal(el.firebaseModal);
-  }
-
-  async function handleFirebaseSave() {
-    const newConfig = {
-      apiKey: el.fbApiKey.value.trim(),
-      projectId: el.fbProjectId.value.trim(),
-      authDomain: el.fbAuthDomain.value.trim(),
-      appId: el.fbAppId.value.trim()
-    };
-
-    el.fbSaveBtn.disabled = true;
-    el.fbSaveBtn.textContent = 'Connecting...';
-
-    const result = await window.dbService.saveConfig(newConfig);
-    el.fbSaveBtn.disabled = false;
-    el.fbSaveBtn.textContent = 'Save & Connect';
-
-    if (result.success) {
-      closeModal(el.firebaseModal);
-      showToast('Connected to Firebase Firestore!', 'success');
-      updateFirebaseBadge();
-      await loadTeachers();
-    } else {
-      showToast(result.message || 'Firebase connection failed', 'error');
-      updateFirebaseBadge();
-    }
-  }
-
-  function updateFirebaseBadge() {
-    if (window.dbService.isFirebaseActive) {
-      el.firebaseDot.className = 'status-dot';
-      el.firebaseStatusText.textContent = 'Firebase Cloud Live';
-    } else {
-      el.firebaseDot.className = 'status-dot local';
-      el.firebaseStatusText.textContent = 'Local Database (Offline)';
-    }
-  }
-
   // Add Teacher Modal
   function openAddTeacherModal() {
     openModal(el.addTeacherModal);
@@ -852,7 +793,6 @@
       }
     });
     el.heroSuggestBtn.addEventListener('click', openAddTeacherModal);
-    el.firebasePill.addEventListener('click', openFirebaseModal);
 
     // Verification Modal
     el.verifyCloseBtn.addEventListener('click', () => closeModal(el.verifyModal));
@@ -891,16 +831,6 @@
     el.reviewCommentInput.addEventListener('input', () => {
       const len = el.reviewCommentInput.value.length;
       el.reviewCommentCharCount.textContent = `${len} / 500`;
-    });
-
-    // Firebase Modal
-    el.firebaseCloseBtn.addEventListener('click', () => closeModal(el.firebaseModal));
-    el.fbSaveBtn.addEventListener('click', handleFirebaseSave);
-    el.fbResetBtn.addEventListener('click', async () => {
-      await window.dbService.saveConfig({});
-      closeModal(el.firebaseModal);
-      showToast('Reverted to Local Storage mode.', 'info');
-      updateFirebaseBadge();
     });
 
     // Add Teacher Modal
