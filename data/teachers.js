@@ -1,4 +1,4 @@
-// Pre-loaded BUET Faculty Directory with 271 authentic records and ratings
+// Pre-loaded BUET Faculty Directory with 271 authentic records (0 reviews)
 window.INITIAL_TEACHERS = [
   {
     "id": "cse-001",
@@ -9,54 +9,14 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 4.7,
-      "redStars": 1.1,
-      "totalReviews": 21,
-      "greenPoints": 98,
-      "redPoints": 23,
-      "netApproval": 81
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-cse-001-1",
-        "author": "SoohoText",
-        "date": "2026-08-15",
-        "course": "CSE 101",
-        "greenStars": 5,
-        "redStars": 1,
-        "tags": [
-          "Research Oriented",
-          "Practical Knowledge"
-        ],
-        "comment": "Outstanding professor! Concepts are explained with unmatched clarity, and very supportive during office hours."
-      },
-      {
-        "id": "rev-cse-001-2",
-        "author": "DeltaViper",
-        "date": "2026-07-22",
-        "course": "CSE 205",
-        "greenStars": 5,
-        "redStars": 1,
-        "tags": [
-          "Crystal Clear Lectures",
-          "Inspiring Mentor"
-        ],
-        "comment": "One of the best teachers in BUET. Always encourages student initiatives and critical problem-solving."
-      },
-      {
-        "id": "rev-cse-001-3",
-        "author": "ByteStalker",
-        "date": "2026-06-30",
-        "course": "CSE 311",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Helpful in Consultation",
-          "Fair Exam Questions"
-        ],
-        "comment": "Great lectures and very organized notes. Exams are thorough but totally fair."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "cse-002",
@@ -67,54 +27,14 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 4.7,
-      "redStars": 1.2,
-      "totalReviews": 20,
-      "greenPoints": 94,
-      "redPoints": 24,
-      "netApproval": 80
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-cse-002-1",
-        "author": "GlitchPanda",
-        "date": "2026-08-15",
-        "course": "CSE 101",
-        "greenStars": 5,
-        "redStars": 1,
-        "tags": [
-          "Inspiring Mentor",
-          "Crystal Clear Lectures"
-        ],
-        "comment": "Outstanding professor! Concepts are explained with unmatched clarity, and very supportive during office hours."
-      },
-      {
-        "id": "rev-cse-002-2",
-        "author": "NeonFalcon",
-        "date": "2026-07-22",
-        "course": "CSE 205",
-        "greenStars": 5,
-        "redStars": 1,
-        "tags": [
-          "Crystal Clear Lectures",
-          "Inspiring Mentor"
-        ],
-        "comment": "One of the best teachers in BUET. Always encourages student initiatives and critical problem-solving."
-      },
-      {
-        "id": "rev-cse-002-3",
-        "author": "GlitchPanda",
-        "date": "2026-06-30",
-        "course": "CSE 311",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Helpful in Consultation",
-          "Fair Exam Questions"
-        ],
-        "comment": "Great lectures and very organized notes. Exams are thorough but totally fair."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "cse-003",
@@ -125,54 +45,14 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 4.8,
-      "redStars": 1.5,
-      "totalReviews": 17,
-      "greenPoints": 81,
-      "redPoints": 25,
-      "netApproval": 76
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-cse-003-1",
-        "author": "GlitchPanda",
-        "date": "2026-08-15",
-        "course": "CSE 101",
-        "greenStars": 5,
-        "redStars": 1,
-        "tags": [
-          "Crystal Clear Lectures",
-          "Practical Knowledge"
-        ],
-        "comment": "Outstanding professor! Concepts are explained with unmatched clarity, and very supportive during office hours."
-      },
-      {
-        "id": "rev-cse-003-2",
-        "author": "CircuitPhantom",
-        "date": "2026-07-22",
-        "course": "CSE 205",
-        "greenStars": 5,
-        "redStars": 1,
-        "tags": [
-          "Crystal Clear Lectures",
-          "Inspiring Mentor"
-        ],
-        "comment": "One of the best teachers in BUET. Always encourages student initiatives and critical problem-solving."
-      },
-      {
-        "id": "rev-cse-003-3",
-        "author": "SoohoText",
-        "date": "2026-06-30",
-        "course": "CSE 311",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Helpful in Consultation",
-          "Fair Exam Questions"
-        ],
-        "comment": "Great lectures and very organized notes. Exams are thorough but totally fair."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "cse-004",
@@ -183,41 +63,14 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 2.5,
-      "redStars": 4.7,
-      "totalReviews": 24,
-      "greenPoints": 60,
-      "redPoints": 112,
-      "netApproval": 35
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-cse-004-1",
-        "author": "VectorKnight",
-        "date": "2026-08-10",
-        "course": "CSE 301",
-        "greenStars": 2,
-        "redStars": 5,
-        "tags": [
-          "Tricky Midterms",
-          "Difficult Lab Reports"
-        ],
-        "comment": "Extremely strict attendance policy and unannounced pop quizzes. Grading on term finals is notoriously brutal."
-      },
-      {
-        "id": "rev-cse-004-2",
-        "author": "SoohoText",
-        "date": "2026-06-18",
-        "course": "CSE 210",
-        "greenStars": 2,
-        "redStars": 5,
-        "tags": [
-          "Tough Grading",
-          "Lengthy Assignments"
-        ],
-        "comment": "Very deep subject knowledge, but syllabus pacing is relentless and question patterns are extraordinarily difficult."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "cse-005",
@@ -228,12 +81,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 4.4,
-      "redStars": 1.8,
-      "totalReviews": 2,
-      "greenPoints": 8,
-      "redPoints": 3,
-      "netApproval": 73
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -246,54 +99,14 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 4.8,
-      "redStars": 1.3,
-      "totalReviews": 25,
-      "greenPoints": 120,
-      "redPoints": 32,
-      "netApproval": 79
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-cse-006-1",
-        "author": "WizardFox",
-        "date": "2026-08-15",
-        "course": "CSE 101",
-        "greenStars": 5,
-        "redStars": 1,
-        "tags": [
-          "Helpful in Consultation",
-          "Fair Exam Questions"
-        ],
-        "comment": "Outstanding professor! Concepts are explained with unmatched clarity, and very supportive during office hours."
-      },
-      {
-        "id": "rev-cse-006-2",
-        "author": "QuantumTitan",
-        "date": "2026-07-22",
-        "course": "CSE 205",
-        "greenStars": 5,
-        "redStars": 1,
-        "tags": [
-          "Crystal Clear Lectures",
-          "Inspiring Mentor"
-        ],
-        "comment": "One of the best teachers in BUET. Always encourages student initiatives and critical problem-solving."
-      },
-      {
-        "id": "rev-cse-006-3",
-        "author": "VectorKnight",
-        "date": "2026-06-30",
-        "course": "CSE 311",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Helpful in Consultation",
-          "Fair Exam Questions"
-        ],
-        "comment": "Great lectures and very organized notes. Exams are thorough but totally fair."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "cse-007",
@@ -304,28 +117,14 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 4.1,
-      "redStars": 2.6,
-      "totalReviews": 12,
-      "greenPoints": 49,
-      "redPoints": 31,
-      "netApproval": 61
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-cse-007-1",
-        "author": "AeroSphinx",
-        "date": "2026-05-14",
-        "course": "CSE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "cse-008",
@@ -336,12 +135,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 4.6,
-      "redStars": 2.2,
-      "totalReviews": 2,
-      "greenPoints": 9,
-      "redPoints": 4,
-      "netApproval": 69
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -354,54 +153,14 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 4.8,
-      "redStars": 1.1,
-      "totalReviews": 26,
-      "greenPoints": 124,
-      "redPoints": 28,
-      "netApproval": 82
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-cse-009-1",
-        "author": "CyberOtter",
-        "date": "2026-08-15",
-        "course": "CSE 101",
-        "greenStars": 5,
-        "redStars": 1,
-        "tags": [
-          "Encourages Questions",
-          "Helpful in Consultation"
-        ],
-        "comment": "Outstanding professor! Concepts are explained with unmatched clarity, and very supportive during office hours."
-      },
-      {
-        "id": "rev-cse-009-2",
-        "author": "VectorKnight",
-        "date": "2026-07-22",
-        "course": "CSE 205",
-        "greenStars": 5,
-        "redStars": 1,
-        "tags": [
-          "Crystal Clear Lectures",
-          "Inspiring Mentor"
-        ],
-        "comment": "One of the best teachers in BUET. Always encourages student initiatives and critical problem-solving."
-      },
-      {
-        "id": "rev-cse-009-3",
-        "author": "WizardFox",
-        "date": "2026-06-30",
-        "course": "CSE 311",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Helpful in Consultation",
-          "Fair Exam Questions"
-        ],
-        "comment": "Great lectures and very organized notes. Exams are thorough but totally fair."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "cse-010",
@@ -412,41 +171,14 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 2.9,
-      "redStars": 4.6,
-      "totalReviews": 22,
-      "greenPoints": 63,
-      "redPoints": 101,
-      "netApproval": 38
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-cse-010-1",
-        "author": "NeonFalcon",
-        "date": "2026-08-10",
-        "course": "CSE 301",
-        "greenStars": 2,
-        "redStars": 5,
-        "tags": [
-          "Strict Attendance",
-          "Tough Grading"
-        ],
-        "comment": "Extremely strict attendance policy and unannounced pop quizzes. Grading on term finals is notoriously brutal."
-      },
-      {
-        "id": "rev-cse-010-2",
-        "author": "TurboCheetah",
-        "date": "2026-06-18",
-        "course": "CSE 210",
-        "greenStars": 2,
-        "redStars": 5,
-        "tags": [
-          "Tough Grading",
-          "Lengthy Assignments"
-        ],
-        "comment": "Very deep subject knowledge, but syllabus pacing is relentless and question patterns are extraordinarily difficult."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "cse-011",
@@ -457,12 +189,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 4.1,
-      "redStars": 1.7,
-      "totalReviews": 5,
-      "greenPoints": 20,
-      "redPoints": 8,
-      "netApproval": 71
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -475,12 +207,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 4.2,
-      "redStars": 1.5,
-      "totalReviews": 2,
-      "greenPoints": 8,
-      "redPoints": 3,
-      "netApproval": 73
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -493,54 +225,14 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 4.7,
-      "redStars": 1.1,
-      "totalReviews": 26,
-      "greenPoints": 122,
-      "redPoints": 28,
-      "netApproval": 81
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-cse-013-1",
-        "author": "AeroSphinx",
-        "date": "2026-08-15",
-        "course": "CSE 101",
-        "greenStars": 5,
-        "redStars": 1,
-        "tags": [
-          "Helpful in Consultation",
-          "Crystal Clear Lectures"
-        ],
-        "comment": "Outstanding professor! Concepts are explained with unmatched clarity, and very supportive during office hours."
-      },
-      {
-        "id": "rev-cse-013-2",
-        "author": "GlitchPanda",
-        "date": "2026-07-22",
-        "course": "CSE 205",
-        "greenStars": 5,
-        "redStars": 1,
-        "tags": [
-          "Crystal Clear Lectures",
-          "Inspiring Mentor"
-        ],
-        "comment": "One of the best teachers in BUET. Always encourages student initiatives and critical problem-solving."
-      },
-      {
-        "id": "rev-cse-013-3",
-        "author": "LogicRaven",
-        "date": "2026-06-30",
-        "course": "CSE 311",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Helpful in Consultation",
-          "Fair Exam Questions"
-        ],
-        "comment": "Great lectures and very organized notes. Exams are thorough but totally fair."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "cse-014",
@@ -551,12 +243,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 4.4,
-      "redStars": 1.6,
-      "totalReviews": 6,
-      "greenPoints": 26,
-      "redPoints": 9,
-      "netApproval": 74
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -569,12 +261,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 4.6,
-      "redStars": 1.6,
-      "totalReviews": 5,
-      "greenPoints": 23,
-      "redPoints": 8,
-      "netApproval": 74
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -587,28 +279,14 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 4.4,
-      "redStars": 2.3,
-      "totalReviews": 10,
-      "greenPoints": 44,
-      "redPoints": 23,
-      "netApproval": 66
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-cse-016-1",
-        "author": "ShadowEcho",
-        "date": "2026-05-14",
-        "course": "CSE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "cse-017",
@@ -619,54 +297,14 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 4.7,
-      "redStars": 1.5,
-      "totalReviews": 16,
-      "greenPoints": 75,
-      "redPoints": 24,
-      "netApproval": 76
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-cse-017-1",
-        "author": "TurboCheetah",
-        "date": "2026-08-15",
-        "course": "CSE 101",
-        "greenStars": 5,
-        "redStars": 1,
-        "tags": [
-          "Well-Structured Slides",
-          "Helpful in Consultation"
-        ],
-        "comment": "Outstanding professor! Concepts are explained with unmatched clarity, and very supportive during office hours."
-      },
-      {
-        "id": "rev-cse-017-2",
-        "author": "ByteStalker",
-        "date": "2026-07-22",
-        "course": "CSE 205",
-        "greenStars": 5,
-        "redStars": 1,
-        "tags": [
-          "Crystal Clear Lectures",
-          "Inspiring Mentor"
-        ],
-        "comment": "One of the best teachers in BUET. Always encourages student initiatives and critical problem-solving."
-      },
-      {
-        "id": "rev-cse-017-3",
-        "author": "AeroSphinx",
-        "date": "2026-06-30",
-        "course": "CSE 311",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Helpful in Consultation",
-          "Fair Exam Questions"
-        ],
-        "comment": "Great lectures and very organized notes. Exams are thorough but totally fair."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "cse-018",
@@ -677,12 +315,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 4.6,
-      "redStars": 2.0,
-      "totalReviews": 2,
-      "greenPoints": 9,
-      "redPoints": 4,
-      "netApproval": 69
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -695,28 +333,14 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 3.8,
-      "redStars": 1.9,
-      "totalReviews": 10,
-      "greenPoints": 38,
-      "redPoints": 19,
-      "netApproval": 67
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-cse-019-1",
-        "author": "QuantumTitan",
-        "date": "2026-05-14",
-        "course": "CSE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "cse-020",
@@ -727,12 +351,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 4.4,
-      "redStars": 1.9,
-      "totalReviews": 5,
-      "greenPoints": 22,
-      "redPoints": 9,
-      "netApproval": 71
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -745,12 +369,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 4.1,
-      "redStars": 1.5,
-      "totalReviews": 4,
-      "greenPoints": 16,
-      "redPoints": 6,
-      "netApproval": 73
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -763,28 +387,14 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 4.2,
-      "redStars": 2.0,
-      "totalReviews": 14,
-      "greenPoints": 58,
-      "redPoints": 28,
-      "netApproval": 67
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-cse-022-1",
-        "author": "ShadowEcho",
-        "date": "2026-05-14",
-        "course": "CSE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "cse-023",
@@ -795,12 +405,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 4.4,
-      "redStars": 1.9,
-      "totalReviews": 2,
-      "greenPoints": 8,
-      "redPoints": 3,
-      "netApproval": 73
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -813,12 +423,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 4.6,
-      "redStars": 1.2,
-      "totalReviews": 4,
-      "greenPoints": 18,
-      "redPoints": 4,
-      "netApproval": 82
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -831,28 +441,14 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 3.9,
-      "redStars": 2.7,
-      "totalReviews": 9,
-      "greenPoints": 35,
-      "redPoints": 24,
-      "netApproval": 59
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-cse-025-1",
-        "author": "AeroSphinx",
-        "date": "2026-05-14",
-        "course": "CSE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "cse-026",
@@ -863,41 +459,14 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 2.5,
-      "redStars": 4.6,
-      "totalReviews": 22,
-      "greenPoints": 55,
-      "redPoints": 101,
-      "netApproval": 35
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-cse-026-1",
-        "author": "DeltaViper",
-        "date": "2026-08-10",
-        "course": "CSE 301",
-        "greenStars": 2,
-        "redStars": 5,
-        "tags": [
-          "Tough Grading",
-          "Difficult Lab Reports"
-        ],
-        "comment": "Extremely strict attendance policy and unannounced pop quizzes. Grading on term finals is notoriously brutal."
-      },
-      {
-        "id": "rev-cse-026-2",
-        "author": "SoohoText",
-        "date": "2026-06-18",
-        "course": "CSE 210",
-        "greenStars": 2,
-        "redStars": 5,
-        "tags": [
-          "Tough Grading",
-          "Lengthy Assignments"
-        ],
-        "comment": "Very deep subject knowledge, but syllabus pacing is relentless and question patterns are extraordinarily difficult."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "cse-027",
@@ -908,12 +477,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 4.6,
-      "redStars": 1.5,
-      "totalReviews": 2,
-      "greenPoints": 9,
-      "redPoints": 3,
-      "netApproval": 75
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -926,28 +495,14 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 3.7,
-      "redStars": 2.5,
-      "totalReviews": 13,
-      "greenPoints": 48,
-      "redPoints": 32,
-      "netApproval": 60
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-cse-028-1",
-        "author": "LinkBash",
-        "date": "2026-05-14",
-        "course": "CSE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "cse-029",
@@ -958,12 +513,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 4.6,
-      "redStars": 1.2,
-      "totalReviews": 3,
-      "greenPoints": 13,
-      "redPoints": 3,
-      "netApproval": 81
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -976,12 +531,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 4.7,
-      "redStars": 1.5,
-      "totalReviews": 2,
-      "greenPoints": 9,
-      "redPoints": 3,
-      "netApproval": 75
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -994,28 +549,14 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 3.9,
-      "redStars": 2.7,
-      "totalReviews": 10,
-      "greenPoints": 39,
-      "redPoints": 27,
-      "netApproval": 59
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-cse-031-1",
-        "author": "TurboCheetah",
-        "date": "2026-05-14",
-        "course": "CSE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "cse-032",
@@ -1026,12 +567,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 4.6,
-      "redStars": 1.9,
-      "totalReviews": 6,
-      "greenPoints": 27,
-      "redPoints": 11,
-      "netApproval": 71
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -1044,12 +585,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 4.1,
-      "redStars": 1.5,
-      "totalReviews": 6,
-      "greenPoints": 24,
-      "redPoints": 9,
-      "netApproval": 73
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -1062,28 +603,14 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 4.1,
-      "redStars": 2.8,
-      "totalReviews": 10,
-      "greenPoints": 41,
-      "redPoints": 28,
-      "netApproval": 59
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-cse-034-1",
-        "author": "ShadowEcho",
-        "date": "2026-05-14",
-        "course": "CSE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "cse-035",
@@ -1094,12 +621,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 3.9,
-      "redStars": 1.6,
-      "totalReviews": 2,
-      "greenPoints": 7,
-      "redPoints": 3,
-      "netApproval": 70
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -1112,12 +639,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 4.0,
-      "redStars": 1.9,
-      "totalReviews": 3,
-      "greenPoints": 12,
-      "redPoints": 5,
-      "netApproval": 71
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -1130,28 +657,14 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 3.7,
-      "redStars": 2.5,
-      "totalReviews": 13,
-      "greenPoints": 48,
-      "redPoints": 32,
-      "netApproval": 60
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-cse-037-1",
-        "author": "CircuitPhantom",
-        "date": "2026-05-14",
-        "course": "CSE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "cse-038",
@@ -1162,12 +675,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 4.4,
-      "redStars": 1.6,
-      "totalReviews": 3,
-      "greenPoints": 13,
-      "redPoints": 4,
-      "netApproval": 76
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -1180,12 +693,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 4.5,
-      "redStars": 2.0,
-      "totalReviews": 6,
-      "greenPoints": 27,
-      "redPoints": 12,
-      "netApproval": 69
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -1198,28 +711,14 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 4.1,
-      "redStars": 2.3,
-      "totalReviews": 8,
-      "greenPoints": 32,
-      "redPoints": 18,
-      "netApproval": 64
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-cse-040-1",
-        "author": "CyberOtter",
-        "date": "2026-05-14",
-        "course": "CSE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "cse-041",
@@ -1230,12 +729,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 4.2,
-      "redStars": 1.3,
-      "totalReviews": 3,
-      "greenPoints": 12,
-      "redPoints": 3,
-      "netApproval": 80
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -1248,12 +747,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 4.2,
-      "redStars": 1.3,
-      "totalReviews": 3,
-      "greenPoints": 12,
-      "redPoints": 3,
-      "netApproval": 80
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -1266,28 +765,14 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 4.0,
-      "redStars": 2.1,
-      "totalReviews": 12,
-      "greenPoints": 48,
-      "redPoints": 25,
-      "netApproval": 66
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-cse-043-1",
-        "author": "QuantumTitan",
-        "date": "2026-05-14",
-        "course": "CSE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "cse-044",
@@ -1298,12 +783,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 4.3,
-      "redStars": 1.6,
-      "totalReviews": 4,
-      "greenPoints": 17,
-      "redPoints": 6,
-      "netApproval": 74
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -1316,12 +801,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 4.1,
-      "redStars": 1.2,
-      "totalReviews": 6,
-      "greenPoints": 24,
-      "redPoints": 7,
-      "netApproval": 77
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -1334,28 +819,14 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 3.9,
-      "redStars": 2.7,
-      "totalReviews": 8,
-      "greenPoints": 31,
-      "redPoints": 21,
-      "netApproval": 60
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-cse-046-1",
-        "author": "SoohoText",
-        "date": "2026-05-14",
-        "course": "CSE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "cse-047",
@@ -1366,12 +837,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 4.6,
-      "redStars": 1.5,
-      "totalReviews": 5,
-      "greenPoints": 23,
-      "redPoints": 7,
-      "netApproval": 77
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -1384,12 +855,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 4.7,
-      "redStars": 2.0,
-      "totalReviews": 3,
-      "greenPoints": 14,
-      "redPoints": 6,
-      "netApproval": 70
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -1402,28 +873,14 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 4.1,
-      "redStars": 2.8,
-      "totalReviews": 13,
-      "greenPoints": 53,
-      "redPoints": 36,
-      "netApproval": 60
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-cse-049-1",
-        "author": "LogicRaven",
-        "date": "2026-05-14",
-        "course": "CSE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "cse-050",
@@ -1434,12 +891,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 4.3,
-      "redStars": 1.6,
-      "totalReviews": 3,
-      "greenPoints": 12,
-      "redPoints": 4,
-      "netApproval": 75
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -1452,12 +909,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 4.2,
-      "redStars": 1.7,
-      "totalReviews": 3,
-      "greenPoints": 12,
-      "redPoints": 5,
-      "netApproval": 71
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -1470,28 +927,14 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 4.4,
-      "redStars": 2.9,
-      "totalReviews": 7,
-      "greenPoints": 30,
-      "redPoints": 20,
-      "netApproval": 60
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-eee-052-1",
-        "author": "AlgoDragon",
-        "date": "2026-05-14",
-        "course": "EEE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "eee-053",
@@ -1502,54 +945,14 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 4.6,
-      "redStars": 1.2,
-      "totalReviews": 21,
-      "greenPoints": 96,
-      "redPoints": 25,
-      "netApproval": 79
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-eee-053-1",
-        "author": "LinkBash",
-        "date": "2026-08-15",
-        "course": "EEE 101",
-        "greenStars": 5,
-        "redStars": 1,
-        "tags": [
-          "Well-Structured Slides",
-          "Helpful in Consultation"
-        ],
-        "comment": "Outstanding professor! Concepts are explained with unmatched clarity, and very supportive during office hours."
-      },
-      {
-        "id": "rev-eee-053-2",
-        "author": "BinaryBadger",
-        "date": "2026-07-22",
-        "course": "EEE 205",
-        "greenStars": 5,
-        "redStars": 1,
-        "tags": [
-          "Crystal Clear Lectures",
-          "Inspiring Mentor"
-        ],
-        "comment": "One of the best teachers in BUET. Always encourages student initiatives and critical problem-solving."
-      },
-      {
-        "id": "rev-eee-053-3",
-        "author": "MatrixWolf",
-        "date": "2026-06-30",
-        "course": "EEE 311",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Helpful in Consultation",
-          "Fair Exam Questions"
-        ],
-        "comment": "Great lectures and very organized notes. Exams are thorough but totally fair."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "eee-054",
@@ -1560,12 +963,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 4.4,
-      "redStars": 2.1,
-      "totalReviews": 5,
-      "greenPoints": 22,
-      "redPoints": 10,
-      "netApproval": 69
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -1578,28 +981,14 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 3.9,
-      "redStars": 2.7,
-      "totalReviews": 11,
-      "greenPoints": 42,
-      "redPoints": 29,
-      "netApproval": 59
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-eee-055-1",
-        "author": "LogicRaven",
-        "date": "2026-05-14",
-        "course": "EEE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "eee-056",
@@ -1610,54 +999,14 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 4.7,
-      "redStars": 1.6,
-      "totalReviews": 22,
-      "greenPoints": 103,
-      "redPoints": 35,
-      "netApproval": 75
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-eee-056-1",
-        "author": "AeroSphinx",
-        "date": "2026-08-15",
-        "course": "EEE 101",
-        "greenStars": 5,
-        "redStars": 1,
-        "tags": [
-          "Well-Structured Slides",
-          "Crystal Clear Lectures"
-        ],
-        "comment": "Outstanding professor! Concepts are explained with unmatched clarity, and very supportive during office hours."
-      },
-      {
-        "id": "rev-eee-056-2",
-        "author": "LinkBash",
-        "date": "2026-07-22",
-        "course": "EEE 205",
-        "greenStars": 5,
-        "redStars": 1,
-        "tags": [
-          "Crystal Clear Lectures",
-          "Inspiring Mentor"
-        ],
-        "comment": "One of the best teachers in BUET. Always encourages student initiatives and critical problem-solving."
-      },
-      {
-        "id": "rev-eee-056-3",
-        "author": "MatrixWolf",
-        "date": "2026-06-30",
-        "course": "EEE 311",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Helpful in Consultation",
-          "Fair Exam Questions"
-        ],
-        "comment": "Great lectures and very organized notes. Exams are thorough but totally fair."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "eee-057",
@@ -1668,12 +1017,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 4.2,
-      "redStars": 1.5,
-      "totalReviews": 3,
-      "greenPoints": 12,
-      "redPoints": 4,
-      "netApproval": 75
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -1686,28 +1035,14 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 4.1,
-      "redStars": 2.5,
-      "totalReviews": 9,
-      "greenPoints": 36,
-      "redPoints": 22,
-      "netApproval": 62
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-eee-058-1",
-        "author": "BinaryBadger",
-        "date": "2026-05-14",
-        "course": "EEE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "eee-059",
@@ -1718,12 +1053,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 4.1,
-      "redStars": 1.3,
-      "totalReviews": 4,
-      "greenPoints": 16,
-      "redPoints": 5,
-      "netApproval": 76
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -1736,12 +1071,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 4.6,
-      "redStars": 1.6,
-      "totalReviews": 4,
-      "greenPoints": 18,
-      "redPoints": 6,
-      "netApproval": 75
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -1754,41 +1089,14 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 2.5,
-      "redStars": 4.6,
-      "totalReviews": 29,
-      "greenPoints": 72,
-      "redPoints": 133,
-      "netApproval": 35
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-eee-061-1",
-        "author": "BinaryBadger",
-        "date": "2026-08-10",
-        "course": "EEE 301",
-        "greenStars": 2,
-        "redStars": 5,
-        "tags": [
-          "Fast-Paced Lectures",
-          "Unpredictable Questions"
-        ],
-        "comment": "Extremely strict attendance policy and unannounced pop quizzes. Grading on term finals is notoriously brutal."
-      },
-      {
-        "id": "rev-eee-061-2",
-        "author": "LinkBash",
-        "date": "2026-06-18",
-        "course": "EEE 210",
-        "greenStars": 2,
-        "redStars": 5,
-        "tags": [
-          "Tough Grading",
-          "Lengthy Assignments"
-        ],
-        "comment": "Very deep subject knowledge, but syllabus pacing is relentless and question patterns are extraordinarily difficult."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "eee-062",
@@ -1799,12 +1107,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 4.1,
-      "redStars": 1.6,
-      "totalReviews": 5,
-      "greenPoints": 20,
-      "redPoints": 8,
-      "netApproval": 71
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -1817,12 +1125,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 4.3,
-      "redStars": 2.1,
-      "totalReviews": 6,
-      "greenPoints": 25,
-      "redPoints": 12,
-      "netApproval": 68
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -1835,28 +1143,14 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 4.0,
-      "redStars": 2.4,
-      "totalReviews": 12,
-      "greenPoints": 48,
-      "redPoints": 28,
-      "netApproval": 63
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-eee-064-1",
-        "author": "QuantumTitan",
-        "date": "2026-05-14",
-        "course": "EEE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "eee-065",
@@ -1867,12 +1161,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 4.2,
-      "redStars": 1.2,
-      "totalReviews": 5,
-      "greenPoints": 21,
-      "redPoints": 6,
-      "netApproval": 78
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -1885,12 +1179,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 3.9,
-      "redStars": 1.4,
-      "totalReviews": 4,
-      "greenPoints": 15,
-      "redPoints": 5,
-      "netApproval": 75
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -1903,28 +1197,14 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 4.4,
-      "redStars": 2.5,
-      "totalReviews": 14,
-      "greenPoints": 61,
-      "redPoints": 35,
-      "netApproval": 64
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-eee-067-1",
-        "author": "AlgoDragon",
-        "date": "2026-05-14",
-        "course": "EEE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "eee-068",
@@ -1935,12 +1215,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 4.5,
-      "redStars": 1.5,
-      "totalReviews": 3,
-      "greenPoints": 13,
-      "redPoints": 4,
-      "netApproval": 76
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -1953,12 +1233,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 4.7,
-      "redStars": 1.5,
-      "totalReviews": 3,
-      "greenPoints": 14,
-      "redPoints": 4,
-      "netApproval": 78
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -1971,28 +1251,14 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 4.2,
-      "redStars": 2.2,
-      "totalReviews": 14,
-      "greenPoints": 58,
-      "redPoints": 30,
-      "netApproval": 66
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-eee-070-1",
-        "author": "CircuitPhantom",
-        "date": "2026-05-14",
-        "course": "EEE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "eee-071",
@@ -2003,12 +1269,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 4.7,
-      "redStars": 1.4,
-      "totalReviews": 4,
-      "greenPoints": 18,
-      "redPoints": 5,
-      "netApproval": 78
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -2021,12 +1287,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 4.4,
-      "redStars": 1.8,
-      "totalReviews": 6,
-      "greenPoints": 26,
-      "redPoints": 10,
-      "netApproval": 72
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -2039,28 +1305,14 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 4.2,
-      "redStars": 2.3,
-      "totalReviews": 6,
-      "greenPoints": 25,
-      "redPoints": 13,
-      "netApproval": 66
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-eee-073-1",
-        "author": "ByteStalker",
-        "date": "2026-05-14",
-        "course": "EEE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "eee-074",
@@ -2071,12 +1323,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 4.5,
-      "redStars": 2.0,
-      "totalReviews": 6,
-      "greenPoints": 27,
-      "redPoints": 12,
-      "netApproval": 69
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -2089,12 +1341,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 4.5,
-      "redStars": 1.5,
-      "totalReviews": 3,
-      "greenPoints": 13,
-      "redPoints": 4,
-      "netApproval": 76
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -2107,28 +1359,14 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 3.8,
-      "redStars": 2.2,
-      "totalReviews": 9,
-      "greenPoints": 34,
-      "redPoints": 19,
-      "netApproval": 64
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-eee-076-1",
-        "author": "BinaryBadger",
-        "date": "2026-05-14",
-        "course": "EEE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "eee-077",
@@ -2139,12 +1377,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 4.3,
-      "redStars": 1.6,
-      "totalReviews": 2,
-      "greenPoints": 8,
-      "redPoints": 3,
-      "netApproval": 73
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -2157,12 +1395,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 4.7,
-      "redStars": 1.2,
-      "totalReviews": 3,
-      "greenPoints": 14,
-      "redPoints": 3,
-      "netApproval": 82
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -2175,28 +1413,14 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 4.0,
-      "redStars": 2.3,
-      "totalReviews": 9,
-      "greenPoints": 36,
-      "redPoints": 20,
-      "netApproval": 64
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-eee-079-1",
-        "author": "SoohoText",
-        "date": "2026-05-14",
-        "course": "EEE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "eee-080",
@@ -2207,12 +1431,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 4.5,
-      "redStars": 2.2,
-      "totalReviews": 4,
-      "greenPoints": 18,
-      "redPoints": 8,
-      "netApproval": 69
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -2225,12 +1449,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 4.2,
-      "redStars": 1.3,
-      "totalReviews": 3,
-      "greenPoints": 12,
-      "redPoints": 3,
-      "netApproval": 80
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -2243,28 +1467,14 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 3.9,
-      "redStars": 2.7,
-      "totalReviews": 13,
-      "greenPoints": 50,
-      "redPoints": 35,
-      "netApproval": 59
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-eee-082-1",
-        "author": "AeroSphinx",
-        "date": "2026-05-14",
-        "course": "EEE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "eee-083",
@@ -2275,12 +1485,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 4.3,
-      "redStars": 1.5,
-      "totalReviews": 4,
-      "greenPoints": 17,
-      "redPoints": 6,
-      "netApproval": 74
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -2293,12 +1503,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 3.9,
-      "redStars": 1.8,
-      "totalReviews": 4,
-      "greenPoints": 15,
-      "redPoints": 7,
-      "netApproval": 68
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -2311,28 +1521,14 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 4.0,
-      "redStars": 2.1,
-      "totalReviews": 9,
-      "greenPoints": 36,
-      "redPoints": 18,
-      "netApproval": 67
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-eee-085-1",
-        "author": "TurboCheetah",
-        "date": "2026-05-14",
-        "course": "EEE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "eee-086",
@@ -2343,12 +1539,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 4.5,
-      "redStars": 1.2,
-      "totalReviews": 3,
-      "greenPoints": 13,
-      "redPoints": 3,
-      "netApproval": 81
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -2361,12 +1557,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 4.4,
-      "redStars": 1.5,
-      "totalReviews": 3,
-      "greenPoints": 13,
-      "redPoints": 4,
-      "netApproval": 76
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -2379,28 +1575,14 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 3.7,
-      "redStars": 2.5,
-      "totalReviews": 9,
-      "greenPoints": 33,
-      "redPoints": 22,
-      "netApproval": 60
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-eee-088-1",
-        "author": "CyberOtter",
-        "date": "2026-05-14",
-        "course": "EEE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "eee-089",
@@ -2411,12 +1593,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 4.2,
-      "redStars": 1.1,
-      "totalReviews": 3,
-      "greenPoints": 12,
-      "redPoints": 3,
-      "netApproval": 80
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -2429,12 +1611,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 4.0,
-      "redStars": 1.9,
-      "totalReviews": 5,
-      "greenPoints": 20,
-      "redPoints": 9,
-      "netApproval": 69
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -2447,28 +1629,14 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 4.3,
-      "redStars": 2.0,
-      "totalReviews": 14,
-      "greenPoints": 60,
-      "redPoints": 28,
-      "netApproval": 68
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-eee-091-1",
-        "author": "MatrixWolf",
-        "date": "2026-05-14",
-        "course": "EEE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "eee-092",
@@ -2479,12 +1647,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 3.9,
-      "redStars": 1.6,
-      "totalReviews": 3,
-      "greenPoints": 11,
-      "redPoints": 4,
-      "netApproval": 73
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -2497,12 +1665,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 4.3,
-      "redStars": 1.2,
-      "totalReviews": 6,
-      "greenPoints": 25,
-      "redPoints": 7,
-      "netApproval": 78
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -2515,28 +1683,14 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 3.8,
-      "redStars": 2.4,
-      "totalReviews": 12,
-      "greenPoints": 45,
-      "redPoints": 28,
-      "netApproval": 62
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-eee-094-1",
-        "author": "WizardFox",
-        "date": "2026-05-14",
-        "course": "EEE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "eee-095",
@@ -2547,12 +1701,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 4.4,
-      "redStars": 1.4,
-      "totalReviews": 5,
-      "greenPoints": 22,
-      "redPoints": 7,
-      "netApproval": 76
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -2565,12 +1719,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 4.4,
-      "redStars": 1.5,
-      "totalReviews": 5,
-      "greenPoints": 22,
-      "redPoints": 7,
-      "netApproval": 76
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -2583,28 +1737,14 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 4.3,
-      "redStars": 2.2,
-      "totalReviews": 9,
-      "greenPoints": 38,
-      "redPoints": 19,
-      "netApproval": 67
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-eee-097-1",
-        "author": "VectorKnight",
-        "date": "2026-05-14",
-        "course": "EEE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "eee-098",
@@ -2615,12 +1755,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 4.4,
-      "redStars": 2.1,
-      "totalReviews": 2,
-      "greenPoints": 8,
-      "redPoints": 4,
-      "netApproval": 67
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -2633,12 +1773,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 4.7,
-      "redStars": 1.9,
-      "totalReviews": 6,
-      "greenPoints": 28,
-      "redPoints": 11,
-      "netApproval": 72
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -2651,28 +1791,14 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 4.4,
-      "redStars": 2.6,
-      "totalReviews": 7,
-      "greenPoints": 30,
-      "redPoints": 18,
-      "netApproval": 62
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-eee-100-1",
-        "author": "LinkBash",
-        "date": "2026-05-14",
-        "course": "EEE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "eee-101",
@@ -2683,12 +1809,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 4.6,
-      "redStars": 1.4,
-      "totalReviews": 4,
-      "greenPoints": 18,
-      "redPoints": 5,
-      "netApproval": 78
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -2701,12 +1827,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 4.0,
-      "redStars": 1.5,
-      "totalReviews": 6,
-      "greenPoints": 24,
-      "redPoints": 9,
-      "netApproval": 73
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -2719,28 +1845,14 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 4.2,
-      "redStars": 1.9,
-      "totalReviews": 8,
-      "greenPoints": 33,
-      "redPoints": 15,
-      "netApproval": 69
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-eee-103-1",
-        "author": "AeroSphinx",
-        "date": "2026-05-14",
-        "course": "EEE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "ce-104",
@@ -2751,12 +1863,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 4.1,
-      "redStars": 1.3,
-      "totalReviews": 6,
-      "greenPoints": 24,
-      "redPoints": 7,
-      "netApproval": 77
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -2769,12 +1881,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 4.7,
-      "redStars": 1.1,
-      "totalReviews": 5,
-      "greenPoints": 23,
-      "redPoints": 5,
-      "netApproval": 82
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -2787,54 +1899,14 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 4.8,
-      "redStars": 1.1,
-      "totalReviews": 17,
-      "greenPoints": 81,
-      "redPoints": 18,
-      "netApproval": 82
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-ce-106-1",
-        "author": "AeroSphinx",
-        "date": "2026-08-15",
-        "course": "CE 101",
-        "greenStars": 5,
-        "redStars": 1,
-        "tags": [
-          "Lenient Grading",
-          "Well-Structured Slides"
-        ],
-        "comment": "Outstanding professor! Concepts are explained with unmatched clarity, and very supportive during office hours."
-      },
-      {
-        "id": "rev-ce-106-2",
-        "author": "PixelSage",
-        "date": "2026-07-22",
-        "course": "CE 205",
-        "greenStars": 5,
-        "redStars": 1,
-        "tags": [
-          "Crystal Clear Lectures",
-          "Inspiring Mentor"
-        ],
-        "comment": "One of the best teachers in BUET. Always encourages student initiatives and critical problem-solving."
-      },
-      {
-        "id": "rev-ce-106-3",
-        "author": "AeroSphinx",
-        "date": "2026-06-30",
-        "course": "CE 311",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Helpful in Consultation",
-          "Fair Exam Questions"
-        ],
-        "comment": "Great lectures and very organized notes. Exams are thorough but totally fair."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "ce-107",
@@ -2845,12 +1917,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 4.0,
-      "redStars": 2.1,
-      "totalReviews": 3,
-      "greenPoints": 12,
-      "redPoints": 6,
-      "netApproval": 67
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -2863,12 +1935,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 4.2,
-      "redStars": 1.5,
-      "totalReviews": 2,
-      "greenPoints": 8,
-      "redPoints": 3,
-      "netApproval": 73
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -2881,54 +1953,14 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 4.8,
-      "redStars": 1.4,
-      "totalReviews": 22,
-      "greenPoints": 105,
-      "redPoints": 30,
-      "netApproval": 78
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-ce-109-1",
-        "author": "TurboCheetah",
-        "date": "2026-08-15",
-        "course": "CE 101",
-        "greenStars": 5,
-        "redStars": 1,
-        "tags": [
-          "Encourages Questions",
-          "Research Oriented"
-        ],
-        "comment": "Outstanding professor! Concepts are explained with unmatched clarity, and very supportive during office hours."
-      },
-      {
-        "id": "rev-ce-109-2",
-        "author": "CircuitPhantom",
-        "date": "2026-07-22",
-        "course": "CE 205",
-        "greenStars": 5,
-        "redStars": 1,
-        "tags": [
-          "Crystal Clear Lectures",
-          "Inspiring Mentor"
-        ],
-        "comment": "One of the best teachers in BUET. Always encourages student initiatives and critical problem-solving."
-      },
-      {
-        "id": "rev-ce-109-3",
-        "author": "WizardFox",
-        "date": "2026-06-30",
-        "course": "CE 311",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Helpful in Consultation",
-          "Fair Exam Questions"
-        ],
-        "comment": "Great lectures and very organized notes. Exams are thorough but totally fair."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "ce-110",
@@ -2939,12 +1971,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 4.1,
-      "redStars": 2.2,
-      "totalReviews": 4,
-      "greenPoints": 16,
-      "redPoints": 8,
-      "netApproval": 67
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -2957,12 +1989,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 4.1,
-      "redStars": 1.6,
-      "totalReviews": 5,
-      "greenPoints": 20,
-      "redPoints": 8,
-      "netApproval": 71
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -2975,28 +2007,14 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 4.1,
-      "redStars": 2.3,
-      "totalReviews": 10,
-      "greenPoints": 41,
-      "redPoints": 23,
-      "netApproval": 64
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-ce-112-1",
-        "author": "AlgoDragon",
-        "date": "2026-05-14",
-        "course": "CE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "ce-113",
@@ -3007,12 +2025,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 4.5,
-      "redStars": 1.4,
-      "totalReviews": 3,
-      "greenPoints": 13,
-      "redPoints": 4,
-      "netApproval": 76
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -3025,12 +2043,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 4.6,
-      "redStars": 1.2,
-      "totalReviews": 6,
-      "greenPoints": 27,
-      "redPoints": 7,
-      "netApproval": 79
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -3043,28 +2061,14 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 3.7,
-      "redStars": 2.7,
-      "totalReviews": 13,
-      "greenPoints": 48,
-      "redPoints": 35,
-      "netApproval": 58
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-ce-115-1",
-        "author": "WizardFox",
-        "date": "2026-05-14",
-        "course": "CE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "ce-116",
@@ -3075,41 +2079,14 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 2.3,
-      "redStars": 4.5,
-      "totalReviews": 25,
-      "greenPoints": 57,
-      "redPoints": 112,
-      "netApproval": 34
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-ce-116-1",
-        "author": "DeltaViper",
-        "date": "2026-08-10",
-        "course": "CE 301",
-        "greenStars": 2,
-        "redStars": 5,
-        "tags": [
-          "Tough Grading",
-          "Unapproachable in Office"
-        ],
-        "comment": "Extremely strict attendance policy and unannounced pop quizzes. Grading on term finals is notoriously brutal."
-      },
-      {
-        "id": "rev-ce-116-2",
-        "author": "TurboCheetah",
-        "date": "2026-06-18",
-        "course": "CE 210",
-        "greenStars": 2,
-        "redStars": 5,
-        "tags": [
-          "Tough Grading",
-          "Lengthy Assignments"
-        ],
-        "comment": "Very deep subject knowledge, but syllabus pacing is relentless and question patterns are extraordinarily difficult."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "ce-117",
@@ -3120,12 +2097,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 4.0,
-      "redStars": 1.8,
-      "totalReviews": 6,
-      "greenPoints": 24,
-      "redPoints": 10,
-      "netApproval": 71
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -3138,28 +2115,14 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 3.8,
-      "redStars": 2.4,
-      "totalReviews": 13,
-      "greenPoints": 49,
-      "redPoints": 31,
-      "netApproval": 61
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-ce-118-1",
-        "author": "QuantumTitan",
-        "date": "2026-05-14",
-        "course": "CE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "ce-119",
@@ -3170,12 +2133,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 3.9,
-      "redStars": 1.4,
-      "totalReviews": 5,
-      "greenPoints": 19,
-      "redPoints": 7,
-      "netApproval": 73
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -3188,12 +2151,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 4.3,
-      "redStars": 1.6,
-      "totalReviews": 6,
-      "greenPoints": 25,
-      "redPoints": 9,
-      "netApproval": 74
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -3206,28 +2169,14 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 4.0,
-      "redStars": 2.2,
-      "totalReviews": 11,
-      "greenPoints": 44,
-      "redPoints": 24,
-      "netApproval": 65
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-ce-121-1",
-        "author": "WizardFox",
-        "date": "2026-05-14",
-        "course": "CE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "ce-122",
@@ -3238,12 +2187,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 4.6,
-      "redStars": 1.1,
-      "totalReviews": 4,
-      "greenPoints": 18,
-      "redPoints": 4,
-      "netApproval": 82
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -3256,12 +2205,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 4.6,
-      "redStars": 2.1,
-      "totalReviews": 5,
-      "greenPoints": 23,
-      "redPoints": 10,
-      "netApproval": 70
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -3274,28 +2223,14 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 3.9,
-      "redStars": 1.8,
-      "totalReviews": 10,
-      "greenPoints": 39,
-      "redPoints": 18,
-      "netApproval": 68
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-ce-124-1",
-        "author": "ByteStalker",
-        "date": "2026-05-14",
-        "course": "CE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "ce-125",
@@ -3306,12 +2241,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 4.1,
-      "redStars": 1.2,
-      "totalReviews": 3,
-      "greenPoints": 12,
-      "redPoints": 3,
-      "netApproval": 80
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -3324,12 +2259,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 4.4,
-      "redStars": 1.5,
-      "totalReviews": 5,
-      "greenPoints": 22,
-      "redPoints": 7,
-      "netApproval": 76
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -3342,28 +2277,14 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 3.8,
-      "redStars": 2.3,
-      "totalReviews": 7,
-      "greenPoints": 26,
-      "redPoints": 16,
-      "netApproval": 62
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-ce-127-1",
-        "author": "AeroSphinx",
-        "date": "2026-05-14",
-        "course": "CE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "ce-128",
@@ -3374,12 +2295,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 4.6,
-      "redStars": 1.7,
-      "totalReviews": 5,
-      "greenPoints": 23,
-      "redPoints": 8,
-      "netApproval": 74
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -3392,12 +2313,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 4.5,
-      "redStars": 1.6,
-      "totalReviews": 5,
-      "greenPoints": 22,
-      "redPoints": 8,
-      "netApproval": 73
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -3410,28 +2331,14 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 4.2,
-      "redStars": 2.6,
-      "totalReviews": 13,
-      "greenPoints": 54,
-      "redPoints": 33,
-      "netApproval": 62
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-ce-130-1",
-        "author": "PixelSage",
-        "date": "2026-05-14",
-        "course": "CE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "ce-131",
@@ -3442,12 +2349,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 4.5,
-      "redStars": 1.3,
-      "totalReviews": 6,
-      "greenPoints": 27,
-      "redPoints": 7,
-      "netApproval": 79
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -3460,12 +2367,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 4.1,
-      "redStars": 1.9,
-      "totalReviews": 5,
-      "greenPoints": 20,
-      "redPoints": 9,
-      "netApproval": 69
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -3478,28 +2385,14 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 3.7,
-      "redStars": 2.5,
-      "totalReviews": 10,
-      "greenPoints": 37,
-      "redPoints": 25,
-      "netApproval": 60
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-ce-133-1",
-        "author": "MatrixWolf",
-        "date": "2026-05-14",
-        "course": "CE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "ce-134",
@@ -3510,12 +2403,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 4.0,
-      "redStars": 1.7,
-      "totalReviews": 2,
-      "greenPoints": 8,
-      "redPoints": 3,
-      "netApproval": 73
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -3528,12 +2421,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 4.4,
-      "redStars": 2.2,
-      "totalReviews": 5,
-      "greenPoints": 22,
-      "redPoints": 11,
-      "netApproval": 67
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -3546,28 +2439,14 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 4.3,
-      "redStars": 1.9,
-      "totalReviews": 6,
-      "greenPoints": 25,
-      "redPoints": 11,
-      "netApproval": 69
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-ce-136-1",
-        "author": "ByteStalker",
-        "date": "2026-05-14",
-        "course": "CE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "ce-137",
@@ -3578,12 +2457,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 4.0,
-      "redStars": 1.7,
-      "totalReviews": 4,
-      "greenPoints": 16,
-      "redPoints": 6,
-      "netApproval": 73
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -3596,12 +2475,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 4.1,
-      "redStars": 2.1,
-      "totalReviews": 6,
-      "greenPoints": 24,
-      "redPoints": 12,
-      "netApproval": 67
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -3614,28 +2493,14 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 3.7,
-      "redStars": 2.5,
-      "totalReviews": 6,
-      "greenPoints": 22,
-      "redPoints": 15,
-      "netApproval": 59
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-ce-139-1",
-        "author": "NeonFalcon",
-        "date": "2026-05-14",
-        "course": "CE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "ce-140",
@@ -3646,12 +2511,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 4.6,
-      "redStars": 1.3,
-      "totalReviews": 6,
-      "greenPoints": 27,
-      "redPoints": 7,
-      "netApproval": 79
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -3664,12 +2529,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 4.3,
-      "redStars": 1.3,
-      "totalReviews": 6,
-      "greenPoints": 25,
-      "redPoints": 7,
-      "netApproval": 78
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -3682,28 +2547,14 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 4.2,
-      "redStars": 1.8,
-      "totalReviews": 6,
-      "greenPoints": 25,
-      "redPoints": 10,
-      "netApproval": 71
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-ce-142-1",
-        "author": "ShadowEcho",
-        "date": "2026-05-14",
-        "course": "CE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "ce-143",
@@ -3714,12 +2565,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 4.7,
-      "redStars": 1.7,
-      "totalReviews": 3,
-      "greenPoints": 14,
-      "redPoints": 5,
-      "netApproval": 74
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -3732,12 +2583,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 4.1,
-      "redStars": 1.4,
-      "totalReviews": 2,
-      "greenPoints": 8,
-      "redPoints": 2,
-      "netApproval": 80
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -3750,28 +2601,14 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 3.8,
-      "redStars": 2.1,
-      "totalReviews": 7,
-      "greenPoints": 26,
-      "redPoints": 14,
-      "netApproval": 65
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-ce-145-1",
-        "author": "CircuitPhantom",
-        "date": "2026-05-14",
-        "course": "CE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "ce-146",
@@ -3782,12 +2619,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 4.5,
-      "redStars": 1.3,
-      "totalReviews": 4,
-      "greenPoints": 18,
-      "redPoints": 5,
-      "netApproval": 78
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -3800,12 +2637,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 4.6,
-      "redStars": 1.6,
-      "totalReviews": 6,
-      "greenPoints": 27,
-      "redPoints": 9,
-      "netApproval": 75
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -3818,28 +2655,14 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 3.7,
-      "redStars": 1.9,
-      "totalReviews": 14,
-      "greenPoints": 51,
-      "redPoints": 26,
-      "netApproval": 66
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-ce-148-1",
-        "author": "CosmicHawk",
-        "date": "2026-05-14",
-        "course": "CE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "ce-149",
@@ -3850,12 +2673,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 4.0,
-      "redStars": 2.0,
-      "totalReviews": 3,
-      "greenPoints": 12,
-      "redPoints": 6,
-      "netApproval": 67
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -3868,12 +2691,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 4.2,
-      "redStars": 1.6,
-      "totalReviews": 3,
-      "greenPoints": 12,
-      "redPoints": 4,
-      "netApproval": 75
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -3886,28 +2709,14 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 4.3,
-      "redStars": 2.3,
-      "totalReviews": 7,
-      "greenPoints": 30,
-      "redPoints": 16,
-      "netApproval": 65
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-ce-151-1",
-        "author": "DeltaViper",
-        "date": "2026-05-14",
-        "course": "CE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "ce-152",
@@ -3918,12 +2727,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 4.6,
-      "redStars": 1.9,
-      "totalReviews": 4,
-      "greenPoints": 18,
-      "redPoints": 7,
-      "netApproval": 72
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -3936,12 +2745,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 4.6,
-      "redStars": 1.5,
-      "totalReviews": 5,
-      "greenPoints": 23,
-      "redPoints": 7,
-      "netApproval": 77
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -3954,28 +2763,14 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 4.4,
-      "redStars": 2.8,
-      "totalReviews": 8,
-      "greenPoints": 35,
-      "redPoints": 22,
-      "netApproval": 61
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-ce-154-1",
-        "author": "TurboCheetah",
-        "date": "2026-05-14",
-        "course": "CE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "ce-155",
@@ -3986,12 +2781,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 4.7,
-      "redStars": 2.0,
-      "totalReviews": 4,
-      "greenPoints": 18,
-      "redPoints": 8,
-      "netApproval": 69
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -4004,12 +2799,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 4.1,
-      "redStars": 1.9,
-      "totalReviews": 6,
-      "greenPoints": 24,
-      "redPoints": 11,
-      "netApproval": 69
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -4022,28 +2817,14 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 3.8,
-      "redStars": 1.9,
-      "totalReviews": 8,
-      "greenPoints": 30,
-      "redPoints": 15,
-      "netApproval": 67
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-ce-157-1",
-        "author": "VectorKnight",
-        "date": "2026-05-14",
-        "course": "CE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "me-158",
@@ -4054,12 +2835,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 4.5,
-      "redStars": 2.2,
-      "totalReviews": 6,
-      "greenPoints": 27,
-      "redPoints": 13,
-      "netApproval": 67
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -4072,12 +2853,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 4.6,
-      "redStars": 1.2,
-      "totalReviews": 6,
-      "greenPoints": 27,
-      "redPoints": 7,
-      "netApproval": 79
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -4090,28 +2871,14 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 4.2,
-      "redStars": 2.4,
-      "totalReviews": 11,
-      "greenPoints": 46,
-      "redPoints": 26,
-      "netApproval": 64
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-me-160-1",
-        "author": "CosmicHawk",
-        "date": "2026-05-14",
-        "course": "ME 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "me-161",
@@ -4122,54 +2889,14 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 4.9,
-      "redStars": 1.6,
-      "totalReviews": 32,
-      "greenPoints": 156,
-      "redPoints": 51,
-      "netApproval": 75
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-me-161-1",
-        "author": "VectorKnight",
-        "date": "2026-08-15",
-        "course": "ME 101",
-        "greenStars": 5,
-        "redStars": 1,
-        "tags": [
-          "Lenient Grading",
-          "Fair Exam Questions"
-        ],
-        "comment": "Outstanding professor! Concepts are explained with unmatched clarity, and very supportive during office hours."
-      },
-      {
-        "id": "rev-me-161-2",
-        "author": "AeroSphinx",
-        "date": "2026-07-22",
-        "course": "ME 205",
-        "greenStars": 5,
-        "redStars": 1,
-        "tags": [
-          "Crystal Clear Lectures",
-          "Inspiring Mentor"
-        ],
-        "comment": "One of the best teachers in BUET. Always encourages student initiatives and critical problem-solving."
-      },
-      {
-        "id": "rev-me-161-3",
-        "author": "ShadowEcho",
-        "date": "2026-06-30",
-        "course": "ME 311",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Helpful in Consultation",
-          "Fair Exam Questions"
-        ],
-        "comment": "Great lectures and very organized notes. Exams are thorough but totally fair."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "me-162",
@@ -4180,12 +2907,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 4.0,
-      "redStars": 2.0,
-      "totalReviews": 6,
-      "greenPoints": 24,
-      "redPoints": 12,
-      "netApproval": 67
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -4198,28 +2925,14 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 4.1,
-      "redStars": 2.2,
-      "totalReviews": 13,
-      "greenPoints": 53,
-      "redPoints": 28,
-      "netApproval": 65
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-me-163-1",
-        "author": "TurboCheetah",
-        "date": "2026-05-14",
-        "course": "ME 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "me-164",
@@ -4230,12 +2943,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 4.2,
-      "redStars": 1.6,
-      "totalReviews": 3,
-      "greenPoints": 12,
-      "redPoints": 4,
-      "netApproval": 75
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -4248,12 +2961,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 4.0,
-      "redStars": 1.5,
-      "totalReviews": 2,
-      "greenPoints": 8,
-      "redPoints": 3,
-      "netApproval": 73
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -4266,28 +2979,14 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 4.3,
-      "redStars": 2.8,
-      "totalReviews": 11,
-      "greenPoints": 47,
-      "redPoints": 30,
-      "netApproval": 61
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-me-166-1",
-        "author": "AeroSphinx",
-        "date": "2026-05-14",
-        "course": "ME 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "me-167",
@@ -4298,12 +2997,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 4.7,
-      "redStars": 1.2,
-      "totalReviews": 3,
-      "greenPoints": 14,
-      "redPoints": 3,
-      "netApproval": 82
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -4316,12 +3015,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 4.7,
-      "redStars": 1.7,
-      "totalReviews": 3,
-      "greenPoints": 14,
-      "redPoints": 5,
-      "netApproval": 74
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -4334,28 +3033,14 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 3.9,
-      "redStars": 1.8,
-      "totalReviews": 6,
-      "greenPoints": 23,
-      "redPoints": 10,
-      "netApproval": 70
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-me-169-1",
-        "author": "QuantumTitan",
-        "date": "2026-05-14",
-        "course": "ME 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "me-170",
@@ -4366,12 +3051,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 4.3,
-      "redStars": 1.8,
-      "totalReviews": 3,
-      "greenPoints": 12,
-      "redPoints": 5,
-      "netApproval": 71
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -4384,41 +3069,14 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 2.7,
-      "redStars": 4.5,
-      "totalReviews": 18,
-      "greenPoints": 48,
-      "redPoints": 81,
-      "netApproval": 37
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-me-171-1",
-        "author": "WizardFox",
-        "date": "2026-08-10",
-        "course": "ME 301",
-        "greenStars": 2,
-        "redStars": 5,
-        "tags": [
-          "Unpredictable Questions",
-          "Strict Attendance"
-        ],
-        "comment": "Extremely strict attendance policy and unannounced pop quizzes. Grading on term finals is notoriously brutal."
-      },
-      {
-        "id": "rev-me-171-2",
-        "author": "ShadowEcho",
-        "date": "2026-06-18",
-        "course": "ME 210",
-        "greenStars": 2,
-        "redStars": 5,
-        "tags": [
-          "Tough Grading",
-          "Lengthy Assignments"
-        ],
-        "comment": "Very deep subject knowledge, but syllabus pacing is relentless and question patterns are extraordinarily difficult."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "me-172",
@@ -4429,28 +3087,14 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 3.9,
-      "redStars": 1.9,
-      "totalReviews": 11,
-      "greenPoints": 42,
-      "redPoints": 20,
-      "netApproval": 68
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-me-172-1",
-        "author": "AlgoDragon",
-        "date": "2026-05-14",
-        "course": "ME 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "me-173",
@@ -4461,12 +3105,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 4.0,
-      "redStars": 2.1,
-      "totalReviews": 2,
-      "greenPoints": 8,
-      "redPoints": 4,
-      "netApproval": 67
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -4479,12 +3123,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 4.2,
-      "redStars": 1.8,
-      "totalReviews": 3,
-      "greenPoints": 12,
-      "redPoints": 5,
-      "netApproval": 71
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -4497,28 +3141,14 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 4.3,
-      "redStars": 2.7,
-      "totalReviews": 12,
-      "greenPoints": 51,
-      "redPoints": 32,
-      "netApproval": 61
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-me-175-1",
-        "author": "VectorKnight",
-        "date": "2026-05-14",
-        "course": "ME 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "me-176",
@@ -4529,12 +3159,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 4.2,
-      "redStars": 1.2,
-      "totalReviews": 2,
-      "greenPoints": 8,
-      "redPoints": 2,
-      "netApproval": 80
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -4547,12 +3177,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 4.1,
-      "redStars": 1.5,
-      "totalReviews": 2,
-      "greenPoints": 8,
-      "redPoints": 3,
-      "netApproval": 73
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -4565,28 +3195,14 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 4.3,
-      "redStars": 2.9,
-      "totalReviews": 8,
-      "greenPoints": 34,
-      "redPoints": 23,
-      "netApproval": 60
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-me-178-1",
-        "author": "TurboCheetah",
-        "date": "2026-05-14",
-        "course": "ME 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "me-179",
@@ -4597,12 +3213,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 4.5,
-      "redStars": 1.6,
-      "totalReviews": 3,
-      "greenPoints": 13,
-      "redPoints": 4,
-      "netApproval": 76
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -4615,12 +3231,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 4.6,
-      "redStars": 2.2,
-      "totalReviews": 3,
-      "greenPoints": 13,
-      "redPoints": 6,
-      "netApproval": 68
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -4633,28 +3249,14 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 4.2,
-      "redStars": 2.8,
-      "totalReviews": 14,
-      "greenPoints": 58,
-      "redPoints": 39,
-      "netApproval": 60
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-me-181-1",
-        "author": "ShadowEcho",
-        "date": "2026-05-14",
-        "course": "ME 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "me-182",
@@ -4665,12 +3267,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 4.6,
-      "redStars": 1.4,
-      "totalReviews": 6,
-      "greenPoints": 27,
-      "redPoints": 8,
-      "netApproval": 77
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -4683,12 +3285,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 4.5,
-      "redStars": 1.8,
-      "totalReviews": 3,
-      "greenPoints": 13,
-      "redPoints": 5,
-      "netApproval": 72
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -4701,28 +3303,14 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 3.9,
-      "redStars": 2.0,
-      "totalReviews": 9,
-      "greenPoints": 35,
-      "redPoints": 18,
-      "netApproval": 66
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-me-184-1",
-        "author": "TurboCheetah",
-        "date": "2026-05-14",
-        "course": "ME 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "me-185",
@@ -4733,12 +3321,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 4.5,
-      "redStars": 1.8,
-      "totalReviews": 6,
-      "greenPoints": 27,
-      "redPoints": 10,
-      "netApproval": 73
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -4751,12 +3339,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 4.1,
-      "redStars": 1.5,
-      "totalReviews": 2,
-      "greenPoints": 8,
-      "redPoints": 3,
-      "netApproval": 73
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -4769,28 +3357,14 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 4.3,
-      "redStars": 2.5,
-      "totalReviews": 10,
-      "greenPoints": 43,
-      "redPoints": 25,
-      "netApproval": 63
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-ipe-187-1",
-        "author": "AlgoDragon",
-        "date": "2026-05-14",
-        "course": "IPE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "ipe-188",
@@ -4801,12 +3375,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 4.0,
-      "redStars": 1.3,
-      "totalReviews": 3,
-      "greenPoints": 12,
-      "redPoints": 3,
-      "netApproval": 80
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -4819,54 +3393,14 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 4.9,
-      "redStars": 1.4,
-      "totalReviews": 25,
-      "greenPoints": 122,
-      "redPoints": 35,
-      "netApproval": 78
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-ipe-189-1",
-        "author": "ByteStalker",
-        "date": "2026-08-15",
-        "course": "IPE 101",
-        "greenStars": 5,
-        "redStars": 1,
-        "tags": [
-          "Helpful in Consultation",
-          "Practical Knowledge"
-        ],
-        "comment": "Outstanding professor! Concepts are explained with unmatched clarity, and very supportive during office hours."
-      },
-      {
-        "id": "rev-ipe-189-2",
-        "author": "SoohoText",
-        "date": "2026-07-22",
-        "course": "IPE 205",
-        "greenStars": 5,
-        "redStars": 1,
-        "tags": [
-          "Crystal Clear Lectures",
-          "Inspiring Mentor"
-        ],
-        "comment": "One of the best teachers in BUET. Always encourages student initiatives and critical problem-solving."
-      },
-      {
-        "id": "rev-ipe-189-3",
-        "author": "MatrixWolf",
-        "date": "2026-06-30",
-        "course": "IPE 311",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Helpful in Consultation",
-          "Fair Exam Questions"
-        ],
-        "comment": "Great lectures and very organized notes. Exams are thorough but totally fair."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "ipe-190",
@@ -4877,28 +3411,14 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 4.1,
-      "redStars": 2.0,
-      "totalReviews": 8,
-      "greenPoints": 32,
-      "redPoints": 16,
-      "netApproval": 67
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-ipe-190-1",
-        "author": "CyberOtter",
-        "date": "2026-05-14",
-        "course": "IPE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "ipe-191",
@@ -4909,12 +3429,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 4.0,
-      "redStars": 1.8,
-      "totalReviews": 2,
-      "greenPoints": 8,
-      "redPoints": 3,
-      "netApproval": 73
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -4927,12 +3447,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 4.5,
-      "redStars": 2.1,
-      "totalReviews": 3,
-      "greenPoints": 13,
-      "redPoints": 6,
-      "netApproval": 68
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -4945,28 +3465,14 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 3.7,
-      "redStars": 2.1,
-      "totalReviews": 14,
-      "greenPoints": 51,
-      "redPoints": 29,
-      "netApproval": 64
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-ipe-193-1",
-        "author": "LinkBash",
-        "date": "2026-05-14",
-        "course": "IPE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "ipe-194",
@@ -4977,12 +3483,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 4.0,
-      "redStars": 1.5,
-      "totalReviews": 2,
-      "greenPoints": 8,
-      "redPoints": 3,
-      "netApproval": 73
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -4995,12 +3501,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 4.2,
-      "redStars": 1.5,
-      "totalReviews": 3,
-      "greenPoints": 12,
-      "redPoints": 4,
-      "netApproval": 75
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -5013,28 +3519,14 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 4.2,
-      "redStars": 2.5,
-      "totalReviews": 7,
-      "greenPoints": 29,
-      "redPoints": 17,
-      "netApproval": 63
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-ipe-196-1",
-        "author": "TurboCheetah",
-        "date": "2026-05-14",
-        "course": "IPE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "ipe-197",
@@ -5045,12 +3537,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 4.7,
-      "redStars": 1.8,
-      "totalReviews": 4,
-      "greenPoints": 18,
-      "redPoints": 7,
-      "netApproval": 72
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -5063,12 +3555,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 3.9,
-      "redStars": 1.5,
-      "totalReviews": 4,
-      "greenPoints": 15,
-      "redPoints": 6,
-      "netApproval": 71
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -5081,28 +3573,14 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, 10th-11th Floor",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 4.0,
-      "redStars": 2.0,
-      "totalReviews": 9,
-      "greenPoints": 36,
-      "redPoints": 18,
-      "netApproval": 67
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-bme-199-1",
-        "author": "GlitchPanda",
-        "date": "2026-05-14",
-        "course": "BME 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "bme-200",
@@ -5113,12 +3591,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, 10th-11th Floor",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 4.0,
-      "redStars": 1.1,
-      "totalReviews": 6,
-      "greenPoints": 24,
-      "redPoints": 6,
-      "netApproval": 80
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -5131,12 +3609,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, 10th-11th Floor",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 4.2,
-      "redStars": 1.9,
-      "totalReviews": 3,
-      "greenPoints": 12,
-      "redPoints": 5,
-      "netApproval": 71
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -5149,28 +3627,14 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, 10th-11th Floor",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 4.1,
-      "redStars": 1.9,
-      "totalReviews": 8,
-      "greenPoints": 32,
-      "redPoints": 15,
-      "netApproval": 68
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-bme-202-1",
-        "author": "BinaryBadger",
-        "date": "2026-05-14",
-        "course": "BME 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "bme-203",
@@ -5181,12 +3645,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, 10th-11th Floor",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 4.1,
-      "redStars": 2.2,
-      "totalReviews": 4,
-      "greenPoints": 16,
-      "redPoints": 8,
-      "netApproval": 67
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -5199,12 +3663,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, 10th-11th Floor",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 4.0,
-      "redStars": 2.0,
-      "totalReviews": 3,
-      "greenPoints": 12,
-      "redPoints": 6,
-      "netApproval": 67
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -5217,28 +3681,14 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, 10th-11th Floor",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 4.3,
-      "redStars": 1.8,
-      "totalReviews": 9,
-      "greenPoints": 38,
-      "redPoints": 16,
-      "netApproval": 70
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-bme-205-1",
-        "author": "AlgoDragon",
-        "date": "2026-05-14",
-        "course": "BME 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "bme-206",
@@ -5249,12 +3699,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, 10th-11th Floor",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 4.3,
-      "redStars": 1.6,
-      "totalReviews": 3,
-      "greenPoints": 12,
-      "redPoints": 4,
-      "netApproval": 75
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -5267,12 +3717,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, 10th-11th Floor",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 4.2,
-      "redStars": 1.3,
-      "totalReviews": 4,
-      "greenPoints": 16,
-      "redPoints": 5,
-      "netApproval": 76
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -5285,28 +3735,14 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, 10th-11th Floor",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 4.0,
-      "redStars": 2.4,
-      "totalReviews": 9,
-      "greenPoints": 36,
-      "redPoints": 21,
-      "netApproval": 63
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-bme-208-1",
-        "author": "VectorKnight",
-        "date": "2026-05-14",
-        "course": "BME 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "bme-209",
@@ -5317,12 +3753,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, 10th-11th Floor",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 4.1,
-      "redStars": 2.0,
-      "totalReviews": 5,
-      "greenPoints": 20,
-      "redPoints": 10,
-      "netApproval": 67
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -5335,12 +3771,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, 10th-11th Floor",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 4.6,
-      "redStars": 1.2,
-      "totalReviews": 2,
-      "greenPoints": 9,
-      "redPoints": 2,
-      "netApproval": 82
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -5353,54 +3789,14 @@ window.INITIAL_TEACHERS = [
     "location": "Old Academic Building (OAB)",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 4.9,
-      "redStars": 1.5,
-      "totalReviews": 32,
-      "greenPoints": 156,
-      "redPoints": 48,
-      "netApproval": 76
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-mme-211-1",
-        "author": "AeroSphinx",
-        "date": "2026-08-15",
-        "course": "MME 101",
-        "greenStars": 5,
-        "redStars": 1,
-        "tags": [
-          "Encourages Questions",
-          "Practical Knowledge"
-        ],
-        "comment": "Outstanding professor! Concepts are explained with unmatched clarity, and very supportive during office hours."
-      },
-      {
-        "id": "rev-mme-211-2",
-        "author": "QuantumTitan",
-        "date": "2026-07-22",
-        "course": "MME 205",
-        "greenStars": 5,
-        "redStars": 1,
-        "tags": [
-          "Crystal Clear Lectures",
-          "Inspiring Mentor"
-        ],
-        "comment": "One of the best teachers in BUET. Always encourages student initiatives and critical problem-solving."
-      },
-      {
-        "id": "rev-mme-211-3",
-        "author": "BinaryBadger",
-        "date": "2026-06-30",
-        "course": "MME 311",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Helpful in Consultation",
-          "Fair Exam Questions"
-        ],
-        "comment": "Great lectures and very organized notes. Exams are thorough but totally fair."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "mme-212",
@@ -5411,12 +3807,12 @@ window.INITIAL_TEACHERS = [
     "location": "Old Academic Building (OAB)",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 4.3,
-      "redStars": 1.5,
-      "totalReviews": 5,
-      "greenPoints": 21,
-      "redPoints": 7,
-      "netApproval": 75
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -5429,12 +3825,12 @@ window.INITIAL_TEACHERS = [
     "location": "Old Academic Building (OAB)",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 4.2,
-      "redStars": 1.4,
-      "totalReviews": 2,
-      "greenPoints": 8,
-      "redPoints": 2,
-      "netApproval": 80
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -5447,28 +3843,14 @@ window.INITIAL_TEACHERS = [
     "location": "Old Academic Building (OAB)",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 4.1,
-      "redStars": 2.3,
-      "totalReviews": 11,
-      "greenPoints": 45,
-      "redPoints": 25,
-      "netApproval": 64
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-mme-214-1",
-        "author": "AeroSphinx",
-        "date": "2026-05-14",
-        "course": "MME 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "mme-215",
@@ -5479,12 +3861,12 @@ window.INITIAL_TEACHERS = [
     "location": "Old Academic Building (OAB)",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 4.6,
-      "redStars": 2.0,
-      "totalReviews": 3,
-      "greenPoints": 13,
-      "redPoints": 6,
-      "netApproval": 68
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -5497,12 +3879,12 @@ window.INITIAL_TEACHERS = [
     "location": "Old Academic Building (OAB)",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 4.0,
-      "redStars": 2.0,
-      "totalReviews": 3,
-      "greenPoints": 12,
-      "redPoints": 6,
-      "netApproval": 67
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -5515,28 +3897,14 @@ window.INITIAL_TEACHERS = [
     "location": "Old Academic Building (OAB)",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 4.4,
-      "redStars": 2.7,
-      "totalReviews": 8,
-      "greenPoints": 35,
-      "redPoints": 21,
-      "netApproval": 62
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-mme-217-1",
-        "author": "ByteStalker",
-        "date": "2026-05-14",
-        "course": "MME 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "mme-218",
@@ -5547,12 +3915,12 @@ window.INITIAL_TEACHERS = [
     "location": "Old Academic Building (OAB)",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 4.1,
-      "redStars": 1.9,
-      "totalReviews": 3,
-      "greenPoints": 12,
-      "redPoints": 5,
-      "netApproval": 71
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -5565,12 +3933,12 @@ window.INITIAL_TEACHERS = [
     "location": "Old Academic Building (OAB)",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 4.3,
-      "redStars": 1.3,
-      "totalReviews": 6,
-      "greenPoints": 25,
-      "redPoints": 7,
-      "netApproval": 78
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -5583,28 +3951,14 @@ window.INITIAL_TEACHERS = [
     "location": "Old Academic Building (OAB)",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 3.7,
-      "redStars": 2.3,
-      "totalReviews": 10,
-      "greenPoints": 37,
-      "redPoints": 23,
-      "netApproval": 62
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-mme-220-1",
-        "author": "MatrixWolf",
-        "date": "2026-05-14",
-        "course": "MME 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "mme-221",
@@ -5615,41 +3969,14 @@ window.INITIAL_TEACHERS = [
     "location": "Old Academic Building (OAB)",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 2.3,
-      "redStars": 4.7,
-      "totalReviews": 17,
-      "greenPoints": 39,
-      "redPoints": 79,
-      "netApproval": 33
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-mme-221-1",
-        "author": "WizardFox",
-        "date": "2026-08-10",
-        "course": "MME 301",
-        "greenStars": 2,
-        "redStars": 5,
-        "tags": [
-          "Tricky Midterms",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Extremely strict attendance policy and unannounced pop quizzes. Grading on term finals is notoriously brutal."
-      },
-      {
-        "id": "rev-mme-221-2",
-        "author": "AlgoDragon",
-        "date": "2026-06-18",
-        "course": "MME 210",
-        "greenStars": 2,
-        "redStars": 5,
-        "tags": [
-          "Tough Grading",
-          "Lengthy Assignments"
-        ],
-        "comment": "Very deep subject knowledge, but syllabus pacing is relentless and question patterns are extraordinarily difficult."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "mme-222",
@@ -5660,12 +3987,12 @@ window.INITIAL_TEACHERS = [
     "location": "Old Academic Building (OAB)",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 4.5,
-      "redStars": 2.1,
-      "totalReviews": 5,
-      "greenPoints": 22,
-      "redPoints": 10,
-      "netApproval": 69
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -5678,28 +4005,14 @@ window.INITIAL_TEACHERS = [
     "location": "Old Academic Building (OAB)",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 4.1,
-      "redStars": 2.7,
-      "totalReviews": 7,
-      "greenPoints": 28,
-      "redPoints": 18,
-      "netApproval": 61
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-mme-223-1",
-        "author": "PixelSage",
-        "date": "2026-05-14",
-        "course": "MME 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "mme-224",
@@ -5710,12 +4023,12 @@ window.INITIAL_TEACHERS = [
     "location": "Old Academic Building (OAB)",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 4.3,
-      "redStars": 1.5,
-      "totalReviews": 4,
-      "greenPoints": 17,
-      "redPoints": 6,
-      "netApproval": 74
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -5728,12 +4041,12 @@ window.INITIAL_TEACHERS = [
     "location": "Old Academic Building (OAB)",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 4.0,
-      "redStars": 1.4,
-      "totalReviews": 4,
-      "greenPoints": 16,
-      "redPoints": 5,
-      "netApproval": 76
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -5746,28 +4059,14 @@ window.INITIAL_TEACHERS = [
     "location": "Architecture & Planning Building",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 4.1,
-      "redStars": 2.8,
-      "totalReviews": 13,
-      "greenPoints": 53,
-      "redPoints": 36,
-      "netApproval": 60
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-urp-226-1",
-        "author": "ShadowEcho",
-        "date": "2026-05-14",
-        "course": "URP 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "urp-227",
@@ -5778,12 +4077,12 @@ window.INITIAL_TEACHERS = [
     "location": "Architecture & Planning Building",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 4.4,
-      "redStars": 2.2,
-      "totalReviews": 5,
-      "greenPoints": 22,
-      "redPoints": 11,
-      "netApproval": 67
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -5796,12 +4095,12 @@ window.INITIAL_TEACHERS = [
     "location": "Architecture & Planning Building",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 4.4,
-      "redStars": 2.0,
-      "totalReviews": 4,
-      "greenPoints": 17,
-      "redPoints": 8,
-      "netApproval": 68
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -5814,28 +4113,14 @@ window.INITIAL_TEACHERS = [
     "location": "Architecture & Planning Building",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 3.9,
-      "redStars": 2.4,
-      "totalReviews": 9,
-      "greenPoints": 35,
-      "redPoints": 21,
-      "netApproval": 62
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-urp-229-1",
-        "author": "TurboCheetah",
-        "date": "2026-05-14",
-        "course": "URP 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "urp-230",
@@ -5846,12 +4131,12 @@ window.INITIAL_TEACHERS = [
     "location": "Architecture & Planning Building",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 4.3,
-      "redStars": 1.1,
-      "totalReviews": 5,
-      "greenPoints": 21,
-      "redPoints": 5,
-      "netApproval": 81
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -5864,12 +4149,12 @@ window.INITIAL_TEACHERS = [
     "location": "Architecture & Planning Building",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 4.4,
-      "redStars": 2.0,
-      "totalReviews": 5,
-      "greenPoints": 22,
-      "redPoints": 10,
-      "netApproval": 69
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -5882,28 +4167,14 @@ window.INITIAL_TEACHERS = [
     "location": "Architecture & Planning Building",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 3.7,
-      "redStars": 2.9,
-      "totalReviews": 6,
-      "greenPoints": 22,
-      "redPoints": 17,
-      "netApproval": 56
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-urp-232-1",
-        "author": "GlitchPanda",
-        "date": "2026-05-14",
-        "course": "URP 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "urp-233",
@@ -5914,12 +4185,12 @@ window.INITIAL_TEACHERS = [
     "location": "Architecture & Planning Building",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 4.2,
-      "redStars": 1.5,
-      "totalReviews": 2,
-      "greenPoints": 8,
-      "redPoints": 3,
-      "netApproval": 73
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -5932,12 +4203,12 @@ window.INITIAL_TEACHERS = [
     "location": "Architecture & Planning Building",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 4.5,
-      "redStars": 1.9,
-      "totalReviews": 2,
-      "greenPoints": 9,
-      "redPoints": 3,
-      "netApproval": 75
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -5950,28 +4221,14 @@ window.INITIAL_TEACHERS = [
     "location": "Architecture & Planning Building",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 4.2,
-      "redStars": 2.8,
-      "totalReviews": 7,
-      "greenPoints": 29,
-      "redPoints": 19,
-      "netApproval": 60
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-urp-235-1",
-        "author": "WizardFox",
-        "date": "2026-05-14",
-        "course": "URP 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "urp-236",
@@ -5982,12 +4239,12 @@ window.INITIAL_TEACHERS = [
     "location": "Architecture & Planning Building",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 4.5,
-      "redStars": 1.9,
-      "totalReviews": 4,
-      "greenPoints": 18,
-      "redPoints": 7,
-      "netApproval": 72
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -6000,12 +4257,12 @@ window.INITIAL_TEACHERS = [
     "location": "Architecture & Planning Building",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 4.3,
-      "redStars": 1.8,
-      "totalReviews": 2,
-      "greenPoints": 8,
-      "redPoints": 3,
-      "netApproval": 73
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -6018,28 +4275,14 @@ window.INITIAL_TEACHERS = [
     "location": "Architecture & Planning Building",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 4.1,
-      "redStars": 2.7,
-      "totalReviews": 7,
-      "greenPoints": 28,
-      "redPoints": 18,
-      "netApproval": 61
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-urp-238-1",
-        "author": "WizardFox",
-        "date": "2026-05-14",
-        "course": "URP 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "urp-239",
@@ -6050,12 +4293,12 @@ window.INITIAL_TEACHERS = [
     "location": "Architecture & Planning Building",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 4.7,
-      "redStars": 1.7,
-      "totalReviews": 4,
-      "greenPoints": 18,
-      "redPoints": 6,
-      "netApproval": 75
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -6068,12 +4311,12 @@ window.INITIAL_TEACHERS = [
     "location": "Architecture & Planning Building",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 4.3,
-      "redStars": 2.0,
-      "totalReviews": 5,
-      "greenPoints": 21,
-      "redPoints": 10,
-      "netApproval": 68
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -6086,28 +4329,14 @@ window.INITIAL_TEACHERS = [
     "location": "Civil / NAME Building",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 4.4,
-      "redStars": 1.9,
-      "totalReviews": 14,
-      "greenPoints": 61,
-      "redPoints": 26,
-      "netApproval": 70
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-name-241-1",
-        "author": "CyberOtter",
-        "date": "2026-05-14",
-        "course": "NAME 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "name-242",
@@ -6118,12 +4347,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil / NAME Building",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 4.7,
-      "redStars": 1.3,
-      "totalReviews": 4,
-      "greenPoints": 18,
-      "redPoints": 5,
-      "netApproval": 78
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -6136,12 +4365,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil / NAME Building",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 4.5,
-      "redStars": 1.8,
-      "totalReviews": 2,
-      "greenPoints": 9,
-      "redPoints": 3,
-      "netApproval": 75
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -6154,28 +4383,14 @@ window.INITIAL_TEACHERS = [
     "location": "Civil / NAME Building",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 4.2,
-      "redStars": 2.9,
-      "totalReviews": 8,
-      "greenPoints": 33,
-      "redPoints": 23,
-      "netApproval": 59
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-name-244-1",
-        "author": "CyberOtter",
-        "date": "2026-05-14",
-        "course": "NAME 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "name-245",
@@ -6186,12 +4401,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil / NAME Building",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 4.5,
-      "redStars": 1.2,
-      "totalReviews": 6,
-      "greenPoints": 27,
-      "redPoints": 7,
-      "netApproval": 79
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -6204,12 +4419,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil / NAME Building",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 4.3,
-      "redStars": 1.5,
-      "totalReviews": 6,
-      "greenPoints": 25,
-      "redPoints": 9,
-      "netApproval": 74
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -6222,28 +4437,14 @@ window.INITIAL_TEACHERS = [
     "location": "Civil / NAME Building",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 4.0,
-      "redStars": 2.7,
-      "totalReviews": 6,
-      "greenPoints": 24,
-      "redPoints": 16,
-      "netApproval": 60
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-name-247-1",
-        "author": "ByteStalker",
-        "date": "2026-05-14",
-        "course": "NAME 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "name-248",
@@ -6254,12 +4455,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil / NAME Building",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 3.9,
-      "redStars": 2.1,
-      "totalReviews": 6,
-      "greenPoints": 23,
-      "redPoints": 12,
-      "netApproval": 66
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -6272,12 +4473,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil / NAME Building",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 4.5,
-      "redStars": 1.6,
-      "totalReviews": 5,
-      "greenPoints": 22,
-      "redPoints": 8,
-      "netApproval": 73
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -6290,28 +4491,14 @@ window.INITIAL_TEACHERS = [
     "location": "Civil / NAME Building",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 4.3,
-      "redStars": 2.3,
-      "totalReviews": 14,
-      "greenPoints": 60,
-      "redPoints": 32,
-      "netApproval": 65
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-name-250-1",
-        "author": "CircuitPhantom",
-        "date": "2026-05-14",
-        "course": "NAME 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "wre-251",
@@ -6322,12 +4509,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 4.7,
-      "redStars": 1.5,
-      "totalReviews": 3,
-      "greenPoints": 14,
-      "redPoints": 4,
-      "netApproval": 78
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -6340,12 +4527,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 4.4,
-      "redStars": 1.5,
-      "totalReviews": 3,
-      "greenPoints": 13,
-      "redPoints": 4,
-      "netApproval": 76
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -6358,28 +4545,14 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 4.0,
-      "redStars": 2.2,
-      "totalReviews": 11,
-      "greenPoints": 44,
-      "redPoints": 24,
-      "netApproval": 65
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-wre-253-1",
-        "author": "AeroSphinx",
-        "date": "2026-05-14",
-        "course": "WRE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "wre-254",
@@ -6390,12 +4563,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 4.1,
-      "redStars": 2.2,
-      "totalReviews": 6,
-      "greenPoints": 24,
-      "redPoints": 13,
-      "netApproval": 65
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -6408,12 +4581,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 4.5,
-      "redStars": 2.1,
-      "totalReviews": 6,
-      "greenPoints": 27,
-      "redPoints": 12,
-      "netApproval": 69
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -6426,28 +4599,14 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 4.2,
-      "redStars": 2.8,
-      "totalReviews": 14,
-      "greenPoints": 58,
-      "redPoints": 39,
-      "netApproval": 60
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-wre-256-1",
-        "author": "LogicRaven",
-        "date": "2026-05-14",
-        "course": "WRE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "wre-257",
@@ -6458,12 +4617,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 4.5,
-      "redStars": 1.7,
-      "totalReviews": 2,
-      "greenPoints": 9,
-      "redPoints": 3,
-      "netApproval": 75
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -6476,12 +4635,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 4.4,
-      "redStars": 1.4,
-      "totalReviews": 4,
-      "greenPoints": 17,
-      "redPoints": 5,
-      "netApproval": 77
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -6494,28 +4653,14 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 4.3,
-      "redStars": 2.2,
-      "totalReviews": 11,
-      "greenPoints": 47,
-      "redPoints": 24,
-      "netApproval": 66
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-wre-259-1",
-        "author": "BinaryBadger",
-        "date": "2026-05-14",
-        "course": "WRE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "wre-260",
@@ -6526,12 +4671,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 4.1,
-      "redStars": 1.7,
-      "totalReviews": 5,
-      "greenPoints": 20,
-      "redPoints": 8,
-      "netApproval": 71
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -6544,12 +4689,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 4.7,
-      "redStars": 2.1,
-      "totalReviews": 4,
-      "greenPoints": 18,
-      "redPoints": 8,
-      "netApproval": 69
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -6562,28 +4707,14 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 4.2,
-      "redStars": 1.9,
-      "totalReviews": 14,
-      "greenPoints": 58,
-      "redPoints": 26,
-      "netApproval": 69
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-wre-262-1",
-        "author": "WizardFox",
-        "date": "2026-05-14",
-        "course": "WRE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "nce-263",
@@ -6594,12 +4725,12 @@ window.INITIAL_TEACHERS = [
     "location": "Old Academic Building (OBE)",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 3.9,
-      "redStars": 1.7,
-      "totalReviews": 3,
-      "greenPoints": 11,
-      "redPoints": 5,
-      "netApproval": 69
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -6612,12 +4743,12 @@ window.INITIAL_TEACHERS = [
     "location": "Old Academic Building (OBE)",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 4.7,
-      "redStars": 1.9,
-      "totalReviews": 5,
-      "greenPoints": 23,
-      "redPoints": 9,
-      "netApproval": 72
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -6630,28 +4761,14 @@ window.INITIAL_TEACHERS = [
     "location": "Old Academic Building (OBE)",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 4.0,
-      "redStars": 2.7,
-      "totalReviews": 8,
-      "greenPoints": 32,
-      "redPoints": 21,
-      "netApproval": 60
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-nce-265-1",
-        "author": "DeltaViper",
-        "date": "2026-05-14",
-        "course": "NCE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "nce-266",
@@ -6662,12 +4779,12 @@ window.INITIAL_TEACHERS = [
     "location": "Old Academic Building (OBE)",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 4.4,
-      "redStars": 1.5,
-      "totalReviews": 4,
-      "greenPoints": 17,
-      "redPoints": 6,
-      "netApproval": 74
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -6680,12 +4797,12 @@ window.INITIAL_TEACHERS = [
     "location": "Old Academic Building (OBE)",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 4.0,
-      "redStars": 2.1,
-      "totalReviews": 2,
-      "greenPoints": 8,
-      "redPoints": 4,
-      "netApproval": 67
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -6698,28 +4815,14 @@ window.INITIAL_TEACHERS = [
     "location": "Old Academic Building (OBE)",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 4.3,
-      "redStars": 2.8,
-      "totalReviews": 6,
-      "greenPoints": 25,
-      "redPoints": 16,
-      "netApproval": 61
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-nce-268-1",
-        "author": "ShadowEcho",
-        "date": "2026-05-14",
-        "course": "NCE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   },
   {
     "id": "nce-269",
@@ -6730,12 +4833,12 @@ window.INITIAL_TEACHERS = [
     "location": "Old Academic Building (OBE)",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 4.1,
-      "redStars": 1.7,
-      "totalReviews": 5,
-      "greenPoints": 20,
-      "redPoints": 8,
-      "netApproval": 71
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -6748,12 +4851,12 @@ window.INITIAL_TEACHERS = [
     "location": "Old Academic Building (OBE)",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 4.2,
-      "redStars": 2.1,
-      "totalReviews": 2,
-      "greenPoints": 8,
-      "redPoints": 4,
-      "netApproval": 67
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
     "reviews": []
   },
@@ -6766,27 +4869,13 @@ window.INITIAL_TEACHERS = [
     "location": "Old Academic Building (OBE)",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 4.3,
-      "redStars": 2.2,
-      "totalReviews": 14,
-      "greenPoints": 60,
-      "redPoints": 30,
-      "netApproval": 67
+      "greenStars": 0,
+      "redStars": 0,
+      "totalReviews": 0,
+      "greenPoints": 0,
+      "redPoints": 0,
+      "netApproval": 0
     },
-    "reviews": [
-      {
-        "id": "rev-nce-271-1",
-        "author": "WizardFox",
-        "date": "2026-05-14",
-        "course": "NCE 201",
-        "greenStars": 4,
-        "redStars": 2,
-        "tags": [
-          "Lenient Grading",
-          "Fast-Paced Lectures"
-        ],
-        "comment": "Good lecturer. Explains fundamental mechanics clearly, though you must stay attentive every week."
-      }
-    ]
+    "reviews": []
   }
 ];

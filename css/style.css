@@ -542,6 +542,18 @@ button, input, select, textarea {
   gap: 0.85rem;
 }
 
+.empty-leaderboard-box {
+  padding: 2.2rem 1.5rem;
+  text-align: center;
+  background: var(--bg-secondary);
+  border: 1px dashed var(--border-color);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .leader-card {
   background: var(--bg-secondary);
   border: 1px solid var(--border-color);

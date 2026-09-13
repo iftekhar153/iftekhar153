@@ -1,5 +1,6 @@
 // Firebase Configuration and Database Service
-// Supports both Real Firebase Firestore (Modular v10 SDK) and high-fidelity LocalStorage fallback
+// Clean architecture: Never seeds mock/dummy reviews into Firebase.
+// If the database is empty, zero reviews are displayed.
 
 (function () {
   // Default placeholder config - users can edit this here or via the in-app "Firebase Settings" modal
@@ -13,8 +14,7 @@
   };
 
   const STORAGE_KEY_CONFIG = 'buet_eval_firebase_config';
-  const STORAGE_KEY_TEACHERS = 'buet_eval_teachers_v2';
-  const STORAGE_KEY_REVIEWS = 'buet_eval_reviews_v2';
+  const STORAGE_KEY_TEACHERS = 'buet_eval_teachers_clean_v1';
 
   class DatabaseService {
     constructor() {
@@ -61,7 +61,6 @@
       }
 
       try {
-        // Dynamically load Firebase modules if not already loaded
         const { initializeApp, getApps } = await import('https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js');
         const {
           getFirestore, collection, getDocs, doc, setDoc, addDoc, getDoc, updateDoc, serverTimestamp, query, where, orderBy
@@ -96,15 +95,29 @@
       this.listeners.forEach(cb => cb(status, error));
     }
 
-    // LocalStorage helper: initialize teachers if missing
+    // LocalStorage helper: initialize clean teachers directory with 0 reviews
     getLocalTeachers() {
       const stored = localStorage.getItem(STORAGE_KEY_TEACHERS);
       if (stored) {
         try {
-          return JSON.parse(stored);
+          const list = JSON.parse(stored);
+          if (Array.isArray(list) && list.length > 0) {
+            return list;
+          }
         } catch (e) {}
       }
-      const initial = (window.INITIAL_TEACHERS || []).map(t => ({ ...t }));
+      const initial = (window.INITIAL_TEACHERS || []).map(t => ({
+        ...t,
+        stats: {
+          greenStars: 0,
+          redStars: 0,
+          totalReviews: 0,
+          greenPoints: 0,
+          redPoints: 0,
+          netApproval: 0
+        },
+        reviews: []
+      }));
       localStorage.setItem(STORAGE_KEY_TEACHERS, JSON.stringify(initial));
       return initial;
     }
@@ -114,44 +127,82 @@
     }
 
     // Public API: Fetch all teachers
+    // Never seeds mock data. If the database is empty, returns teachers with 0 reviews.
     async getTeachers() {
       if (this.isFirebaseActive && this.db) {
         try {
           const { collection, getDocs } = this.firestoreOps;
-          const colRef = collection(this.db, 'teachers');
-          const snap = await getDocs(colRef);
-          if (!snap.empty) {
-            const list = [];
-            snap.forEach(d => list.push({ id: d.id, ...d.data() }));
-            return list;
-          } else {
-            // First time on Firestore: seed from INITIAL_TEACHERS
-            const initial = this.getLocalTeachers();
-            await this.seedFirestore(initial);
-            return initial;
+          
+          // Base faculty directory with clean 0-review states
+          const baseTeachers = (window.INITIAL_TEACHERS || []).map(t => ({
+            ...t,
+            stats: {
+              greenStars: 0,
+              redStars: 0,
+              totalReviews: 0,
+              greenPoints: 0,
+              redPoints: 0,
+              netApproval: 0
+            },
+            reviews: []
+          }));
+
+          const teacherMap = new Map();
+          baseTeachers.forEach(t => teacherMap.set(t.id, t));
+
+          // Fetch custom added teachers from Firestore (if any were added via 'Add Teacher')
+          const teachersSnap = await getDocs(collection(this.db, 'teachers'));
+          teachersSnap.forEach(d => {
+            const data = d.data();
+            const existing = teacherMap.get(d.id);
+            if (existing) {
+              Object.assign(existing, data);
+              existing.reviews = existing.reviews || [];
+            } else {
+              teacherMap.set(d.id, {
+                id: d.id,
+                ...data,
+                reviews: data.reviews || [],
+                stats: data.stats || {
+                  greenStars: 0,
+                  redStars: 0,
+                  totalReviews: 0,
+                  greenPoints: 0,
+                  redPoints: 0,
+                  netApproval: 0
+                }
+              });
+            }
+          });
+
+          // Fetch genuine student reviews from Firestore
+          const reviewsSnap = await getDocs(collection(this.db, 'reviews'));
+          if (!reviewsSnap.empty) {
+            // Reset reviews array before populating from Firestore
+            teacherMap.forEach(t => { t.reviews = []; });
+            reviewsSnap.forEach(rDoc => {
+              const rev = rDoc.data();
+              const teacherId = rev.teacherId;
+              const teacher = teacherMap.get(teacherId);
+              if (teacher) {
+                teacher.reviews.push({ id: rDoc.id, ...rev });
+              }
+            });
+
+            // Recalculate stats for each teacher based only on actual reviews
+            teacherMap.forEach(t => {
+              this.recalculateTeacherStats(t);
+            });
           }
+
+          return Array.from(teacherMap.values());
         } catch (e) {
-          console.warn('Failed to fetch from Firestore, using local fallback:', e);
+          console.warn('Failed to fetch from Firestore, using clean local fallback:', e);
           return this.getLocalTeachers();
         }
       }
-      return this.getLocalTeachers();
-    }
 
-    async seedFirestore(teachersList) {
-      if (!this.isFirebaseActive || !this.db) return;
-      try {
-        const { collection, doc, setDoc } = this.firestoreOps;
-        const colRef = collection(this.db, 'teachers');
-        // Seed first 40 teachers with ratings to keep Firestore writes modest
-        const seedBatch = teachersList.slice(0, 50);
-        for (const t of seedBatch) {
-          await setDoc(doc(colRef, t.id), t);
-        }
-        console.log('Seeded initial teachers to Firestore.');
-      } catch (e) {
-        console.warn('Seed to Firestore error:', e);
-      }
+      return this.getLocalTeachers();
     }
 
     // Public API: Add a review
@@ -171,7 +222,7 @@
 
       // 1. Update in local storage
       const teachers = this.getLocalTeachers();
-      const teacher = teachers.find(t => t.id === teacherId);
+      let teacher = teachers.find(t => t.id === teacherId);
       if (teacher) {
         if (!teacher.reviews) teacher.reviews = [];
         teacher.reviews.unshift(review);
@@ -184,10 +235,17 @@
       // 2. If Firebase is active, persist to Firestore
       if (this.isFirebaseActive && this.db) {
         try {
-          const { collection, addDoc, doc, setDoc, updateDoc } = this.firestoreOps;
+          const { collection, addDoc, doc, setDoc } = this.firestoreOps;
           await addDoc(collection(this.db, 'reviews'), review);
           if (teacher) {
-            await setDoc(doc(this.db, 'teachers', teacherId), teacher, { merge: true });
+            await setDoc(doc(this.db, 'teachers', teacherId), {
+              id: teacher.id,
+              name: teacher.name,
+              dept: teacher.dept,
+              deptCode: teacher.deptCode,
+              designation: teacher.designation,
+              stats: teacher.stats
+            }, { merge: true });
           }
         } catch (e) {
           console.error('Failed to write review to Firestore:', e);
@@ -215,7 +273,7 @@
           totalReviews: 0,
           greenPoints: 0,
           redPoints: 0,
-          netApproval: 50
+          netApproval: 0
         },
         reviews: []
       };
@@ -236,7 +294,7 @@
       return newTeacher;
     }
 
-    // Rating calculation algorithm
+    // Rating calculation algorithm based strictly on actual student reviews
     recalculateTeacherStats(teacher) {
       const reviews = teacher.reviews || [];
       const total = reviews.length;
@@ -247,7 +305,7 @@
           totalReviews: 0,
           greenPoints: 0,
           redPoints: 0,
-          netApproval: 50
+          netApproval: 0
         };
         return;
       }

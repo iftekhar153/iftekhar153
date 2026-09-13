@@ -198,53 +198,71 @@
       })
       .slice(0, 5);
 
-    el.greenLeaderboard.innerHTML = greenTop.map((t, idx) => `
-      <div class="leader-card" data-teacher-id="${t.id}">
-        <div class="leader-left">
-          <span class="rank-badge rank-${idx + 1}">${idx + 1}</span>
-          <div class="leader-avatar" style="background: ${t.avatarColor || '#10b981'};">
-            ${getInitials(t.name)}
+    if (greenTop.length === 0) {
+      el.greenLeaderboard.innerHTML = `
+        <div class="empty-leaderboard-box">
+          <span style="font-size: 1.5rem;">🌱</span>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.35rem;">No reviews yet. Be the first BUETian to rate a teacher!</p>
+        </div>
+      `;
+    } else {
+      el.greenLeaderboard.innerHTML = greenTop.map((t, idx) => `
+        <div class="leader-card" data-teacher-id="${t.id}">
+          <div class="leader-left">
+            <span class="rank-badge rank-${idx + 1}">${idx + 1}</span>
+            <div class="leader-avatar" style="background: ${t.avatarColor || '#10b981'};">
+              ${getInitials(t.name)}
+            </div>
+            <div class="leader-info">
+              <span class="leader-name" title="${escapeHtml(t.name)}">${escapeHtml(t.name)}</span>
+              <div class="leader-meta">
+                <span class="dept-pill-small">${t.deptCode || 'BUET'}</span>
+                <span>${escapeHtml(t.designation)}</span>
+              </div>
+            </div>
           </div>
-          <div class="leader-info">
-            <span class="leader-name" title="${escapeHtml(t.name)}">${escapeHtml(t.name)}</span>
-            <div class="leader-meta">
-              <span class="dept-pill-small">${t.deptCode || 'BUET'}</span>
-              <span>${escapeHtml(t.designation)}</span>
+          <div class="leader-right">
+            <div class="star-rating-pill star-pill-green">
+              <span>★</span>
+              <span>${t.stats.greenStars.toFixed(1)}</span>
             </div>
           </div>
         </div>
-        <div class="leader-right">
-          <div class="star-rating-pill star-pill-green">
-            <span>★</span>
-            <span>${t.stats.greenStars.toFixed(1)}</span>
-          </div>
-        </div>
-      </div>
-    `).join('');
+      `).join('');
+    }
 
-    el.redLeaderboard.innerHTML = redTop.map((t, idx) => `
-      <div class="leader-card" data-teacher-id="${t.id}">
-        <div class="leader-left">
-          <span class="rank-badge rank-${idx + 1}">${idx + 1}</span>
-          <div class="leader-avatar" style="background: ${t.avatarColor || '#f43f5e'};">
-            ${getInitials(t.name)}
+    if (redTop.length === 0) {
+      el.redLeaderboard.innerHTML = `
+        <div class="empty-leaderboard-box">
+          <span style="font-size: 1.5rem;">🛡️</span>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.35rem;">No reviews yet. Critical reports will appear here.</p>
+        </div>
+      `;
+    } else {
+      el.redLeaderboard.innerHTML = redTop.map((t, idx) => `
+        <div class="leader-card" data-teacher-id="${t.id}">
+          <div class="leader-left">
+            <span class="rank-badge rank-${idx + 1}">${idx + 1}</span>
+            <div class="leader-avatar" style="background: ${t.avatarColor || '#f43f5e'};">
+              ${getInitials(t.name)}
+            </div>
+            <div class="leader-info">
+              <span class="leader-name" title="${escapeHtml(t.name)}">${escapeHtml(t.name)}</span>
+              <div class="leader-meta">
+                <span class="dept-pill-small">${t.deptCode || 'BUET'}</span>
+                <span>${escapeHtml(t.designation)}</span>
+              </div>
+            </div>
           </div>
-          <div class="leader-info">
-            <span class="leader-name" title="${escapeHtml(t.name)}">${escapeHtml(t.name)}</span>
-            <div class="leader-meta">
-              <span class="dept-pill-small">${t.deptCode || 'BUET'}</span>
-              <span>${escapeHtml(t.designation)}</span>
+          <div class="leader-right">
+            <div class="star-rating-pill star-pill-red">
+              <span>★</span>
+              <span>${t.stats.redStars.toFixed(1)}</span>
             </div>
           </div>
         </div>
-        <div class="leader-right">
-          <div class="star-rating-pill star-pill-red">
-            <span>★</span>
-            <span>${t.stats.redStars.toFixed(1)}</span>
-          </div>
-        </div>
-      </div>
-    `).join('');
+      `).join('');
+    }
 
     // Attach click listeners to cards
     document.querySelectorAll('.leader-card').forEach(card => {
@@ -320,8 +338,10 @@
     }
 
     el.teachersGrid.innerHTML = pageItems.map(t => {
-      const stats = t.stats || { greenStars: 0, redStars: 0, totalReviews: 0, netApproval: 50 };
-      const net = stats.netApproval || 50;
+      const stats = t.stats || { greenStars: 0, redStars: 0, totalReviews: 0, netApproval: 0 };
+      const hasReviews = (stats.totalReviews || 0) > 0;
+      const net = hasReviews ? stats.netApproval : 0;
+      const approvalText = hasReviews ? `${net}%` : 'No ratings';
 
       return `
         <div class="teacher-card" data-teacher-id="${t.id}">
@@ -338,11 +358,11 @@
 
           <div class="dual-rating-strip">
             <div class="strip-item green">
-              <span class="strip-score">★ ${stats.greenStars.toFixed(1)}</span>
+              <span class="strip-score">${hasReviews ? `★ ${stats.greenStars.toFixed(1)}` : '★ 0.0'}</span>
               <span class="strip-label">Green (Positive)</span>
             </div>
             <div class="strip-item red">
-              <span class="strip-score">★ ${stats.redStars.toFixed(1)}</span>
+              <span class="strip-score">${hasReviews ? `★ ${stats.redStars.toFixed(1)}` : '★ 0.0'}</span>
               <span class="strip-label">Red (Critical)</span>
             </div>
           </div>
@@ -350,15 +370,15 @@
           <div class="approval-bar-wrap">
             <div class="approval-bar-labels">
               <span>Approval Index</span>
-              <span style="font-weight: 700; color: ${net >= 50 ? 'var(--green-star)' : 'var(--red-star)'}">${net}%</span>
+              <span style="font-weight: 700; color: ${hasReviews ? (net >= 50 ? 'var(--green-star)' : 'var(--red-star)') : 'var(--text-muted)'}">${approvalText}</span>
             </div>
-            <div class="approval-track">
+            <div class="approval-track" style="background: ${hasReviews ? 'var(--red-star)' : 'var(--bg-input)'};">
               <div class="approval-fill-green" style="width: ${net}%;"></div>
             </div>
           </div>
 
           <div class="teacher-card-footer">
-            <span class="reviews-count-text">${stats.totalReviews} review${stats.totalReviews === 1 ? '' : 's'}</span>
+            <span class="reviews-count-text">${stats.totalReviews || 0} review${stats.totalReviews === 1 ? '' : 's'}</span>
             <button class="btn-view-teacher" data-id="${t.id}">
               <span>View & Rate</span> &rarr;
             </button>
@@ -402,12 +422,12 @@
 
       <div class="dual-rating-strip" style="padding: 1.25rem; margin-bottom: 1.5rem;">
         <div class="strip-item green" style="padding: 0.75rem;">
-          <div style="font-size: 1.7rem; font-weight: 800; color: var(--green-star);">★ ${stats.greenStars.toFixed(1)} / 5.0</div>
-          <div class="strip-label" style="font-size: 0.75rem;">Positive Commendation Score</div>
+          <div style="font-size: 1.7rem; font-weight: 800; color: var(--green-star);">★ ${reviews.length > 0 ? stats.greenStars.toFixed(1) : '0.0'} / 5.0</div>
+          <div class="strip-label" style="font-size: 0.75rem;">Positive Commendation Score (${reviews.length} reviews)</div>
         </div>
         <div class="strip-item red" style="padding: 0.75rem;">
-          <div style="font-size: 1.7rem; font-weight: 800; color: var(--red-star);">★ ${stats.redStars.toFixed(1)} / 5.0</div>
-          <div class="strip-label" style="font-size: 0.75rem;">Critical Scrutiny Score</div>
+          <div style="font-size: 1.7rem; font-weight: 800; color: var(--red-star);">★ ${reviews.length > 0 ? stats.redStars.toFixed(1) : '0.0'} / 5.0</div>
+          <div class="strip-label" style="font-size: 0.75rem;">Critical Scrutiny Score (${reviews.length} reviews)</div>
         </div>
       </div>
 
