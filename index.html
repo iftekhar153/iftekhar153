@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BUET Faculty Pulse - Anonymous Teacher Evaluation Portal</title>
+  <meta name="description" content="Anonymous teacher evaluation and dual-star rating portal for Bangladesh University of Engineering and Technology (BUET) students.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏛️</text></svg>">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <div class="brand-crest">🏛️</div>
+        <div class="brand-text">
+          <h1>
+            BUET Faculty Pulse
+            <span class="brand-badge">INSIDER</span>
+          </h1>
+          <span class="brand-sub">Anonymous Teacher Rating &amp; Review Portal</span>
+        </div>
+      </div>
+
+      <div class="nav-actions">
+        <!-- Anonymous Identity Pill -->
+        <div id="anonPill" class="anon-pill" title="Click to customize your anonymous handle">
+          <span id="anonMascot" class="anon-mascot">🦊</span>
+          <span id="anonName" class="anon-name">WizardFox</span>
+          <span id="anonVerifyStatus" class="anon-badge-unverified">Unverified</span>
+        </div>
+
+        <!-- Firebase Live Status Pill -->
+        <div id="firebasePill" class="firebase-pill" title="Click to configure Firebase Firestore">
+          <span id="firebaseDot" class="status-dot local"></span>
+          <span id="firebaseStatusText">Local Database</span>
+        </div>
+
+        <!-- Theme Toggle -->
+        <button id="themeToggle" class="theme-toggle-btn" title="Toggle Light/Dark Theme">🌙</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section">
+    <div class="hero-banner">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <span>🛡️</span>
+          <span>Anonymous BUET Student Verification Protocol</span>
+        </div>
+        <h2 class="hero-title">
+          Evaluate with <span class="gradient-text-green">Green Stars</span> of Praise &amp; <span class="gradient-text-red">Red Stars</span> of Scrutiny
+        </h2>
+        <p class="hero-desc">
+          Honest, transparent, and completely anonymous faculty feedback built exclusively by and for BUETians. Only verified campus insiders can review, safeguarding our community against outsider tampering.
+        </p>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span id="statTeachersCount" class="stat-num">271</span>
+            <span class="stat-label">Faculty Listed</span>
+          </div>
+          <div class="stat-item">
+            <span id="statReviewsCount" class="stat-num">150+</span>
+            <span class="stat-label">Student Reviews</span>
+          </div>
+          <div class="stat-item">
+            <span id="statDeptsCount" class="stat-num">11</span>
+            <span class="stat-label">Engineering Depts</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-action-box">
+        <button id="heroVerifyBtn" class="btn-verify-hero">
+          <span>🔒</span> Verify BUET Student Status
+        </button>
+        <button id="heroSuggestBtn" class="btn-suggest-hero">
+          <span>➕</span> Suggest / Add Teacher
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Split Dual Leaderboard Section -->
+  <section class="leaderboard-section">
+    <div class="section-header">
+      <div>
+        <h2 class="section-title">Split Campus Leaderboard</h2>
+        <p class="section-sub">Highest praised mentors vs. most critically reviewed faculty based on verified student input</p>
+      </div>
+    </div>
+
+    <div class="split-grid">
+      <!-- Hall of Praise (Left: Green Stars) -->
+      <div class="split-col col-green">
+        <div class="col-header">
+          <div class="col-title-wrap">
+            <span class="col-icon">🌟</span>
+            <div>
+              <h3 class="col-title">Hall of Praise</h3>
+              <p class="section-sub">Teachers with Most Green Stars (Commendations)</p>
+            </div>
+          </div>
+          <span class="col-badge">Top Positive</span>
+        </div>
+        <div id="greenLeaderboard" class="leaderboard-list">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+
+      <!-- Hall of Caution (Right: Red Stars) -->
+      <div class="split-col col-red">
+        <div class="col-header">
+          <div class="col-title-wrap">
+            <span class="col-icon">⚠️</span>
+            <div>
+              <h3 class="col-title">Hall of Caution</h3>
+              <p class="section-sub">Teachers with Most Red Stars (Strict / Scrutiny)</p>
+            </div>
+          </div>
+          <span class="col-badge">Top Scrutiny</span>
+        </div>
+        <div id="redLeaderboard" class="leaderboard-list">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Teacher Directory & Rating Explorer -->
+  <main class="directory-section">
+    <div class="section-header">
+      <div>
+        <h2 class="section-title">Faculty Directory Explorer</h2>
+        <p class="section-sub">Browse, search, and review all 271+ faculty members across BUET</p>
+      </div>
+    </div>
+
+    <!-- Filter & Search Controls -->
+    <div class="controls-bar">
+      <div class="search-filter-row">
+        <div class="search-wrap">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="searchInput" class="search-input" placeholder="Search teacher by name, department, or office...">
+        </div>
+
+        <div class="select-wrap">
+          <select id="desigFilter" class="filter-select">
+            <option value="ALL">All Designations</option>
+            <option value="Professor">Professor</option>
+            <option value="Associate Professor">Associate Professor</option>
+            <option value="Assistant Professor">Assistant Professor</option>
+            <option value="Lecturer">Lecturer</option>
+          </select>
+
+          <select id="sortFilter" class="filter-select">
+            <option value="GREEN">Sort: Most Green Stars ★</option>
+            <option value="RED">Sort: Most Red Stars ★</option>
+            <option value="REVIEWS">Sort: Most Reviews</option>
+            <option value="NAME">Sort: Name (A-Z)</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Department Scroll Pills -->
+      <div id="deptScrollRow" class="dept-scroll-row">
+        <button class="dept-pill active" data-dept="ALL">All Departments</button>
+        <button class="dept-pill" data-dept="CSE">CSE</button>
+        <button class="dept-pill" data-dept="EEE">EEE</button>
+        <button class="dept-pill" data-dept="CE">CE</button>
+        <button class="dept-pill" data-dept="ME">ME</button>
+        <button class="dept-pill" data-dept="BME">BME</button>
+        <button class="dept-pill" data-dept="IPE">IPE</button>
+        <button class="dept-pill" data-dept="MME">MME</button>
+        <button class="dept-pill" data-dept="NCE">NCE</button>
+        <button class="dept-pill" data-dept="NAME">NAME</button>
+        <button class="dept-pill" data-dept="URP">URP</button>
+        <button class="dept-pill" data-dept="WRE">WRE</button>
+      </div>
+    </div>
+
+    <!-- Teacher Grid -->
+    <div id="teachersGrid" class="teachers-grid">
+      <!-- Populated by JS -->
+    </div>
+
+    <!-- Pagination -->
+    <div class="pagination-wrap">
+      <button id="prevPageBtn" class="btn-page">&larr; Previous</button>
+      <span id="pageIndicator" class="page-indicator">Page 1 of 1</span>
+      <button id="nextPageBtn" class="btn-page">Next &rarr;</button>
+    </div>
+  </main>
+
+  <!-- ================= MODALS ================= -->
+
+  <!-- 1. BUET Student Verification Modal -->
+  <div id="verifyModal" class="modal-overlay">
+    <div class="modal-card" style="max-width: 520px;">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span>🎓</span>
+          <h3 class="modal-title">BUET Student Verification</h3>
+        </div>
+        <button id="verifyCloseBtn" class="btn-close-modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1.25rem;">
+          To ensure genuine evaluations and prevent outsider trolling, answer this random BUET campus trivia question. Your identity remains 100% anonymous.
+        </p>
+
+        <div class="verify-card-box">
+          <span class="verify-q-badge">Security Challenge</span>
+          <div id="verifyQuestionText" class="verify-question-text">Loading question...</div>
+          <div id="verifyHint" class="verify-hint" style="display: none;"></div>
+        </div>
+
+        <div class="input-group">
+          <label class="input-label" for="verifyAnswerInput">Your Answer</label>
+          <input type="text" id="verifyAnswerInput" class="text-input" placeholder="Type your answer here..." autocomplete="off">
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 1rem;">
+          <button type="button" id="verifyToggleHintBtn" style="background: none; border: none; color: var(--accent-cyan); font-size: 0.8rem; cursor: pointer; text-decoration: underline;">
+            💡 Need a hint?
+          </button>
+          <button id="verifySubmitBtn" class="btn-primary">Verify Identity</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Anonymous Identity & Mascot Modal -->
+  <div id="aliasModal" class="modal-overlay">
+    <div class="modal-card" style="max-width: 480px;">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span>🛡️</span>
+          <h3 class="modal-title">Anonymous Identity</h3>
+        </div>
+        <button id="aliasCloseBtn" class="btn-close-modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">
+          All reviews you submit will be displayed with your anonymous pseudonym. You can customize or re-roll your alias anytime.
+        </p>
+
+        <div class="input-group">
+          <label class="input-label">Anonymous Alias / Handle</label>
+          <div style="display: flex; gap: 0.5rem;">
+            <input type="text" id="aliasInput" class="text-input" maxlength="24" placeholder="e.g. WizardFox">
+            <button id="aliasRerollBtn" class="btn-secondary" title="Generate random alias">🎲 Re-roll</button>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label class="input-label">Select Avatar Mascot</label>
+          <div id="mascotPickerGrid" class="mascot-picker-grid">
+            <!-- Populated by JS -->
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button id="aliasSaveBtn" class="btn-primary">Save Anonymous Profile</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Teacher Details & Reviews Modal -->
+  <div id="teacherModal" class="modal-overlay">
+    <div class="modal-card" style="max-width: 780px;">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span>👨‍🏫</span>
+          <h3 class="modal-title">Teacher Profile &amp; Evaluations</h3>
+        </div>
+        <button id="teacherModalCloseBtn" class="btn-close-modal">&times;</button>
+      </div>
+      <div id="teacherModalBody" class="modal-body">
+        <!-- Populated dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. Write Review & Rate Modal (Dual Green/Red Stars) -->
+  <div id="reviewModal" class="modal-overlay">
+    <div class="modal-card" style="max-width: 650px;">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span>✍️</span>
+          <h3 class="modal-title">Submit Anonymous Review</h3>
+        </div>
+        <button id="reviewModalCloseBtn" class="btn-close-modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div style="margin-bottom: 1.25rem;">
+          <span style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase;">Rating Faculty Member</span>
+          <h4 id="reviewTeacherName" style="font-size: 1.2rem; font-weight: 800; color: var(--text-main);">Teacher Name</h4>
+        </div>
+
+        <!-- Dual Star Pickers -->
+        <div class="star-picker-container">
+          <!-- Green Star Box -->
+          <div class="star-picker-box green-box">
+            <div class="star-picker-title">
+              <span>🌟</span> Green Stars (Good Rating)
+            </div>
+            <div id="greenStarRow" class="star-row"></div>
+            <div id="greenStarLabel" class="star-picker-label">5 - Inspiring Legend</div>
+          </div>
+
+          <!-- Red Star Box -->
+          <div class="star-picker-box red-box">
+            <div class="star-picker-title">
+              <span>⚠️</span> Red Stars (Strict / Critical)
+            </div>
+            <div id="redStarRow" class="star-row"></div>
+            <div id="redStarLabel" class="star-picker-label">1 - Minor Strictness</div>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label class="input-label" for="reviewCourseInput">Course Code (e.g. CSE 101, EEE 205)</label>
+          <input type="text" id="reviewCourseInput" class="text-input" placeholder="e.g. CSE 101">
+        </div>
+
+        <div class="input-group">
+          <label class="input-label">Quick Feedback Tags</label>
+          <div id="tagChipsContainer" class="tag-chips-wrap">
+            <!-- Populated by JS -->
+          </div>
+        </div>
+
+        <div class="input-group">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.4rem;">
+            <label class="input-label" for="reviewCommentInput" style="margin-bottom: 0;">Written Feedback / Commentary</label>
+            <span id="reviewCommentCharCount" style="font-size: 0.75rem; color: var(--text-muted);">0 / 500</span>
+          </div>
+          <textarea id="reviewCommentInput" class="textarea-input" rows="4" maxlength="500" placeholder="Share your constructive experience with teaching style, exams, lecture slides, consultation, or grading..."></textarea>
+        </div>
+
+        <div class="modal-footer">
+          <button id="reviewSubmitBtn" class="btn-success">Submit Anonymous Review</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. Firebase Cloud Settings Modal -->
+  <div id="firebaseModal" class="modal-overlay">
+    <div class="modal-card" style="max-width: 580px;">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span>🔥</span>
+          <h3 class="modal-title">Firebase Cloud Setup</h3>
+        </div>
+        <button id="firebaseCloseBtn" class="btn-close-modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.25rem;">
+          Connect your free Firebase Firestore database so reviews are saved across all devices and live for everyone on GitHub Pages! If left empty, the site operates in <strong>Local Storage Mode</strong> automatically.
+        </p>
+
+        <div class="input-group">
+          <label class="input-label">API Key</label>
+          <input type="text" id="fbApiKey" class="text-input" placeholder="AIzaSy...">
+        </div>
+
+        <div class="input-group">
+          <label class="input-label">Project ID</label>
+          <input type="text" id="fbProjectId" class="text-input" placeholder="my-buet-rating-app">
+        </div>
+
+        <div class="input-group">
+          <label class="input-label">Auth Domain (Optional)</label>
+          <input type="text" id="fbAuthDomain" class="text-input" placeholder="my-buet-rating-app.firebaseapp.com">
+        </div>
+
+        <div class="input-group">
+          <label class="input-label">App ID</label>
+          <input type="text" id="fbAppId" class="text-input" placeholder="1:123456789:web:abcdef">
+        </div>
+
+        <div style="background: var(--bg-input); padding: 0.75rem; border-radius: var(--radius-sm); font-size: 0.75rem; color: var(--text-muted); margin-bottom: 1rem;">
+          💡 <strong>Tip for Free Firebase Firestore:</strong> Create a project at <a href="https://console.firebase.google.com" target="_blank" style="color: var(--accent-cyan); text-decoration: underline;">console.firebase.google.com</a>, enable Cloud Firestore in Test Mode or with read/write rules, and paste the web app config here.
+        </div>
+
+        <div class="modal-footer" style="justify-content: space-between;">
+          <button id="fbResetBtn" class="btn-secondary">Reset to Local Mode</button>
+          <button id="fbSaveBtn" class="btn-primary">Save &amp; Connect</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6. Suggest / Add Teacher Modal -->
+  <div id="addTeacherModal" class="modal-overlay">
+    <div class="modal-card" style="max-width: 520px;">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span>➕</span>
+          <h3 class="modal-title">Suggest / Add Faculty Member</h3>
+        </div>
+        <button id="addTeacherCloseBtn" class="btn-close-modal">&times;</button>
+      </div>
+      <form id="addTeacherForm" class="modal-body">
+        <div class="input-group">
+          <label class="input-label" for="newTeacherName">Teacher Full Name (e.g. Dr. Jane Doe)</label>
+          <input type="text" id="newTeacherName" class="text-input" required placeholder="Dr. First Last">
+        </div>
+
+        <div class="input-group">
+          <label class="input-label" for="newTeacherDept">Department</label>
+          <select id="newTeacherDept" class="filter-select" style="width: 100%;" required>
+            <option value="Computer Science and Engineering">Computer Science and Engineering (CSE)</option>
+            <option value="Electrical and Electronic Engineering">Electrical and Electronic Engineering (EEE)</option>
+            <option value="Civil Engineering">Civil Engineering (CE)</option>
+            <option value="Mechanical Engineering">Mechanical Engineering (ME)</option>
+            <option value="Biomedical Engineering">Biomedical Engineering (BME)</option>
+            <option value="Industrial & Production Engineering">Industrial & Production Engineering (IPE)</option>
+            <option value="Materials and Metallurgical Engineering">Materials and Metallurgical Engineering (MME)</option>
+            <option value="Nanomaterials and Ceramic Engineering">Nanomaterials and Ceramic Engineering (NCE)</option>
+            <option value="Naval Architecture and Marine Engineering">Naval Architecture and Marine Engineering (NAME)</option>
+            <option value="Urban and Regional Planning">Urban and Regional Planning (URP)</option>
+            <option value="Water Resources Engineering">Water Resources Engineering (WRE)</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label class="input-label" for="newTeacherDesig">Designation</label>
+          <select id="newTeacherDesig" class="filter-select" style="width: 100%;" required>
+            <option value="Professor">Professor</option>
+            <option value="Associate Professor">Associate Professor</option>
+            <option value="Assistant Professor">Assistant Professor</option>
+            <option value="Lecturer">Lecturer</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label class="input-label" for="newTeacherLocation">Office / Building Location</label>
+          <input type="text" id="newTeacherLocation" class="text-input" placeholder="e.g. ECE Building, 7th Floor">
+        </div>
+
+        <div class="modal-footer">
+          <button type="submit" class="btn-primary">Add to Directory</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toastContainer" class="toast-container"></div>
+
+  <!-- Application Scripts -->
+  <script src="data/teachers.js"></script>
+  <script src="data/questions.js"></script>
+  <script src="js/firebase-config.js"></script>
+  <script src="js/verification.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
