@@ -1,0 +1,283 @@
+
+--- PAGE 1 ---
+Department Name Teacher Name Designation
+Department of Computer Science and Engineering Dr. Tanzima Hashem Professor
+Department of Computer Science and Engineering Dr. Muhammad Masroor Ali Professor
+Department of Computer Science and Engineering Dr. Md. Saidur Rahman Professor
+Department of Computer Science and Engineering Dr. Md. Monirul Islam Professor
+Department of Computer Science and Engineering Dr. Md. Mostofa Akbar Professor
+Department of Computer Science and Engineering Dr. Abu Sayed Md. Latiful Hoque Professor
+Department of Computer Science and Engineering Dr. Mohammad Mahfuzul Islam Professor
+Department of Computer Science and Engineering Dr. A.K.M. Ashikur Rahman Professor
+Department of Computer Science and Engineering Dr. Mahmuda Naznin Professor
+Department of Computer Science and Engineering Dr. A. B. M. Alim Al Islam Professor
+Department of Computer Science and Engineering Dr. Anindya Iqbal Professor
+Department of Computer Science and Engineering Dr. Rifat Shahriyar Professor
+Department of Computer Science and Engineering Dr. Muhammad Abdullah Adnan Professor
+Department of Computer Science and Engineering Dr. Mohammad Saifur Rahman Professor
+Department of Computer Science and Engineering Dr. Md. Shamsuzzoha Bayzid Professor
+Department of Computer Science and Engineering Dr. Atif Hasan Rahman Professor
+Department of Computer Science and Engineering Dr. Sadia Sharmin Associate Professor
+Department of Computer Science and Engineering Abu Wasif Associate Professor
+Department of Computer Science and Engineering Sukarna Barua Associate Professor
+Department of Computer Science and Engineering Dr. Md. Shariful Islam Bhuyan Associate Professor
+Department of Computer Science and Engineering Dr. Rezwana Reaz Associate Professor
+Department of Computer Science and Engineering Dr. Tanveer Awal Assistant Professor
+Department of Computer Science and Engineering Khaled Mahmud Shahriar Assistant Professor
+Department of Computer Science and Engineering Dr. Ch. Md. Rakin Haider Assistant Professor
+Department of Computer Science and Engineering Tahmid Hasan Assistant Professor
+Department of Computer Science and Engineering Dr. Novia Nurain Assistant Professor
+Department of Computer Science and Engineering Ishrat Jahan Assistant Professor
+Department of Computer Science and Engineering Junaed Younus Khan Assistant Professor
+Department of Computer Science and Engineering Md. Nurul Muttakin Assistant Professor
+--- PAGE 2 ---
+Department of Computer Science and Engineering A.K.M. Mehedi Hasan Lecturer
+Department of Computer Science and Engineering Abdur Rashid Tushar Lecturer
+Department of Computer Science and Engineering Kowshic Roy Lecturer
+Department of Computer Science and Engineering Saem Hasan Lecturer
+Department of Computer Science and Engineering Md. Emamul Haque Pranta Lecturer
+Department of Computer Science and Engineering Ahmed Mahir Sultan Rumi Lecturer
+Department of Computer Science and Engineering Rabib Jahin Ibn Momin Lecturer
+Department of Computer Science and Engineering Abdur Rafi Lecturer
+Department of Computer Science and Engineering Anwarul Bashir Shuaib Lecturer
+Department of Computer Science and Engineering Shattik Islam Rhythm Lecturer
+Department of Computer Science and Engineering Mohammad Sadat Hossain Lecturer
+Department of Computer Science and Engineering Nafis Tahmid Lecturer
+Department of Computer Science and Engineering Md. Ashrafur Rahman Khan Lecturer
+Department of Computer Science and Engineering Md. Roqunuzzaman Sojib Lecturer
+Department of Computer Science and Engineering Niaz Rahman Lecturer
+Department of Computer Science and Engineering Mahir Labib Dihan Lecturer
+Department of Computer Science and Engineering Anik Saha Lecturer
+Department of Computer Science and Engineering Abdullah Muhammed Amimul Ehsan Lecturer
+Department of Computer Science and Engineering Md. Irtiaz Kabir Lecturer
+Department of Computer Science and Engineering Swastika Pandit Lecturer
+Department of Computer Science and Engineering Anup Halder Joy Lecturer
+Department of Computer Science and Engineering Md Zim Mim Siddiqee Sowdha Lecturer
+Department of Electrical and Electronic Engineering Dr. Md. Saifur Rahman Professor
+Department of Electrical and Electronic Engineering Dr. Md. Shafiqul Islam Professor
+Department of Electrical and Electronic Engineering Dr. Md. Kamrul Hasan Professor
+Department of Electrical and Electronic Engineering Dr. Md. Aynal Haque Professor
+Department of Electrical and Electronic Engineering Dr. A. B. M. Harun-Ur-Rashid Professor
+Department of Electrical and Electronic Engineering Dr. Sharif Mohammad Mominuzzaman Professor
+Department of Electrical and Electronic Engineering Dr. Mohammad Jahangir Alam Professor
+Department of Electrical and Electronic Engineering Dr. Md. Shah Alam Professor
+--- PAGE 3 ---
+Department of Electrical and Electronic Engineering Dr. Md. Ziaur Rahman Khan Professor
+Department of Electrical and Electronic Engineering Dr. Mohammed Imamul Hassan Bhuiyan Professor
+Department of Electrical and Electronic Engineering Dr. Shaikh Anowarul Fattah Professor
+Department of Electrical and Electronic Engineering Dr. Md. Nasim Ahmed Dewan Professor
+Department of Electrical and Electronic Engineering Dr. S. M. Mahbubur Rahman Professor
+Department of Electrical and Electronic Engineering Dr. Muhammad Anisuzzaman Talukder Professor
+Department of Electrical and Electronic Engineering Dr. Mohammad Ariful Haque Professor
+Department of Electrical and Electronic Engineering Dr. Abdul Hasib Chowdhury Professor
+Department of Electrical and Electronic Engineering Dr. Farseem Mannan Mohammedy Professor
+Department of Electrical and Electronic Engineering Dr. Mohammad Faisal Professor
+Department of Electrical and Electronic Engineering Dr. Samia Subrina Professor
+Department of Electrical and Electronic Engineering Dr. Md. Forkan Uddin Professor
+Department of Electrical and Electronic Engineering Dr. Lutfa Akter Professor
+Department of Electrical and Electronic Engineering Dr. Md. Kawsar Alam Professor
+Department of Electrical and Electronic Engineering Dr. Md. Zahurul Islam Professor
+Department of Electrical and Electronic Engineering Dr. Md. Shamim Reza Professor
+Department of Electrical and Electronic Engineering Dr. Apratim Roy Professor
+Department of Electrical and Electronic Engineering Dr. Mahbub Alam Professor
+Department of Electrical and Electronic Engineering Dr. Hafiz Imtiaz Professor
+Department of Electrical and Electronic Engineering Dr. Ahmed Zubair Associate Professor
+Department of Electrical and Electronic Engineering Dr. Shaikh Asif Mahmood Associate Professor
+Department of Electrical and Electronic Engineering Dr. Hamidur Rahman Associate Professor
+Department of Electrical and Electronic Engineering Dr. Md. Asiful Islam Associate Professor
+Department of Electrical and Electronic Engineering Dr. Sajid Muhaimin Choudhury Associate Professor
+Department of Electrical and Electronic Engineering Dr. Muhammad Abdullah Arafat Associate Professor
+Department of Electrical and Electronic Engineering Dr. Ehsanur Rahman Associate Professor
+Department of Electrical and Electronic Engineering Yeasir Arafat Assistant Professor
+Department of Electrical and Electronic Engineering Dr. Nadim Chowdhury Assistant Professor
+Department of Electrical and Electronic Engineering Dr. Orchi Hassan Assistant Professor
+Department of Electrical and Electronic Engineering Dr. Maruf Ahmed Assistant Professor
+--- PAGE 4 ---
+Department of Electrical and Electronic Engineering Dr. Md. Hadiur Rahman Khan Assistant Professor
+Department of Electrical and Electronic Engineering Dr. Md. Irfan Khan Assistant Professor
+Department of Electrical and Electronic Engineering Asikur Rahman Jowel Assistant Professor
+Department of Electrical and Electronic Engineering Iftekharul Islam Emon Assistant Professor
+Department of Electrical and Electronic Engineering Nafis Sadik Assistant Professor
+Department of Electrical and Electronic Engineering Dr. Md. Mohsinur Rahman Adnan Assistant Professor
+Department of Electrical and Electronic Engineering Sadman Sakib Ahbab Lecturer
+Department of Electrical and Electronic Engineering Sadat Tahmeed Azad Lecturer
+Department of Electrical and Electronic Engineering Md. Jawad Ul Islam Lecturer
+Department of Electrical and Electronic Engineering Md. Ehsanul Karim Lecturer
+Department of Electrical and Electronic Engineering Tanushri Medha Kundu Lecturer
+Department of Electrical and Electronic Engineering Rafid Hassan Palash Lecturer
+Department of Electrical and Electronic Engineering Khairul Islam Lecturer
+Department of Electrical and Electronic Engineering Md. Kamrul Hasan Lecturer
+Department of Civil Engineering Dr. A. B. M. Badruzzaman Professor
+Department of Civil Engineering Dr. Md. Zakaria Ahmed Professor
+Department of Civil Engineering Dr. Md. Abdul Jalil Professor
+Department of Civil Engineering Dr. Ishtiaque Ahmed Professor
+Department of Civil Engineering Dr. Hasib Mohammed Ahsan Professor
+Department of Civil Engineering Dr. Sarwar Jahan Md. Yasin Professor
+Department of Civil Engineering Dr. Moazzem Hossain Professor
+Department of Civil Engineering Dr. Eqramul Hoque Professor
+Department of Civil Engineering Dr. Bashir Ahmed Professor
+Department of Civil Engineering Dr. Khan Mahmud Amanat Professor
+Department of Civil Engineering Dr. Mehedi Ahmed Ansary Professor
+Department of Civil Engineering Dr. Md. Shamsul Hoque Professor
+Department of Civil Engineering Dr. Tahmeed M. Al-Hussaini Professor
+Department of Civil Engineering Dr. Md. Mafizur Rahman Professor
+Department of Civil Engineering Dr. Abdul Jabbar Khan Professor
+Department of Civil Engineering Dr. Syed Ishtiaq Ahmad Professor
+--- PAGE 5 ---
+Department of Civil Engineering Dr. Md. Mizanur Rahman Professor
+Department of Civil Engineering Dr. Mohammad Shariful Islam Professor
+Department of Civil Engineering Dr. Mahbuba Begum Professor
+Department of Civil Engineering Dr. Tanvir Manzur Professor
+Department of Civil Engineering Dr. Md. Hadiuzzaman Professor
+Department of Civil Engineering Dr. Mohammad Al Amin Siddique Professor
+Department of Civil Engineering Dr. Tanvir Ahmed Professor
+Department of Civil Engineering Dr. Shameem Ahmed Professor
+Department of Civil Engineering Dr. Shohel Rana Professor
+Department of Civil Engineering Dr. Nazrul Islam Professor
+Department of Civil Engineering Dr. Sheikh Mokhlesur Rahman Professor
+Department of Civil Engineering Dr. Md. Jahangir Alam Professor
+Department of Civil Engineering Dr. Annesha Enam Professor
+Department of Civil Engineering Dr. M. Neaz Murshed Associate Professor
+Department of Civil Engineering Ahmed Farhan Ahnaf Siddique Assistant Professor
+Department of Civil Engineering Sumaiya Afrose Suma Assistant Professor
+Department of Civil Engineering Sk. Rakibul Islam Assistant Professor
+Department of Civil Engineering Md. Amin Al Noor Assistant Professor
+Department of Civil Engineering Saidis Salekin Aninda Assistant Professor
+Department of Civil Engineering Tazwar Bakhtiyar Zahid Assistant Professor
+Department of Civil Engineering Mahbubah Ahmed Assistant Professor
+Department of Civil Engineering Nishatee Binte Shahid Assistant Professor
+Department of Civil Engineering Subashish Kundu Sunny Assistant Professor
+Department of Civil Engineering Shantanu Paul Assistant Professor
+Department of Civil Engineering Mirza Md. Nazmus Sakib Assistant Professor
+Department of Civil Engineering Meftahul Ahsan Assistant Professor
+Department of Civil Engineering Zahid Hasan Prince Assistant Professor
+Department of Civil Engineering Md. Imran Hossain Lecturer
+Department of Civil Engineering Sameeha Islam Lecturer
+Department of Civil Engineering Rabeya Akter Sukhi Lecturer
+--- PAGE 6 ---
+Department of Civil Engineering Ojashwy Islam Audri Lecturer
+Department of Civil Engineering Jaya Majumder Lecturer
+Department of Civil Engineering Anas Bin Faruque Lecturer
+Department of Civil Engineering Md. Muhtashim Shahrier Lecturer
+Department of Civil Engineering Azmain Mottaqi Lecturer
+Department of Civil Engineering Protiva Sadhukhan Prova Lecturer
+Department of Civil Engineering Alimul Rafi Lecturer
+Department of Civil Engineering Kamruzzaman Rahi Lecturer
+Department of Mechanical Engineering Dr. Abu Rayhan Md. Ali Professor
+Department of Mechanical Engineering Dr. Md. Ehsan Professor
+Department of Mechanical Engineering Dr. Md. Zahurul Haq Professor
+Department of Mechanical Engineering Dr. Mohammad Ali Professor
+Department of Mechanical Engineering Dr. Shaikh Reaz Ahmed Professor
+Department of Mechanical Engineering Dr. M. Ashiqur Rahman Professor
+Department of Mechanical Engineering Dr. Md. Afsar Ali Professor
+Department of Mechanical Engineering Dr. Mohammad Arif Hasan Mamun Professor
+Department of Mechanical Engineering Dr. Md. Abdus Salam Akanda Professor
+Department of Mechanical Engineering Dr. Mohammad Mamun Professor
+Department of Mechanical Engineering Dr. Aloke Kumar Mozumder Professor
+Department of Mechanical Engineering Dr. A. B. M. Toufique Hasan Professor
+Department of Mechanical Engineering Dr. Mohammad Nasim Hasan Professor
+Department of Mechanical Engineering Dr. A K M Monjur Morshed Professor
+Department of Mechanical Engineering Dr. Mohammad A. Motalab Professor
+Department of Mechanical Engineering Dr. Md. Ashiqur Rahman Professor
+Department of Mechanical Engineering Dr. Sumon Saha Professor
+Department of Mechanical Engineering Dr. Kazi Arafat Rahman Associate Professor
+Department of Mechanical Engineering Dr. Sheikh Mohammad Shavik Associate Professor
+Department of Mechanical Engineering Dr. Md Aman Uddin Associate Professor
+Department of Mechanical Engineering Ms. Sanchita Amin Assistant Professor
+Department of Mechanical Engineering Dr. Anup Saha Assistant Professor
+--- PAGE 7 ---
+Department of Mechanical Engineering Dr. Md. Rakibul Hasan Roni Assistant Professor
+Department of Mechanical Engineering Dr. Md. Omarsany Bappy Assistant Professor
+Department of Mechanical Engineering Md. Imrul Kayes Assistant Professor
+Department of Mechanical Engineering Abrar Jahin Lecturer
+Department of Mechanical Engineering Abdul Al Mahfuj Lecturer
+Department of Mechanical Engineering Dilshad Jahan Ritu Lecturer
+Department of Industrial & Production Engineering Dr. Prianka Binte Zaman Professor
+Department of Industrial & Production Engineering Dr. Ahsan Akhtar Hasin Professor
+Department of Industrial & Production Engineering Dr. A.K.M Masud Professor
+Department of Industrial & Production Engineering Dr. Abdullahil Azeem Professor
+Department of Industrial & Production Engineering Dr. Sultana Parveen Professor
+Department of Industrial & Production Engineering Dr. Nafis Ahmad Professor
+Department of Industrial & Production Engineering Dr. Nikhil Ranjan Dhar Professor
+Department of Industrial & Production Engineering Dr. Syed Mithun Ali Professor
+Department of Industrial & Production Engineering Dr. Shuva Ghosh Associate Professor
+Department of Industrial & Production Engineering Dr. Ridwan Al Aziz Associate Professor
+Department of Industrial & Production Engineering Dr. Nafisa Mahbub Assistant Professor
+Department of Industrial & Production Engineering Nafisa Anzum Sristi Assistant Professor
+Department of Industrial & Production Engineering Naimool Islam Lecturer
+Department of Biomedical Engineering Dr. Muhammad Tarik Arafat Professor
+Department of Biomedical Engineering Dr. Taufiq Hasan Associate Professor
+Department of Biomedical Engineering Dr. Jahid Ferdous Assistant Professor
+Department of Biomedical Engineering Shoyad Ibn Sabur Khan Nuhash Assistant Professor
+Department of Biomedical Engineering Samiul Based Shuvo Assistant Professor
+Department of Biomedical Engineering Md. Tazuddin Ahmed Lecturer
+Department of Biomedical Engineering Abdullah Al Mamun Lecturer
+Department of Biomedical Engineering Samina Nishat Binte Akram Lecturer
+Department of Biomedical Engineering Tasnia Binte Mamun Lecturer
+Department of Biomedical Engineering Srija Sarker Anannya Lecturer
+Department of Biomedical Engineering Sayeed Sajjad Razin Lecturer
+--- PAGE 8 ---
+Department of Biomedical Engineering Chaity Chakraborty Lecturer
+Department of Materials and Metallurgical Engineering Dr. A. K. M. Bazlur Rashid Professor
+Department of Materials and Metallurgical Engineering Dr. Md. Aminul Islam Professor
+Department of Materials and Metallurgical Engineering Dr. Md. Moniruzzaman Professor
+Department of Materials and Metallurgical Engineering Dr. Ahmed Sharif Professor
+Department of Materials and Metallurgical Engineering Dr. Fahmida Gulshan Professor
+Department of Materials and Metallurgical Engineering Dr. Kazi Md. Shorowordi Professor
+Department of Materials and Metallurgical Engineering Dr. Mahbub Hasan Professor
+Department of Materials and Metallurgical Engineering Dr. H. M. Mamun Al Rashed Professor
+Department of Materials and Metallurgical Engineering Dr. Md. Muktadir Billah Professor
+Department of Materials and Metallurgical Engineering Dr. Takian Fakhrul Associate Professor
+Department of Materials and Metallurgical Engineering Md. Miftaur Rahman Assistant Professor
+Department of Materials and Metallurgical Engineering Oishy Roy Assistant Professor
+Department of Materials and Metallurgical Engineering Moniruzzaman Jamal Assistant Professor
+Department of Materials and Metallurgical Engineering Humayun Kabir Assistant Professor
+Department of Materials and Metallurgical Engineering Dr. Muhammad Usama Hasan Assistant Professor
+Department of Urban and Regional Planning Dr. Ishrat Islam Professor
+Department of Urban and Regional Planning Dr. Meher Nigar Neema Professor
+Department of Urban and Regional Planning Dr. Afsana Haque Professor
+Department of Urban and Regional Planning Dr. Md. Musleh Uddin Hasan Professor
+Department of Urban and Regional Planning Mohammad Shakil Akther Professor
+Department of Urban and Regional Planning Neelopal Adri Associate Professor
+Department of Urban and Regional Planning Dr. Dipita Hossain Assistant Professor
+Department of Urban and Regional Planning Sadia Afroj Assistant Professor
+Department of Urban and Regional Planning Meher Afjun Faria Lecturer
+Department of Urban and Regional Planning Md Waliullah Lecturer
+Department of Urban and Regional Planning Sayeda Laizu Aktar Lecturer
+Department of Urban and Regional Planning Nur-E-Faeeza Ankhi Lecturer
+Department of Urban and Regional Planning Ahmed Farwa Mahraf Siddique Lecturer
+Department of Urban and Regional Planning Tasirul Hasan Lecturer
+--- PAGE 9 ---
+Department of Urban and Regional Planning Md. Ahnaf Zaman Lecturer
+Department of Naval Architecture and Marine EngineeringDr. Md. Mashud Karim Professor
+Department of Naval Architecture and Marine EngineeringDr. M. Rafiqul Islam Professor
+Department of Naval Architecture and Marine EngineeringDr. Goutam Kumar Saha Professor
+Department of Naval Architecture and Marine EngineeringDr. N. M. Golam Zakaria Professor
+Department of Naval Architecture and Marine EngineeringDr. Md. Shahidul Islam Professor
+Department of Naval Architecture and Marine EngineeringDr. Zobair Ibn Awal Professor
+Department of Naval Architecture and Marine EngineeringShumon Mia Assistant Professor
+Department of Naval Architecture and Marine EngineeringImdadul Haque Lecturer
+Department of Naval Architecture and Marine EngineeringNabiha Tasnim Lecturer
+Department of Naval Architecture and Marine EngineeringMiftahul Islam Chowdhury Lecturer
+Department of Water Resources Engineering Dr. Md. Ataur Rahman Professor
+Department of Water Resources Engineering Dr. Umme Kulsum Navera Professor
+Department of Water Resources Engineering Muhammad Rezaul Haider Assistant Professor
+Department of Water Resources Engineering Rajib Kamal Assistant Professor
+Department of Water Resources Engineering Mrs. Afeefa Rahman Assistant Professor
+Department of Water Resources Engineering Faisal Mohammad Alvee Assistant Professor
+Department of Water Resources Engineering Mrs. Mushtari Maliha Assistant Professor
+Department of Water Resources Engineering Mrs. Naila Matin Assistant Professor
+Department of Water Resources Engineering Shadman Shahariar Lecturer
+Department of Water Resources Engineering Nafisa Tasnia Lecturer
+Department of Water Resources Engineering Tasmiah Ahsan Lecturer
+Department of Water Resources Engineering Sarfaraz Alam Lecturer
+Department of Nanomaterials and Ceramic Engineering Dr. Md. Fakhrul Islam Professor
+Department of Nanomaterials and Ceramic Engineering Dr. Md. Abdullah Zubair Professor
+Department of Nanomaterials and Ceramic Engineering Dr. Muhammad Hasanuzzaman Professor
+Department of Nanomaterials and Ceramic Engineering Dr. Redwan Noor Sajjad Associate Professor
+Department of Nanomaterials and Ceramic Engineering Dr. Md. Saiful Islam Associate Professor
+Department of Nanomaterials and Ceramic Engineering Wahidur Rahman Sajal Assistant Professor
+Department of Nanomaterials and Ceramic Engineering Syed Muhammad Al Amin Assistant Professor
+--- PAGE 10 ---
+Department of Nanomaterials and Ceramic Engineering Ayesha Akter Lecturer
+Department of Nanomaterials and Ceramic Engineering Muhaimen Atiq Khan Lecturer

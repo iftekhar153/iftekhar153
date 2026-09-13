@@ -1,0 +1,2170 @@
+[
+  {
+    "id": "cse-001",
+    "name": "Dr. Tanzima Hashem",
+    "dept": "Computer Science and Engineering",
+    "deptCode": "CSE",
+    "designation": "Professor",
+    "location": "ECE Building, West Wing"
+  },
+  {
+    "id": "cse-002",
+    "name": "Dr. Muhammad Masroor Ali",
+    "dept": "Computer Science and Engineering",
+    "deptCode": "CSE",
+    "designation": "Professor",
+    "location": "ECE Building, West Wing"
+  },
+  {
+    "id": "cse-003",
+    "name": "Dr. Md. Saidur Rahman",
+    "dept": "Computer Science and Engineering",
+    "deptCode": "CSE",
+    "designation": "Professor",
+    "location": "ECE Building, West Wing"
+  },
+  {
+    "id": "cse-004",
+    "name": "Dr. Md. Monirul Islam",
+    "dept": "Computer Science and Engineering",
+    "deptCode": "CSE",
+    "designation": "Professor",
+    "location": "ECE Building, West Wing"
+  },
+  {
+    "id": "cse-005",
+    "name": "Dr. Md. Mostofa Akbar",
+    "dept": "Computer Science and Engineering",
+    "deptCode": "CSE",
+    "designation": "Professor",
+    "location": "ECE Building, West Wing"
+  },
+  {
+    "id": "cse-006",
+    "name": "Dr. Abu Sayed Md. Latiful Hoque",
+    "dept": "Computer Science and Engineering",
+    "deptCode": "CSE",
+    "designation": "Professor",
+    "location": "ECE Building, West Wing"
+  },
+  {
+    "id": "cse-007",
+    "name": "Dr. Mohammad Mahfuzul Islam",
+    "dept": "Computer Science and Engineering",
+    "deptCode": "CSE",
+    "designation": "Professor",
+    "location": "ECE Building, West Wing"
+  },
+  {
+    "id": "cse-008",
+    "name": "Dr. A.K.M. Ashikur Rahman",
+    "dept": "Computer Science and Engineering",
+    "deptCode": "CSE",
+    "designation": "Professor",
+    "location": "ECE Building, West Wing"
+  },
+  {
+    "id": "cse-009",
+    "name": "Dr. Mahmuda Naznin",
+    "dept": "Computer Science and Engineering",
+    "deptCode": "CSE",
+    "designation": "Professor",
+    "location": "ECE Building, West Wing"
+  },
+  {
+    "id": "cse-010",
+    "name": "Dr. A. B. M. Alim Al Islam",
+    "dept": "Computer Science and Engineering",
+    "deptCode": "CSE",
+    "designation": "Professor",
+    "location": "ECE Building, West Wing"
+  },
+  {
+    "id": "cse-011",
+    "name": "Dr. Anindya Iqbal",
+    "dept": "Computer Science and Engineering",
+    "deptCode": "CSE",
+    "designation": "Professor",
+    "location": "ECE Building, West Wing"
+  },
+  {
+    "id": "cse-012",
+    "name": "Dr. Rifat Shahriyar",
+    "dept": "Computer Science and Engineering",
+    "deptCode": "CSE",
+    "designation": "Professor",
+    "location": "ECE Building, West Wing"
+  },
+  {
+    "id": "cse-013",
+    "name": "Dr. Muhammad Abdullah Adnan",
+    "dept": "Computer Science and Engineering",
+    "deptCode": "CSE",
+    "designation": "Professor",
+    "location": "ECE Building, West Wing"
+  },
+  {
+    "id": "cse-014",
+    "name": "Dr. Mohammad Saifur Rahman",
+    "dept": "Computer Science and Engineering",
+    "deptCode": "CSE",
+    "designation": "Professor",
+    "location": "ECE Building, West Wing"
+  },
+  {
+    "id": "cse-015",
+    "name": "Dr. Md. Shamsuzzoha Bayzid",
+    "dept": "Computer Science and Engineering",
+    "deptCode": "CSE",
+    "designation": "Professor",
+    "location": "ECE Building, West Wing"
+  },
+  {
+    "id": "cse-016",
+    "name": "Dr. Atif Hasan Rahman",
+    "dept": "Computer Science and Engineering",
+    "deptCode": "CSE",
+    "designation": "Professor",
+    "location": "ECE Building, West Wing"
+  },
+  {
+    "id": "cse-017",
+    "name": "Dr. Sadia Sharmin Associate",
+    "dept": "Computer Science and Engineering",
+    "deptCode": "CSE",
+    "designation": "Professor",
+    "location": "ECE Building, West Wing"
+  },
+  {
+    "id": "cse-018",
+    "name": "Abu Wasif Associate",
+    "dept": "Computer Science and Engineering",
+    "deptCode": "CSE",
+    "designation": "Professor",
+    "location": "ECE Building, West Wing"
+  },
+  {
+    "id": "cse-019",
+    "name": "Sukarna Barua Associate",
+    "dept": "Computer Science and Engineering",
+    "deptCode": "CSE",
+    "designation": "Professor",
+    "location": "ECE Building, West Wing"
+  },
+  {
+    "id": "cse-020",
+    "name": "Dr. Md. Shariful Islam Bhuyan Associate",
+    "dept": "Computer Science and Engineering",
+    "deptCode": "CSE",
+    "designation": "Professor",
+    "location": "ECE Building, West Wing"
+  },
+  {
+    "id": "cse-021",
+    "name": "Dr. Rezwana Reaz Associate",
+    "dept": "Computer Science and Engineering",
+    "deptCode": "CSE",
+    "designation": "Professor",
+    "location": "ECE Building, West Wing"
+  },
+  {
+    "id": "cse-022",
+    "name": "Dr. Tanveer Awal Assistant",
+    "dept": "Computer Science and Engineering",
+    "deptCode": "CSE",
+    "designation": "Professor",
+    "location": "ECE Building, West Wing"
+  },
+  {
+    "id": "cse-023",
+    "name": "Khaled Mahmud Shahriar Assistant",
+    "dept": "Computer Science and Engineering",
+    "deptCode": "CSE",
+    "designation": "Professor",
+    "location": "ECE Building, West Wing"
+  },
+  {
+    "id": "cse-024",
+    "name": "Dr. Ch. Md. Rakin Haider Assistant",
+    "dept": "Computer Science and Engineering",
+    "deptCode": "CSE",
+    "designation": "Professor",
+    "location": "ECE Building, West Wing"
+  },
+  {
+    "id": "cse-025",
+    "name": "Tahmid Hasan Assistant",
+    "dept": "Computer Science and Engineering",
+    "deptCode": "CSE",
+    "designation": "Professor",
+    "location": "ECE Building, West Wing"
+  },
+  {
+    "id": "cse-026",
+    "name": "Dr. Novia Nurain Assistant",
+    "dept": "Computer Science and Engineering",
+    "deptCode": "CSE",
+    "designation": "Professor",
+    "location": "ECE Building, West Wing"
+  },
+  {
+    "id": "cse-027",
+    "name": "Ishrat Jahan Assistant",
+    "dept": "Computer Science and Engineering",
+    "deptCode": "CSE",
+    "designation": "Professor",
+    "location": "ECE Building, West Wing"
+  },
+  {
+    "id": "cse-028",
+    "name": "Junaed Younus Khan Assistant",
+    "dept": "Computer Science and Engineering",
+    "deptCode": "CSE",
+    "designation": "Professor",
+    "location": "ECE Building, West Wing"
+  },
+  {
+    "id": "cse-029",
+    "name": "Md. Nurul Muttakin Assistant",
+    "dept": "Computer Science and Engineering",
+    "deptCode": "CSE",
+    "designation": "Professor",
+    "location": "ECE Building, West Wing"
+  },
+  {
+    "id": "cse-030",
+    "name": "A.K.M. Mehedi Hasan",
+    "dept": "Computer Science and Engineering",
+    "deptCode": "CSE",
+    "designation": "Lecturer",
+    "location": "ECE Building, West Wing"
+  },
+  {
+    "id": "cse-031",
+    "name": "Abdur Rashid Tushar",
+    "dept": "Computer Science and Engineering",
+    "deptCode": "CSE",
+    "designation": "Lecturer",
+    "location": "ECE Building, West Wing"
+  },
+  {
+    "id": "cse-032",
+    "name": "Kowshic Roy",
+    "dept": "Computer Science and Engineering",
+    "deptCode": "CSE",
+    "designation": "Lecturer",
+    "location": "ECE Building, West Wing"
+  },
+  {
+    "id": "cse-033",
+    "name": "Saem Hasan",
+    "dept": "Computer Science and Engineering",
+    "deptCode": "CSE",
+    "designation": "Lecturer",
+    "location": "ECE Building, West Wing"
+  },
+  {
+    "id": "cse-034",
+    "name": "Md. Emamul Haque Pranta",
+    "dept": "Computer Science and Engineering",
+    "deptCode": "CSE",
+    "designation": "Lecturer",
+    "location": "ECE Building, West Wing"
+  },
+  {
+    "id": "cse-035",
+    "name": "Ahmed Mahir Sultan Rumi",
+    "dept": "Computer Science and Engineering",
+    "deptCode": "CSE",
+    "designation": "Lecturer",
+    "location": "ECE Building, West Wing"
+  },
+  {
+    "id": "cse-036",
+    "name": "Rabib Jahin Ibn Momin",
+    "dept": "Computer Science and Engineering",
+    "deptCode": "CSE",
+    "designation": "Lecturer",
+    "location": "ECE Building, West Wing"
+  },
+  {
+    "id": "cse-037",
+    "name": "Abdur Rafi",
+    "dept": "Computer Science and Engineering",
+    "deptCode": "CSE",
+    "designation": "Lecturer",
+    "location": "ECE Building, West Wing"
+  },
+  {
+    "id": "cse-038",
+    "name": "Anwarul Bashir Shuaib",
+    "dept": "Computer Science and Engineering",
+    "deptCode": "CSE",
+    "designation": "Lecturer",
+    "location": "ECE Building, West Wing"
+  },
+  {
+    "id": "cse-039",
+    "name": "Shattik Islam Rhythm",
+    "dept": "Computer Science and Engineering",
+    "deptCode": "CSE",
+    "designation": "Lecturer",
+    "location": "ECE Building, West Wing"
+  },
+  {
+    "id": "cse-040",
+    "name": "Mohammad Sadat Hossain",
+    "dept": "Computer Science and Engineering",
+    "deptCode": "CSE",
+    "designation": "Lecturer",
+    "location": "ECE Building, West Wing"
+  },
+  {
+    "id": "cse-041",
+    "name": "Nafis Tahmid",
+    "dept": "Computer Science and Engineering",
+    "deptCode": "CSE",
+    "designation": "Lecturer",
+    "location": "ECE Building, West Wing"
+  },
+  {
+    "id": "cse-042",
+    "name": "Md. Ashrafur Rahman Khan",
+    "dept": "Computer Science and Engineering",
+    "deptCode": "CSE",
+    "designation": "Lecturer",
+    "location": "ECE Building, West Wing"
+  },
+  {
+    "id": "cse-043",
+    "name": "Md. Roqunuzzaman Sojib",
+    "dept": "Computer Science and Engineering",
+    "deptCode": "CSE",
+    "designation": "Lecturer",
+    "location": "ECE Building, West Wing"
+  },
+  {
+    "id": "cse-044",
+    "name": "Niaz Rahman",
+    "dept": "Computer Science and Engineering",
+    "deptCode": "CSE",
+    "designation": "Lecturer",
+    "location": "ECE Building, West Wing"
+  },
+  {
+    "id": "cse-045",
+    "name": "Mahir Labib Dihan",
+    "dept": "Computer Science and Engineering",
+    "deptCode": "CSE",
+    "designation": "Lecturer",
+    "location": "ECE Building, West Wing"
+  },
+  {
+    "id": "cse-046",
+    "name": "Anik Saha",
+    "dept": "Computer Science and Engineering",
+    "deptCode": "CSE",
+    "designation": "Lecturer",
+    "location": "ECE Building, West Wing"
+  },
+  {
+    "id": "cse-047",
+    "name": "Abdullah Muhammed Amimul Ehsan",
+    "dept": "Computer Science and Engineering",
+    "deptCode": "CSE",
+    "designation": "Lecturer",
+    "location": "ECE Building, West Wing"
+  },
+  {
+    "id": "cse-048",
+    "name": "Md. Irtiaz Kabir",
+    "dept": "Computer Science and Engineering",
+    "deptCode": "CSE",
+    "designation": "Lecturer",
+    "location": "ECE Building, West Wing"
+  },
+  {
+    "id": "cse-049",
+    "name": "Swastika Pandit",
+    "dept": "Computer Science and Engineering",
+    "deptCode": "CSE",
+    "designation": "Lecturer",
+    "location": "ECE Building, West Wing"
+  },
+  {
+    "id": "cse-050",
+    "name": "Anup Halder Joy",
+    "dept": "Computer Science and Engineering",
+    "deptCode": "CSE",
+    "designation": "Lecturer",
+    "location": "ECE Building, West Wing"
+  },
+  {
+    "id": "cse-051",
+    "name": "Md Zim Mim Siddiqee Sowdha",
+    "dept": "Computer Science and Engineering",
+    "deptCode": "CSE",
+    "designation": "Lecturer",
+    "location": "ECE Building, West Wing"
+  },
+  {
+    "id": "eee-052",
+    "name": "Dr. Md. Saifur Rahman",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-053",
+    "name": "Dr. Md. Shafiqul Islam",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-054",
+    "name": "Dr. Md. Kamrul Hasan",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-055",
+    "name": "Dr. Md. Aynal Haque",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-056",
+    "name": "Dr. A. B. M. Harun-Ur-Rashid",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-057",
+    "name": "Dr. Sharif Mohammad Mominuzzaman",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-058",
+    "name": "Dr. Mohammad Jahangir Alam",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-059",
+    "name": "Dr. Md. Shah Alam",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-060",
+    "name": "Dr. Md. Ziaur Rahman Khan",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-061",
+    "name": "Dr. Mohammed Imamul Hassan Bhuiyan",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-062",
+    "name": "Dr. Shaikh Anowarul Fattah",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-063",
+    "name": "Dr. Md. Nasim Ahmed Dewan",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-064",
+    "name": "Dr. S. M. Mahbubur Rahman",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-065",
+    "name": "Dr. Muhammad Anisuzzaman Talukder",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-066",
+    "name": "Dr. Mohammad Ariful Haque",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-067",
+    "name": "Dr. Abdul Hasib Chowdhury",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-068",
+    "name": "Dr. Farseem Mannan Mohammedy",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-069",
+    "name": "Dr. Mohammad Faisal",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-070",
+    "name": "Dr. Samia Subrina",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-071",
+    "name": "Dr. Md. Forkan Uddin",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-072",
+    "name": "Dr. Lutfa Akter",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-073",
+    "name": "Dr. Md. Kawsar Alam",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-074",
+    "name": "Dr. Md. Zahurul Islam",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-075",
+    "name": "Dr. Md. Shamim Reza",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-076",
+    "name": "Dr. Apratim Roy",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-077",
+    "name": "Dr. Mahbub Alam",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-078",
+    "name": "Dr. Hafiz Imtiaz",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-079",
+    "name": "Dr. Ahmed Zubair Associate",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-080",
+    "name": "Dr. Shaikh Asif Mahmood Associate",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-081",
+    "name": "Dr. Hamidur Rahman Associate",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-082",
+    "name": "Dr. Md. Asiful Islam Associate",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-083",
+    "name": "Dr. Sajid Muhaimin Choudhury Associate",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-084",
+    "name": "Dr. Muhammad Abdullah Arafat Associate",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-085",
+    "name": "Dr. Ehsanur Rahman Associate",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-086",
+    "name": "Yeasir Arafat Assistant",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-087",
+    "name": "Dr. Nadim Chowdhury Assistant",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-088",
+    "name": "Dr. Orchi Hassan Assistant",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-089",
+    "name": "Dr. Maruf Ahmed Assistant",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-090",
+    "name": "Dr. Md. Hadiur Rahman Khan Assistant",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-091",
+    "name": "Dr. Md. Irfan Khan Assistant",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-092",
+    "name": "Asikur Rahman Jowel Assistant",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-093",
+    "name": "Iftekharul Islam Emon Assistant",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-094",
+    "name": "Nafis Sadik Assistant",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-095",
+    "name": "Dr. Md. Mohsinur Rahman Adnan Assistant",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-096",
+    "name": "Sadman Sakib Ahbab",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Lecturer",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-097",
+    "name": "Sadat Tahmeed Azad",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Lecturer",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-098",
+    "name": "Md. Jawad Ul Islam",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Lecturer",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-099",
+    "name": "Md. Ehsanul Karim",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Lecturer",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-100",
+    "name": "Tanushri Medha Kundu",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Lecturer",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-101",
+    "name": "Rafid Hassan Palash",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Lecturer",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-102",
+    "name": "Khairul Islam",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Lecturer",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-103",
+    "name": "Md. Kamrul Hasan",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Lecturer",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "ce-104",
+    "name": "Dr. A. B. M. Badruzzaman",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Professor",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-105",
+    "name": "Dr. Md. Zakaria Ahmed",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Professor",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-106",
+    "name": "Dr. Md. Abdul Jalil",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Professor",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-107",
+    "name": "Dr. Ishtiaque Ahmed",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Professor",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-108",
+    "name": "Dr. Hasib Mohammed Ahsan",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Professor",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-109",
+    "name": "Dr. Sarwar Jahan Md. Yasin",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Professor",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-110",
+    "name": "Dr. Moazzem Hossain",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Professor",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-111",
+    "name": "Dr. Eqramul Hoque",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Professor",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-112",
+    "name": "Dr. Bashir Ahmed",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Professor",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-113",
+    "name": "Dr. Khan Mahmud Amanat",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Professor",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-114",
+    "name": "Dr. Mehedi Ahmed Ansary",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Professor",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-115",
+    "name": "Dr. Md. Shamsul Hoque",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Professor",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-116",
+    "name": "Dr. Tahmeed M. Al-Hussaini",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Professor",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-117",
+    "name": "Dr. Md. Mafizur Rahman",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Professor",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-118",
+    "name": "Dr. Abdul Jabbar Khan",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Professor",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-119",
+    "name": "Dr. Syed Ishtiaq Ahmad",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Professor",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-120",
+    "name": "Dr. Md. Mizanur Rahman",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Professor",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-121",
+    "name": "Dr. Mohammad Shariful Islam",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Professor",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-122",
+    "name": "Dr. Mahbuba Begum",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Professor",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-123",
+    "name": "Dr. Tanvir Manzur",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Professor",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-124",
+    "name": "Dr. Md. Hadiuzzaman",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Professor",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-125",
+    "name": "Dr. Mohammad Al Amin Siddique",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Professor",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-126",
+    "name": "Dr. Tanvir Ahmed",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Professor",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-127",
+    "name": "Dr. Shameem Ahmed",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Professor",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-128",
+    "name": "Dr. Shohel Rana",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Professor",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-129",
+    "name": "Dr. Nazrul Islam",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Professor",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-130",
+    "name": "Dr. Sheikh Mokhlesur Rahman",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Professor",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-131",
+    "name": "Dr. Md. Jahangir Alam",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Professor",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-132",
+    "name": "Dr. Annesha Enam",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Professor",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-133",
+    "name": "Dr. M. Neaz Murshed Associate",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Professor",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-134",
+    "name": "Ahmed Farhan Ahnaf Siddique Assistant",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Professor",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-135",
+    "name": "Sumaiya Afrose Suma Assistant",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Professor",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-136",
+    "name": "Sk. Rakibul Islam Assistant",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Professor",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-137",
+    "name": "Md. Amin Al Noor Assistant",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Professor",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-138",
+    "name": "Saidis Salekin Aninda Assistant",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Professor",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-139",
+    "name": "Tazwar Bakhtiyar Zahid Assistant",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Professor",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-140",
+    "name": "Mahbubah Ahmed Assistant",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Professor",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-141",
+    "name": "Nishatee Binte Shahid Assistant",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Professor",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-142",
+    "name": "Subashish Kundu Sunny Assistant",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Professor",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-143",
+    "name": "Shantanu Paul Assistant",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Professor",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-144",
+    "name": "Mirza Md. Nazmus Sakib Assistant",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Professor",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-145",
+    "name": "Meftahul Ahsan Assistant",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Professor",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-146",
+    "name": "Zahid Hasan Prince Assistant",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Professor",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-147",
+    "name": "Md. Imran Hossain",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Lecturer",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-148",
+    "name": "Sameeha Islam",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Lecturer",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-149",
+    "name": "Rabeya Akter Sukhi",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Lecturer",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-150",
+    "name": "Ojashwy Islam Audri",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Lecturer",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-151",
+    "name": "Jaya Majumder",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Lecturer",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-152",
+    "name": "Anas Bin Faruque",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Lecturer",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-153",
+    "name": "Md. Muhtashim Shahrier",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Lecturer",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-154",
+    "name": "Azmain Mottaqi",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Lecturer",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-155",
+    "name": "Protiva Sadhukhan Prova",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Lecturer",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-156",
+    "name": "Alimul Rafi",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Lecturer",
+    "location": "Civil Building"
+  },
+  {
+    "id": "ce-157",
+    "name": "Kamruzzaman Rahi",
+    "dept": "Civil Engineering",
+    "deptCode": "CE",
+    "designation": "Lecturer",
+    "location": "Civil Building"
+  },
+  {
+    "id": "me-158",
+    "name": "Dr. Abu Rayhan Md. Ali",
+    "dept": "Mechanical Engineering",
+    "deptCode": "ME",
+    "designation": "Professor",
+    "location": "Mechanical Building"
+  },
+  {
+    "id": "me-159",
+    "name": "Dr. Md. Ehsan",
+    "dept": "Mechanical Engineering",
+    "deptCode": "ME",
+    "designation": "Professor",
+    "location": "Mechanical Building"
+  },
+  {
+    "id": "me-160",
+    "name": "Dr. Md. Zahurul Haq",
+    "dept": "Mechanical Engineering",
+    "deptCode": "ME",
+    "designation": "Professor",
+    "location": "Mechanical Building"
+  },
+  {
+    "id": "me-161",
+    "name": "Dr. Mohammad Ali",
+    "dept": "Mechanical Engineering",
+    "deptCode": "ME",
+    "designation": "Professor",
+    "location": "Mechanical Building"
+  },
+  {
+    "id": "me-162",
+    "name": "Dr. Shaikh Reaz Ahmed",
+    "dept": "Mechanical Engineering",
+    "deptCode": "ME",
+    "designation": "Professor",
+    "location": "Mechanical Building"
+  },
+  {
+    "id": "me-163",
+    "name": "Dr. M. Ashiqur Rahman",
+    "dept": "Mechanical Engineering",
+    "deptCode": "ME",
+    "designation": "Professor",
+    "location": "Mechanical Building"
+  },
+  {
+    "id": "me-164",
+    "name": "Dr. Md. Afsar Ali",
+    "dept": "Mechanical Engineering",
+    "deptCode": "ME",
+    "designation": "Professor",
+    "location": "Mechanical Building"
+  },
+  {
+    "id": "me-165",
+    "name": "Dr. Mohammad Arif Hasan Mamun",
+    "dept": "Mechanical Engineering",
+    "deptCode": "ME",
+    "designation": "Professor",
+    "location": "Mechanical Building"
+  },
+  {
+    "id": "me-166",
+    "name": "Dr. Md. Abdus Salam Akanda",
+    "dept": "Mechanical Engineering",
+    "deptCode": "ME",
+    "designation": "Professor",
+    "location": "Mechanical Building"
+  },
+  {
+    "id": "me-167",
+    "name": "Dr. Mohammad Mamun",
+    "dept": "Mechanical Engineering",
+    "deptCode": "ME",
+    "designation": "Professor",
+    "location": "Mechanical Building"
+  },
+  {
+    "id": "me-168",
+    "name": "Dr. Aloke Kumar Mozumder",
+    "dept": "Mechanical Engineering",
+    "deptCode": "ME",
+    "designation": "Professor",
+    "location": "Mechanical Building"
+  },
+  {
+    "id": "me-169",
+    "name": "Dr. A. B. M. Toufique Hasan",
+    "dept": "Mechanical Engineering",
+    "deptCode": "ME",
+    "designation": "Professor",
+    "location": "Mechanical Building"
+  },
+  {
+    "id": "me-170",
+    "name": "Dr. Mohammad Nasim Hasan",
+    "dept": "Mechanical Engineering",
+    "deptCode": "ME",
+    "designation": "Professor",
+    "location": "Mechanical Building"
+  },
+  {
+    "id": "me-171",
+    "name": "Dr. A K M Monjur Morshed",
+    "dept": "Mechanical Engineering",
+    "deptCode": "ME",
+    "designation": "Professor",
+    "location": "Mechanical Building"
+  },
+  {
+    "id": "me-172",
+    "name": "Dr. Mohammad A. Motalab",
+    "dept": "Mechanical Engineering",
+    "deptCode": "ME",
+    "designation": "Professor",
+    "location": "Mechanical Building"
+  },
+  {
+    "id": "me-173",
+    "name": "Dr. Md. Ashiqur Rahman",
+    "dept": "Mechanical Engineering",
+    "deptCode": "ME",
+    "designation": "Professor",
+    "location": "Mechanical Building"
+  },
+  {
+    "id": "me-174",
+    "name": "Dr. Sumon Saha",
+    "dept": "Mechanical Engineering",
+    "deptCode": "ME",
+    "designation": "Professor",
+    "location": "Mechanical Building"
+  },
+  {
+    "id": "me-175",
+    "name": "Dr. Kazi Arafat Rahman Associate",
+    "dept": "Mechanical Engineering",
+    "deptCode": "ME",
+    "designation": "Professor",
+    "location": "Mechanical Building"
+  },
+  {
+    "id": "me-176",
+    "name": "Dr. Sheikh Mohammad Shavik Associate",
+    "dept": "Mechanical Engineering",
+    "deptCode": "ME",
+    "designation": "Professor",
+    "location": "Mechanical Building"
+  },
+  {
+    "id": "me-177",
+    "name": "Dr. Md Aman Uddin Associate",
+    "dept": "Mechanical Engineering",
+    "deptCode": "ME",
+    "designation": "Professor",
+    "location": "Mechanical Building"
+  },
+  {
+    "id": "me-178",
+    "name": "Ms. Sanchita Amin Assistant",
+    "dept": "Mechanical Engineering",
+    "deptCode": "ME",
+    "designation": "Professor",
+    "location": "Mechanical Building"
+  },
+  {
+    "id": "me-179",
+    "name": "Dr. Anup Saha Assistant",
+    "dept": "Mechanical Engineering",
+    "deptCode": "ME",
+    "designation": "Professor",
+    "location": "Mechanical Building"
+  },
+  {
+    "id": "me-180",
+    "name": "Dr. Md. Rakibul Hasan Roni Assistant",
+    "dept": "Mechanical Engineering",
+    "deptCode": "ME",
+    "designation": "Professor",
+    "location": "Mechanical Building"
+  },
+  {
+    "id": "me-181",
+    "name": "Dr. Md. Omarsany Bappy Assistant",
+    "dept": "Mechanical Engineering",
+    "deptCode": "ME",
+    "designation": "Professor",
+    "location": "Mechanical Building"
+  },
+  {
+    "id": "me-182",
+    "name": "Md. Imrul Kayes Assistant",
+    "dept": "Mechanical Engineering",
+    "deptCode": "ME",
+    "designation": "Professor",
+    "location": "Mechanical Building"
+  },
+  {
+    "id": "me-183",
+    "name": "Abrar Jahin",
+    "dept": "Mechanical Engineering",
+    "deptCode": "ME",
+    "designation": "Lecturer",
+    "location": "Mechanical Building"
+  },
+  {
+    "id": "me-184",
+    "name": "Abdul Al Mahfuj",
+    "dept": "Mechanical Engineering",
+    "deptCode": "ME",
+    "designation": "Lecturer",
+    "location": "Mechanical Building"
+  },
+  {
+    "id": "me-185",
+    "name": "Dilshad Jahan Ritu",
+    "dept": "Mechanical Engineering",
+    "deptCode": "ME",
+    "designation": "Lecturer",
+    "location": "Mechanical Building"
+  },
+  {
+    "id": "ipe-186",
+    "name": "Dr. Prianka Binte Zaman",
+    "dept": "Industrial & Production Engineering",
+    "deptCode": "IPE",
+    "designation": "Professor",
+    "location": "Mechanical Building"
+  },
+  {
+    "id": "ipe-187",
+    "name": "Dr. Ahsan Akhtar Hasin",
+    "dept": "Industrial & Production Engineering",
+    "deptCode": "IPE",
+    "designation": "Professor",
+    "location": "Mechanical Building"
+  },
+  {
+    "id": "ipe-188",
+    "name": "Dr. A.K.M Masud",
+    "dept": "Industrial & Production Engineering",
+    "deptCode": "IPE",
+    "designation": "Professor",
+    "location": "Mechanical Building"
+  },
+  {
+    "id": "ipe-189",
+    "name": "Dr. Abdullahil Azeem",
+    "dept": "Industrial & Production Engineering",
+    "deptCode": "IPE",
+    "designation": "Professor",
+    "location": "Mechanical Building"
+  },
+  {
+    "id": "ipe-190",
+    "name": "Dr. Sultana Parveen",
+    "dept": "Industrial & Production Engineering",
+    "deptCode": "IPE",
+    "designation": "Professor",
+    "location": "Mechanical Building"
+  },
+  {
+    "id": "ipe-191",
+    "name": "Dr. Nafis Ahmad",
+    "dept": "Industrial & Production Engineering",
+    "deptCode": "IPE",
+    "designation": "Professor",
+    "location": "Mechanical Building"
+  },
+  {
+    "id": "ipe-192",
+    "name": "Dr. Nikhil Ranjan Dhar",
+    "dept": "Industrial & Production Engineering",
+    "deptCode": "IPE",
+    "designation": "Professor",
+    "location": "Mechanical Building"
+  },
+  {
+    "id": "ipe-193",
+    "name": "Dr. Syed Mithun Ali",
+    "dept": "Industrial & Production Engineering",
+    "deptCode": "IPE",
+    "designation": "Professor",
+    "location": "Mechanical Building"
+  },
+  {
+    "id": "ipe-194",
+    "name": "Dr. Shuva Ghosh Associate",
+    "dept": "Industrial & Production Engineering",
+    "deptCode": "IPE",
+    "designation": "Professor",
+    "location": "Mechanical Building"
+  },
+  {
+    "id": "ipe-195",
+    "name": "Dr. Ridwan Al Aziz Associate",
+    "dept": "Industrial & Production Engineering",
+    "deptCode": "IPE",
+    "designation": "Professor",
+    "location": "Mechanical Building"
+  },
+  {
+    "id": "ipe-196",
+    "name": "Dr. Nafisa Mahbub Assistant",
+    "dept": "Industrial & Production Engineering",
+    "deptCode": "IPE",
+    "designation": "Professor",
+    "location": "Mechanical Building"
+  },
+  {
+    "id": "ipe-197",
+    "name": "Nafisa Anzum Sristi Assistant",
+    "dept": "Industrial & Production Engineering",
+    "deptCode": "IPE",
+    "designation": "Professor",
+    "location": "Mechanical Building"
+  },
+  {
+    "id": "ipe-198",
+    "name": "Naimool Islam",
+    "dept": "Industrial & Production Engineering",
+    "deptCode": "IPE",
+    "designation": "Lecturer",
+    "location": "Mechanical Building"
+  },
+  {
+    "id": "bme-199",
+    "name": "Dr. Muhammad Tarik Arafat",
+    "dept": "Biomedical Engineering",
+    "deptCode": "BME",
+    "designation": "Professor",
+    "location": "ECE Building, 10th-11th Floor"
+  },
+  {
+    "id": "bme-200",
+    "name": "Dr. Taufiq Hasan Associate",
+    "dept": "Biomedical Engineering",
+    "deptCode": "BME",
+    "designation": "Professor",
+    "location": "ECE Building, 10th-11th Floor"
+  },
+  {
+    "id": "bme-201",
+    "name": "Dr. Jahid Ferdous Assistant",
+    "dept": "Biomedical Engineering",
+    "deptCode": "BME",
+    "designation": "Professor",
+    "location": "ECE Building, 10th-11th Floor"
+  },
+  {
+    "id": "bme-202",
+    "name": "Shoyad Ibn Sabur Khan Nuhash Assistant",
+    "dept": "Biomedical Engineering",
+    "deptCode": "BME",
+    "designation": "Professor",
+    "location": "ECE Building, 10th-11th Floor"
+  },
+  {
+    "id": "bme-203",
+    "name": "Samiul Based Shuvo Assistant",
+    "dept": "Biomedical Engineering",
+    "deptCode": "BME",
+    "designation": "Professor",
+    "location": "ECE Building, 10th-11th Floor"
+  },
+  {
+    "id": "bme-204",
+    "name": "Md. Tazuddin Ahmed",
+    "dept": "Biomedical Engineering",
+    "deptCode": "BME",
+    "designation": "Lecturer",
+    "location": "ECE Building, 10th-11th Floor"
+  },
+  {
+    "id": "bme-205",
+    "name": "Abdullah Al Mamun",
+    "dept": "Biomedical Engineering",
+    "deptCode": "BME",
+    "designation": "Lecturer",
+    "location": "ECE Building, 10th-11th Floor"
+  },
+  {
+    "id": "bme-206",
+    "name": "Samina Nishat Binte Akram",
+    "dept": "Biomedical Engineering",
+    "deptCode": "BME",
+    "designation": "Lecturer",
+    "location": "ECE Building, 10th-11th Floor"
+  },
+  {
+    "id": "bme-207",
+    "name": "Tasnia Binte Mamun",
+    "dept": "Biomedical Engineering",
+    "deptCode": "BME",
+    "designation": "Lecturer",
+    "location": "ECE Building, 10th-11th Floor"
+  },
+  {
+    "id": "bme-208",
+    "name": "Srija Sarker Anannya",
+    "dept": "Biomedical Engineering",
+    "deptCode": "BME",
+    "designation": "Lecturer",
+    "location": "ECE Building, 10th-11th Floor"
+  },
+  {
+    "id": "bme-209",
+    "name": "Sayeed Sajjad Razin",
+    "dept": "Biomedical Engineering",
+    "deptCode": "BME",
+    "designation": "Lecturer",
+    "location": "ECE Building, 10th-11th Floor"
+  },
+  {
+    "id": "bme-210",
+    "name": "Chaity Chakraborty",
+    "dept": "Biomedical Engineering",
+    "deptCode": "BME",
+    "designation": "Lecturer",
+    "location": "ECE Building, 10th-11th Floor"
+  },
+  {
+    "id": "mme-211",
+    "name": "Dr. A. K. M. Bazlur Rashid",
+    "dept": "Materials and Metallurgical Engineering",
+    "deptCode": "MME",
+    "designation": "Professor",
+    "location": "Old Academic Building (OAB)"
+  },
+  {
+    "id": "mme-212",
+    "name": "Dr. Md. Aminul Islam",
+    "dept": "Materials and Metallurgical Engineering",
+    "deptCode": "MME",
+    "designation": "Professor",
+    "location": "Old Academic Building (OAB)"
+  },
+  {
+    "id": "mme-213",
+    "name": "Dr. Md. Moniruzzaman",
+    "dept": "Materials and Metallurgical Engineering",
+    "deptCode": "MME",
+    "designation": "Professor",
+    "location": "Old Academic Building (OAB)"
+  },
+  {
+    "id": "mme-214",
+    "name": "Dr. Ahmed Sharif",
+    "dept": "Materials and Metallurgical Engineering",
+    "deptCode": "MME",
+    "designation": "Professor",
+    "location": "Old Academic Building (OAB)"
+  },
+  {
+    "id": "mme-215",
+    "name": "Dr. Fahmida Gulshan",
+    "dept": "Materials and Metallurgical Engineering",
+    "deptCode": "MME",
+    "designation": "Professor",
+    "location": "Old Academic Building (OAB)"
+  },
+  {
+    "id": "mme-216",
+    "name": "Dr. Kazi Md. Shorowordi",
+    "dept": "Materials and Metallurgical Engineering",
+    "deptCode": "MME",
+    "designation": "Professor",
+    "location": "Old Academic Building (OAB)"
+  },
+  {
+    "id": "mme-217",
+    "name": "Dr. Mahbub Hasan",
+    "dept": "Materials and Metallurgical Engineering",
+    "deptCode": "MME",
+    "designation": "Professor",
+    "location": "Old Academic Building (OAB)"
+  },
+  {
+    "id": "mme-218",
+    "name": "Dr. H. M. Mamun Al Rashed",
+    "dept": "Materials and Metallurgical Engineering",
+    "deptCode": "MME",
+    "designation": "Professor",
+    "location": "Old Academic Building (OAB)"
+  },
+  {
+    "id": "mme-219",
+    "name": "Dr. Md. Muktadir Billah",
+    "dept": "Materials and Metallurgical Engineering",
+    "deptCode": "MME",
+    "designation": "Professor",
+    "location": "Old Academic Building (OAB)"
+  },
+  {
+    "id": "mme-220",
+    "name": "Dr. Takian Fakhrul Associate",
+    "dept": "Materials and Metallurgical Engineering",
+    "deptCode": "MME",
+    "designation": "Professor",
+    "location": "Old Academic Building (OAB)"
+  },
+  {
+    "id": "mme-221",
+    "name": "Md. Miftaur Rahman Assistant",
+    "dept": "Materials and Metallurgical Engineering",
+    "deptCode": "MME",
+    "designation": "Professor",
+    "location": "Old Academic Building (OAB)"
+  },
+  {
+    "id": "mme-222",
+    "name": "Oishy Roy Assistant",
+    "dept": "Materials and Metallurgical Engineering",
+    "deptCode": "MME",
+    "designation": "Professor",
+    "location": "Old Academic Building (OAB)"
+  },
+  {
+    "id": "mme-223",
+    "name": "Moniruzzaman Jamal Assistant",
+    "dept": "Materials and Metallurgical Engineering",
+    "deptCode": "MME",
+    "designation": "Professor",
+    "location": "Old Academic Building (OAB)"
+  },
+  {
+    "id": "mme-224",
+    "name": "Humayun Kabir Assistant",
+    "dept": "Materials and Metallurgical Engineering",
+    "deptCode": "MME",
+    "designation": "Professor",
+    "location": "Old Academic Building (OAB)"
+  },
+  {
+    "id": "mme-225",
+    "name": "Dr. Muhammad Usama Hasan Assistant",
+    "dept": "Materials and Metallurgical Engineering",
+    "deptCode": "MME",
+    "designation": "Professor",
+    "location": "Old Academic Building (OAB)"
+  },
+  {
+    "id": "urp-226",
+    "name": "Dr. Ishrat Islam",
+    "dept": "Urban and Regional Planning",
+    "deptCode": "URP",
+    "designation": "Professor",
+    "location": "Architecture & Planning Building"
+  },
+  {
+    "id": "urp-227",
+    "name": "Dr. Meher Nigar Neema",
+    "dept": "Urban and Regional Planning",
+    "deptCode": "URP",
+    "designation": "Professor",
+    "location": "Architecture & Planning Building"
+  },
+  {
+    "id": "urp-228",
+    "name": "Dr. Afsana Haque",
+    "dept": "Urban and Regional Planning",
+    "deptCode": "URP",
+    "designation": "Professor",
+    "location": "Architecture & Planning Building"
+  },
+  {
+    "id": "urp-229",
+    "name": "Dr. Md. Musleh Uddin Hasan",
+    "dept": "Urban and Regional Planning",
+    "deptCode": "URP",
+    "designation": "Professor",
+    "location": "Architecture & Planning Building"
+  },
+  {
+    "id": "urp-230",
+    "name": "Mohammad Shakil Akther",
+    "dept": "Urban and Regional Planning",
+    "deptCode": "URP",
+    "designation": "Professor",
+    "location": "Architecture & Planning Building"
+  },
+  {
+    "id": "urp-231",
+    "name": "Neelopal Adri Associate",
+    "dept": "Urban and Regional Planning",
+    "deptCode": "URP",
+    "designation": "Professor",
+    "location": "Architecture & Planning Building"
+  },
+  {
+    "id": "urp-232",
+    "name": "Dr. Dipita Hossain Assistant",
+    "dept": "Urban and Regional Planning",
+    "deptCode": "URP",
+    "designation": "Professor",
+    "location": "Architecture & Planning Building"
+  },
+  {
+    "id": "urp-233",
+    "name": "Sadia Afroj Assistant",
+    "dept": "Urban and Regional Planning",
+    "deptCode": "URP",
+    "designation": "Professor",
+    "location": "Architecture & Planning Building"
+  },
+  {
+    "id": "urp-234",
+    "name": "Meher Afjun Faria",
+    "dept": "Urban and Regional Planning",
+    "deptCode": "URP",
+    "designation": "Lecturer",
+    "location": "Architecture & Planning Building"
+  },
+  {
+    "id": "urp-235",
+    "name": "Md Waliullah",
+    "dept": "Urban and Regional Planning",
+    "deptCode": "URP",
+    "designation": "Lecturer",
+    "location": "Architecture & Planning Building"
+  },
+  {
+    "id": "urp-236",
+    "name": "Sayeda Laizu Aktar",
+    "dept": "Urban and Regional Planning",
+    "deptCode": "URP",
+    "designation": "Lecturer",
+    "location": "Architecture & Planning Building"
+  },
+  {
+    "id": "urp-237",
+    "name": "Nur-E-Faeeza Ankhi",
+    "dept": "Urban and Regional Planning",
+    "deptCode": "URP",
+    "designation": "Lecturer",
+    "location": "Architecture & Planning Building"
+  },
+  {
+    "id": "urp-238",
+    "name": "Ahmed Farwa Mahraf Siddique",
+    "dept": "Urban and Regional Planning",
+    "deptCode": "URP",
+    "designation": "Lecturer",
+    "location": "Architecture & Planning Building"
+  },
+  {
+    "id": "urp-239",
+    "name": "Tasirul Hasan",
+    "dept": "Urban and Regional Planning",
+    "deptCode": "URP",
+    "designation": "Lecturer",
+    "location": "Architecture & Planning Building"
+  },
+  {
+    "id": "urp-240",
+    "name": "Md. Ahnaf Zaman",
+    "dept": "Urban and Regional Planning",
+    "deptCode": "URP",
+    "designation": "Lecturer",
+    "location": "Architecture & Planning Building"
+  },
+  {
+    "id": "name-241",
+    "name": "Dr. Md. Mashud Karim",
+    "dept": "Naval Architecture and Marine Engineering",
+    "deptCode": "NAME",
+    "designation": "Professor",
+    "location": "Civil / NAME Building"
+  },
+  {
+    "id": "name-242",
+    "name": "Dr. M. Rafiqul Islam",
+    "dept": "Naval Architecture and Marine Engineering",
+    "deptCode": "NAME",
+    "designation": "Professor",
+    "location": "Civil / NAME Building"
+  },
+  {
+    "id": "name-243",
+    "name": "Dr. Goutam Kumar Saha",
+    "dept": "Naval Architecture and Marine Engineering",
+    "deptCode": "NAME",
+    "designation": "Professor",
+    "location": "Civil / NAME Building"
+  },
+  {
+    "id": "name-244",
+    "name": "Dr. N. M. Golam Zakaria",
+    "dept": "Naval Architecture and Marine Engineering",
+    "deptCode": "NAME",
+    "designation": "Professor",
+    "location": "Civil / NAME Building"
+  },
+  {
+    "id": "name-245",
+    "name": "Dr. Md. Shahidul Islam",
+    "dept": "Naval Architecture and Marine Engineering",
+    "deptCode": "NAME",
+    "designation": "Professor",
+    "location": "Civil / NAME Building"
+  },
+  {
+    "id": "name-246",
+    "name": "Dr. Zobair Ibn Awal",
+    "dept": "Naval Architecture and Marine Engineering",
+    "deptCode": "NAME",
+    "designation": "Professor",
+    "location": "Civil / NAME Building"
+  },
+  {
+    "id": "name-247",
+    "name": "Shumon Mia Assistant",
+    "dept": "Naval Architecture and Marine Engineering",
+    "deptCode": "NAME",
+    "designation": "Professor",
+    "location": "Civil / NAME Building"
+  },
+  {
+    "id": "name-248",
+    "name": "Imdadul Haque",
+    "dept": "Naval Architecture and Marine Engineering",
+    "deptCode": "NAME",
+    "designation": "Lecturer",
+    "location": "Civil / NAME Building"
+  },
+  {
+    "id": "name-249",
+    "name": "Nabiha Tasnim",
+    "dept": "Naval Architecture and Marine Engineering",
+    "deptCode": "NAME",
+    "designation": "Lecturer",
+    "location": "Civil / NAME Building"
+  },
+  {
+    "id": "name-250",
+    "name": "Miftahul Islam Chowdhury",
+    "dept": "Naval Architecture and Marine Engineering",
+    "deptCode": "NAME",
+    "designation": "Lecturer",
+    "location": "Civil / NAME Building"
+  },
+  {
+    "id": "wre-251",
+    "name": "Dr. Md. Ataur Rahman",
+    "dept": "Water Resources Engineering",
+    "deptCode": "WRE",
+    "designation": "Professor",
+    "location": "Civil Building"
+  },
+  {
+    "id": "wre-252",
+    "name": "Dr. Umme Kulsum Navera",
+    "dept": "Water Resources Engineering",
+    "deptCode": "WRE",
+    "designation": "Professor",
+    "location": "Civil Building"
+  },
+  {
+    "id": "wre-253",
+    "name": "Muhammad Rezaul Haider Assistant",
+    "dept": "Water Resources Engineering",
+    "deptCode": "WRE",
+    "designation": "Professor",
+    "location": "Civil Building"
+  },
+  {
+    "id": "wre-254",
+    "name": "Rajib Kamal Assistant",
+    "dept": "Water Resources Engineering",
+    "deptCode": "WRE",
+    "designation": "Professor",
+    "location": "Civil Building"
+  },
+  {
+    "id": "wre-255",
+    "name": "Mrs. Afeefa Rahman Assistant",
+    "dept": "Water Resources Engineering",
+    "deptCode": "WRE",
+    "designation": "Professor",
+    "location": "Civil Building"
+  },
+  {
+    "id": "wre-256",
+    "name": "Faisal Mohammad Alvee Assistant",
+    "dept": "Water Resources Engineering",
+    "deptCode": "WRE",
+    "designation": "Professor",
+    "location": "Civil Building"
+  },
+  {
+    "id": "wre-257",
+    "name": "Mrs. Mushtari Maliha Assistant",
+    "dept": "Water Resources Engineering",
+    "deptCode": "WRE",
+    "designation": "Professor",
+    "location": "Civil Building"
+  },
+  {
+    "id": "wre-258",
+    "name": "Mrs. Naila Matin Assistant",
+    "dept": "Water Resources Engineering",
+    "deptCode": "WRE",
+    "designation": "Professor",
+    "location": "Civil Building"
+  },
+  {
+    "id": "wre-259",
+    "name": "Shadman Shahariar",
+    "dept": "Water Resources Engineering",
+    "deptCode": "WRE",
+    "designation": "Lecturer",
+    "location": "Civil Building"
+  },
+  {
+    "id": "wre-260",
+    "name": "Nafisa Tasnia",
+    "dept": "Water Resources Engineering",
+    "deptCode": "WRE",
+    "designation": "Lecturer",
+    "location": "Civil Building"
+  },
+  {
+    "id": "wre-261",
+    "name": "Tasmiah Ahsan",
+    "dept": "Water Resources Engineering",
+    "deptCode": "WRE",
+    "designation": "Lecturer",
+    "location": "Civil Building"
+  },
+  {
+    "id": "wre-262",
+    "name": "Sarfaraz Alam",
+    "dept": "Water Resources Engineering",
+    "deptCode": "WRE",
+    "designation": "Lecturer",
+    "location": "Civil Building"
+  },
+  {
+    "id": "nce-263",
+    "name": "Dr. Md. Fakhrul Islam",
+    "dept": "Nanomaterials and Ceramic Engineering",
+    "deptCode": "NCE",
+    "designation": "Professor",
+    "location": "Old Academic Building (OBE)"
+  },
+  {
+    "id": "nce-264",
+    "name": "Dr. Md. Abdullah Zubair",
+    "dept": "Nanomaterials and Ceramic Engineering",
+    "deptCode": "NCE",
+    "designation": "Professor",
+    "location": "Old Academic Building (OBE)"
+  },
+  {
+    "id": "nce-265",
+    "name": "Dr. Muhammad Hasanuzzaman",
+    "dept": "Nanomaterials and Ceramic Engineering",
+    "deptCode": "NCE",
+    "designation": "Professor",
+    "location": "Old Academic Building (OBE)"
+  },
+  {
+    "id": "nce-266",
+    "name": "Dr. Redwan Noor Sajjad Associate",
+    "dept": "Nanomaterials and Ceramic Engineering",
+    "deptCode": "NCE",
+    "designation": "Professor",
+    "location": "Old Academic Building (OBE)"
+  },
+  {
+    "id": "nce-267",
+    "name": "Dr. Md. Saiful Islam Associate",
+    "dept": "Nanomaterials and Ceramic Engineering",
+    "deptCode": "NCE",
+    "designation": "Professor",
+    "location": "Old Academic Building (OBE)"
+  },
+  {
+    "id": "nce-268",
+    "name": "Wahidur Rahman Sajal Assistant",
+    "dept": "Nanomaterials and Ceramic Engineering",
+    "deptCode": "NCE",
+    "designation": "Professor",
+    "location": "Old Academic Building (OBE)"
+  },
+  {
+    "id": "nce-269",
+    "name": "Syed Muhammad Al Amin Assistant",
+    "dept": "Nanomaterials and Ceramic Engineering",
+    "deptCode": "NCE",
+    "designation": "Professor",
+    "location": "Old Academic Building (OBE)"
+  },
+  {
+    "id": "nce-270",
+    "name": "Ayesha Akter",
+    "dept": "Nanomaterials and Ceramic Engineering",
+    "deptCode": "NCE",
+    "designation": "Lecturer",
+    "location": "Old Academic Building (OBE)"
+  },
+  {
+    "id": "nce-271",
+    "name": "Muhaimen Atiq Khan",
+    "dept": "Nanomaterials and Ceramic Engineering",
+    "deptCode": "NCE",
+    "designation": "Lecturer",
+    "location": "Old Academic Building (OBE)"
+  }
+]
