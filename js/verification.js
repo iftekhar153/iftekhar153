@@ -1,11 +1,12 @@
-// BUET Verification Gateway and Anonymous Identity Manager
+// BUET Verification Gateway & Anonymous Identity Manager
 
 (function () {
-  const STORAGE_KEY_VERIFIED = 'buet_student_verified_v1';
-  const STORAGE_KEY_ALIAS = 'buet_student_alias_v1';
-  const STORAGE_KEY_AVATAR = 'buet_student_avatar_v1';
+  const STORAGE_KEY_VERIFIED = 'buet_verified_status_v2';
+  const STORAGE_KEY_DEPT = 'buet_verified_dept_v2';
+  const STORAGE_KEY_ALIAS = 'buet_anonymous_alias_v2';
+  const STORAGE_KEY_AVATAR = 'buet_anonymous_avatar_v2';
 
-  const MASCOTS = ['🦊', '🐺', '🦅', '🦉', '🐉', '🦡', '🦦', '🐼', '⚡', '🚀', '🔮', '🛡️'];
+  const MASCOTS = ['🦊', '🐺', '🦅', '🦉', '🐉', '🦡', '⚡', '🚀', '🐼', '🛡️', '🦁', '🔮'];
 
   class IdentityManager {
     constructor() {
@@ -14,7 +15,7 @@
 
     init() {
       if (!localStorage.getItem(STORAGE_KEY_ALIAS)) {
-        this.setAlias(window.getRandomAnonymousName());
+        this.setAlias(window.getRandomAnonymousName ? window.getRandomAnonymousName() : 'WizardFox_42');
       }
       if (!localStorage.getItem(STORAGE_KEY_AVATAR)) {
         this.setAvatar(MASCOTS[Math.floor(Math.random() * MASCOTS.length)]);
@@ -25,19 +26,40 @@
       return localStorage.getItem(STORAGE_KEY_VERIFIED) === 'true';
     }
 
-    setVerified(value = true) {
-      localStorage.setItem(STORAGE_KEY_VERIFIED, value ? 'true' : 'false');
-      window.dispatchEvent(new CustomEvent('buet-verification-change', { detail: { verified: value } }));
+    setVerified(dept = 'CSE', score = 5) {
+      localStorage.setItem(STORAGE_KEY_VERIFIED, 'true');
+      localStorage.setItem(STORAGE_KEY_DEPT, dept);
+      window.dispatchEvent(new CustomEvent('buet-verification-change', {
+        detail: { verified: true, dept, score }
+      }));
+    }
+
+    resetVerification() {
+      localStorage.removeItem(STORAGE_KEY_VERIFIED);
+      localStorage.removeItem(STORAGE_KEY_DEPT);
+      window.dispatchEvent(new CustomEvent('buet-verification-change', {
+        detail: { verified: false }
+      }));
+    }
+
+    getDept() {
+      return localStorage.getItem(STORAGE_KEY_DEPT) || 'CSE';
+    }
+
+    setDept(dept) {
+      localStorage.setItem(STORAGE_KEY_DEPT, dept);
     }
 
     getAlias() {
-      return localStorage.getItem(STORAGE_KEY_ALIAS) || 'AnonymousStudent';
+      return localStorage.getItem(STORAGE_KEY_ALIAS) || 'WizardFox_42';
     }
 
     setAlias(alias) {
       const sanitized = (alias || '').trim().replace(/[^a-zA-Z0-9_-]/g, '').substring(0, 24);
       localStorage.setItem(STORAGE_KEY_ALIAS, sanitized || 'AnonymousStudent');
-      window.dispatchEvent(new CustomEvent('buet-identity-change', { detail: { alias: this.getAlias(), avatar: this.getAvatar() } }));
+      window.dispatchEvent(new CustomEvent('buet-identity-change', {
+        detail: { alias: this.getAlias(), avatar: this.getAvatar() }
+      }));
     }
 
     getAvatar() {
@@ -46,28 +68,17 @@
 
     setAvatar(avatar) {
       localStorage.setItem(STORAGE_KEY_AVATAR, avatar);
-      window.dispatchEvent(new CustomEvent('buet-identity-change', { detail: { alias: this.getAlias(), avatar } }));
+      window.dispatchEvent(new CustomEvent('buet-identity-change', {
+        detail: { alias: this.getAlias(), avatar }
+      }));
     }
 
-    rerollAlias() {
-      const newName = window.getRandomAnonymousName();
-      const newMascot = MASCOTS[Math.floor(Math.random() * MASCOTS.length)];
-      this.setAlias(newName);
-      this.setAvatar(newMascot);
-      return { alias: newName, avatar: newMascot };
-    }
-
-    getRandomQuestion() {
-      const questions = window.BUET_VERIFICATION_QUESTIONS || [];
-      const randomIndex = Math.floor(Math.random() * questions.length);
-      return questions[randomIndex];
-    }
-
-    validateAnswer(questionId, userInput) {
-      const questions = window.BUET_VERIFICATION_QUESTIONS || [];
-      const q = questions.find(item => item.id === questionId);
-      if (!q) return false;
-      return q.validate(userInput);
+    reroll() {
+      const newAlias = window.getRandomAnonymousName ? window.getRandomAnonymousName() : 'WizardFox_' + Math.floor(Math.random() * 90 + 10);
+      const newAvatar = MASCOTS[Math.floor(Math.random() * MASCOTS.length)];
+      this.setAlias(newAlias);
+      this.setAvatar(newAvatar);
+      return { alias: newAlias, avatar: newAvatar };
     }
   }
 

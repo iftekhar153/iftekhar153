@@ -1,12 +1,7 @@
 // Firebase Configuration and Database Service
-// Clean architecture: Hardcoded Firebase configuration.
-// No in-app settings modal or public key editor. If database is empty, zero reviews are displayed.
+// Integrated with user's megamindratings project + resilient LocalStorage fallback
 
 (function () {
-  // =========================================================================
-  // HARDCODED FIREBASE CONFIGURATION
-  // Replace the placeholder values below with your actual Firebase project keys:
-  // =========================================================================
   const FIREBASE_CONFIG = {
     apiKey: "AIzaSyDQUWu0V9b55-Kg8wi3QMfm404ZguMPdwA",
     authDomain: "megamindratings.firebaseapp.com",
@@ -16,23 +11,24 @@
     appId: "1:343564257626:web:8ae672e7d5e44ea2458b63"
   };
 
-  const STORAGE_KEY_TEACHERS = 'buet_eval_teachers_clean_v1';
+  const STORAGE_KEY_TEACHERS = 'buet_eval_teachers_v2';
+  const STORAGE_KEY_LOCAL_REVIEWS = 'buet_eval_reviews_v2';
 
   class DatabaseService {
     constructor() {
       this.isFirebaseActive = false;
       this.db = null;
+      this.firestoreOps = null;
       this.config = FIREBASE_CONFIG;
+      this.connectionStatus = 'initializing'; // 'online', 'offline', 'error'
     }
 
     hasValidConfig() {
       return !!(
         this.config &&
         this.config.apiKey &&
-        this.config.apiKey !== "YOUR_API_KEY_HERE" &&
         this.config.apiKey.length > 10 &&
         this.config.projectId &&
-        this.config.projectId !== "YOUR_PROJECT_ID" &&
         this.config.projectId.length > 2
       );
     }
@@ -40,13 +36,15 @@
     async initFirebase() {
       if (!this.hasValidConfig()) {
         this.isFirebaseActive = false;
-        return { success: false, mode: 'local', message: 'Local mode active (Enter your Firebase keys in js/firebase-config.js to connect to Cloud).' };
+        this.connectionStatus = 'offline';
+        this.notifyStatus();
+        return { success: false, mode: 'local' };
       }
 
       try {
         const { initializeApp, getApps } = await import('https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js');
         const {
-          getFirestore, collection, getDocs, doc, setDoc, addDoc, getDoc, updateDoc, serverTimestamp, query, where, orderBy
+          getFirestore, collection, getDocs, doc, setDoc, addDoc
         } = await import('https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js');
 
         let app;
@@ -58,249 +56,194 @@
         }
 
         this.db = getFirestore(app);
-        this.firestoreOps = { collection, getDocs, doc, setDoc, addDoc, getDoc, updateDoc, serverTimestamp, query, where, orderBy };
+        this.firestoreOps = { collection, getDocs, doc, setDoc, addDoc };
         this.isFirebaseActive = true;
-        console.log('Successfully connected to Firebase Firestore.');
-        return { success: true, mode: 'firebase', message: 'Connected to Firebase Firestore.' };
+        this.connectionStatus = 'online';
+        this.notifyStatus();
+        console.log('Connected to Google Firebase Firestore (megamindratings).');
+        return { success: true, mode: 'firebase' };
       } catch (err) {
-        console.warn('Firebase init failed, reverting to local fallback:', err);
+        console.warn('Firebase init error, continuing in local mode:', err);
         this.isFirebaseActive = false;
-        return { success: false, mode: 'error', message: err.message };
+        this.connectionStatus = 'offline';
+        this.notifyStatus();
+        return { success: false, mode: 'local', error: err.message };
       }
     }
 
-    // LocalStorage helper: initialize clean teachers directory with 0 reviews
-    getLocalTeachers() {
-      const stored = localStorage.getItem(STORAGE_KEY_TEACHERS);
-      if (stored) {
-        try {
-          const list = JSON.parse(stored);
-          if (Array.isArray(list) && list.length > 0) {
-            return list;
-          }
-        } catch (e) { }
+    notifyStatus() {
+      window.dispatchEvent(new CustomEvent('buet-db-status', {
+        detail: {
+          online: this.isFirebaseActive,
+          status: this.connectionStatus
+        }
+      }));
+    }
+
+    getLocalReviews() {
+      try {
+        const data = localStorage.getItem(STORAGE_KEY_LOCAL_REVIEWS);
+        return data ? JSON.parse(data) : [];
+      } catch (e) {
+        return [];
       }
-      const initial = (window.INITIAL_TEACHERS || []).map(t => ({
+    }
+
+    saveLocalReviews(reviews) {
+      try {
+        localStorage.setItem(STORAGE_KEY_LOCAL_REVIEWS, JSON.stringify(reviews));
+      } catch (e) {
+        console.warn('LocalStorage save error:', e);
+      }
+    }
+
+    // Returns all teachers with their calculated stats and review list
+    async getTeachers() {
+      // 1. Start with authentic directory of 271 BUET faculty
+      const baseTeachers = (window.INITIAL_TEACHERS || []).map(t => ({
         ...t,
         stats: {
-          greenStars: 0,
+          avgScore: 0.0,
+          yellowStars: 0,
           redStars: 0,
+          zeroStars: 0,
           totalReviews: 0,
-          greenPoints: 0,
-          redPoints: 0,
-          netApproval: 0
+          netScore: 0
         },
         reviews: []
       }));
-      localStorage.setItem(STORAGE_KEY_TEACHERS, JSON.stringify(initial));
-      return initial;
-    }
 
-    saveLocalTeachers(teachers) {
-      localStorage.setItem(STORAGE_KEY_TEACHERS, JSON.stringify(teachers));
-    }
+      const teacherMap = new Map();
+      baseTeachers.forEach(t => teacherMap.set(t.id, t));
 
-    // Public API: Fetch all teachers
-    // Never seeds mock data. If the database is empty, returns teachers with 0 reviews.
-    async getTeachers() {
+      // 2. Fetch reviews: from Firestore if active, and also merge local reviews
+      let allReviews = [];
+
       if (this.isFirebaseActive && this.db) {
         try {
           const { collection, getDocs } = this.firestoreOps;
-
-          // Base faculty directory with clean 0-review states
-          const baseTeachers = (window.INITIAL_TEACHERS || []).map(t => ({
-            ...t,
-            stats: {
-              greenStars: 0,
-              redStars: 0,
-              totalReviews: 0,
-              greenPoints: 0,
-              redPoints: 0,
-              netApproval: 0
-            },
-            reviews: []
-          }));
-
-          const teacherMap = new Map();
-          baseTeachers.forEach(t => teacherMap.set(t.id, t));
-
-          // Fetch custom added teachers from Firestore (if any were added via 'Add Teacher')
-          const teachersSnap = await getDocs(collection(this.db, 'teachers'));
-          teachersSnap.forEach(d => {
-            const data = d.data();
-            const existing = teacherMap.get(d.id);
-            if (existing) {
-              Object.assign(existing, data);
-              existing.reviews = existing.reviews || [];
-            } else {
-              teacherMap.set(d.id, {
-                id: d.id,
-                ...data,
-                reviews: data.reviews || [],
-                stats: data.stats || {
-                  greenStars: 0,
-                  redStars: 0,
-                  totalReviews: 0,
-                  greenPoints: 0,
-                  redPoints: 0,
-                  netApproval: 0
-                }
-              });
-            }
-          });
-
-          // Fetch genuine student reviews from Firestore
           const reviewsSnap = await getDocs(collection(this.db, 'reviews'));
-          if (!reviewsSnap.empty) {
-            teacherMap.forEach(t => { t.reviews = []; });
-            reviewsSnap.forEach(rDoc => {
-              const rev = rDoc.data();
-              const teacherId = rev.teacherId;
-              const teacher = teacherMap.get(teacherId);
-              if (teacher) {
-                teacher.reviews.push({ id: rDoc.id, ...rev });
-              }
-            });
-
-            // Recalculate stats for each teacher based only on actual reviews
-            teacherMap.forEach(t => {
-              this.recalculateTeacherStats(t);
-            });
-          }
-
-          return Array.from(teacherMap.values());
+          reviewsSnap.forEach(docSnap => {
+            const rData = docSnap.data();
+            allReviews.push({ id: docSnap.id, ...rData });
+          });
         } catch (e) {
-          console.warn('Failed to fetch from Firestore, using clean local fallback:', e);
-          return this.getLocalTeachers();
+          console.warn('Could not read from Firestore, falling back to local reviews:', e);
         }
       }
 
-      return this.getLocalTeachers();
-    }
-
-    // Public API: Add a review
-    async addReview(teacherId, reviewData) {
-      const review = {
-        id: 'rev-' + Date.now() + '-' + Math.random().toString(36).substring(2, 7),
-        teacherId,
-        author: reviewData.author || window.getRandomAnonymousName(),
-        date: new Date().toISOString().split('T')[0],
-        course: reviewData.course || 'General',
-        greenStars: Number(reviewData.greenStars || 0),
-        redStars: Number(reviewData.redStars || 0),
-        tags: reviewData.tags || [],
-        comment: reviewData.comment || '',
-        timestamp: Date.now()
-      };
-
-      // 1. Update in local storage
-      const teachers = this.getLocalTeachers();
-      let teacher = teachers.find(t => t.id === teacherId);
-      if (teacher) {
-        if (!teacher.reviews) teacher.reviews = [];
-        teacher.reviews.unshift(review);
-
-        // Recalculate metrics
-        this.recalculateTeacherStats(teacher);
-        this.saveLocalTeachers(teachers);
-      }
-
-      // 2. If Firebase is active, persist to Firestore
-      if (this.isFirebaseActive && this.db) {
-        try {
-          const { collection, addDoc, doc, setDoc } = this.firestoreOps;
-          await addDoc(collection(this.db, 'reviews'), review);
-          if (teacher) {
-            await setDoc(doc(this.db, 'teachers', teacherId), {
-              id: teacher.id,
-              name: teacher.name,
-              dept: teacher.dept,
-              deptCode: teacher.deptCode,
-              designation: teacher.designation,
-              stats: teacher.stats
-            }, { merge: true });
-          }
-        } catch (e) {
-          console.error('Failed to write review to Firestore:', e);
+      // Merge local reviews (avoid duplicates by ID)
+      const localReviews = this.getLocalReviews();
+      const existingIds = new Set(allReviews.map(r => r.id));
+      for (const lr of localReviews) {
+        if (!existingIds.has(lr.id)) {
+          allReviews.push(lr);
         }
       }
 
-      return { success: true, review, teacher };
-    }
-
-    // Public API: Add a new teacher
-    async addTeacher(teacherData) {
-      const deptCode = teacherData.deptCode || 'OTHER';
-      const count = (this.getLocalTeachers() || []).length + 1;
-      const newTeacher = {
-        id: `${deptCode.toLowerCase()}-${String(count).padStart(3, '0')}`,
-        name: teacherData.name.trim(),
-        dept: teacherData.dept.trim(),
-        deptCode: deptCode.toUpperCase(),
-        designation: teacherData.designation || 'Lecturer',
-        location: teacherData.location || 'BUET Campus',
-        avatarColor: '#3B82F6',
-        stats: {
-          greenStars: 0,
-          redStars: 0,
-          totalReviews: 0,
-          greenPoints: 0,
-          redPoints: 0,
-          netApproval: 0
-        },
-        reviews: []
-      };
-
-      const teachers = this.getLocalTeachers();
-      teachers.unshift(newTeacher);
-      this.saveLocalTeachers(teachers);
-
-      if (this.isFirebaseActive && this.db) {
-        try {
-          const { doc, setDoc } = this.firestoreOps;
-          await setDoc(doc(this.db, 'teachers', newTeacher.id), newTeacher);
-        } catch (e) {
-          console.warn('Failed to add teacher to Firestore:', e);
+      // 3. Attach reviews to respective teachers
+      allReviews.forEach(rev => {
+        const teacher = teacherMap.get(rev.teacherId);
+        if (teacher) {
+          teacher.reviews.push(rev);
         }
-      }
+      });
 
-      return newTeacher;
+      // 4. Calculate metrics for each teacher based on user ratings (+5 to -5)
+      teacherMap.forEach(t => {
+        this.calculateTeacherMetrics(t);
+      });
+
+      return Array.from(teacherMap.values());
     }
 
-    // Rating calculation algorithm based strictly on actual student reviews
-    recalculateTeacherStats(teacher) {
+    calculateTeacherMetrics(teacher) {
       const reviews = teacher.reviews || [];
       const total = reviews.length;
       if (total === 0) {
         teacher.stats = {
-          greenStars: 0,
+          avgScore: 0.0,
+          yellowStars: 0,
           redStars: 0,
+          zeroStars: 0,
           totalReviews: 0,
-          greenPoints: 0,
-          redPoints: 0,
-          netApproval: 0
+          netScore: 0
         };
         return;
       }
 
-      let totalGreen = 0;
-      let totalRed = 0;
+      // Sort reviews newest first
+      reviews.sort((a, b) => (b.timestamp || 0) - (a.timestamp || 0));
+
+      let netScore = 0;
+      let yellowCount = 0;
+      let redCount = 0;
+      let zeroCount = 0;
+
       for (const r of reviews) {
-        totalGreen += Number(r.greenStars || 0);
-        totalRed += Number(r.redStars || 0);
+        const score = Number(r.score || 0);
+        netScore += score;
+        if (score > 0) yellowCount++;
+        else if (score < 0) redCount++;
+        else zeroCount++;
       }
 
-      const greenAvg = +(totalGreen / total).toFixed(1);
-      const redAvg = +(totalRed / total).toFixed(1);
-      const net = Math.round((totalGreen / (totalGreen + totalRed + 1e-5)) * 100);
+      const avg = +(netScore / total).toFixed(1);
 
       teacher.stats = {
-        greenStars: greenAvg,
-        redStars: redAvg,
+        avgScore: avg,
+        yellowStars: yellowCount,
+        redStars: redCount,
+        zeroStars: zeroCount,
         totalReviews: total,
-        greenPoints: totalGreen,
-        redPoints: totalRed,
-        netApproval: Math.min(100, Math.max(0, net))
+        netScore: netScore
+      };
+    }
+
+    // Add a review for a teacher
+    async addReview(teacherId, reviewData) {
+      const score = Number(reviewData.score || 0);
+      const starType = score > 0 ? 'yellow' : (score < 0 ? 'red' : 'white');
+      const starCount = Math.abs(score);
+
+      const review = {
+        id: 'rev_' + Date.now() + '_' + Math.random().toString(36).substring(2, 7),
+        teacherId: teacherId,
+        author: reviewData.author || 'AnonymousStudent',
+        score: score,
+        starType: starType,
+        starCount: starCount,
+        course: (reviewData.course || '').trim(),
+        comment: (reviewData.comment || '').trim(),
+        date: new Date().toLocaleDateString('en-US', {
+          year: 'numeric',
+          month: 'short',
+          day: 'numeric'
+        }),
+        timestamp: Date.now()
+      };
+
+      // 1. Save to Local Storage immediately
+      const localReviews = this.getLocalReviews();
+      localReviews.unshift(review);
+      this.saveLocalReviews(localReviews);
+
+      // 2. Persist to Firebase Firestore if connected
+      let firestoreSaved = false;
+      if (this.isFirebaseActive && this.db) {
+        try {
+          const { collection, addDoc } = this.firestoreOps;
+          await addDoc(collection(this.db, 'reviews'), review);
+          firestoreSaved = true;
+        } catch (e) {
+          console.warn('Failed to write review to Firestore, saved locally:', e);
+        }
+      }
+
+      return {
+        success: true,
+        review,
+        firestoreSaved
       };
     }
   }

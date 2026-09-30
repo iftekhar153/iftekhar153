@@ -1,915 +1,947 @@
-// BUET Teacher Evaluation & Rating Portal - Core Application Logic
+// ==========================================================================
+// BUET TEACHER EVALUATION — Core Application Logic
+// Implements 4-Page Model from 'website page model.docx' with Day/Night Mode
+// ==========================================================================
 
 (function () {
-  // Global State
+  // Global Application State
   const state = {
+    currentPage: 'pageWelcome',
+    selectedDept: 'CSE',
+    quizQuestions: [],
+    quizAnswers: {},
     teachers: [],
     filteredTeachers: [],
     selectedTeacher: null,
-    currentQuestion: null,
-    pendingTeacherIdForReview: null,
-    activeDept: 'ALL',
-    activeDesig: 'ALL',
+    activeDeptFilter: 'ALL',
     searchQuery: '',
-    sortMode: 'GREEN', // 'GREEN', 'RED', 'REVIEWS', 'NAME'
+    sortMode: 'HIGHEST_STAR',
     page: 1,
-    pageSize: 15,
-    newReview: {
-      greenStars: 5,
-      redStars: 1,
-      course: '',
-      tags: [],
-      comment: ''
-    }
+    pageSize: 18,
+    selectedRating: null, // number between -5 and +5, or null
+    reviewsFilter: 'ALL'
   };
 
-  const GREEN_LABELS = {
-    1: '1 - Decent',
-    2: '2 - Good Lecturer',
-    3: '3 - Very Helpful',
-    4: '4 - Excellent Teacher',
-    5: '5 - Inspiring Legend'
-  };
-
-  const RED_LABELS = {
-    1: '1 - Minor Strictness',
-    2: '2 - Strict Attendance',
-    3: '3 - Tough Questions',
-    4: '4 - Brutal Grading',
-    5: '5 - Extreme Scrutiny'
+  const RATING_DESCRIPTIONS = {
+    5: '★ +5 Yellow Stars — Outstanding & Inspiring Legend',
+    4: '★ +4 Yellow Stars — Excellent Mentor & Clear Lectures',
+    3: '★ +3 Yellow Stars — Very Good & Helpful Guidance',
+    2: '★ +2 Yellow Stars — Good Teacher / Fair Expectations',
+    1: '★ +1 Yellow Star — Decent / Standard Instruction',
+    0: '☆ 0 Neutral Stars — Average / Neutral Experience',
+    '-1': '★ -1 Red Star — Slightly Strict & Demanding',
+    '-2': '★ -2 Red Stars — Strict Attendance & Fast Pacing',
+    '-3': '★ -3 Red Stars — Tough Quizzes & Heavy Workload',
+    '-4': '★ -4 Red Stars — Harsh Grading & Unforgiving Exams',
+    '-5': '★ -5 Red Stars — Brutal Scrutiny & Extreme Strictness'
   };
 
   // DOM Elements cache
-  let el = {};
+  let dom = {};
 
-  function initElements() {
-    el = {
-      themeToggle: document.getElementById('themeToggle'),
-      anonPill: document.getElementById('anonPill'),
-      anonMascot: document.getElementById('anonMascot'),
-      anonName: document.getElementById('anonName'),
-      anonVerifyStatus: document.getElementById('anonVerifyStatus'),
-      
-      // Hero
-      heroVerifyBtn: document.getElementById('heroVerifyBtn'),
-      heroSuggestBtn: document.getElementById('heroSuggestBtn'),
-      statTeachersCount: document.getElementById('statTeachersCount'),
-      statReviewsCount: document.getElementById('statReviewsCount'),
-      statDeptsCount: document.getElementById('statDeptsCount'),
+  function cacheDomElements() {
+    dom = {
+      // Navbar & Global
+      brandHomeBtn: document.getElementById('brandHomeBtn'),
+      themeToggleBtn: document.getElementById('themeToggleBtn'),
+      themeToggleIcon: document.getElementById('themeToggleIcon'),
+      themeToggleText: document.getElementById('themeToggleText'),
+      dbStatusBadge: document.getElementById('dbStatusBadge'),
+      dbStatusText: document.getElementById('dbStatusText'),
+      navUserBadge: document.getElementById('navUserBadge'),
+      navUserMascot: document.getElementById('navUserMascot'),
+      navUserName: document.getElementById('navUserName'),
+      navVerifyPill: document.getElementById('navVerifyPill'),
+      navDirectoryBtn: document.getElementById('navDirectoryBtn'),
+      navVerifyBtn: document.getElementById('navVerifyBtn'),
+      toastPopup: document.getElementById('toastPopup'),
 
-      // Leaderboard
-      greenLeaderboard: document.getElementById('greenLeaderboard'),
-      redLeaderboard: document.getElementById('redLeaderboard'),
+      // Page Views
+      pageWelcome: document.getElementById('pageWelcome'),
+      pageVerify: document.getElementById('pageVerify'),
+      pageDirectory: document.getElementById('pageDirectory'),
+      pageReview: document.getElementById('pageReview'),
 
-      // Directory & Filters
-      searchInput: document.getElementById('searchInput'),
-      deptScrollRow: document.getElementById('deptScrollRow'),
-      desigFilter: document.getElementById('desigFilter'),
-      sortFilter: document.getElementById('sortFilter'),
-      teachersGrid: document.getElementById('teachersGrid'),
+      // Page 1: Welcome
+      deptSelectDropdown: document.getElementById('deptSelectDropdown'),
+      startVerificationBtn: document.getElementById('startVerificationBtn'),
+
+      // Page 2: Quiz
+      quizDeptDisplay: document.getElementById('quizDeptDisplay'),
+      quizQuestionsArea: document.getElementById('quizQuestionsArea'),
+      quizQuestionsList: document.getElementById('quizQuestionsList'),
+      submitQuizBtn: document.getElementById('submitQuizBtn'),
+      quizResultScreen: document.getElementById('quizResultScreen'),
+      resultSuccessBox: document.getElementById('resultSuccessBox'),
+      resultScoreTextSuccess: document.getElementById('resultScoreTextSuccess'),
+      anonAliasInput: document.getElementById('anonAliasInput'),
+      rerollAliasBtn: document.getElementById('rerollAliasBtn'),
+      currentMascotPreview: document.getElementById('currentMascotPreview'),
+      mascotOptionsRow: document.getElementById('mascotOptionsRow'),
+      proceedToDirectoryBtn: document.getElementById('proceedToDirectoryBtn'),
+      resultFailBox: document.getElementById('resultFailBox'),
+      resultScoreTextFail: document.getElementById('resultScoreTextFail'),
+      retryQuizBtn: document.getElementById('retryQuizBtn'),
+      changeDeptQuizBtn: document.getElementById('changeDeptQuizBtn'),
+
+      // Page 3: Directory
+      totalTeachersCount: document.getElementById('totalTeachersCount'),
+      totalReviewsCount: document.getElementById('totalReviewsCount'),
+      teacherSearchInput: document.getElementById('teacherSearchInput'),
+      clearSearchBtn: document.getElementById('clearSearchBtn'),
+      teacherSortSelect: document.getElementById('teacherSortSelect'),
+      deptTabsContainer: document.getElementById('deptTabsContainer'),
+      teachersListGrid: document.getElementById('teachersListGrid'),
+      noTeachersFound: document.getElementById('noTeachersFound'),
+      directoryPagination: document.getElementById('directoryPagination'),
       prevPageBtn: document.getElementById('prevPageBtn'),
       nextPageBtn: document.getElementById('nextPageBtn'),
-      pageIndicator: document.getElementById('pageIndicator'),
+      pageIndicatorText: document.getElementById('pageIndicatorText'),
 
-      // Modals
-      verifyModal: document.getElementById('verifyModal'),
-      verifyCloseBtn: document.getElementById('verifyCloseBtn'),
-      verifyQuestionText: document.getElementById('verifyQuestionText'),
-      verifyHint: document.getElementById('verifyHint'),
-      verifyAnswerInput: document.getElementById('verifyAnswerInput'),
-      verifySubmitBtn: document.getElementById('verifySubmitBtn'),
-      verifyToggleHintBtn: document.getElementById('verifyToggleHintBtn'),
-
-      aliasModal: document.getElementById('aliasModal'),
-      aliasCloseBtn: document.getElementById('aliasCloseBtn'),
-      aliasInput: document.getElementById('aliasInput'),
-      aliasRerollBtn: document.getElementById('aliasRerollBtn'),
-      aliasSaveBtn: document.getElementById('aliasSaveBtn'),
-      mascotPickerGrid: document.getElementById('mascotPickerGrid'),
-
-      teacherModal: document.getElementById('teacherModal'),
-      teacherModalCloseBtn: document.getElementById('teacherModalCloseBtn'),
-      teacherModalBody: document.getElementById('teacherModalBody'),
-
-      reviewModal: document.getElementById('reviewModal'),
-      reviewModalCloseBtn: document.getElementById('reviewModalCloseBtn'),
-      reviewTeacherName: document.getElementById('reviewTeacherName'),
-      reviewCourseInput: document.getElementById('reviewCourseInput'),
-      reviewCommentInput: document.getElementById('reviewCommentInput'),
-      reviewCommentCharCount: document.getElementById('reviewCommentCharCount'),
-      reviewSubmitBtn: document.getElementById('reviewSubmitBtn'),
-      greenStarRow: document.getElementById('greenStarRow'),
-      redStarRow: document.getElementById('redStarRow'),
-      greenStarLabel: document.getElementById('greenStarLabel'),
-      redStarLabel: document.getElementById('redStarLabel'),
-      tagChipsContainer: document.getElementById('tagChipsContainer'),
-
-      addTeacherModal: document.getElementById('addTeacherModal'),
-      addTeacherCloseBtn: document.getElementById('addTeacherCloseBtn'),
-      addTeacherForm: document.getElementById('addTeacherForm'),
-
-      toastContainer: document.getElementById('toastContainer')
+      // Page 4: Review Page
+      backToDirectoryBtn: document.getElementById('backToDirectoryBtn'),
+      profileAvatar: document.getElementById('profileAvatar'),
+      profileDeptBadge: document.getElementById('profileDeptBadge'),
+      profileTeacherName: document.getElementById('profileTeacherName'),
+      profileDesignation: document.getElementById('profileDesignation'),
+      profileLocation: document.getElementById('profileLocation'),
+      profileScoreBadge: document.getElementById('profileScoreBadge'),
+      profileScoreValue: document.getElementById('profileScoreValue'),
+      profileReviewsCount: document.getElementById('profileReviewsCount'),
+      profileYellowCount: document.getElementById('profileYellowCount'),
+      profileZeroCount: document.getElementById('profileZeroCount'),
+      profileRedCount: document.getElementById('profileRedCount'),
+      reviewTargetName: document.getElementById('reviewTargetName'),
+      submissionAuthorDisplay: document.getElementById('submissionAuthorDisplay'),
+      starScaleContainer: document.getElementById('starScaleContainer'),
+      ratingFeedbackText: document.getElementById('ratingFeedbackText'),
+      clearRatingBtn: document.getElementById('clearRatingBtn'),
+      reviewCourseCode: document.getElementById('reviewCourseCode'),
+      reviewCommentText: document.getElementById('reviewCommentText'),
+      commentCharCount: document.getElementById('commentCharCount'),
+      submitReviewBtn: document.getElementById('submitReviewBtn'),
+      reviewsCountBadge: document.getElementById('reviewsCountBadge'),
+      reviewFilterPills: document.getElementById('reviewFilterPills'),
+      othersReviewsList: document.getElementById('othersReviewsList'),
+      noReviewsNotice: document.getElementById('noReviewsNotice')
     };
   }
 
-  // Application Entry Point
-  async function init() {
-    initElements();
-    setupTheme();
+  // ==========================================================================
+  // INITIALIZATION
+  // ==========================================================================
+
+  async function initApp() {
+    cacheDomElements();
+    initTheme();
+    initIdentity();
     setupEventListeners();
-    updateIdentityBadge();
-    
-    // Attempt Firebase connection (or local fallback)
-    await window.dbService.initFirebase();
 
-    // Load data
-    await loadTeachers();
+    // Check if user already verified previously
+    if (window.identityManager && window.identityManager.isVerified()) {
+      state.selectedDept = window.identityManager.getDept();
+      if (dom.deptSelectDropdown) dom.deptSelectDropdown.value = state.selectedDept;
+    }
+
+    // Connect to Firebase Cloud Database (or LocalStorage fallback)
+    initDatabase();
+
+    // Initial page: if user is already verified, show directory; else show Welcome (Page 1)
+    if (window.identityManager && window.identityManager.isVerified()) {
+      navigateToPage('pageDirectory');
+    } else {
+      navigateToPage('pageWelcome');
+    }
   }
 
-  // Theme Management
-  function setupTheme() {
-    const savedTheme = localStorage.getItem('buet_theme') || 'dark';
-    document.documentElement.setAttribute('data-theme', savedTheme);
-    el.themeToggle.textContent = savedTheme === 'dark' ? '🌙' : '☀️';
+  // ==========================================================================
+  // THEME MANAGEMENT (Day Mode vs Night Mode)
+  // ==========================================================================
 
-    el.themeToggle.addEventListener('click', () => {
-      const current = document.documentElement.getAttribute('data-theme');
+  function initTheme() {
+    const saved = localStorage.getItem('buet_theme') || 'dark';
+    applyTheme(saved);
+
+    dom.themeToggleBtn.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme') || 'dark';
       const next = current === 'dark' ? 'light' : 'dark';
-      document.documentElement.setAttribute('data-theme', next);
+      applyTheme(next);
       localStorage.setItem('buet_theme', next);
-      el.themeToggle.textContent = next === 'dark' ? '🌙' : '☀️';
     });
   }
 
-  // Load and refresh teachers
-  async function loadTeachers() {
+  function applyTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    if (theme === 'light') {
+      dom.themeToggleIcon.textContent = '☀️';
+      dom.themeToggleText.textContent = 'Day';
+    } else {
+      dom.themeToggleIcon.textContent = '🌙';
+      dom.themeToggleText.textContent = 'Night';
+    }
+  }
+
+  // ==========================================================================
+  // IDENTITY & NAVBAR BADGE
+  // ==========================================================================
+
+  function initIdentity() {
+    updateIdentityUI();
+
+    window.addEventListener('buet-identity-change', () => {
+      updateIdentityUI();
+    });
+
+    window.addEventListener('buet-verification-change', () => {
+      updateIdentityUI();
+    });
+  }
+
+  function updateIdentityUI() {
+    if (!window.identityManager) return;
+    const alias = window.identityManager.getAlias();
+    const mascot = window.identityManager.getAvatar();
+    const verified = window.identityManager.isVerified();
+
+    if (dom.navUserName) dom.navUserName.textContent = alias;
+    if (dom.navUserMascot) dom.navUserMascot.textContent = mascot;
+
+    if (dom.navVerifyPill) {
+      if (verified) {
+        dom.navVerifyPill.textContent = 'Verified BUET';
+        dom.navVerifyPill.className = 'verified-pill verified';
+      } else {
+        dom.navVerifyPill.textContent = 'Unverified';
+        dom.navVerifyPill.className = 'verified-pill unverified';
+      }
+    }
+
+    if (dom.submissionAuthorDisplay) {
+      dom.submissionAuthorDisplay.textContent = `${mascot} ${alias}`;
+    }
+    if (dom.currentMascotPreview) {
+      dom.currentMascotPreview.textContent = mascot;
+    }
+    if (dom.anonAliasInput) {
+      dom.anonAliasInput.value = alias;
+    }
+  }
+
+  // ==========================================================================
+  // DATABASE SERVICE INTEGRATION
+  // ==========================================================================
+
+  async function initDatabase() {
+    dom.dbStatusBadge.className = 'status-badge';
+    dom.dbStatusText.textContent = 'Connecting...';
+
+    window.addEventListener('buet-db-status', (e) => {
+      const { online } = e.detail;
+      if (online) {
+        dom.dbStatusBadge.className = 'status-badge online';
+        dom.dbStatusText.textContent = 'Firebase Cloud Live';
+        dom.dbStatusBadge.title = 'Connected to Google Firebase Firestore (megamindratings)';
+      } else {
+        dom.dbStatusBadge.className = 'status-badge offline';
+        dom.dbStatusText.textContent = 'Local Database';
+        dom.dbStatusBadge.title = 'Running in offline LocalStorage mode';
+      }
+    });
+
+    if (window.dbService) {
+      await window.dbService.initFirebase();
+      await loadTeachersDirectory();
+    }
+  }
+
+  async function loadTeachersDirectory() {
+    if (!window.dbService) return;
     state.teachers = await window.dbService.getTeachers();
-    updateStatsCounter();
-    renderLeaderboard();
-    applyFilters();
+    updateDirectoryCounts();
+    applyTeacherFilters();
+    if (state.selectedTeacher) {
+      // Refresh current teacher if open
+      const refreshed = state.teachers.find(t => t.id === state.selectedTeacher.id);
+      if (refreshed) {
+        state.selectedTeacher = refreshed;
+        renderTeacherReviewPage(refreshed);
+      }
+    }
   }
 
-  function updateStatsCounter() {
-    el.statTeachersCount.textContent = state.teachers.length;
-    let totalRev = 0;
-    const depts = new Set();
+  function updateDirectoryCounts() {
+    const totalTeachers = state.teachers.length;
+    let totalReviews = 0;
     state.teachers.forEach(t => {
-      totalRev += (t.stats?.totalReviews || 0);
-      if (t.deptCode) depts.add(t.deptCode);
+      totalReviews += (t.stats ? t.stats.totalReviews : 0) || 0;
     });
-    el.statReviewsCount.textContent = totalRev;
-    el.statDeptsCount.textContent = depts.size;
+
+    if (dom.totalTeachersCount) dom.totalTeachersCount.textContent = totalTeachers;
+    if (dom.totalReviewsCount) dom.totalReviewsCount.textContent = totalReviews;
   }
 
-  // Leaderboard rendering
-  function renderLeaderboard() {
-    // Green Leaderboard (Hall of Praise)
-    // Sorted by most green points or highest green stars
-    const greenTop = [...state.teachers]
-      .filter(t => (t.stats?.totalReviews || 0) > 0)
-      .sort((a, b) => {
-        const diff = (b.stats?.greenPoints || 0) - (a.stats?.greenPoints || 0);
-        if (diff !== 0) return diff;
-        return (b.stats?.greenStars || 0) - (a.stats?.greenStars || 0);
-      })
-      .slice(0, 5);
+  // ==========================================================================
+  // ROUTING & PAGE NAVIGATION
+  // ==========================================================================
 
-    // Red Leaderboard (Hall of Scrutiny / Caution)
-    // Sorted by most red points or highest red stars
-    const redTop = [...state.teachers]
-      .filter(t => (t.stats?.totalReviews || 0) > 0)
-      .sort((a, b) => {
-        const diff = (b.stats?.redPoints || 0) - (a.stats?.redPoints || 0);
-        if (diff !== 0) return diff;
-        return (b.stats?.redStars || 0) - (a.stats?.redStars || 0);
-      })
-      .slice(0, 5);
+  function navigateToPage(pageId) {
+    const views = [dom.pageWelcome, dom.pageVerify, dom.pageDirectory, dom.pageReview];
+    views.forEach(v => {
+      if (v) v.classList.remove('active');
+    });
 
-    if (greenTop.length === 0) {
-      el.greenLeaderboard.innerHTML = `
-        <div class="empty-leaderboard-box">
-          <span style="font-size: 1.5rem;">🌱</span>
-          <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.35rem;">No reviews yet. Be the first BUETian to rate a teacher!</p>
-        </div>
-      `;
-    } else {
-      el.greenLeaderboard.innerHTML = greenTop.map((t, idx) => `
-        <div class="leader-card" data-teacher-id="${t.id}">
-          <div class="leader-left">
-            <span class="rank-badge rank-${idx + 1}">${idx + 1}</span>
-            <div class="leader-avatar" style="background: ${t.avatarColor || '#10b981'};">
-              ${getInitials(t.name)}
-            </div>
-            <div class="leader-info">
-              <span class="leader-name" title="${escapeHtml(t.name)}">${escapeHtml(t.name)}</span>
-              <div class="leader-meta">
-                <span class="dept-pill-small">${t.deptCode || 'BUET'}</span>
-                <span>${escapeHtml(t.designation)}</span>
-              </div>
-            </div>
-          </div>
-          <div class="leader-right">
-            <div class="star-rating-pill star-pill-green">
-              <span>★</span>
-              <span>${t.stats.greenStars.toFixed(1)}</span>
-            </div>
-          </div>
-        </div>
-      `).join('');
+    const target = dom[pageId];
+    if (target) {
+      target.classList.add('active');
+      state.currentPage = pageId;
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    if (redTop.length === 0) {
-      el.redLeaderboard.innerHTML = `
-        <div class="empty-leaderboard-box">
-          <span style="font-size: 1.5rem;">🛡️</span>
-          <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.35rem;">No reviews yet. Critical reports will appear here.</p>
-        </div>
-      `;
-    } else {
-      el.redLeaderboard.innerHTML = redTop.map((t, idx) => `
-        <div class="leader-card" data-teacher-id="${t.id}">
-          <div class="leader-left">
-            <span class="rank-badge rank-${idx + 1}">${idx + 1}</span>
-            <div class="leader-avatar" style="background: ${t.avatarColor || '#f43f5e'};">
-              ${getInitials(t.name)}
-            </div>
-            <div class="leader-info">
-              <span class="leader-name" title="${escapeHtml(t.name)}">${escapeHtml(t.name)}</span>
-              <div class="leader-meta">
-                <span class="dept-pill-small">${t.deptCode || 'BUET'}</span>
-                <span>${escapeHtml(t.designation)}</span>
-              </div>
-            </div>
-          </div>
-          <div class="leader-right">
-            <div class="star-rating-pill star-pill-red">
-              <span>★</span>
-              <span>${t.stats.redStars.toFixed(1)}</span>
-            </div>
-          </div>
-        </div>
-      `).join('');
+    if (pageId === 'pageDirectory') {
+      applyTeacherFilters();
     }
+  }
 
-    // Attach click listeners to cards
-    document.querySelectorAll('.leader-card').forEach(card => {
-      card.addEventListener('click', () => {
-        const id = card.getAttribute('data-teacher-id');
-        openTeacherModal(id);
+  // ==========================================================================
+  // EVENT LISTENERS SETUP
+  // ==========================================================================
+
+  function setupEventListeners() {
+    // Brand click: Home / Directory
+    dom.brandHomeBtn.addEventListener('click', () => {
+      if (window.identityManager && window.identityManager.isVerified()) {
+        navigateToPage('pageDirectory');
+      } else {
+        navigateToPage('pageWelcome');
+      }
+    });
+
+    dom.navDirectoryBtn.addEventListener('click', () => {
+      navigateToPage('pageDirectory');
+    });
+
+    dom.navVerifyBtn.addEventListener('click', () => {
+      navigateToPage('pageWelcome');
+    });
+
+    dom.navUserBadge.addEventListener('click', () => {
+      navigateToPage('pageVerify');
+    });
+
+    // Page 1: Start Verification
+    dom.startVerificationBtn.addEventListener('click', () => {
+      const dept = dom.deptSelectDropdown.value;
+      state.selectedDept = dept;
+      startVerificationQuiz(dept);
+    });
+
+    // Page 2: Quiz submission & Retries
+    dom.submitQuizBtn.addEventListener('click', handleQuizSubmission);
+
+    dom.retryQuizBtn.addEventListener('click', () => {
+      startVerificationQuiz(state.selectedDept);
+    });
+
+    dom.changeDeptQuizBtn.addEventListener('click', () => {
+      navigateToPage('pageWelcome');
+    });
+
+    // Page 2: Persona Customization
+    dom.rerollAliasBtn.addEventListener('click', () => {
+      const res = window.identityManager.reroll();
+      dom.anonAliasInput.value = res.alias;
+      dom.currentMascotPreview.textContent = res.avatar;
+      renderMascotPicker();
+      showToast('Rolled new random handle: ' + res.alias);
+    });
+
+    dom.anonAliasInput.addEventListener('input', (e) => {
+      window.identityManager.setAlias(e.target.value);
+    });
+
+    dom.proceedToDirectoryBtn.addEventListener('click', () => {
+      const typed = (dom.anonAliasInput.value || '').trim();
+      if (typed) window.identityManager.setAlias(typed);
+      showToast('Welcome, ' + window.identityManager.getAlias() + '! You are verified.');
+      navigateToPage('pageDirectory');
+    });
+
+    // Page 3: Directory Controls
+    dom.teacherSearchInput.addEventListener('input', (e) => {
+      state.searchQuery = e.target.value.trim().toLowerCase();
+      dom.clearSearchBtn.style.display = state.searchQuery ? 'block' : 'none';
+      state.page = 1;
+      applyTeacherFilters();
+    });
+
+    dom.clearSearchBtn.addEventListener('click', () => {
+      dom.teacherSearchInput.value = '';
+      state.searchQuery = '';
+      dom.clearSearchBtn.style.display = 'none';
+      state.page = 1;
+      applyTeacherFilters();
+    });
+
+    dom.teacherSortSelect.addEventListener('change', (e) => {
+      state.sortMode = e.target.value;
+      state.page = 1;
+      applyTeacherFilters();
+    });
+
+    // Department tabs
+    dom.deptTabsContainer.addEventListener('click', (e) => {
+      const tab = e.target.closest('.dept-tab');
+      if (!tab) return;
+      dom.deptTabsContainer.querySelectorAll('.dept-tab').forEach(b => b.classList.remove('active'));
+      tab.classList.add('active');
+      state.activeDeptFilter = tab.getAttribute('data-dept');
+      state.page = 1;
+      applyTeacherFilters();
+    });
+
+    // Directory Pagination
+    dom.prevPageBtn.addEventListener('click', () => {
+      if (state.page > 1) {
+        state.page--;
+        renderTeachersList();
+        window.scrollTo({ top: 300, behavior: 'smooth' });
+      }
+    });
+
+    dom.nextPageBtn.addEventListener('click', () => {
+      const totalPages = Math.ceil(state.filteredTeachers.length / state.pageSize) || 1;
+      if (state.page < totalPages) {
+        state.page++;
+        renderTeachersList();
+        window.scrollTo({ top: 300, behavior: 'smooth' });
+      }
+    });
+
+    // Page 4: Review Page
+    dom.backToDirectoryBtn.addEventListener('click', () => {
+      navigateToPage('pageDirectory');
+    });
+
+    // 11 Star Scale Buttons
+    dom.starScaleContainer.addEventListener('click', (e) => {
+      const btn = e.target.closest('.scale-star-btn');
+      if (!btn) return;
+      const rating = Number(btn.getAttribute('data-rating'));
+
+      // If already selected, deselect it
+      if (state.selectedRating === rating) {
+        clearStarSelection();
+      } else {
+        selectRating(rating);
+      }
+    });
+
+    dom.clearRatingBtn.addEventListener('click', clearStarSelection);
+
+    // Comment Box Char Counter
+    dom.reviewCommentText.addEventListener('input', (e) => {
+      const len = e.target.value.length;
+      dom.commentCharCount.textContent = `${len} / 600`;
+    });
+
+    // Submit Review Button
+    dom.submitReviewBtn.addEventListener('click', handleReviewSubmit);
+
+    // Review Filter Pills (All / Yellow / Neutral / Red)
+    dom.reviewFilterPills.addEventListener('click', (e) => {
+      const pill = e.target.closest('.rev-filter-pill');
+      if (!pill) return;
+      dom.reviewFilterPills.querySelectorAll('.rev-filter-pill').forEach(p => p.classList.remove('active'));
+      pill.classList.add('active');
+      state.reviewsFilter = pill.getAttribute('data-filter');
+      if (state.selectedTeacher) {
+        renderOthersReviews(state.selectedTeacher.reviews || []);
+      }
+    });
+  }
+
+  // ==========================================================================
+  // PAGE 2: VERIFICATION CHALLENGE (5 QUESTIONS, NO ANSWERS SHOWN UNTIL FINAL)
+  // ==========================================================================
+
+  function startVerificationQuiz(dept) {
+    state.selectedDept = dept;
+    state.quizAnswers = {};
+    state.quizQuestions = window.getQuestionsForDept ? window.getQuestionsForDept(dept) : [];
+
+    dom.quizDeptDisplay.textContent = `Dept: ${dept}`;
+    dom.quizQuestionsArea.style.display = 'block';
+    dom.quizResultScreen.style.display = 'none';
+    dom.resultSuccessBox.style.display = 'none';
+    dom.resultFailBox.style.display = 'none';
+
+    renderQuizQuestions();
+    navigateToPage('pageVerify');
+  }
+
+  function renderQuizQuestions() {
+    dom.quizQuestionsList.innerHTML = '';
+
+    state.quizQuestions.forEach((q, index) => {
+      const card = document.createElement('div');
+      card.className = 'question-card';
+      card.setAttribute('data-qid', q.id);
+
+      const header = document.createElement('div');
+      header.className = 'question-header';
+      header.innerHTML = `
+        <span class="question-num-badge">Question ${index + 1} of 5</span>
+        <span class="question-title-text">${q.question}</span>
+      `;
+      card.appendChild(header);
+
+      const grid = document.createElement('div');
+      grid.className = 'options-grid';
+
+      q.options.forEach(opt => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'option-btn';
+        btn.setAttribute('data-key', opt.key);
+        btn.innerHTML = `
+          <span class="option-key">${opt.key.toUpperCase()}</span>
+          <span class="option-text">${opt.text}</span>
+        `;
+
+        btn.addEventListener('click', () => {
+          // Select this option
+          grid.querySelectorAll('.option-btn').forEach(b => b.classList.remove('selected'));
+          btn.classList.add('selected');
+          state.quizAnswers[q.id] = opt.key;
+        });
+
+        grid.appendChild(btn);
       });
+
+      card.appendChild(grid);
+      dom.quizQuestionsList.appendChild(card);
     });
   }
 
-  // Directory Filters and Grid Rendering
-  function applyFilters() {
-    let list = [...state.teachers];
-
-    // Department Filter
-    if (state.activeDept !== 'ALL') {
-      list = list.filter(t => t.deptCode === state.activeDept);
-    }
-
-    // Designation Filter
-    if (state.activeDesig !== 'ALL') {
-      list = list.filter(t => t.designation === state.activeDesig);
-    }
-
-    // Search Query
-    if (state.searchQuery.trim()) {
-      const q = state.searchQuery.toLowerCase().trim();
-      list = list.filter(t => 
-        t.name.toLowerCase().includes(q) ||
-        (t.dept && t.dept.toLowerCase().includes(q)) ||
-        (t.deptCode && t.deptCode.toLowerCase().includes(q)) ||
-        (t.location && t.location.toLowerCase().includes(q))
-      );
-    }
-
-    // Sorting
-    if (state.sortMode === 'GREEN') {
-      list.sort((a, b) => (b.stats?.greenStars || 0) - (a.stats?.greenStars || 0));
-    } else if (state.sortMode === 'RED') {
-      list.sort((a, b) => (b.stats?.redStars || 0) - (a.stats?.redStars || 0));
-    } else if (state.sortMode === 'REVIEWS') {
-      list.sort((a, b) => (b.stats?.totalReviews || 0) - (a.stats?.totalReviews || 0));
-    } else if (state.sortMode === 'NAME') {
-      list.sort((a, b) => a.name.localeCompare(b.name));
-    }
-
-    state.filteredTeachers = list;
-    state.page = 1;
-    renderTeacherGrid();
-  }
-
-  function renderTeacherGrid() {
-    const total = state.filteredTeachers.length;
-    const totalPages = Math.ceil(total / state.pageSize) || 1;
-    state.page = Math.max(1, Math.min(state.page, totalPages));
-
-    const start = (state.page - 1) * state.pageSize;
-    const pageItems = state.filteredTeachers.slice(start, start + state.pageSize);
-
-    el.pageIndicator.textContent = `Page ${state.page} of ${totalPages} (${total} Teachers)`;
-    el.prevPageBtn.disabled = state.page <= 1;
-    el.nextPageBtn.disabled = state.page >= totalPages;
-
-    if (pageItems.length === 0) {
-      el.teachersGrid.innerHTML = `
-        <div style="grid-column: 1 / -1; text-align: center; padding: 3rem 1rem; color: var(--text-muted);">
-          <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🔍</div>
-          <h3>No faculty members match your current filter</h3>
-          <p style="font-size: 0.85rem; margin-top: 0.25rem;">Try clearing your search query or selecting a different department.</p>
-        </div>
-      `;
+  function handleQuizSubmission() {
+    // Validate that all 5 questions are answered
+    const answeredCount = Object.keys(state.quizAnswers).length;
+    if (answeredCount < state.quizQuestions.length) {
+      showToast(`Please answer all 5 questions before submitting. (${answeredCount}/5 answered)`, 'error');
       return;
     }
 
-    el.teachersGrid.innerHTML = pageItems.map(t => {
-      const stats = t.stats || { greenStars: 0, redStars: 0, totalReviews: 0, netApproval: 0 };
-      const hasReviews = (stats.totalReviews || 0) > 0;
-      const net = hasReviews ? stats.netApproval : 0;
-      const approvalText = hasReviews ? `${net}%` : 'No ratings';
+    // Evaluate score
+    let score = 0;
+    state.quizQuestions.forEach(q => {
+      if (state.quizAnswers[q.id] === q.correctKey) {
+        score++;
+      }
+    });
 
-      return `
-        <div class="teacher-card" data-teacher-id="${t.id}">
-          <div class="teacher-card-top">
-            <div class="teacher-avatar-large" style="background: ${t.avatarColor || '#3B82F6'};">
-              ${getInitials(t.name)}
-            </div>
-            <div class="teacher-card-meta">
-              <h3 class="teacher-card-name" title="${escapeHtml(t.name)}">${escapeHtml(t.name)}</h3>
-              <span class="teacher-card-desig">${escapeHtml(t.designation)}</span>
-              <span class="teacher-card-dept">${t.deptCode || 'BUET'} &bull; ${escapeHtml(t.dept || '')}</span>
-            </div>
-          </div>
+    // Hide quiz area, show results screen
+    dom.quizQuestionsArea.style.display = 'none';
+    dom.quizResultScreen.style.display = 'block';
 
-          <div class="dual-rating-strip">
-            <div class="strip-item green">
-              <span class="strip-score">${hasReviews ? `★ ${stats.greenStars.toFixed(1)}` : '★ 0.0'}</span>
-              <span class="strip-label">Green (Positive)</span>
-            </div>
-            <div class="strip-item red">
-              <span class="strip-score">${hasReviews ? `★ ${stats.redStars.toFixed(1)}` : '★ 0.0'}</span>
-              <span class="strip-label">Red (Critical)</span>
-            </div>
-          </div>
+    if (score >= 4) {
+      // Verification Passed (4 or 5 out of 5)
+      dom.resultSuccessBox.style.display = 'block';
+      dom.resultFailBox.style.display = 'none';
+      dom.resultScoreTextSuccess.textContent = `You scored ${score} out of 5! You are verified as a genuine BUET-ian.`;
 
-          <div class="approval-bar-wrap">
-            <div class="approval-bar-labels">
-              <span>Approval Index</span>
-              <span style="font-weight: 700; color: ${hasReviews ? (net >= 50 ? 'var(--green-star)' : 'var(--red-star)') : 'var(--text-muted)'}">${approvalText}</span>
-            </div>
-            <div class="approval-track" style="background: ${hasReviews ? 'var(--red-star)' : 'var(--bg-input)'};">
-              <div class="approval-fill-green" style="width: ${net}%;"></div>
-            </div>
-          </div>
+      // Save verification state
+      window.identityManager.setVerified(state.selectedDept, score);
 
-          <div class="teacher-card-footer">
-            <span class="reviews-count-text">${stats.totalReviews || 0} review${stats.totalReviews === 1 ? '' : 's'}</span>
-            <button class="btn-view-teacher" data-id="${t.id}">
-              <span>View & Rate</span> &rarr;
-            </button>
-          </div>
-        </div>
-      `;
-    }).join('');
+      // Setup Persona Form
+      renderMascotPicker();
+      dom.anonAliasInput.value = window.identityManager.getAlias();
+      dom.currentMascotPreview.textContent = window.identityManager.getAvatar();
+    } else {
+      // Verification Failed (< 4 out of 5)
+      dom.resultSuccessBox.style.display = 'none';
+      dom.resultFailBox.style.display = 'block';
+      dom.resultScoreTextFail.textContent = `You scored ${score} out of 5 correct. A minimum of 4 out of 5 is required to verify BUET student status.`;
+    }
+  }
 
-    // Attach click events
-    el.teachersGrid.querySelectorAll('.teacher-card').forEach(card => {
-      card.addEventListener('click', (e) => {
-        const id = card.getAttribute('data-teacher-id');
-        openTeacherModal(id);
+  function renderMascotPicker() {
+    dom.mascotOptionsRow.innerHTML = '';
+    const currentAvatar = window.identityManager.getAvatar();
+    const mascots = window.BUET_MASCOTS || ['🦊', '🐺', '🦅', '🦉', '🐉', '🦡', '⚡', '🚀', '🐼', '🛡️'];
+
+    mascots.forEach(m => {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'mascot-btn' + (m === currentAvatar ? ' selected' : '');
+      btn.textContent = m;
+      btn.title = `Select mascot ${m}`;
+
+      btn.addEventListener('click', () => {
+        window.identityManager.setAvatar(m);
+        dom.currentMascotPreview.textContent = m;
+        dom.mascotOptionsRow.querySelectorAll('.mascot-btn').forEach(b => b.classList.remove('selected'));
+        btn.classList.add('selected');
       });
+
+      dom.mascotOptionsRow.appendChild(btn);
     });
   }
 
-  // Teacher Profile & Review Modal
-  function openTeacherModal(teacherId) {
-    const teacher = state.teachers.find(t => t.id === teacherId);
-    if (!teacher) return;
-    state.selectedTeacher = teacher;
+  // ==========================================================================
+  // PAGE 3: TEACHER DIRECTORY & FILTERING
+  // ==========================================================================
 
-    const stats = teacher.stats || { greenStars: 0, redStars: 0, totalReviews: 0, netApproval: 50 };
-    const reviews = teacher.reviews || [];
+  function applyTeacherFilters() {
+    let list = [...state.teachers];
 
-    el.teacherModalBody.innerHTML = `
-      <div class="teacher-modal-summary">
-        <div class="teacher-avatar-large" style="width: 64px; height: 64px; font-size: 1.5rem; background: ${teacher.avatarColor || '#3B82F6'};">
-          ${getInitials(teacher.name)}
+    // 1. Department filter
+    if (state.activeDeptFilter !== 'ALL') {
+      list = list.filter(t => t.deptCode === state.activeDeptFilter);
+    }
+
+    // 2. Search query (matches teacher name, department, or location)
+    if (state.searchQuery) {
+      list = list.filter(t => {
+        const nameMatch = (t.name || '').toLowerCase().includes(state.searchQuery);
+        const deptMatch = (t.dept || '').toLowerCase().includes(state.searchQuery);
+        const desigMatch = (t.designation || '').toLowerCase().includes(state.searchQuery);
+        return nameMatch || deptMatch || desigMatch;
+      });
+    }
+
+    // 3. Sorting (Default: Highest Star to Lowest, +5 to -5)
+    list.sort((a, b) => {
+      const statsA = a.stats || { avgScore: 0, totalReviews: 0, netScore: 0 };
+      const statsB = b.stats || { avgScore: 0, totalReviews: 0, netScore: 0 };
+
+      switch (state.sortMode) {
+        case 'HIGHEST_STAR':
+          // Teachers with highest avg score first; tie breaker: total reviews
+          if (statsB.avgScore !== statsA.avgScore) {
+            return statsB.avgScore - statsA.avgScore;
+          }
+          return statsB.totalReviews - statsA.totalReviews;
+
+        case 'MOST_REVIEWS':
+          if (statsB.totalReviews !== statsA.totalReviews) {
+            return statsB.totalReviews - statsA.totalReviews;
+          }
+          return statsB.avgScore - statsA.avgScore;
+
+        case 'LOWEST_STAR':
+          if (statsA.avgScore !== statsB.avgScore) {
+            return statsA.avgScore - statsB.avgScore;
+          }
+          return statsB.totalReviews - statsA.totalReviews;
+
+        case 'NAME_ASC':
+          return (a.name || '').localeCompare(b.name || '');
+
+        default:
+          return statsB.avgScore - statsA.avgScore;
+      }
+    });
+
+    state.filteredTeachers = list;
+    renderTeachersList();
+  }
+
+  function renderTeachersList() {
+    const total = state.filteredTeachers.length;
+
+    if (total === 0) {
+      dom.teachersListGrid.innerHTML = '';
+      dom.noTeachersFound.style.display = 'block';
+      dom.directoryPagination.style.display = 'none';
+      return;
+    }
+
+    dom.noTeachersFound.style.display = 'none';
+    dom.directoryPagination.style.display = 'flex';
+
+    // Pagination calculations
+    const totalPages = Math.ceil(total / state.pageSize) || 1;
+    if (state.page > totalPages) state.page = totalPages;
+    if (state.page < 1) state.page = 1;
+
+    const startIdx = (state.page - 1) * state.pageSize;
+    const paginated = state.filteredTeachers.slice(startIdx, startIdx + state.pageSize);
+
+    dom.pageIndicatorText.textContent = `Page ${state.page} of ${totalPages} (${total} faculty members)`;
+    dom.prevPageBtn.disabled = state.page <= 1;
+    dom.nextPageBtn.disabled = state.page >= totalPages;
+
+    dom.teachersListGrid.innerHTML = '';
+
+    paginated.forEach(teacher => {
+      const card = createTeacherCard(teacher);
+      dom.teachersListGrid.appendChild(card);
+    });
+  }
+
+  function createTeacherCard(teacher) {
+    const stats = teacher.stats || { avgScore: 0, totalReviews: 0, yellowStars: 0, redStars: 0, zeroStars: 0 };
+    const avg = stats.avgScore || 0;
+    const totalRev = stats.totalReviews || 0;
+
+    let scoreClass = 'zero';
+    let formattedScore = avg.toFixed(1);
+    if (avg > 0) {
+      scoreClass = 'positive';
+      formattedScore = '+' + formattedScore;
+    } else if (avg < 0) {
+      scoreClass = 'negative';
+    }
+
+    const card = document.createElement('div');
+    card.className = 'teacher-card';
+    card.setAttribute('data-id', teacher.id);
+
+    card.innerHTML = `
+      <div class="teacher-card-top">
+        <span class="teacher-dept-pill">${teacher.deptCode || 'BUET'}</span>
+        <div class="card-score-badge ${scoreClass}" title="Average Star Score: ${formattedScore} (+5 to -5 scale)">
+          <span>${formattedScore}</span>
+          <span>★</span>
         </div>
-        <div>
-          <h2 style="font-size: 1.35rem; font-weight: 800; margin-bottom: 0.2rem;">${escapeHtml(teacher.name)}</h2>
-          <div style="color: var(--accent-cyan); font-weight: 600; font-size: 0.9rem;">${escapeHtml(teacher.designation)}</div>
-          <div style="font-size: 0.8rem; color: var(--text-muted);">${escapeHtml(teacher.dept)} &bull; ${escapeHtml(teacher.location || 'BUET Campus')}</div>
-        </div>
-        <button id="modalRateTeacherBtn" class="btn-primary" style="white-space: nowrap;">
-          ✍️ Write Review
-        </button>
       </div>
 
-      <div class="dual-rating-strip" style="padding: 1.25rem; margin-bottom: 1.5rem;">
-        <div class="strip-item green" style="padding: 0.75rem;">
-          <div style="font-size: 1.7rem; font-weight: 800; color: var(--green-star);">★ ${reviews.length > 0 ? stats.greenStars.toFixed(1) : '0.0'} / 5.0</div>
-          <div class="strip-label" style="font-size: 0.75rem;">Positive Commendation Score (${reviews.length} reviews)</div>
-        </div>
-        <div class="strip-item red" style="padding: 0.75rem;">
-          <div style="font-size: 1.7rem; font-weight: 800; color: var(--red-star);">★ ${reviews.length > 0 ? stats.redStars.toFixed(1) : '0.0'} / 5.0</div>
-          <div class="strip-label" style="font-size: 0.75rem;">Critical Scrutiny Score (${reviews.length} reviews)</div>
-        </div>
+      <div class="teacher-card-body">
+        <h3>${escapeHtml(teacher.name)}</h3>
+        <p class="teacher-desig">${escapeHtml(teacher.designation || 'Faculty Member')}</p>
+        <p class="teacher-dept-name">${escapeHtml(teacher.dept || '')}</p>
       </div>
 
-      <div class="reviews-header-bar">
-        <h3 style="font-size: 1.1rem; font-weight: 700;">Student Reviews & Comments (${reviews.length})</h3>
-        <span style="font-size: 0.8rem; color: var(--text-muted);">Completely Anonymous</span>
-      </div>
-
-      <div class="reviews-list">
-        ${reviews.length === 0 ? `
-          <div style="text-align: center; padding: 2rem; color: var(--text-muted); background: var(--bg-input); border-radius: var(--radius-md);">
-            <div style="font-size: 2rem; margin-bottom: 0.5rem;">📝</div>
-            <p>No student reviews posted yet for this teacher.</p>
-            <p style="font-size: 0.85rem; margin-top: 0.25rem;">Be the first BUETian to share honest feedback!</p>
-          </div>
-        ` : reviews.map(r => `
-          <div class="review-item">
-            <div class="review-top">
-              <div class="review-author">
-                <span>🛡️ ${escapeHtml(r.author || 'AnonymousBUETian')}</span>
-                <span class="review-course-badge">${escapeHtml(r.course || 'Course')}</span>
-              </div>
-              <span class="review-date">${escapeHtml(r.date || '')}</span>
-            </div>
-
-            <div class="review-stars-row">
-              <span style="color: var(--green-star); font-size: 0.85rem; font-weight: 700;">
-                ★ ${r.greenStars} Green Star${r.greenStars === 1 ? '' : 's'}
-              </span>
-              <span style="color: var(--text-subtle);">&bull;</span>
-              <span style="color: var(--red-star); font-size: 0.85rem; font-weight: 700;">
-                ★ ${r.redStars} Red Star${r.redStars === 1 ? '' : 's'}
-              </span>
-            </div>
-
-            ${(r.tags && r.tags.length) ? `
-              <div style="display: flex; gap: 0.4rem; flex-wrap: wrap;">
-                ${r.tags.map(t => `<span style="font-size: 0.7rem; background: rgba(99, 102, 241, 0.15); color: #a5b4fc; padding: 2px 8px; border-radius: 999px;">#${escapeHtml(t)}</span>`).join('')}
-              </div>
-            ` : ''}
-
-            <div class="review-comment">
-              ${escapeHtml(r.comment || 'No written commentary.')}
-            </div>
-          </div>
-        `).join('')}
+      <div class="teacher-card-bottom">
+        <span class="review-count-stat">
+          ${totalRev === 0 ? 'No reviews yet' : `${totalRev} review${totalRev > 1 ? 's' : ''}`}
+        </span>
+        <span class="card-action-link">
+          Rate &amp; View Reviews &rarr;
+        </span>
       </div>
     `;
 
-    document.getElementById('modalRateTeacherBtn').addEventListener('click', () => {
-      triggerReviewFlow(teacher.id);
+    card.addEventListener('click', () => {
+      openTeacherReviewPage(teacher);
     });
 
-    openModal(el.teacherModal);
+    return card;
   }
 
-  // Review Flow trigger (with verification check)
-  function triggerReviewFlow(teacherId) {
-    if (!window.identityManager.isVerified()) {
-      state.pendingTeacherIdForReview = teacherId;
-      showToast('BUET student verification required before rating', 'info');
-      openVerificationModal();
-      return;
-    }
+  // ==========================================================================
+  // PAGE 4: TEACHER EVALUATION & REVIEW SUBMISSION
+  // ==========================================================================
 
-    openReviewModal(teacherId);
-  }
-
-  // Write Review Modal
-  function openReviewModal(teacherId) {
-    const teacher = state.teachers.find(t => t.id === teacherId);
-    if (!teacher) return;
+  function openTeacherReviewPage(teacher) {
     state.selectedTeacher = teacher;
+    clearStarSelection();
+    dom.reviewCourseCode.value = '';
+    dom.reviewCommentText.value = '';
+    dom.commentCharCount.textContent = '0 / 600';
+    state.reviewsFilter = 'ALL';
+    dom.reviewFilterPills.querySelectorAll('.rev-filter-pill').forEach(p => {
+      p.classList.toggle('active', p.getAttribute('data-filter') === 'ALL');
+    });
 
-    el.reviewTeacherName.textContent = `${teacher.name} (${teacher.deptCode || 'BUET'})`;
-    state.newReview = {
-      greenStars: 5,
-      redStars: 1,
-      course: `${teacher.deptCode || 'COURSE'} 101`,
-      tags: [],
-      comment: ''
-    };
-
-    el.reviewCourseInput.value = state.newReview.course;
-    el.reviewCommentInput.value = '';
-    el.reviewCommentCharCount.textContent = '0 / 500';
-
-    setupInteractiveStarPickers();
-    setupTagChips();
-
-    openModal(el.reviewModal);
+    renderTeacherReviewPage(teacher);
+    navigateToPage('pageReview');
   }
 
-  function setupInteractiveStarPickers() {
-    // Green Stars Picker
-    renderStarRow(el.greenStarRow, state.newReview.greenStars, 'green', (val) => {
-      state.newReview.greenStars = val;
-      el.greenStarLabel.textContent = GREEN_LABELS[val];
-      renderStarRow(el.greenStarRow, state.newReview.greenStars, 'green');
-    }, (hoverVal) => {
-      el.greenStarLabel.textContent = GREEN_LABELS[hoverVal];
-    }, () => {
-      el.greenStarLabel.textContent = GREEN_LABELS[state.newReview.greenStars];
-    });
-    el.greenStarLabel.textContent = GREEN_LABELS[state.newReview.greenStars];
+  function renderTeacherReviewPage(teacher) {
+    const stats = teacher.stats || { avgScore: 0, totalReviews: 0, yellowStars: 0, redStars: 0, zeroStars: 0 };
+    const avg = stats.avgScore || 0;
+    const totalRev = stats.totalReviews || 0;
 
-    // Red Stars Picker
-    renderStarRow(el.redStarRow, state.newReview.redStars, 'red', (val) => {
-      state.newReview.redStars = val;
-      el.redStarLabel.textContent = RED_LABELS[val];
-      renderStarRow(el.redStarRow, state.newReview.redStars, 'red');
-    }, (hoverVal) => {
-      el.redStarLabel.textContent = RED_LABELS[hoverVal];
-    }, () => {
-      el.redStarLabel.textContent = RED_LABELS[state.newReview.redStars];
-    });
-    el.redStarLabel.textContent = RED_LABELS[state.newReview.redStars];
-  }
+    dom.profileTeacherName.textContent = teacher.name;
+    dom.profileDesignation.textContent = teacher.designation || 'Faculty Member';
+    dom.profileDeptBadge.textContent = teacher.deptCode || 'BUET';
+    dom.profileLocation.textContent = `📍 ${teacher.location || teacher.dept || 'BUET Campus'}`;
+    dom.reviewTargetName.textContent = teacher.name;
 
-  function renderStarRow(container, currentVal, type, onClick, onHover, onLeave) {
-    container.innerHTML = '';
-    for (let i = 1; i <= 5; i++) {
-      const btn = document.createElement('button');
-      btn.type = 'button';
-      btn.className = `star-btn ${i <= currentVal ? 'active' : ''}`;
-      btn.innerHTML = '★';
-      btn.dataset.val = i;
-
-      if (onClick) {
-        btn.addEventListener('click', () => onClick(i));
-      }
-
-      if (onHover) {
-        btn.addEventListener('mouseenter', () => {
-          onHover(i);
-          Array.from(container.children).forEach((child, cIdx) => {
-            if (cIdx + 1 <= i) child.classList.add('hovered');
-            else child.classList.remove('hovered');
-          });
-        });
-      }
-
-      container.appendChild(btn);
+    // Score badge
+    let scoreClass = 'neutral';
+    let formattedScore = avg.toFixed(1);
+    if (avg > 0) {
+      scoreClass = 'positive';
+      formattedScore = '+' + formattedScore;
+    } else if (avg < 0) {
+      scoreClass = 'negative';
     }
 
-    if (onLeave) {
-      container.addEventListener('mouseleave', () => {
-        Array.from(container.children).forEach(child => child.classList.remove('hovered'));
-        onLeave();
-      });
-    }
+    dom.profileScoreValue.textContent = formattedScore;
+    dom.profileScoreBadge.className = `profile-score-badge ${scoreClass}`;
+    dom.profileReviewsCount.textContent = `${totalRev} review${totalRev === 1 ? '' : 's'}`;
+
+    dom.profileYellowCount.textContent = stats.yellowStars || 0;
+    dom.profileZeroCount.textContent = stats.zeroStars || 0;
+    dom.profileRedCount.textContent = stats.redStars || 0;
+
+    // Reviews list
+    renderOthersReviews(teacher.reviews || []);
   }
 
-  function setupTagChips() {
-    const popularTags = [
-      'Crystal Clear Lectures', 'Lenient Grading', 'Helpful in Office Hours',
-      'Inspiring Mentor', 'Fair Exam Questions', 'Strict Attendance',
-      'Pop Quizzes', 'Tough Grading', 'Heavy Assignments', 'Research Oriented'
-    ];
+  // Star Rating Selection (+5 to -5)
+  function selectRating(rating) {
+    state.selectedRating = rating;
 
-    el.tagChipsContainer.innerHTML = popularTags.map(tag => `
-      <button type="button" class="tag-chip" data-tag="${escapeHtml(tag)}">+ ${escapeHtml(tag)}</button>
-    `).join('');
-
-    el.tagChipsContainer.querySelectorAll('.tag-chip').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const tag = btn.getAttribute('data-tag');
-        if (state.newReview.tags.includes(tag)) {
-          state.newReview.tags = state.newReview.tags.filter(t => t !== tag);
-          btn.classList.remove('selected');
-        } else {
-          state.newReview.tags.push(tag);
-          btn.classList.add('selected');
-        }
-      });
+    // Update buttons UI
+    dom.starScaleContainer.querySelectorAll('.scale-star-btn').forEach(btn => {
+      const bRating = Number(btn.getAttribute('data-rating'));
+      btn.classList.toggle('active', bRating === rating);
     });
+
+    // Update description feedback
+    const desc = RATING_DESCRIPTIONS[rating] || `Rating: ${rating}`;
+    dom.ratingFeedbackText.textContent = desc;
+    dom.clearRatingBtn.style.display = 'inline-block';
   }
 
-  // Submit Review Action
-  async function submitReview() {
+  function clearStarSelection() {
+    state.selectedRating = null;
+    dom.starScaleContainer.querySelectorAll('.scale-star-btn').forEach(btn => {
+      btn.classList.remove('active');
+    });
+    dom.ratingFeedbackText.textContent = 'No star selected yet';
+    dom.clearRatingBtn.style.display = 'none';
+  }
+
+  // Submit Review
+  async function handleReviewSubmit() {
     if (!state.selectedTeacher) return;
-    
-    const comment = el.reviewCommentInput.value.trim();
-    if (comment.length < 5) {
-      showToast('Please write a brief comment (at least 5 characters).', 'error');
+
+    if (state.selectedRating === null) {
+      showToast('Please select a star rating (+5 to -5 or 0) before submitting.', 'error');
       return;
     }
 
-    el.reviewSubmitBtn.disabled = true;
-    el.reviewSubmitBtn.textContent = 'Submitting...';
+    const comment = dom.reviewCommentText.value.trim();
+    if (!comment) {
+      showToast('Please write a review comment for this teacher.', 'error');
+      dom.reviewCommentText.focus();
+      return;
+    }
+
+    const course = dom.reviewCourseCode.value.trim();
+    const author = `${window.identityManager.getAvatar()} ${window.identityManager.getAlias()}`;
+
+    dom.submitReviewBtn.disabled = true;
+    dom.submitReviewBtn.textContent = 'Submitting...';
 
     const reviewData = {
-      author: window.identityManager.getAlias(),
-      course: el.reviewCourseInput.value.trim() || 'General',
-      greenStars: state.newReview.greenStars,
-      redStars: state.newReview.redStars,
-      tags: state.newReview.tags,
-      comment: comment
+      score: state.selectedRating,
+      course: course,
+      comment: comment,
+      author: author
     };
 
-    const res = await window.dbService.addReview(state.selectedTeacher.id, reviewData);
-    el.reviewSubmitBtn.disabled = false;
-    el.reviewSubmitBtn.textContent = 'Submit Anonymous Review';
+    try {
+      const res = await window.dbService.addReview(state.selectedTeacher.id, reviewData);
+      showToast('🎉 Review submitted successfully! Thank you for evaluating.');
 
-    if (res.success) {
-      closeModal(el.reviewModal);
-      showToast('Review submitted anonymously and ratings updated!', 'success');
-      await loadTeachers();
-      // Re-open teacher details modal with fresh data
-      openTeacherModal(state.selectedTeacher.id);
-    } else {
-      showToast('Failed to post review. Please try again.', 'error');
+      // Refresh directory and current teacher
+      await loadTeachersDirectory();
+
+      // Reset form
+      clearStarSelection();
+      dom.reviewCourseCode.value = '';
+      dom.reviewCommentText.value = '';
+      dom.commentCharCount.textContent = '0 / 600';
+    } catch (err) {
+      console.error('Error submitting review:', err);
+      showToast('Failed to submit review. Saved locally.', 'error');
+    } finally {
+      dom.submitReviewBtn.disabled = false;
+      dom.submitReviewBtn.textContent = 'Submit';
     }
   }
 
-  // Verification Gateway Modal
-  function openVerificationModal() {
-    state.currentQuestion = window.identityManager.getRandomQuestion();
-    el.verifyQuestionText.textContent = state.currentQuestion.question;
-    el.verifyHint.textContent = `Hint: ${state.currentQuestion.hint}`;
-    el.verifyHint.style.display = 'none';
-    el.verifyAnswerInput.value = '';
-    openModal(el.verifyModal);
-  }
+  // Render Reviews of Others
+  function renderOthersReviews(reviews) {
+    let filtered = [...reviews];
 
-  function handleVerificationSubmit() {
-    const answer = el.verifyAnswerInput.value.trim();
-    if (!answer) {
-      showToast('Please enter your answer', 'error');
+    if (state.reviewsFilter === 'YELLOW') {
+      filtered = filtered.filter(r => Number(r.score) > 0);
+    } else if (state.reviewsFilter === 'ZERO') {
+      filtered = filtered.filter(r => Number(r.score) === 0);
+    } else if (state.reviewsFilter === 'RED') {
+      filtered = filtered.filter(r => Number(r.score) < 0);
+    }
+
+    dom.reviewsCountBadge.textContent = reviews.length;
+
+    if (filtered.length === 0) {
+      dom.othersReviewsList.innerHTML = '';
+      dom.noReviewsNotice.style.display = 'block';
       return;
     }
 
-    const isCorrect = window.identityManager.validateAnswer(state.currentQuestion.id, answer);
-    if (isCorrect) {
-      window.identityManager.setVerified(true);
-      closeModal(el.verifyModal);
-      showToast('BUET student status successfully verified! 🎓', 'success');
-      updateIdentityBadge();
+    dom.noReviewsNotice.style.display = 'none';
+    dom.othersReviewsList.innerHTML = '';
 
-      // If they had a pending teacher to review, open it now!
-      if (state.pendingTeacherIdForReview) {
-        const tid = state.pendingTeacherIdForReview;
-        state.pendingTeacherIdForReview = null;
-        openReviewModal(tid);
-      }
-    } else {
-      showToast('Incorrect answer. Are you sure you are a BUETian? Check the hint!', 'error');
-      el.verifyHint.style.display = 'block';
-    }
-  }
-
-  // Anonymous Profile & Alias Modal
-  function openAliasModal() {
-    el.aliasInput.value = window.identityManager.getAlias();
-    renderMascotGrid();
-    openModal(el.aliasModal);
-  }
-
-  function renderMascotGrid() {
-    const currentMascot = window.identityManager.getAvatar();
-    el.mascotPickerGrid.innerHTML = window.BUET_MASCOTS.map(m => `
-      <button type="button" class="mascot-choice-btn ${m === currentMascot ? 'selected' : ''}" data-mascot="${m}">${m}</button>
-    `).join('');
-
-    el.mascotPickerGrid.querySelectorAll('.mascot-choice-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const m = btn.getAttribute('data-mascot');
-        window.identityManager.setAvatar(m);
-        renderMascotGrid();
-        updateIdentityBadge();
-      });
+    filtered.forEach(rev => {
+      const item = createReviewCard(rev);
+      dom.othersReviewsList.appendChild(item);
     });
   }
 
-  function updateIdentityBadge() {
-    el.anonMascot.textContent = window.identityManager.getAvatar();
-    el.anonName.textContent = window.identityManager.getAlias();
-    const isVer = window.identityManager.isVerified();
-    if (isVer) {
-      el.anonVerifyStatus.className = 'anon-badge-verified';
-      el.anonVerifyStatus.textContent = 'Verified BUETian';
-      if (el.heroVerifyBtn) {
-        el.heroVerifyBtn.innerHTML = '🛡️ BUETian Verified & Ready';
-        el.heroVerifyBtn.style.background = 'linear-gradient(135deg, #059669, #047857)';
-      }
-    } else {
-      el.anonVerifyStatus.className = 'anon-badge-unverified';
-      el.anonVerifyStatus.textContent = 'Unverified (Click to Verify)';
-    }
-  }
+  function createReviewCard(rev) {
+    const score = Number(rev.score || 0);
+    let pillClass = 'neutral';
+    let pillText = `0 ☆ Neutral`;
 
-  // Add Teacher Modal
-  function openAddTeacherModal() {
-    openModal(el.addTeacherModal);
-  }
-
-  async function handleAddTeacherSubmit(e) {
-    e.preventDefault();
-    const name = document.getElementById('newTeacherName').value.trim();
-    const deptFull = document.getElementById('newTeacherDept').value.trim();
-    const desig = document.getElementById('newTeacherDesig').value;
-    const location = document.getElementById('newTeacherLocation').value.trim();
-
-    if (!name) {
-      showToast('Please enter faculty name', 'error');
-      return;
+    if (score > 0) {
+      pillClass = 'yellow';
+      pillText = `+${score} ★ (${score} Yellow Stars)`;
+    } else if (score < 0) {
+      pillClass = 'red';
+      pillText = `${score} ★ (${Math.abs(score)} Red Stars)`;
     }
 
-    // Determine dept code
-    const deptMap = {
-      'Computer Science and Engineering': 'CSE',
-      'Electrical and Electronic Engineering': 'EEE',
-      'Civil Engineering': 'CE',
-      'Mechanical Engineering': 'ME',
-      'Biomedical Engineering': 'BME',
-      'Industrial & Production Engineering': 'IPE',
-      'Materials and Metallurgical Engineering': 'MME',
-      'Nanomaterials and Ceramic Engineering': 'NCE',
-      'Naval Architecture and Marine Engineering': 'NAME',
-      'Urban and Regional Planning': 'URP',
-      'Water Resources Engineering': 'WRE'
-    };
-    const deptCode = deptMap[deptFull] || 'BUET';
+    const card = document.createElement('div');
+    card.className = 'review-item-card';
 
-    const newTeacher = await window.dbService.addTeacher({
-      name,
-      dept: deptFull,
-      deptCode,
-      designation: desig,
-      location: location || 'BUET Campus'
-    });
+    // Parse author mascot and name
+    const authorStr = rev.author || 'Anonymous Student';
+    const parts = authorStr.split(' ');
+    const mascot = parts.length > 1 ? parts[0] : '🦊';
+    const name = parts.length > 1 ? parts.slice(1).join(' ') : authorStr;
 
-    closeModal(el.addTeacherModal);
-    showToast(`Added ${name} to directory!`, 'success');
-    document.getElementById('addTeacherForm').reset();
-    await loadTeachers();
+    card.innerHTML = `
+      <div class="review-item-header">
+        <div class="review-author-wrap">
+          <span class="review-author-mascot">${mascot}</span>
+          <span class="review-author-name">${escapeHtml(name)}</span>
+          <span class="review-date">${escapeHtml(rev.date || 'Recent')}</span>
+        </div>
+        <div class="review-rating-pill ${pillClass}">
+          ${pillText}
+        </div>
+      </div>
+
+      ${rev.course ? `<span class="review-course-tag">Course: ${escapeHtml(rev.course)}</span>` : ''}
+
+      <div class="review-comment-body">${escapeHtml(rev.comment || '')}</div>
+    `;
+
+    return card;
   }
 
-  // Modal helpers
-  function openModal(modal) {
-    if (!modal) return;
-    modal.classList.add('active');
-    document.body.style.overflow = 'hidden';
-  }
+  // ==========================================================================
+  // UTILITIES & NOTIFICATIONS
+  // ==========================================================================
 
-  function closeModal(modal) {
-    if (!modal) return;
-    modal.classList.remove('active');
-    document.body.style.overflow = '';
-  }
+  let toastTimeout = null;
+  function showToast(message, type = 'success') {
+    if (!dom.toastPopup) return;
+    clearTimeout(toastTimeout);
 
-  // Toast notification
-  function showToast(message, type = 'info') {
-    const toast = document.createElement('div');
-    toast.className = `toast ${type}`;
-    const icons = { success: '✅', error: '❌', info: 'ℹ️' };
-    toast.innerHTML = `<span>${icons[type] || 'ℹ️'}</span><span>${escapeHtml(message)}</span>`;
-    el.toastContainer.appendChild(toast);
+    dom.toastPopup.textContent = message;
+    dom.toastPopup.className = `toast-popup visible ${type}`;
 
-    setTimeout(() => toast.classList.add('show'), 10);
-    setTimeout(() => {
-      toast.classList.remove('show');
-      setTimeout(() => toast.remove(), 300);
-    }, 3500);
-  }
-
-  // Event Listeners Setup
-  function setupEventListeners() {
-    // Identity & Verification
-    el.anonPill.addEventListener('click', openAliasModal);
-    el.heroVerifyBtn.addEventListener('click', () => {
-      if (window.identityManager.isVerified()) {
-        showToast('You are already verified as a BUETian!', 'info');
-      } else {
-        openVerificationModal();
-      }
-    });
-    el.heroSuggestBtn.addEventListener('click', openAddTeacherModal);
-
-    // Verification Modal
-    el.verifyCloseBtn.addEventListener('click', () => closeModal(el.verifyModal));
-    el.verifySubmitBtn.addEventListener('click', handleVerificationSubmit);
-    el.verifyAnswerInput.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter') handleVerificationSubmit();
-    });
-    el.verifyToggleHintBtn.addEventListener('click', () => {
-      el.verifyHint.style.display = el.verifyHint.style.display === 'none' ? 'block' : 'none';
-    });
-
-    // Alias Modal
-    el.aliasCloseBtn.addEventListener('click', () => closeModal(el.aliasModal));
-    el.aliasRerollBtn.addEventListener('click', () => {
-      const rolled = window.identityManager.rerollAlias();
-      el.aliasInput.value = rolled.alias;
-      renderMascotGrid();
-      updateIdentityBadge();
-    });
-    el.aliasSaveBtn.addEventListener('click', () => {
-      const newAlias = el.aliasInput.value.trim();
-      if (newAlias) {
-        window.identityManager.setAlias(newAlias);
-        updateIdentityBadge();
-        closeModal(el.aliasModal);
-        showToast('Anonymous alias updated!', 'success');
-      }
-    });
-
-    // Teacher Modal
-    el.teacherModalCloseBtn.addEventListener('click', () => closeModal(el.teacherModal));
-
-    // Review Modal
-    el.reviewModalCloseBtn.addEventListener('click', () => closeModal(el.reviewModal));
-    el.reviewSubmitBtn.addEventListener('click', submitReview);
-    el.reviewCommentInput.addEventListener('input', () => {
-      const len = el.reviewCommentInput.value.length;
-      el.reviewCommentCharCount.textContent = `${len} / 500`;
-    });
-
-    // Add Teacher Modal
-    el.addTeacherCloseBtn.addEventListener('click', () => closeModal(el.addTeacherModal));
-    el.addTeacherForm.addEventListener('submit', handleAddTeacherSubmit);
-
-    // Search and Filters
-    let searchDebounce;
-    el.searchInput.addEventListener('input', () => {
-      clearTimeout(searchDebounce);
-      searchDebounce = setTimeout(() => {
-        state.searchQuery = el.searchInput.value;
-        applyFilters();
-      }, 200);
-    });
-
-    el.desigFilter.addEventListener('change', () => {
-      state.activeDesig = el.desigFilter.value;
-      applyFilters();
-    });
-
-    el.sortFilter.addEventListener('change', () => {
-      state.sortMode = el.sortFilter.value;
-      applyFilters();
-    });
-
-    // Department Pills
-    el.deptScrollRow.querySelectorAll('.dept-pill').forEach(pill => {
-      pill.addEventListener('click', () => {
-        el.deptScrollRow.querySelectorAll('.dept-pill').forEach(p => p.classList.remove('active'));
-        pill.classList.add('active');
-        state.activeDept = pill.getAttribute('data-dept');
-        applyFilters();
-      });
-    });
-
-    // Pagination
-    el.prevPageBtn.addEventListener('click', () => {
-      if (state.page > 1) {
-        state.page--;
-        renderTeacherGrid();
-        window.scrollTo({ top: document.querySelector('.controls-bar').offsetTop - 80, behavior: 'smooth' });
-      }
-    });
-
-    el.nextPageBtn.addEventListener('click', () => {
-      state.page++;
-      renderTeacherGrid();
-      window.scrollTo({ top: document.querySelector('.controls-bar').offsetTop - 80, behavior: 'smooth' });
-    });
-
-    // Close on overlay click
-    document.querySelectorAll('.modal-overlay').forEach(overlay => {
-      overlay.addEventListener('click', (e) => {
-        if (e.target === overlay) closeModal(overlay);
-      });
-    });
-
-    // Close on ESC
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') {
-        document.querySelectorAll('.modal-overlay.active').forEach(closeModal);
-      }
-    });
-
-    // Listen for storage events
-    window.addEventListener('buet-identity-change', updateIdentityBadge);
-    window.addEventListener('buet-verification-change', updateIdentityBadge);
-  }
-
-  // Utilities
-  function getInitials(name) {
-    if (!name) return 'B';
-    const clean = name.replace(/^(Dr\.|Prof\.|Mr\.|Ms\.|Mrs\.)\s*/i, '').trim();
-    const parts = clean.split(/\s+/);
-    if (parts.length >= 2) {
-      return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
-    }
-    return clean.substring(0, 2).toUpperCase();
+    toastTimeout = setTimeout(() => {
+      dom.toastPopup.classList.remove('visible');
+    }, 4000);
   }
 
   function escapeHtml(str) {
@@ -922,10 +954,10 @@
       .replace(/'/g, '&#039;');
   }
 
-  // Start app on DOMContentLoaded
+  // Run on DOM ready
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
+    document.addEventListener('DOMContentLoaded', initApp);
   } else {
-    init();
+    initApp();
   }
 })();

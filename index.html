@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BUET Faculty Pulse - Anonymous Teacher Evaluation Portal</title>
-  <meta name="description" content="Anonymous teacher evaluation and dual-star rating portal for Bangladesh University of Engineering and Technology (BUET) students.">
+  <title>BUET TEACHER EVALUATION — Anonymous Student Evaluation Portal</title>
+  <meta name="description" content="Official anonymous teacher evaluation portal for Bangladesh University of Engineering and Technology (BUET) students. Dual star rating scale (+5 to -5) and campus trivia verification.">
   
-  <!-- Google Fonts -->
+  <!-- Modern Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
 
   <!-- Core Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
@@ -17,405 +17,519 @@
 </head>
 <body>
 
-  <!-- Navigation Bar -->
-  <nav class="navbar">
-    <div class="nav-container">
-      <div class="nav-brand">
-        <div class="brand-crest">🏛️</div>
-        <div class="brand-text">
-          <h1>
-            BUET Faculty Pulse
-            <span class="brand-badge">INSIDER</span>
-          </h1>
-          <span class="brand-sub">Anonymous Teacher Rating &amp; Review Portal</span>
+  <!-- Top Global Navigation Bar -->
+  <header class="global-navbar">
+    <div class="nav-wrapper">
+      <div class="nav-brand" id="brandHomeBtn" role="button" tabindex="0" title="Go to Home / Portal">
+        <span class="brand-crest">🏛️</span>
+        <div class="brand-headings">
+          <span class="brand-title">BUET TEACHER EVALUATION</span>
+          <span class="brand-tagline">Anonymous Student Evaluation Portal</span>
         </div>
       </div>
 
       <div class="nav-actions">
-        <!-- Anonymous Identity Pill -->
-        <div id="anonPill" class="anon-pill" title="Click to customize your anonymous handle">
-          <span id="anonMascot" class="anon-mascot">🦊</span>
-          <span id="anonName" class="anon-name">WizardFox</span>
-          <span id="anonVerifyStatus" class="anon-badge-unverified">Unverified</span>
+        <!-- Live Connection Status Badge -->
+        <div id="dbStatusBadge" class="status-badge" title="Firebase Firestore Cloud Database Status">
+          <span class="status-dot"></span>
+          <span id="dbStatusText">Connecting...</span>
         </div>
 
-
-
-        <!-- Theme Toggle -->
-        <button id="themeToggle" class="theme-toggle-btn" title="Toggle Light/Dark Theme">🌙</button>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <header class="hero-section">
-    <div class="hero-banner">
-      <div class="hero-content">
-        <div class="hero-tag">
-          <span>🛡️</span>
-          <span>Anonymous BUET Student Verification Protocol</span>
+        <!-- Anonymous Identity Badge -->
+        <div id="navUserBadge" class="user-identity-badge" title="Your Anonymous Handle">
+          <span id="navUserMascot" class="user-mascot">🦊</span>
+          <span id="navUserName" class="user-name">WizardFox_42</span>
+          <span id="navVerifyPill" class="verified-pill unverified">Unverified</span>
         </div>
-        <h2 class="hero-title">
-          Evaluate with <span class="gradient-text-green">Green Stars</span> of Praise &amp; <span class="gradient-text-red">Red Stars</span> of Scrutiny
-        </h2>
-        <p class="hero-desc">
-          Honest, transparent, and completely anonymous faculty feedback built exclusively by and for BUETians. Only verified campus insiders can review, safeguarding our community against outsider tampering.
-        </p>
 
-        <div class="hero-stats">
-          <div class="stat-item">
-            <span id="statTeachersCount" class="stat-num">271</span>
-            <span class="stat-label">Faculty Listed</span>
-          </div>
-          <div class="stat-item">
-            <span id="statReviewsCount" class="stat-num">0</span>
-            <span class="stat-label">Student Reviews</span>
-          </div>
-          <div class="stat-item">
-            <span id="statDeptsCount" class="stat-num">11</span>
-            <span class="stat-label">Engineering Depts</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="hero-action-box">
-        <button id="heroVerifyBtn" class="btn-verify-hero">
-          <span>🔒</span> Verify BUET Student Status
+        <!-- Quick Navigation Links -->
+        <button id="navDirectoryBtn" class="nav-link-btn" title="View Teacher Directory">
+          📋 Teacher List
         </button>
-        <button id="heroSuggestBtn" class="btn-suggest-hero">
-          <span>➕</span> Suggest / Add Teacher
+        <button id="navVerifyBtn" class="nav-link-btn" title="Re-take Verification Quiz">
+          🎓 Verify BUET
+        </button>
+
+        <!-- Day / Night Theme Toggle Button -->
+        <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Toggle Day and Night Mode" title="Toggle Day/Night Mode">
+          <span id="themeToggleIcon" class="theme-icon">🌙</span>
+          <span id="themeToggleText" class="theme-label">Night</span>
         </button>
       </div>
     </div>
   </header>
 
-  <!-- Split Dual Leaderboard Section -->
-  <section class="leaderboard-section">
-    <div class="section-header">
-      <div>
-        <h2 class="section-title">Split Campus Leaderboard</h2>
-        <p class="section-sub">Highest praised mentors vs. most critically reviewed faculty based on verified student input</p>
-      </div>
-    </div>
+  <!-- Main Multi-Page Container -->
+  <main class="app-container">
 
-    <div class="split-grid">
-      <!-- Hall of Praise (Left: Green Stars) -->
-      <div class="split-col col-green">
-        <div class="col-header">
-          <div class="col-title-wrap">
-            <span class="col-icon">🌟</span>
-            <div>
-              <h3 class="col-title">Hall of Praise</h3>
-              <p class="section-sub">Teachers with Most Green Stars (Commendations)</p>
+    <!-- ========================================================
+         PAGE 1: Welcome & Department Selection
+         ======================================================== -->
+    <section id="pageWelcome" class="page-view active">
+      <div class="welcome-card card-glass">
+        <div class="welcome-badge">
+          <span>🛡️</span>
+          <span>BUET Student Verification Protocol</span>
+        </div>
+
+        <h1 class="welcome-title">
+          Welcome to the <span class="highlight-text">BUET Teacher Evaluation</span> portal
+        </h1>
+        
+        <p class="welcome-subtitle">
+          Ans some simple question to verify you are a BUET-ian (you will be treated as an anonymous person).
+        </p>
+
+        <div class="department-picker-box">
+          <label for="deptSelectDropdown" class="dept-label">
+            First choose your department:
+          </label>
+          <div class="select-field-wrap">
+            <select id="deptSelectDropdown" class="dept-dropdown">
+              <option value="CSE" selected>Computer Science and Engineering (CSE)</option>
+              <option value="EEE">Electrical and Electronic Engineering (EEE)</option>
+              <option value="CE">Civil Engineering (CE)</option>
+            </select>
+          </div>
+          <p class="dept-hint">
+            According to your chosen department, simple campus trivia questions will be asked in the next step to verify insider status.
+          </p>
+        </div>
+
+        <div class="welcome-action-wrap">
+          <button id="startVerificationBtn" class="btn btn-primary btn-large">
+            <span>Continue to Verification</span>
+            <span class="btn-arrow">&rarr;</span>
+          </button>
+        </div>
+
+        <!-- Portal Feature Highlights -->
+        <div class="features-summary-grid">
+          <div class="feature-item">
+            <div class="feature-icon">🔒</div>
+            <div class="feature-info">
+              <h4>100% Anonymous</h4>
+              <p>No passwords, no student roll numbers, and no personal data stored.</p>
             </div>
           </div>
-          <span class="col-badge">Top Positive</span>
-        </div>
-        <div id="greenLeaderboard" class="leaderboard-list">
-          <!-- Populated by JS -->
-        </div>
-      </div>
-
-      <!-- Hall of Caution (Right: Red Stars) -->
-      <div class="split-col col-red">
-        <div class="col-header">
-          <div class="col-title-wrap">
-            <span class="col-icon">⚠️</span>
-            <div>
-              <h3 class="col-title">Hall of Caution</h3>
-              <p class="section-sub">Teachers with Most Red Stars (Strict / Scrutiny)</p>
+          <div class="feature-item">
+            <div class="feature-icon">⭐</div>
+            <div class="feature-info">
+              <h4>Dual-Star Scale (+5 to -5)</h4>
+              <p>Yellow stars for commendations, Red stars for scrutiny, and 0 for neutral.</p>
             </div>
           </div>
-          <span class="col-badge">Top Scrutiny</span>
-        </div>
-        <div id="redLeaderboard" class="leaderboard-list">
-          <!-- Populated by JS -->
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Main Teacher Directory & Rating Explorer -->
-  <main class="directory-section">
-    <div class="section-header">
-      <div>
-        <h2 class="section-title">Faculty Directory Explorer</h2>
-        <p class="section-sub">Browse, search, and review all 271+ faculty members across BUET</p>
-      </div>
-    </div>
-
-    <!-- Filter & Search Controls -->
-    <div class="controls-bar">
-      <div class="search-filter-row">
-        <div class="search-wrap">
-          <span class="search-icon">🔍</span>
-          <input type="text" id="searchInput" class="search-input" placeholder="Search teacher by name, department, or office...">
-        </div>
-
-        <div class="select-wrap">
-          <select id="desigFilter" class="filter-select">
-            <option value="ALL">All Designations</option>
-            <option value="Professor">Professor</option>
-            <option value="Associate Professor">Associate Professor</option>
-            <option value="Assistant Professor">Assistant Professor</option>
-            <option value="Lecturer">Lecturer</option>
-          </select>
-
-          <select id="sortFilter" class="filter-select">
-            <option value="GREEN">Sort: Most Green Stars ★</option>
-            <option value="RED">Sort: Most Red Stars ★</option>
-            <option value="REVIEWS">Sort: Most Reviews</option>
-            <option value="NAME">Sort: Name (A-Z)</option>
-          </select>
+          <div class="feature-item">
+            <div class="feature-icon">☁️</div>
+            <div class="feature-info">
+              <h4>Cloud Synchronized</h4>
+              <p>Live student ratings synced via Google Firebase Firestore.</p>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <!-- Department Scroll Pills -->
-      <div id="deptScrollRow" class="dept-scroll-row">
-        <button class="dept-pill active" data-dept="ALL">All Departments</button>
-        <button class="dept-pill" data-dept="CSE">CSE</button>
-        <button class="dept-pill" data-dept="EEE">EEE</button>
-        <button class="dept-pill" data-dept="CE">CE</button>
-        <button class="dept-pill" data-dept="ME">ME</button>
-        <button class="dept-pill" data-dept="BME">BME</button>
-        <button class="dept-pill" data-dept="IPE">IPE</button>
-        <button class="dept-pill" data-dept="MME">MME</button>
-        <button class="dept-pill" data-dept="NCE">NCE</button>
-        <button class="dept-pill" data-dept="NAME">NAME</button>
-        <button class="dept-pill" data-dept="URP">URP</button>
-        <button class="dept-pill" data-dept="WRE">WRE</button>
+    <!-- ========================================================
+         PAGE 2: 5-Question Verification Quiz & Persona Setup
+         ======================================================== -->
+    <section id="pageVerify" class="page-view">
+      <div class="verify-container card-glass">
+        <!-- Quiz Header -->
+        <div class="quiz-header">
+          <div class="quiz-title-wrap">
+            <span class="quiz-step-tag">Step 2: BUET Verification</span>
+            <h2 class="quiz-title">Campus Verification Challenge</h2>
+            <p class="quiz-desc">
+              Answer the following 5 questions according to your department. 
+              <strong>4 out of 5 correct answers</strong> will verify you as a legal BUET-ian.
+            </p>
+          </div>
+          <div class="dept-pill-badge">
+            <span class="dept-badge-icon">🏛️</span>
+            <span id="quizDeptDisplay">Dept: CSE</span>
+          </div>
+        </div>
+
+        <!-- Active Questions Area -->
+        <div id="quizQuestionsArea">
+          <div id="quizQuestionsList" class="questions-list">
+            <!-- Dynamically populated with 5 department questions -->
+          </div>
+
+          <!-- Bottom Submit Area -->
+          <div class="quiz-submit-bar">
+            <div class="quiz-note">
+              <span>ℹ️</span>
+              <span>Your answers are saved. Correct and wrong answers are revealed upon final submission.</span>
+            </div>
+            <button id="submitQuizBtn" class="btn btn-primary btn-large">
+              Submit Answers for Verification &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Quiz Result Screen (Shown after submission) -->
+        <div id="quizResultScreen" class="quiz-result-screen" style="display: none;">
+          <!-- Success State -->
+          <div id="resultSuccessBox" class="result-box success-box" style="display: none;">
+            <div class="result-icon-large">🎉</div>
+            <h3 class="result-title">Verification Successful!</h3>
+            <p id="resultScoreTextSuccess" class="result-score-text">
+              You scored 5 out of 5! You are recognized as a genuine BUET-ian.
+            </p>
+
+            <div class="anonymous-setup-card">
+              <h4 class="setup-heading">Set Your Anonymous Student Identity</h4>
+              <p class="setup-sub">
+                This pseudonym will be attached to your teacher ratings and comments. You can type any custom name or re-roll a random one.
+              </p>
+
+              <div class="alias-input-row">
+                <div class="alias-input-wrapper">
+                  <span id="currentMascotPreview" class="input-mascot-preview">🦊</span>
+                  <input type="text" id="anonAliasInput" class="alias-input" maxlength="24" placeholder="e.g. WizardFox_42">
+                </div>
+                <button id="rerollAliasBtn" class="btn btn-secondary" title="Roll another random anonymous name">
+                  🎲 Randomize
+                </button>
+              </div>
+
+              <!-- Mascot Picker -->
+              <div class="mascot-picker-wrap">
+                <span class="picker-label">Choose Avatar Mascot:</span>
+                <div id="mascotOptionsRow" class="mascot-options-row">
+                  <!-- Injected by JS -->
+                </div>
+              </div>
+
+              <div class="proceed-btn-wrap">
+                <button id="proceedToDirectoryBtn" class="btn btn-success btn-large">
+                  <span>Enter BUET Teacher Evaluation</span>
+                  <span class="btn-arrow">&rarr;</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Failure State -->
+          <div id="resultFailBox" class="result-box fail-box" style="display: none;">
+            <div class="result-icon-large">⚠️</div>
+            <h3 class="result-title">Verification Incomplete</h3>
+            <p id="resultScoreTextFail" class="result-score-text">
+              You got 2 out of 5 correct. A minimum of 4 out of 5 is required to ensure genuine BUET student reviews.
+            </p>
+            <p class="fail-hint">
+              Don't worry! Review the campus trivia and try again with 5 fresh questions.
+            </p>
+
+            <div class="fail-actions-row">
+              <button id="retryQuizBtn" class="btn btn-primary">
+                🔄 Try Again with 5 Questions
+              </button>
+              <button id="changeDeptQuizBtn" class="btn btn-secondary">
+                🏛️ Change Department
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Teacher Grid -->
-    <div id="teachersGrid" class="teachers-grid">
-      <!-- Populated by JS -->
-    </div>
+    <!-- ========================================================
+         PAGE 3: Teacher Directory & Overall Evaluation List
+         ======================================================== -->
+    <section id="pageDirectory" class="page-view">
+      <div class="directory-container">
+        <!-- Page Title & Header -->
+        <div class="directory-header">
+          <div>
+            <h1 class="main-title">BUET TEACHER EVALUATION</h1>
+            <p class="main-subtitle">
+              List of the teachers (from highest star to lowest)
+            </p>
+          </div>
+          <div class="directory-quick-stats">
+            <span class="stat-pill"><strong id="totalTeachersCount">271</strong> Faculty</span>
+            <span class="stat-pill"><strong id="totalReviewsCount">0</strong> Student Reviews</span>
+          </div>
+        </div>
 
-    <!-- Pagination -->
-    <div class="pagination-wrap">
-      <button id="prevPageBtn" class="btn-page">&larr; Previous</button>
-      <span id="pageIndicator" class="page-indicator">Page 1 of 1</span>
-      <button id="nextPageBtn" class="btn-page">Next &rarr;</button>
-    </div>
+        <!-- Search & Department Filter Bar -->
+        <div class="search-filter-card card-glass">
+          <div class="search-row">
+            <div class="search-input-wrap">
+              <span class="search-icon">🔍</span>
+              <input type="text" id="teacherSearchInput" class="search-input" placeholder="Search teacher by name...">
+              <button id="clearSearchBtn" class="clear-search-btn" title="Clear search" style="display: none;">&times;</button>
+            </div>
+
+            <div class="sort-select-wrap">
+              <label for="teacherSortSelect" class="sort-label">Order:</label>
+              <select id="teacherSortSelect" class="sort-select">
+                <option value="HIGHEST_STAR" selected>Highest Star to Lowest (+5 to -5)</option>
+                <option value="MOST_REVIEWS">Most Reviews Count</option>
+                <option value="LOWEST_STAR">Lowest Star to Highest (-5 to +5)</option>
+                <option value="NAME_ASC">Name (A &rarr; Z)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Department Selector Tabs -->
+          <div class="dept-tabs-wrap" id="deptTabsContainer">
+            <button class="dept-tab active" data-dept="ALL">All Departments</button>
+            <button class="dept-tab" data-dept="CSE">CSE</button>
+            <button class="dept-tab" data-dept="EEE">EEE</button>
+            <button class="dept-tab" data-dept="CE">CE</button>
+            <button class="dept-tab" data-dept="ME">ME</button>
+            <button class="dept-tab" data-dept="BME">BME</button>
+            <button class="dept-tab" data-dept="IPE">IPE</button>
+            <button class="dept-tab" data-dept="MME">MME</button>
+            <button class="dept-tab" data-dept="NCE">NCE</button>
+            <button class="dept-tab" data-dept="NAME">NAME</button>
+            <button class="dept-tab" data-dept="URP">URP</button>
+            <button class="dept-tab" data-dept="WRE">WRE</button>
+          </div>
+        </div>
+
+        <!-- Teachers Listing Grid -->
+        <div id="teachersListGrid" class="teachers-grid">
+          <!-- Dynamically populated with Teacher Cards -->
+        </div>
+
+        <!-- Empty Results Placeholder -->
+        <div id="noTeachersFound" class="empty-state-card" style="display: none;">
+          <div class="empty-icon">🔍</div>
+          <h3>No matching faculty members found</h3>
+          <p>Try searching for a different teacher name or switch the department filter.</p>
+        </div>
+
+        <!-- Directory Pagination -->
+        <div class="pagination-bar" id="directoryPagination">
+          <button id="prevPageBtn" class="btn btn-secondary btn-sm">&larr; Previous</button>
+          <span id="pageIndicatorText" class="page-indicator">Page 1 of 1</span>
+          <button id="nextPageBtn" class="btn btn-secondary btn-sm">Next &rarr;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         PAGE 4: Teacher Evaluation & Review Submission Page
+         ======================================================== -->
+    <section id="pageReview" class="page-view">
+      <div class="review-page-container">
+        <!-- Top Navigation Action -->
+        <div class="back-nav-bar">
+          <button id="backToDirectoryBtn" class="btn-back">
+            <span>&larr;</span> Back to Teacher List
+          </button>
+        </div>
+
+        <!-- Teacher Profile Card -->
+        <div class="teacher-profile-card card-glass">
+          <div class="profile-header-flex">
+            <div class="profile-avatar-wrap">
+              <div id="profileAvatar" class="profile-avatar">👨‍🏫</div>
+            </div>
+            <div class="profile-info-wrap">
+              <span id="profileDeptBadge" class="profile-dept-badge">CSE</span>
+              <h2 id="profileTeacherName" class="profile-teacher-name">Dr. Teacher Name</h2>
+              <p id="profileDesignation" class="profile-designation">Professor</p>
+              <p id="profileLocation" class="profile-location">📍 ECE Building, West Wing</p>
+            </div>
+            <div class="profile-score-display">
+              <span class="score-label">Average Score</span>
+              <div id="profileScoreBadge" class="profile-score-badge neutral">
+                <span id="profileScoreValue">0.0</span>
+                <span class="score-star-glyph">★</span>
+              </div>
+              <span id="profileReviewsCount" class="profile-review-stat">0 reviews</span>
+            </div>
+          </div>
+
+          <!-- Breakdown Bar -->
+          <div class="ratings-breakdown-row">
+            <div class="breakdown-item yellow-stat">
+              <span class="stat-glyph">⭐</span>
+              <span id="profileYellowCount">0</span>
+              <span class="stat-text">Yellow Stars (Good)</span>
+            </div>
+            <div class="breakdown-item zero-stat">
+              <span class="stat-glyph">⚪</span>
+              <span id="profileZeroCount">0</span>
+              <span class="stat-text">0 Stars (Neutral)</span>
+            </div>
+            <div class="breakdown-item red-stat">
+              <span class="stat-glyph">🔴</span>
+              <span id="profileRedCount">0</span>
+              <span class="stat-text">Red Stars (Bad)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4th Page Review Form Section -->
+        <div class="review-submission-card card-glass">
+          <div class="card-title-wrap">
+            <h3 class="submission-title">
+              Comment your review for <span id="reviewTargetName" class="highlight-teacher">this teacher</span>
+            </h3>
+            <div class="author-posting-badge">
+              <span>Posting anonymously as:</span>
+              <strong id="submissionAuthorDisplay">🦊 WizardFox_42</strong>
+            </div>
+          </div>
+
+          <!-- The +5 to -5 Dual Star Rating Scale -->
+          <div class="rating-scale-section">
+            <div class="scale-instructions-wrap">
+              <label class="scale-label">
+                Select your Star Rating:
+              </label>
+              <span class="scale-note">
+                (Yellow Star: Good Review • Red Star: Bad Review • Scale: +5 to -5 or 0)
+              </span>
+            </div>
+
+            <!-- The 11-step interactive button/star bar -->
+            <div class="scale-buttons-grid" id="starScaleContainer">
+              <!-- +5 to +1: Yellow Stars -->
+              <button type="button" class="scale-star-btn btn-star-yellow" data-rating="5" title="+5 Yellow Stars (Outstanding)">
+                <span class="scale-num">+5</span>
+                <span class="scale-stars-row">★★★★★</span>
+                <span class="scale-type">Yellow</span>
+              </button>
+              <button type="button" class="scale-star-btn btn-star-yellow" data-rating="4" title="+4 Yellow Stars (Excellent)">
+                <span class="scale-num">+4</span>
+                <span class="scale-stars-row">★★★★</span>
+                <span class="scale-type">Yellow</span>
+              </button>
+              <button type="button" class="scale-star-btn btn-star-yellow" data-rating="3" title="+3 Yellow Stars (Very Good)">
+                <span class="scale-num">+3</span>
+                <span class="scale-stars-row">★★★</span>
+                <span class="scale-type">Yellow</span>
+              </button>
+              <button type="button" class="scale-star-btn btn-star-yellow" data-rating="2" title="+2 Yellow Stars (Good)">
+                <span class="scale-num">+2</span>
+                <span class="scale-stars-row">★★</span>
+                <span class="scale-type">Yellow</span>
+              </button>
+              <button type="button" class="scale-star-btn btn-star-yellow" data-rating="1" title="+1 Yellow Star (Decent)">
+                <span class="scale-num">+1</span>
+                <span class="scale-stars-row">★</span>
+                <span class="scale-type">Yellow</span>
+              </button>
+
+              <!-- 0: White / Neutral Star -->
+              <button type="button" class="scale-star-btn btn-star-zero" data-rating="0" title="0 Star (Neutral / Indifferent)">
+                <span class="scale-num">0</span>
+                <span class="scale-stars-row">☆</span>
+                <span class="scale-type">Neutral</span>
+              </button>
+
+              <!-- -1 to -5: Red Stars -->
+              <button type="button" class="scale-star-btn btn-star-red" data-rating="-1" title="-1 Red Star (Minor Strictness)">
+                <span class="scale-num">-1</span>
+                <span class="scale-stars-row">★</span>
+                <span class="scale-type">Red</span>
+              </button>
+              <button type="button" class="scale-star-btn btn-star-red" data-rating="-2" title="-2 Red Stars (Strict Attendance / Tough)">
+                <span class="scale-num">-2</span>
+                <span class="scale-stars-row">★★</span>
+                <span class="scale-type">Red</span>
+              </button>
+              <button type="button" class="scale-star-btn btn-star-red" data-rating="-3" title="-3 Red Stars (Harsh Quizzes)">
+                <span class="scale-num">-3</span>
+                <span class="scale-stars-row">★★★</span>
+                <span class="scale-type">Red</span>
+              </button>
+              <button type="button" class="scale-star-btn btn-star-red" data-rating="-4" title="-4 Red Stars (Brutal Grading)">
+                <span class="scale-num">-4</span>
+                <span class="scale-stars-row">★★★★</span>
+                <span class="scale-type">Red</span>
+              </button>
+              <button type="button" class="scale-star-btn btn-star-red" data-rating="-5" title="-5 Red Stars (Extreme Scrutiny)">
+                <span class="scale-num">-5</span>
+                <span class="scale-stars-row">★★★★★</span>
+                <span class="scale-type">Red</span>
+              </button>
+            </div>
+
+            <!-- Current Rating Display Feedback -->
+            <div class="selected-rating-feedback">
+              <span class="feedback-prefix">Current Selection:</span>
+              <strong id="ratingFeedbackText" class="feedback-value">No star selected yet</strong>
+              <button type="button" id="clearRatingBtn" class="btn-clear-selection" style="display: none;">Deselect</button>
+            </div>
+          </div>
+
+          <!-- Course Code Field (Optional) -->
+          <div class="form-group">
+            <label for="reviewCourseCode" class="form-label">
+              Course Code <span class="label-optional">(Optional, e.g. CSE 101, EEE 205, CE 103)</span>:
+            </label>
+            <input type="text" id="reviewCourseCode" class="form-input" placeholder="e.g. CSE 101">
+          </div>
+
+          <!-- Comment Box -->
+          <div class="form-group">
+            <div class="label-char-flex">
+              <label for="reviewCommentText" class="form-label">
+                Comment Box <span class="required-asterisk">*</span>:
+              </label>
+              <span id="commentCharCount" class="char-counter">0 / 600</span>
+            </div>
+            <textarea id="reviewCommentText" class="form-textarea" rows="4" maxlength="600" placeholder="Write your honest, constructive anonymous review regarding lectures, exams, grading, consultation, and coursework..."></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="submit-action-row">
+            <button id="submitReviewBtn" class="btn btn-success btn-large">
+              <span>Submit</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Reviews of Others Section -->
+        <div class="others-reviews-section card-glass">
+          <div class="section-title-bar">
+            <div>
+              <h3 class="reviews-list-title">
+                Reviews of Others
+                <span id="reviewsCountBadge" class="count-pill">0</span>
+              </h3>
+              <p class="reviews-list-sub">Honest community evaluations from verified BUETians</p>
+            </div>
+
+            <!-- Reviews Filter Pill Tabs -->
+            <div class="reviews-filter-pills" id="reviewFilterPills">
+              <button class="rev-filter-pill active" data-filter="ALL">All</button>
+              <button class="rev-filter-pill" data-filter="YELLOW">⭐ Yellow (+)</button>
+              <button class="rev-filter-pill" data-filter="ZERO">⚪ Neutral (0)</button>
+              <button class="rev-filter-pill" data-filter="RED">🔴 Red (-)</button>
+            </div>
+          </div>
+
+          <!-- Reviews List Items -->
+          <div id="othersReviewsList" class="reviews-list">
+            <!-- Dynamically populated by JS -->
+          </div>
+
+          <!-- Empty Reviews Notice -->
+          <div id="noReviewsNotice" class="no-reviews-box" style="display: none;">
+            <div class="empty-icon">✍️</div>
+            <h4>No reviews submitted yet</h4>
+            <p>Be the first BUETian to share an anonymous evaluation for this faculty member above!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <!-- ================= MODALS ================= -->
+  <!-- Toast Notification Popup -->
+  <div id="toastPopup" class="toast-popup" role="alert" aria-live="assertive"></div>
 
-  <!-- 1. BUET Student Verification Modal -->
-  <div id="verifyModal" class="modal-overlay">
-    <div class="modal-card" style="max-width: 520px;">
-      <div class="modal-header">
-        <div class="modal-title-wrap">
-          <span>🎓</span>
-          <h3 class="modal-title">BUET Student Verification</h3>
-        </div>
-        <button id="verifyCloseBtn" class="btn-close-modal">&times;</button>
-      </div>
-      <div class="modal-body">
-        <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1.25rem;">
-          To ensure genuine evaluations and prevent outsider trolling, answer this random BUET campus trivia question. Your identity remains 100% anonymous.
-        </p>
-
-        <div class="verify-card-box">
-          <span class="verify-q-badge">Security Challenge</span>
-          <div id="verifyQuestionText" class="verify-question-text">Loading question...</div>
-          <div id="verifyHint" class="verify-hint" style="display: none;"></div>
-        </div>
-
-        <div class="input-group">
-          <label class="input-label" for="verifyAnswerInput">Your Answer</label>
-          <input type="text" id="verifyAnswerInput" class="text-input" placeholder="Type your answer here..." autocomplete="off">
-        </div>
-
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 1rem;">
-          <button type="button" id="verifyToggleHintBtn" style="background: none; border: none; color: var(--accent-cyan); font-size: 0.8rem; cursor: pointer; text-decoration: underline;">
-            💡 Need a hint?
-          </button>
-          <button id="verifySubmitBtn" class="btn-primary">Verify Identity</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- 2. Anonymous Identity & Mascot Modal -->
-  <div id="aliasModal" class="modal-overlay">
-    <div class="modal-card" style="max-width: 480px;">
-      <div class="modal-header">
-        <div class="modal-title-wrap">
-          <span>🛡️</span>
-          <h3 class="modal-title">Anonymous Identity</h3>
-        </div>
-        <button id="aliasCloseBtn" class="btn-close-modal">&times;</button>
-      </div>
-      <div class="modal-body">
-        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">
-          All reviews you submit will be displayed with your anonymous pseudonym. You can customize or re-roll your alias anytime.
-        </p>
-
-        <div class="input-group">
-          <label class="input-label">Anonymous Alias / Handle</label>
-          <div style="display: flex; gap: 0.5rem;">
-            <input type="text" id="aliasInput" class="text-input" maxlength="24" placeholder="e.g. WizardFox">
-            <button id="aliasRerollBtn" class="btn-secondary" title="Generate random alias">🎲 Re-roll</button>
-          </div>
-        </div>
-
-        <div class="input-group">
-          <label class="input-label">Select Avatar Mascot</label>
-          <div id="mascotPickerGrid" class="mascot-picker-grid">
-            <!-- Populated by JS -->
-          </div>
-        </div>
-
-        <div class="modal-footer">
-          <button id="aliasSaveBtn" class="btn-primary">Save Anonymous Profile</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- 3. Teacher Details & Reviews Modal -->
-  <div id="teacherModal" class="modal-overlay">
-    <div class="modal-card" style="max-width: 780px;">
-      <div class="modal-header">
-        <div class="modal-title-wrap">
-          <span>👨‍🏫</span>
-          <h3 class="modal-title">Teacher Profile &amp; Evaluations</h3>
-        </div>
-        <button id="teacherModalCloseBtn" class="btn-close-modal">&times;</button>
-      </div>
-      <div id="teacherModalBody" class="modal-body">
-        <!-- Populated dynamically -->
-      </div>
-    </div>
-  </div>
-
-  <!-- 4. Write Review & Rate Modal (Dual Green/Red Stars) -->
-  <div id="reviewModal" class="modal-overlay">
-    <div class="modal-card" style="max-width: 650px;">
-      <div class="modal-header">
-        <div class="modal-title-wrap">
-          <span>✍️</span>
-          <h3 class="modal-title">Submit Anonymous Review</h3>
-        </div>
-        <button id="reviewModalCloseBtn" class="btn-close-modal">&times;</button>
-      </div>
-      <div class="modal-body">
-        <div style="margin-bottom: 1.25rem;">
-          <span style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase;">Rating Faculty Member</span>
-          <h4 id="reviewTeacherName" style="font-size: 1.2rem; font-weight: 800; color: var(--text-main);">Teacher Name</h4>
-        </div>
-
-        <!-- Dual Star Pickers -->
-        <div class="star-picker-container">
-          <!-- Green Star Box -->
-          <div class="star-picker-box green-box">
-            <div class="star-picker-title">
-              <span>🌟</span> Green Stars (Good Rating)
-            </div>
-            <div id="greenStarRow" class="star-row"></div>
-            <div id="greenStarLabel" class="star-picker-label">5 - Inspiring Legend</div>
-          </div>
-
-          <!-- Red Star Box -->
-          <div class="star-picker-box red-box">
-            <div class="star-picker-title">
-              <span>⚠️</span> Red Stars (Strict / Critical)
-            </div>
-            <div id="redStarRow" class="star-row"></div>
-            <div id="redStarLabel" class="star-picker-label">1 - Minor Strictness</div>
-          </div>
-        </div>
-
-        <div class="input-group">
-          <label class="input-label" for="reviewCourseInput">Course Code (e.g. CSE 101, EEE 205)</label>
-          <input type="text" id="reviewCourseInput" class="text-input" placeholder="e.g. CSE 101">
-        </div>
-
-        <div class="input-group">
-          <label class="input-label">Quick Feedback Tags</label>
-          <div id="tagChipsContainer" class="tag-chips-wrap">
-            <!-- Populated by JS -->
-          </div>
-        </div>
-
-        <div class="input-group">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.4rem;">
-            <label class="input-label" for="reviewCommentInput" style="margin-bottom: 0;">Written Feedback / Commentary</label>
-            <span id="reviewCommentCharCount" style="font-size: 0.75rem; color: var(--text-muted);">0 / 500</span>
-          </div>
-          <textarea id="reviewCommentInput" class="textarea-input" rows="4" maxlength="500" placeholder="Share your constructive experience with teaching style, exams, lecture slides, consultation, or grading..."></textarea>
-        </div>
-
-        <div class="modal-footer">
-          <button id="reviewSubmitBtn" class="btn-success">Submit Anonymous Review</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-  <!-- 6. Suggest / Add Teacher Modal -->
-  <div id="addTeacherModal" class="modal-overlay">
-    <div class="modal-card" style="max-width: 520px;">
-      <div class="modal-header">
-        <div class="modal-title-wrap">
-          <span>➕</span>
-          <h3 class="modal-title">Suggest / Add Faculty Member</h3>
-        </div>
-        <button id="addTeacherCloseBtn" class="btn-close-modal">&times;</button>
-      </div>
-      <form id="addTeacherForm" class="modal-body">
-        <div class="input-group">
-          <label class="input-label" for="newTeacherName">Teacher Full Name (e.g. Dr. Jane Doe)</label>
-          <input type="text" id="newTeacherName" class="text-input" required placeholder="Dr. First Last">
-        </div>
-
-        <div class="input-group">
-          <label class="input-label" for="newTeacherDept">Department</label>
-          <select id="newTeacherDept" class="filter-select" style="width: 100%;" required>
-            <option value="Computer Science and Engineering">Computer Science and Engineering (CSE)</option>
-            <option value="Electrical and Electronic Engineering">Electrical and Electronic Engineering (EEE)</option>
-            <option value="Civil Engineering">Civil Engineering (CE)</option>
-            <option value="Mechanical Engineering">Mechanical Engineering (ME)</option>
-            <option value="Biomedical Engineering">Biomedical Engineering (BME)</option>
-            <option value="Industrial & Production Engineering">Industrial & Production Engineering (IPE)</option>
-            <option value="Materials and Metallurgical Engineering">Materials and Metallurgical Engineering (MME)</option>
-            <option value="Nanomaterials and Ceramic Engineering">Nanomaterials and Ceramic Engineering (NCE)</option>
-            <option value="Naval Architecture and Marine Engineering">Naval Architecture and Marine Engineering (NAME)</option>
-            <option value="Urban and Regional Planning">Urban and Regional Planning (URP)</option>
-            <option value="Water Resources Engineering">Water Resources Engineering (WRE)</option>
-          </select>
-        </div>
-
-        <div class="input-group">
-          <label class="input-label" for="newTeacherDesig">Designation</label>
-          <select id="newTeacherDesig" class="filter-select" style="width: 100%;" required>
-            <option value="Professor">Professor</option>
-            <option value="Associate Professor">Associate Professor</option>
-            <option value="Assistant Professor">Assistant Professor</option>
-            <option value="Lecturer">Lecturer</option>
-          </select>
-        </div>
-
-        <div class="input-group">
-          <label class="input-label" for="newTeacherLocation">Office / Building Location</label>
-          <input type="text" id="newTeacherLocation" class="text-input" placeholder="e.g. ECE Building, 7th Floor">
-        </div>
-
-        <div class="modal-footer">
-          <button type="submit" class="btn-primary">Add to Directory</button>
-        </div>
-      </form>
-    </div>
-  </div>
-
-  <!-- Toast Notification Container -->
-  <div id="toastContainer" class="toast-container"></div>
-
-  <!-- Application Scripts -->
+  <!-- Pre-loaded Data & Core Application Scripts -->
   <script src="data/teachers.js"></script>
   <script src="data/questions.js"></script>
   <script src="js/firebase-config.js"></script>

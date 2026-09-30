@@ -9,12 +9,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -27,12 +27,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -45,12 +45,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -63,12 +63,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -81,12 +81,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -99,12 +99,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -117,12 +117,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -135,12 +135,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -153,12 +153,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -171,12 +171,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -189,12 +189,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -207,12 +207,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -225,12 +225,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -243,12 +243,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -261,12 +261,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -279,12 +279,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -297,12 +297,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -315,12 +315,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -333,12 +333,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -351,12 +351,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -369,12 +369,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -387,12 +387,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -405,12 +405,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -423,12 +423,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -441,12 +441,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -459,12 +459,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -477,12 +477,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -495,12 +495,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -513,12 +513,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -531,12 +531,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -549,12 +549,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -567,12 +567,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -585,12 +585,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -603,12 +603,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -621,12 +621,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -639,12 +639,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -657,12 +657,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -675,12 +675,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -693,12 +693,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -711,12 +711,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -729,12 +729,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -747,12 +747,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -765,12 +765,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -783,12 +783,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -801,12 +801,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -819,12 +819,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -837,12 +837,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -855,12 +855,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -873,12 +873,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -891,12 +891,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -909,12 +909,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, West Wing",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -927,12 +927,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -945,12 +945,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -963,12 +963,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -981,12 +981,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -999,12 +999,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1017,12 +1017,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1035,12 +1035,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1053,12 +1053,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1071,12 +1071,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1089,12 +1089,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1107,12 +1107,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1125,12 +1125,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1143,12 +1143,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1161,12 +1161,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1179,12 +1179,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1197,12 +1197,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1215,12 +1215,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1233,12 +1233,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1251,12 +1251,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1269,12 +1269,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1287,12 +1287,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1305,12 +1305,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1323,12 +1323,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1341,12 +1341,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1359,12 +1359,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1377,12 +1377,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1395,12 +1395,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1413,12 +1413,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1431,12 +1431,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1449,12 +1449,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1467,12 +1467,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1485,12 +1485,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1503,12 +1503,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1521,12 +1521,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1539,12 +1539,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1557,12 +1557,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1575,12 +1575,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1593,12 +1593,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1611,12 +1611,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1629,12 +1629,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1647,12 +1647,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1665,12 +1665,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1683,12 +1683,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1701,12 +1701,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1719,12 +1719,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1737,12 +1737,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1755,12 +1755,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1773,12 +1773,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1791,12 +1791,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1809,12 +1809,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1827,12 +1827,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1845,12 +1845,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, East Wing",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1863,12 +1863,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1881,12 +1881,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1899,12 +1899,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1917,12 +1917,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1935,12 +1935,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1953,12 +1953,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1971,12 +1971,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -1989,12 +1989,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2007,12 +2007,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2025,12 +2025,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2043,12 +2043,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2061,12 +2061,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2079,12 +2079,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2097,12 +2097,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2115,12 +2115,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2133,12 +2133,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2151,12 +2151,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2169,12 +2169,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2187,12 +2187,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2205,12 +2205,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2223,12 +2223,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2241,12 +2241,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2259,12 +2259,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2277,12 +2277,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2295,12 +2295,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2313,12 +2313,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2331,12 +2331,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2349,12 +2349,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2367,12 +2367,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2385,12 +2385,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2403,12 +2403,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2421,12 +2421,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2439,12 +2439,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2457,12 +2457,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2475,12 +2475,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2493,12 +2493,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2511,12 +2511,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2529,12 +2529,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2547,12 +2547,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2565,12 +2565,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2583,12 +2583,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2601,12 +2601,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2619,12 +2619,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2637,12 +2637,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2655,12 +2655,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2673,12 +2673,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2691,12 +2691,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2709,12 +2709,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2727,12 +2727,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2745,12 +2745,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2763,12 +2763,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2781,12 +2781,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2799,12 +2799,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2817,12 +2817,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2835,12 +2835,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2853,12 +2853,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2871,12 +2871,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2889,12 +2889,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2907,12 +2907,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2925,12 +2925,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2943,12 +2943,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2961,12 +2961,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2979,12 +2979,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -2997,12 +2997,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3015,12 +3015,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3033,12 +3033,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3051,12 +3051,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3069,12 +3069,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3087,12 +3087,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3105,12 +3105,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3123,12 +3123,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3141,12 +3141,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3159,12 +3159,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3177,12 +3177,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3195,12 +3195,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3213,12 +3213,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3231,12 +3231,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3249,12 +3249,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3267,12 +3267,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3285,12 +3285,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3303,12 +3303,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3321,12 +3321,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3339,12 +3339,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3357,12 +3357,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3375,12 +3375,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3393,12 +3393,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3411,12 +3411,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3429,12 +3429,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3447,12 +3447,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3465,12 +3465,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3483,12 +3483,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3501,12 +3501,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3519,12 +3519,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3537,12 +3537,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3555,12 +3555,12 @@ window.INITIAL_TEACHERS = [
     "location": "Mechanical Building",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3573,12 +3573,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, 10th-11th Floor",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3591,12 +3591,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, 10th-11th Floor",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3609,12 +3609,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, 10th-11th Floor",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3627,12 +3627,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, 10th-11th Floor",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3645,12 +3645,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, 10th-11th Floor",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3663,12 +3663,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, 10th-11th Floor",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3681,12 +3681,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, 10th-11th Floor",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3699,12 +3699,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, 10th-11th Floor",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3717,12 +3717,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, 10th-11th Floor",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3735,12 +3735,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, 10th-11th Floor",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3753,12 +3753,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, 10th-11th Floor",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3771,12 +3771,12 @@ window.INITIAL_TEACHERS = [
     "location": "ECE Building, 10th-11th Floor",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3789,12 +3789,12 @@ window.INITIAL_TEACHERS = [
     "location": "Old Academic Building (OAB)",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3807,12 +3807,12 @@ window.INITIAL_TEACHERS = [
     "location": "Old Academic Building (OAB)",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3825,12 +3825,12 @@ window.INITIAL_TEACHERS = [
     "location": "Old Academic Building (OAB)",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3843,12 +3843,12 @@ window.INITIAL_TEACHERS = [
     "location": "Old Academic Building (OAB)",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3861,12 +3861,12 @@ window.INITIAL_TEACHERS = [
     "location": "Old Academic Building (OAB)",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3879,12 +3879,12 @@ window.INITIAL_TEACHERS = [
     "location": "Old Academic Building (OAB)",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3897,12 +3897,12 @@ window.INITIAL_TEACHERS = [
     "location": "Old Academic Building (OAB)",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3915,12 +3915,12 @@ window.INITIAL_TEACHERS = [
     "location": "Old Academic Building (OAB)",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3933,12 +3933,12 @@ window.INITIAL_TEACHERS = [
     "location": "Old Academic Building (OAB)",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3951,12 +3951,12 @@ window.INITIAL_TEACHERS = [
     "location": "Old Academic Building (OAB)",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3969,12 +3969,12 @@ window.INITIAL_TEACHERS = [
     "location": "Old Academic Building (OAB)",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -3987,12 +3987,12 @@ window.INITIAL_TEACHERS = [
     "location": "Old Academic Building (OAB)",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -4005,12 +4005,12 @@ window.INITIAL_TEACHERS = [
     "location": "Old Academic Building (OAB)",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -4023,12 +4023,12 @@ window.INITIAL_TEACHERS = [
     "location": "Old Academic Building (OAB)",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -4041,12 +4041,12 @@ window.INITIAL_TEACHERS = [
     "location": "Old Academic Building (OAB)",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -4059,12 +4059,12 @@ window.INITIAL_TEACHERS = [
     "location": "Architecture & Planning Building",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -4077,12 +4077,12 @@ window.INITIAL_TEACHERS = [
     "location": "Architecture & Planning Building",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -4095,12 +4095,12 @@ window.INITIAL_TEACHERS = [
     "location": "Architecture & Planning Building",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -4113,12 +4113,12 @@ window.INITIAL_TEACHERS = [
     "location": "Architecture & Planning Building",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -4131,12 +4131,12 @@ window.INITIAL_TEACHERS = [
     "location": "Architecture & Planning Building",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -4149,12 +4149,12 @@ window.INITIAL_TEACHERS = [
     "location": "Architecture & Planning Building",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -4167,12 +4167,12 @@ window.INITIAL_TEACHERS = [
     "location": "Architecture & Planning Building",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -4185,12 +4185,12 @@ window.INITIAL_TEACHERS = [
     "location": "Architecture & Planning Building",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -4203,12 +4203,12 @@ window.INITIAL_TEACHERS = [
     "location": "Architecture & Planning Building",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -4221,12 +4221,12 @@ window.INITIAL_TEACHERS = [
     "location": "Architecture & Planning Building",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -4239,12 +4239,12 @@ window.INITIAL_TEACHERS = [
     "location": "Architecture & Planning Building",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -4257,12 +4257,12 @@ window.INITIAL_TEACHERS = [
     "location": "Architecture & Planning Building",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -4275,12 +4275,12 @@ window.INITIAL_TEACHERS = [
     "location": "Architecture & Planning Building",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -4293,12 +4293,12 @@ window.INITIAL_TEACHERS = [
     "location": "Architecture & Planning Building",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -4311,12 +4311,12 @@ window.INITIAL_TEACHERS = [
     "location": "Architecture & Planning Building",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -4329,12 +4329,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil / NAME Building",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -4347,12 +4347,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil / NAME Building",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -4365,12 +4365,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil / NAME Building",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -4383,12 +4383,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil / NAME Building",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -4401,12 +4401,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil / NAME Building",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -4419,12 +4419,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil / NAME Building",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -4437,12 +4437,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil / NAME Building",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -4455,12 +4455,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil / NAME Building",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -4473,12 +4473,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil / NAME Building",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -4491,12 +4491,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil / NAME Building",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -4509,12 +4509,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -4527,12 +4527,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -4545,12 +4545,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -4563,12 +4563,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -4581,12 +4581,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -4599,12 +4599,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -4617,12 +4617,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -4635,12 +4635,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -4653,12 +4653,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -4671,12 +4671,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -4689,12 +4689,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -4707,12 +4707,12 @@ window.INITIAL_TEACHERS = [
     "location": "Civil Building",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -4725,12 +4725,12 @@ window.INITIAL_TEACHERS = [
     "location": "Old Academic Building (OBE)",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -4743,12 +4743,12 @@ window.INITIAL_TEACHERS = [
     "location": "Old Academic Building (OBE)",
     "avatarColor": "#14B8A6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -4761,12 +4761,12 @@ window.INITIAL_TEACHERS = [
     "location": "Old Academic Building (OBE)",
     "avatarColor": "#3B82F6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -4779,12 +4779,12 @@ window.INITIAL_TEACHERS = [
     "location": "Old Academic Building (OBE)",
     "avatarColor": "#10B981",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -4797,12 +4797,12 @@ window.INITIAL_TEACHERS = [
     "location": "Old Academic Building (OBE)",
     "avatarColor": "#8B5CF6",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -4815,12 +4815,12 @@ window.INITIAL_TEACHERS = [
     "location": "Old Academic Building (OBE)",
     "avatarColor": "#F59E0B",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -4833,12 +4833,12 @@ window.INITIAL_TEACHERS = [
     "location": "Old Academic Building (OBE)",
     "avatarColor": "#EC4899",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -4851,12 +4851,12 @@ window.INITIAL_TEACHERS = [
     "location": "Old Academic Building (OBE)",
     "avatarColor": "#06B6D4",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   },
@@ -4869,12 +4869,12 @@ window.INITIAL_TEACHERS = [
     "location": "Old Academic Building (OBE)",
     "avatarColor": "#6366F1",
     "stats": {
-      "greenStars": 0,
+      "avgScore": 0.0,
+      "yellowStars": 0,
       "redStars": 0,
+      "zeroStars": 0,
       "totalReviews": 0,
-      "greenPoints": 0,
-      "redPoints": 0,
-      "netApproval": 0
+      "netScore": 0
     },
     "reviews": []
   }
