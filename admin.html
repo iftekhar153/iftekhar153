@@ -1,0 +1,1466 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BUET Faculty Pulse — Admin Management Dashboard</title>
+  
+  <!-- Modern Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
+
+  <style>
+    /* Admin Dashboard Specific Styles */
+    .admin-auth-overlay {
+      position: fixed;
+      inset: 0;
+      background: var(--bg-overlay);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+
+    .admin-auth-card {
+      background: var(--bg-card);
+      border: 1.5px solid var(--border-strong);
+      border-radius: var(--radius-xl);
+      padding: 2.75rem 2.5rem;
+      max-width: 460px;
+      width: 100%;
+      text-align: center;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .admin-auth-icon {
+      font-size: 3rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .admin-auth-title {
+      font-size: 1.6rem;
+      font-weight: 800;
+      margin-bottom: 0.4rem;
+    }
+
+    .admin-auth-sub {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-bottom: 1.75rem;
+    }
+
+    .admin-auth-input {
+      width: 100%;
+      padding: 0.85rem 1.15rem;
+      background: var(--bg-input);
+      border: 1.5px solid var(--border-strong);
+      border-radius: var(--radius-md);
+      font-size: 1.05rem;
+      color: var(--text-primary);
+      text-align: center;
+      letter-spacing: 0.2em;
+      outline: none;
+      margin-bottom: 1.25rem;
+      transition: border-color var(--transition-fast);
+    }
+
+    .admin-auth-input:focus {
+      border-color: var(--accent-cyan);
+      box-shadow: 0 0 0 3px var(--accent-cyan-glow);
+    }
+
+    /* Admin Hub Cards */
+    .admin-hub-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .admin-nav-card {
+      background: var(--bg-card);
+      border: 1.5px solid var(--border-medium);
+      border-radius: var(--radius-xl);
+      padding: 2rem;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1.25rem;
+      transition: all var(--transition-normal);
+      text-align: left;
+    }
+
+    .admin-nav-card:hover {
+      border-color: var(--accent-cyan);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .nav-card-icon {
+      font-size: 2.5rem;
+      background: var(--bg-input);
+      width: 64px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-subtle);
+    }
+
+    .nav-card-title {
+      font-size: 1.35rem;
+      font-weight: 800;
+      margin-bottom: 0.35rem;
+    }
+
+    .nav-card-desc {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+
+    .nav-card-cta {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      color: var(--accent-cyan);
+      font-weight: 700;
+      font-size: 0.92rem;
+      margin-top: auto;
+    }
+
+    /* Admin Subpages */
+    .admin-subpage {
+      display: none;
+      animation: fadeIn 0.3s ease forwards;
+    }
+
+    .admin-subpage.active {
+      display: block;
+    }
+
+    .admin-page-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid var(--border-subtle);
+      padding-bottom: 1.25rem;
+    }
+
+    .admin-mode-toggle-row {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .mode-tab-btn {
+      padding: 0.65rem 1.25rem;
+      border-radius: var(--radius-full);
+      font-size: 0.9rem;
+      font-weight: 700;
+      background: var(--bg-surface);
+      border: 1.5px solid var(--border-medium);
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: all var(--transition-fast);
+    }
+
+    .mode-tab-btn.active {
+      background: var(--accent-blue);
+      color: #ffffff;
+      border-color: var(--accent-blue);
+    }
+
+    .admin-editor-card {
+      background: var(--bg-card);
+      border: 1.5px solid var(--border-medium);
+      border-radius: var(--radius-xl);
+      padding: 2.25rem;
+      margin-bottom: 2rem;
+    }
+
+    .form-grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .admin-table-wrap {
+      background: var(--bg-card);
+      border: 1px solid var(--border-medium);
+      border-radius: var(--radius-xl);
+      overflow-x: auto;
+      max-height: 520px;
+    }
+
+    .admin-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.9rem;
+    }
+
+    .admin-table th {
+      background: var(--bg-surface);
+      padding: 0.95rem 1.25rem;
+      font-family: var(--font-heading);
+      font-weight: 700;
+      color: var(--text-muted);
+      border-bottom: 1px solid var(--border-medium);
+      position: sticky;
+      top: 0;
+      z-index: 2;
+    }
+
+    .admin-table td {
+      padding: 0.85rem 1.25rem;
+      border-bottom: 1px solid var(--border-subtle);
+      color: var(--text-primary);
+    }
+
+    .admin-table tr:hover td {
+      background: var(--bg-card-hover);
+    }
+
+    .btn-edit-inline {
+      padding: 0.35rem 0.75rem;
+      font-size: 0.78rem;
+      border-radius: var(--radius-sm);
+      background: var(--bg-input);
+      border: 1px solid var(--border-medium);
+      color: var(--accent-cyan);
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    .btn-edit-inline:hover {
+      background: var(--accent-cyan);
+      color: #ffffff;
+    }
+
+    /* Question Cards */
+    .admin-question-card {
+      background: var(--bg-surface);
+      border: 1.5px solid var(--border-medium);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+
+    .admin-q-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 0.75rem;
+    }
+
+    .admin-q-options-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 0.5rem;
+      margin-top: 0.4rem;
+    }
+
+    .admin-opt-pill {
+      font-size: 0.82rem;
+      padding: 0.35rem 0.65rem;
+      border-radius: var(--radius-md);
+      background: var(--bg-input);
+      border: 1px solid var(--border-subtle);
+    }
+
+    .admin-opt-pill.correct {
+      border-color: #10b981;
+      background: rgba(16, 185, 129, 0.15);
+      color: #10b981;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- =========================================================================
+       ADMIN AUTHENTICATION LOCK SCREEN (Password Protected)
+       ========================================================================= -->
+  <div id="adminAuthOverlay" class="admin-auth-overlay">
+    <div class="admin-auth-card">
+      <div class="admin-auth-icon">🛡️</div>
+      <h2 class="admin-auth-title">Admin Access Gate</h2>
+      <p class="admin-auth-sub">
+        Private management console for <strong>Iftekhar</strong>. Enter master admin password to continue.
+      </p>
+
+      <form id="adminAuthForm">
+        <input type="password" id="adminPasswordInput" class="admin-auth-input" placeholder="••••••••" autofocus autocomplete="current-password" required>
+        <button type="submit" class="btn btn-primary btn-large" style="width: 100%;">
+          <span>Unlock Admin Panel</span>
+          <span>&rarr;</span>
+        </button>
+      </form>
+      <p id="authErrorMsg" style="color: var(--star-red); font-size: 0.85rem; margin-top: 0.75rem; display: none;">
+        Incorrect password. Please try again.
+      </p>
+    </div>
+  </div>
+
+  <!-- Top Global Navbar -->
+  <header class="global-navbar">
+    <div class="nav-wrapper">
+      <div class="nav-brand" id="adminBrandBtn" role="button" tabindex="0" title="Admin Hub">
+        <span class="brand-crest">🛡️</span>
+        <div class="brand-headings">
+          <span class="brand-title">BUET EVALUATION — ADMIN</span>
+          <span class="brand-tagline">Authorized Moderator Console</span>
+        </div>
+      </div>
+
+      <div class="nav-actions">
+        <!-- Live Connection Status Badge -->
+        <div id="adminDbStatusBadge" class="status-badge" title="Firebase Firestore Cloud Database Status">
+          <span class="status-dot"></span>
+          <span id="adminDbStatusText">Connecting...</span>
+        </div>
+
+        <a href="index.html" class="nav-link-btn" title="View Public Student Review Portal">
+          🌐 View Live Site
+        </a>
+
+        <!-- Day / Night Theme Toggle -->
+        <button id="adminThemeToggleBtn" class="theme-toggle-btn" title="Toggle Day/Night Mode">
+          <span id="adminThemeIcon" class="theme-icon">🌙</span>
+          <span id="adminThemeText" class="theme-label">Night</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="app-container">
+
+    <!-- =========================================================================
+         PAGE 1: ADMIN HUB MAIN MENU
+         ========================================================================= -->
+    <section id="pageAdminHub" class="admin-subpage active">
+      <div class="card-glass" style="padding: 2.75rem 2.5rem; text-align: center;">
+        <span class="welcome-badge">👑 Master Moderator Panel</span>
+        <h1 class="welcome-title" style="margin-bottom: 0.5rem;">
+          Welcome Iftekhar to the admin panel
+        </h1>
+        <p class="welcome-subtitle" style="margin-bottom: 1.5rem;">
+          What do u want to modify? Changes saved here immediately update the live student evaluation website in real-time.
+        </p>
+
+        <!-- Navigation Cards -->
+        <div class="admin-hub-grid">
+          <!-- Card 1: Teachers & Designations (Page 2A) -->
+          <div class="admin-nav-card" id="btnGoTeachers">
+            <div>
+              <div class="nav-card-icon">👨‍🏫</div>
+              <h3 class="nav-card-title">Teacher Names &amp; Designations</h3>
+              <p class="nav-card-desc">
+                Add new teachers, search &amp; modify existing names, edit designations (Professor, Lecturer, etc.), or delete records.
+              </p>
+            </div>
+            <span class="nav-card-cta">Manage Teachers &rarr;</span>
+          </div>
+
+          <!-- Card 2: Verification Questions (Page 2B) -->
+          <div class="admin-nav-card" id="btnGoQuestions">
+            <div>
+              <div class="nav-card-icon">❓</div>
+              <h3 class="nav-card-title">Verification Questions</h3>
+              <p class="nav-card-desc">
+                Browse questions department-wise, edit questions and options A-E, update answer keys, or add brand new campus trivia questions.
+              </p>
+            </div>
+            <span class="nav-card-cta">Manage Questions &rarr;</span>
+          </div>
+
+          <!-- Card 3: Portal Settings & Departments (Page 2C) -->
+          <div class="admin-nav-card" id="btnGoSettings">
+            <div>
+              <div class="nav-card-icon">⚙️</div>
+              <h3 class="nav-card-title">Portal Settings &amp; Depts</h3>
+              <p class="nav-card-desc">
+                Set question correction rate to get verified (e.g. 4/5), add new departments, and configure admin preferences.
+              </p>
+            </div>
+            <span class="nav-card-cta">Configure Portal &rarr;</span>
+          </div>
+        </div>
+
+        <!-- Quick Summary Stats Bar -->
+        <div class="ratings-breakdown-row" style="margin-top: 2.5rem; text-align: left;">
+          <div class="breakdown-item">
+            <span class="stat-glyph">📚</span>
+            <span id="adminTotalTeachers">277</span>
+            <span class="stat-text">Faculty Listed</span>
+          </div>
+          <div class="breakdown-item">
+            <span class="stat-glyph">💬</span>
+            <span id="adminTotalReviews">0</span>
+            <span class="stat-text">Student Reviews Recorded</span>
+          </div>
+          <div class="breakdown-item">
+            <span class="stat-glyph">🏛️</span>
+            <span id="adminTotalDepts">3 Active Depts</span>
+            <span class="stat-text">Verification Trivia Active</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         PAGE 2A: TEACHER NAMES & DESIGNATIONS MANAGEMENT
+         ========================================================================= -->
+    <section id="pageAdminTeachers" class="admin-subpage">
+      <div class="admin-page-header">
+        <div>
+          <button class="btn-back btnBackToHub" style="margin-bottom: 0.5rem;">
+            <span>&larr;</span> Back to Admin Menu
+          </button>
+          <h2>You want to add new teacher or modify existing teacher name?</h2>
+          <p>Search and select any teacher to modify their details, or add new faculty members.</p>
+        </div>
+
+        <div class="admin-mode-toggle-row">
+          <button type="button" id="tabModifyTeacher" class="mode-tab-btn active">✏️ Modify Existing</button>
+          <button type="button" id="tabAddNewTeacher" class="mode-tab-btn">➕ Add New Teacher</button>
+        </div>
+      </div>
+
+      <!-- Modify Existing Teacher Form -->
+      <div id="sectionModifyTeacher" class="admin-editor-card">
+        <h3 style="margin-bottom: 1rem;">Select the teacher name or search the name</h3>
+        
+        <div class="search-row" style="margin-bottom: 1.5rem;">
+          <div class="search-input-wrap">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="adminTeacherSearchInput" class="search-input" placeholder="Type to filter teacher dropdown...">
+          </div>
+
+          <div style="flex: 1.5; min-width: 280px;">
+            <select id="adminTeacherSelectDropdown" class="form-input" style="cursor: pointer;">
+              <option value="">-- Choose a Faculty Member to Edit --</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Teacher Edit Form (Active when teacher selected) -->
+        <div id="teacherEditFormArea" style="display: none; border-top: 1px solid var(--border-subtle); padding-top: 1.5rem;">
+          <h4 style="margin-bottom: 1.25rem;">
+            Editing: <span id="editingTeacherBadge" class="highlight-teacher">Teacher Name</span>
+          </h4>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label class="form-label" for="editTeacherName">Full Name &amp; Academic Title</label>
+              <input type="text" id="editTeacherName" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="editTeacherDesig">Designation</label>
+              <select id="editTeacherDesig" class="form-input">
+                <option value="Professor">Professor</option>
+                <option value="Associate Professor">Associate Professor</option>
+                <option value="Assistant Professor">Assistant Professor</option>
+                <option value="Lecturer">Lecturer</option>
+                <option value="Professor Emeritus">Professor Emeritus</option>
+                <option value="Adjunct Faculty">Adjunct Faculty</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="editTeacherDeptCode">Department Code</label>
+              <select id="editTeacherDeptCode" class="form-input">
+                <option value="CSE">CSE (Computer Science and Engineering)</option>
+                <option value="EEE">EEE (Electrical and Electronic Engineering)</option>
+                <option value="CE">CE (Civil Engineering)</option>
+                <option value="ME">ME (Mechanical Engineering)</option>
+                <option value="BME">BME (Biomedical Engineering)</option>
+                <option value="IPE">IPE (Industrial &amp; Production Engineering)</option>
+                <option value="MME">MME (Materials &amp; Metallurgical Engineering)</option>
+                <option value="NCE">NCE (Nanomaterials &amp; Ceramic Engineering)</option>
+                <option value="NAME">NAME (Naval Architecture &amp; Marine)</option>
+                <option value="URP">URP (Urban &amp; Regional Planning)</option>
+                <option value="WRE">WRE (Water Resources Engineering)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="editTeacherLocation">Location / Office Room</label>
+              <input type="text" id="editTeacherLocation" class="form-input" placeholder="e.g. ECE Building, 7th Floor">
+            </div>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 1rem;">
+            <button type="button" id="btnDeleteTeacher" class="btn btn-secondary" style="color: var(--star-red); border-color: var(--star-red-border);">
+              🗑️ Delete Teacher
+            </button>
+            <button type="button" id="btnSaveTeacher" class="btn btn-success btn-large">
+              💾 Save Changes to Live Site
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add New Teacher Form -->
+      <div id="sectionAddTeacher" class="admin-editor-card" style="display: none;">
+        <h3 style="margin-bottom: 1.25rem;">Add New Faculty Member</h3>
+
+        <div class="form-grid-2">
+          <div class="form-group">
+            <label class="form-label" for="newTeacherName">Full Name (e.g. Dr. John Doe)</label>
+            <input type="text" id="newTeacherName" class="form-input" placeholder="Dr. Full Name" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="newTeacherDesig">Designation</label>
+            <select id="newTeacherDesig" class="form-input">
+              <option value="Professor">Professor</option>
+              <option value="Associate Professor">Associate Professor</option>
+              <option value="Assistant Professor">Assistant Professor</option>
+              <option value="Lecturer" selected>Lecturer</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="newTeacherDeptCode">Department</label>
+            <select id="newTeacherDeptCode" class="form-input">
+              <option value="CSE">CSE (Computer Science and Engineering)</option>
+              <option value="EEE">EEE (Electrical and Electronic Engineering)</option>
+              <option value="CE">CE (Civil Engineering)</option>
+              <option value="ME">ME (Mechanical Engineering)</option>
+              <option value="BME">BME (Biomedical Engineering)</option>
+              <option value="IPE">IPE (Industrial &amp; Production Engineering)</option>
+              <option value="MME">MME (Materials &amp; Metallurgical Engineering)</option>
+              <option value="NCE">NCE (Nanomaterials &amp; Ceramic Engineering)</option>
+              <option value="NAME">NAME (Naval Architecture &amp; Marine)</option>
+              <option value="URP">URP (Urban &amp; Regional Planning)</option>
+              <option value="WRE">WRE (Water Resources Engineering)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="newTeacherLocation">Office Location</label>
+            <input type="text" id="newTeacherLocation" class="form-input" placeholder="e.g. ECE Building, 5th Floor">
+          </div>
+        </div>
+
+        <div style="display: flex; justify-content: flex-end; margin-top: 1rem;">
+          <button type="button" id="btnSubmitNewTeacher" class="btn btn-primary btn-large">
+            ➕ Add Faculty Member
+          </button>
+        </div>
+      </div>
+
+      <!-- Quick Directory Table View -->
+      <div class="card-glass" style="padding: 1.5rem;">
+        <h4 style="margin-bottom: 1rem;">All Faculty Directory Records (<span id="tableRecordCount">277</span>)</h4>
+        <div class="admin-table-wrap">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Designation</th>
+                <th>Department</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="adminTeachersTableBody">
+              <!-- Populated by JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         PAGE 2B: VERIFICATION QUESTIONS MANAGEMENT
+         ========================================================================= -->
+    <section id="pageAdminQuestions" class="admin-subpage">
+      <div class="admin-page-header">
+        <div>
+          <button class="btn-back btnBackToHub" style="margin-bottom: 0.5rem;">
+            <span>&larr;</span> Back to Admin Menu
+          </button>
+          <h2>You want to add new que or modify existing que?</h2>
+          <p>See the list of questions dept wise or search a ques</p>
+        </div>
+
+        <div class="admin-mode-toggle-row">
+          <button type="button" id="tabModifyQues" class="mode-tab-btn active">📋 View / Edit Questions</button>
+          <button type="button" id="tabAddNewQues" class="mode-tab-btn">➕ Add New Question</button>
+        </div>
+      </div>
+
+      <!-- Department Filter Pills & Search -->
+      <div class="search-filter-card card-glass" style="margin-bottom: 1.5rem;">
+        <div class="search-row">
+          <div class="search-input-wrap">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="adminQuesSearchInput" class="search-input" placeholder="Search question text...">
+          </div>
+
+          <div class="dept-tabs-wrap" id="adminQuesDeptTabs">
+            <button class="dept-tab active" data-dept="CSE">CSE Questions</button>
+            <button class="dept-tab" data-dept="EEE">EEE Questions</button>
+            <button class="dept-tab" data-dept="CE">CE Questions</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Question Editor / Form Area -->
+      <div id="questionEditModal" class="admin-editor-card" style="display: none;">
+        <h3 id="questionEditModalTitle" style="margin-bottom: 1.25rem;">Edit Question</h3>
+
+        <div class="form-group">
+          <label class="form-label" for="qEditDeptSelect">Department</label>
+          <select id="qEditDeptSelect" class="form-input" style="max-width: 250px;">
+            <option value="CSE">CSE</option>
+            <option value="EEE">EEE</option>
+            <option value="CE">CE</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="qEditText">Question Prompt</label>
+          <textarea id="qEditText" class="form-textarea" rows="2" placeholder="e.g. How many lifts are on the ground of EEE side?"></textarea>
+        </div>
+
+        <div class="form-grid-2">
+          <div class="form-group">
+            <label class="form-label">Option A</label>
+            <input type="text" id="qOptA" class="form-input" placeholder="Option A text">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Option B</label>
+            <input type="text" id="qOptB" class="form-input" placeholder="Option B text">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Option C</label>
+            <input type="text" id="qOptC" class="form-input" placeholder="Option C text">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Option D</label>
+            <input type="text" id="qOptD" class="form-input" placeholder="Option D text">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Option E</label>
+            <input type="text" id="qOptE" class="form-input" placeholder="Option E text">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="qCorrectKeySelect">Correct Answer Key</label>
+            <select id="qCorrectKeySelect" class="form-input">
+              <option value="a">A</option>
+              <option value="b">B</option>
+              <option value="c">C</option>
+              <option value="d">D</option>
+              <option value="e">E</option>
+            </select>
+          </div>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 1rem;">
+          <button type="button" id="btnCancelEditQues" class="btn btn-secondary">Cancel</button>
+          <button type="button" id="btnSaveQuestion" class="btn btn-success btn-large">💾 Save Question</button>
+        </div>
+      </div>
+
+      <!-- Questions List Cards -->
+      <div id="adminQuestionsListContainer">
+        <!-- Populated by JS -->
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         PAGE 2C: PORTAL SETTINGS & DEPARTMENTS
+         ========================================================================= -->
+    <section id="pageAdminSettings" class="admin-subpage">
+      <div class="admin-page-header">
+        <div>
+          <button class="btn-back btnBackToHub" style="margin-bottom: 0.5rem;">
+            <span>&larr;</span> Back to Admin Menu
+          </button>
+          <h2>Portal Settings &amp; Verification Rules</h2>
+          <p>Set verification passing rate and add departments</p>
+        </div>
+      </div>
+
+      <div class="admin-editor-card">
+        <h3 style="margin-bottom: 1.5rem;">Verification Quiz Rules</h3>
+
+        <div class="form-group" style="max-width: 480px;">
+          <label class="form-label" for="settingMinCorrect">
+            Question Correction Rate to get verified (out of 5):
+          </label>
+          <select id="settingMinCorrect" class="form-input">
+            <option value="3">3 out of 5 (60% passing rate)</option>
+            <option value="4" selected>4 out of 5 (80% passing rate — Recommended)</option>
+            <option value="5">5 out of 5 (100% strict passing rate)</option>
+          </select>
+          <p style="font-size: 0.82rem; color: var(--text-muted); margin-top: 0.4rem;">
+            Students must achieve at least this many correct answers on Page 2 to proceed to the evaluation directory.
+          </p>
+        </div>
+
+        <div class="form-group" style="margin-top: 2rem;">
+          <label class="form-label">
+            Active Verification Departments (Shown on Page 1 Dropdown):
+          </label>
+          <div id="activeDeptsCheckboxes" style="display: flex; flex-wrap: wrap; gap: 0.85rem; margin-top: 0.5rem;">
+            <!-- Injected by JS -->
+          </div>
+        </div>
+
+        <div class="form-group" style="margin-top: 1.5rem; max-width: 480px;">
+          <label class="form-label" for="newDeptInput">Add New Department to Portal:</label>
+          <div style="display: flex; gap: 0.65rem;">
+            <input type="text" id="newDeptInput" class="form-input" placeholder="e.g. ME, BME, IPE">
+            <button type="button" id="btnAddDept" class="btn btn-secondary">Add Dept</button>
+          </div>
+        </div>
+
+        <div style="margin-top: 2rem; border-top: 1px solid var(--border-subtle); padding-top: 1.5rem; display: flex; justify-content: flex-end;">
+          <button type="button" id="btnSavePortalSettings" class="btn btn-success btn-large">
+            💾 Save Settings to Live Site
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Toast Notification Popup -->
+  <div id="adminToastPopup" class="toast-popup" role="alert" aria-live="assertive"></div>
+
+  <!-- Shared Data & Firebase Service -->
+  <script src="data/teachers.js"></script>
+  <script src="data/questions.js"></script>
+  <script src="js/firebase-config.js"></script>
+
+  <!-- Admin Controller Logic -->
+  <script>
+    (function () {
+      const MASTER_DEFAULT_PIN = 'buetadmin1024';
+
+      // State
+      const adminState = {
+        authenticated: false,
+        teachers: [],
+        currentDeptQuestions: 'CSE',
+        questionsPool: {},
+        settings: { minCorrect: 4, activeDepts: ['CSE', 'EEE', 'CE'] },
+        selectedTeacherForEdit: null,
+        editingQuestionId: null
+      };
+
+      // Elements
+      const el = {
+        adminAuthOverlay: document.getElementById('adminAuthOverlay'),
+        adminAuthForm: document.getElementById('adminAuthForm'),
+        adminPasswordInput: document.getElementById('adminPasswordInput'),
+        authErrorMsg: document.getElementById('authErrorMsg'),
+
+        adminDbStatusBadge: document.getElementById('adminDbStatusBadge'),
+        adminDbStatusText: document.getElementById('adminDbStatusText'),
+        adminThemeToggleBtn: document.getElementById('adminThemeToggleBtn'),
+        adminThemeIcon: document.getElementById('adminThemeIcon'),
+        adminThemeText: document.getElementById('adminThemeText'),
+
+        pageAdminHub: document.getElementById('pageAdminHub'),
+        pageAdminTeachers: document.getElementById('pageAdminTeachers'),
+        pageAdminQuestions: document.getElementById('pageAdminQuestions'),
+        pageAdminSettings: document.getElementById('pageAdminSettings'),
+
+        btnGoTeachers: document.getElementById('btnGoTeachers'),
+        btnGoQuestions: document.getElementById('btnGoQuestions'),
+        btnGoSettings: document.getElementById('btnGoSettings'),
+        adminBrandBtn: document.getElementById('adminBrandBtn'),
+
+        adminTotalTeachers: document.getElementById('adminTotalTeachers'),
+        adminTotalReviews: document.getElementById('adminTotalReviews'),
+        adminTotalDepts: document.getElementById('adminTotalDepts'),
+
+        // Teachers section
+        tabModifyTeacher: document.getElementById('tabModifyTeacher'),
+        tabAddNewTeacher: document.getElementById('tabAddNewTeacher'),
+        sectionModifyTeacher: document.getElementById('sectionModifyTeacher'),
+        sectionAddTeacher: document.getElementById('sectionAddTeacher'),
+        adminTeacherSearchInput: document.getElementById('adminTeacherSearchInput'),
+        adminTeacherSelectDropdown: document.getElementById('adminTeacherSelectDropdown'),
+        teacherEditFormArea: document.getElementById('teacherEditFormArea'),
+        editingTeacherBadge: document.getElementById('editingTeacherBadge'),
+        editTeacherName: document.getElementById('editTeacherName'),
+        editTeacherDesig: document.getElementById('editTeacherDesig'),
+        editTeacherDeptCode: document.getElementById('editTeacherDeptCode'),
+        editTeacherLocation: document.getElementById('editTeacherLocation'),
+        btnSaveTeacher: document.getElementById('btnSaveTeacher'),
+        btnDeleteTeacher: document.getElementById('btnDeleteTeacher'),
+
+        newTeacherName: document.getElementById('newTeacherName'),
+        newTeacherDesig: document.getElementById('newTeacherDesig'),
+        newTeacherDeptCode: document.getElementById('newTeacherDeptCode'),
+        newTeacherLocation: document.getElementById('newTeacherLocation'),
+        btnSubmitNewTeacher: document.getElementById('btnSubmitNewTeacher'),
+        adminTeachersTableBody: document.getElementById('adminTeachersTableBody'),
+        tableRecordCount: document.getElementById('tableRecordCount'),
+
+        // Questions section
+        tabModifyQues: document.getElementById('tabModifyQues'),
+        tabAddNewQues: document.getElementById('tabAddNewQues'),
+        adminQuesSearchInput: document.getElementById('adminQuesSearchInput'),
+        adminQuesDeptTabs: document.getElementById('adminQuesDeptTabs'),
+        questionEditModal: document.getElementById('questionEditModal'),
+        questionEditModalTitle: document.getElementById('questionEditModalTitle'),
+        qEditDeptSelect: document.getElementById('qEditDeptSelect'),
+        qEditText: document.getElementById('qEditText'),
+        qOptA: document.getElementById('qOptA'),
+        qOptB: document.getElementById('qOptB'),
+        qOptC: document.getElementById('qOptC'),
+        qOptD: document.getElementById('qOptD'),
+        qOptE: document.getElementById('qOptE'),
+        qCorrectKeySelect: document.getElementById('qCorrectKeySelect'),
+        btnCancelEditQues: document.getElementById('btnCancelEditQues'),
+        btnSaveQuestion: document.getElementById('btnSaveQuestion'),
+        adminQuestionsListContainer: document.getElementById('adminQuestionsListContainer'),
+
+        // Settings section
+        settingMinCorrect: document.getElementById('settingMinCorrect'),
+        activeDeptsCheckboxes: document.getElementById('activeDeptsCheckboxes'),
+        newDeptInput: document.getElementById('newDeptInput'),
+        btnAddDept: document.getElementById('btnAddDept'),
+        btnSavePortalSettings: document.getElementById('btnSavePortalSettings'),
+
+        adminToastPopup: document.getElementById('adminToastPopup')
+      };
+
+      // =========================================================================
+      // AUTHENTICATION
+      // =========================================================================
+
+      function initAuth() {
+        if (sessionStorage.getItem('buet_admin_session') === 'active') {
+          unlockAdmin();
+          return;
+        }
+
+        el.adminAuthForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const entered = el.adminPasswordInput.value.trim();
+          const savedPass = localStorage.getItem('buet_admin_password') || MASTER_DEFAULT_PIN;
+
+          if (entered === savedPass || entered === MASTER_DEFAULT_PIN) {
+            sessionStorage.setItem('buet_admin_session', 'active');
+            unlockAdmin();
+          } else {
+            el.authErrorMsg.style.display = 'block';
+            el.adminPasswordInput.select();
+          }
+        });
+      }
+
+      function unlockAdmin() {
+        adminState.authenticated = true;
+        el.adminAuthOverlay.style.display = 'none';
+        initAdminApp();
+      }
+
+      // =========================================================================
+      // THEME & DATABASE
+      // =========================================================================
+
+      function initTheme() {
+        const saved = localStorage.getItem('buet_theme') || 'dark';
+        applyTheme(saved);
+
+        el.adminThemeToggleBtn.addEventListener('click', () => {
+          const current = document.documentElement.getAttribute('data-theme') || 'dark';
+          const next = current === 'dark' ? 'light' : 'dark';
+          applyTheme(next);
+          localStorage.setItem('buet_theme', next);
+        });
+      }
+
+      function applyTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        if (theme === 'light') {
+          el.adminThemeIcon.textContent = '☀️';
+          el.adminThemeText.textContent = 'Day';
+        } else {
+          el.adminThemeIcon.textContent = '🌙';
+          el.adminThemeText.textContent = 'Night';
+        }
+      }
+
+      async function initDatabase() {
+        window.addEventListener('buet-db-status', (e) => {
+          const { online } = e.detail;
+          if (online) {
+            el.adminDbStatusBadge.className = 'status-badge online';
+            el.adminDbStatusText.textContent = 'Firebase Cloud Live';
+          } else {
+            el.adminDbStatusBadge.className = 'status-badge offline';
+            el.adminDbStatusText.textContent = 'Local Database';
+          }
+        });
+
+        if (window.dbService) {
+          await window.dbService.initFirebase();
+          await refreshAllData();
+        }
+      }
+
+      async function refreshAllData() {
+        if (!window.dbService) return;
+        adminState.teachers = await window.dbService.getTeachers();
+        adminState.questionsPool = await window.dbService.getQuestions();
+        adminState.settings = await window.dbService.getSettings();
+
+        updateDashboardCounters();
+        populateTeachersDropdown();
+        renderTeachersTable();
+        renderQuestionsList();
+        renderSettingsUI();
+      }
+
+      function updateDashboardCounters() {
+        el.adminTotalTeachers.textContent = adminState.teachers.length;
+        let totalRev = 0;
+        adminState.teachers.forEach(t => {
+          totalRev += (t.stats ? t.stats.totalReviews : 0) || 0;
+        });
+        el.adminTotalReviews.textContent = totalRev;
+        el.adminTotalDepts.textContent = `${(adminState.settings.activeDepts || []).length} Active Depts`;
+        el.tableRecordCount.textContent = adminState.teachers.length;
+      }
+
+      // =========================================================================
+      // SUBPAGE NAVIGATION
+      // =========================================================================
+
+      function showSubpage(pageId) {
+        [el.pageAdminHub, el.pageAdminTeachers, el.pageAdminQuestions, el.pageAdminSettings].forEach(p => {
+          p.classList.remove('active');
+        });
+        const target = el[pageId];
+        if (target) {
+          target.classList.add('active');
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      }
+
+      function setupNavigationListeners() {
+        el.adminBrandBtn.addEventListener('click', () => showSubpage('pageAdminHub'));
+        el.btnGoTeachers.addEventListener('click', () => showSubpage('pageAdminTeachers'));
+        el.btnGoQuestions.addEventListener('click', () => showSubpage('pageAdminQuestions'));
+        el.btnGoSettings.addEventListener('click', () => showSubpage('pageAdminSettings'));
+
+        document.querySelectorAll('.btnBackToHub').forEach(b => {
+          b.addEventListener('click', () => showSubpage('pageAdminHub'));
+        });
+      }
+
+      // =========================================================================
+      // TEACHER MANAGEMENT LOGIC (Page 2A)
+      // =========================================================================
+
+      function initTeacherManagement() {
+        // Toggle tabs (Modify vs Add)
+        el.tabModifyTeacher.addEventListener('click', () => {
+          el.tabModifyTeacher.classList.add('active');
+          el.tabAddNewTeacher.classList.remove('active');
+          el.sectionModifyTeacher.style.display = 'block';
+          el.sectionAddTeacher.style.display = 'none';
+        });
+
+        el.tabAddNewTeacher.addEventListener('click', () => {
+          el.tabAddNewTeacher.classList.add('active');
+          el.tabModifyTeacher.classList.remove('active');
+          el.sectionModifyTeacher.style.display = 'none';
+          el.sectionAddTeacher.style.display = 'block';
+        });
+
+        // Search & Select dropdown filter
+        el.adminTeacherSearchInput.addEventListener('input', (e) => {
+          const q = e.target.value.toLowerCase().trim();
+          populateTeachersDropdown(q);
+        });
+
+        el.adminTeacherSelectDropdown.addEventListener('change', (e) => {
+          const teacherId = e.target.value;
+          if (!teacherId) {
+            el.teacherEditFormArea.style.display = 'none';
+            adminState.selectedTeacherForEdit = null;
+            return;
+          }
+          const t = adminState.teachers.find(item => item.id === teacherId);
+          if (t) {
+            loadTeacherIntoEditor(t);
+          }
+        });
+
+        // Save teacher
+        el.btnSaveTeacher.addEventListener('click', async () => {
+          if (!adminState.selectedTeacherForEdit) return;
+          const updated = {
+            ...adminState.selectedTeacherForEdit,
+            name: el.editTeacherName.value.trim(),
+            designation: el.editTeacherDesig.value,
+            deptCode: el.editTeacherDeptCode.value,
+            dept: getDeptFullName(el.editTeacherDeptCode.value),
+            location: el.editTeacherLocation.value.trim()
+          };
+
+          el.btnSaveTeacher.disabled = true;
+          el.btnSaveTeacher.textContent = 'Saving...';
+
+          try {
+            await window.dbService.saveTeacher(updated);
+            showToast(`✅ Successfully updated ${updated.name}! Changes are live.`);
+            await refreshAllData();
+            loadTeacherIntoEditor(updated);
+          } catch (e) {
+            showToast('Error saving teacher: ' + e.message, 'error');
+          } finally {
+            el.btnSaveTeacher.disabled = false;
+            el.btnSaveTeacher.textContent = '💾 Save Changes to Live Site';
+          }
+        });
+
+        // Delete teacher
+        el.btnDeleteTeacher.addEventListener('click', async () => {
+          if (!adminState.selectedTeacherForEdit) return;
+          const confirmDel = confirm(`Are you sure you want to remove ${adminState.selectedTeacherForEdit.name} from the portal?`);
+          if (!confirmDel) return;
+
+          try {
+            await window.dbService.deleteTeacher(adminState.selectedTeacherForEdit.id);
+            showToast(`🗑️ Removed teacher from live portal.`);
+            el.teacherEditFormArea.style.display = 'none';
+            adminState.selectedTeacherForEdit = null;
+            await refreshAllData();
+          } catch (e) {
+            showToast('Error deleting teacher: ' + e.message, 'error');
+          }
+        });
+
+        // Add new teacher
+        el.btnSubmitNewTeacher.addEventListener('click', async () => {
+          const name = el.newTeacherName.value.trim();
+          if (!name) {
+            showToast('Please enter the teacher full name', 'error');
+            return;
+          }
+
+          const newT = {
+            name: name,
+            designation: el.newTeacherDesig.value,
+            deptCode: el.newTeacherDeptCode.value,
+            dept: getDeptFullName(el.newTeacherDeptCode.value),
+            location: el.newTeacherLocation.value.trim() || 'BUET Campus'
+          };
+
+          el.btnSubmitNewTeacher.disabled = true;
+          el.btnSubmitNewTeacher.textContent = 'Adding...';
+
+          try {
+            await window.dbService.saveTeacher(newT);
+            showToast(`✅ Added ${name} to directory! Live on index.html.`);
+            el.newTeacherName.value = '';
+            el.newTeacherLocation.value = '';
+            await refreshAllData();
+
+            // Switch to modify tab
+            el.tabModifyTeacher.click();
+          } catch (e) {
+            showToast('Error adding teacher: ' + e.message, 'error');
+          } finally {
+            el.btnSubmitNewTeacher.disabled = false;
+            el.btnSubmitNewTeacher.textContent = '➕ Add Faculty Member';
+          }
+        });
+      }
+
+      function populateTeachersDropdown(query = '') {
+        el.adminTeacherSelectDropdown.innerHTML = '<option value="">-- Choose a Faculty Member to Edit --</option>';
+        let list = [...adminState.teachers];
+        if (query) {
+          list = list.filter(t => (t.name || '').toLowerCase().includes(query) || (t.deptCode || '').toLowerCase().includes(query));
+        }
+
+        // Group by department
+        const depts = {};
+        list.forEach(t => {
+          const c = t.deptCode || 'OTHER';
+          if (!depts[c]) depts[c] = [];
+          depts[c].push(t);
+        });
+
+        Object.keys(depts).sort().forEach(dept => {
+          const grp = document.createElement('optgroup');
+          grp.label = dept + ' Department';
+          depts[dept].forEach(t => {
+            const opt = document.createElement('option');
+            opt.value = t.id;
+            opt.textContent = `${t.name} (${t.designation || 'Lecturer'})`;
+            grp.appendChild(opt);
+          });
+          el.adminTeacherSelectDropdown.appendChild(grp);
+        });
+      }
+
+      function loadTeacherIntoEditor(t) {
+        adminState.selectedTeacherForEdit = t;
+        el.teacherEditFormArea.style.display = 'block';
+        el.editingTeacherBadge.textContent = t.name;
+        el.editTeacherName.value = t.name || '';
+        el.editTeacherDesig.value = t.designation || 'Lecturer';
+        el.editTeacherDeptCode.value = t.deptCode || 'CSE';
+        el.editTeacherLocation.value = t.location || '';
+      }
+
+      function renderTeachersTable() {
+        el.adminTeachersTableBody.innerHTML = '';
+        adminState.teachers.forEach(t => {
+          const tr = document.createElement('tr');
+          tr.innerHTML = `
+            <td><code>${t.id}</code></td>
+            <td><strong>${escapeHtml(t.name)}</strong></td>
+            <td>${escapeHtml(t.designation || 'Lecturer')}</td>
+            <td><span class="teacher-dept-pill">${t.deptCode || 'BUET'}</span></td>
+            <td><button type="button" class="btn-edit-inline" data-id="${t.id}">✏️ Edit</button></td>
+          `;
+
+          tr.querySelector('.btn-edit-inline').addEventListener('click', () => {
+            el.tabModifyTeacher.click();
+            el.adminTeacherSelectDropdown.value = t.id;
+            loadTeacherIntoEditor(t);
+            window.scrollTo({ top: 250, behavior: 'smooth' });
+          });
+
+          el.adminTeachersTableBody.appendChild(tr);
+        });
+      }
+
+      // =========================================================================
+      // VERIFICATION QUESTIONS MANAGEMENT (Page 2B)
+      // =========================================================================
+
+      function initQuestionsManagement() {
+        // Tab toggle
+        el.tabModifyQues.addEventListener('click', () => {
+          el.tabModifyQues.classList.add('active');
+          el.tabAddNewQues.classList.remove('active');
+          el.questionEditModal.style.display = 'none';
+        });
+
+        el.tabAddNewQues.addEventListener('click', () => {
+          el.tabAddNewQues.classList.add('active');
+          el.tabModifyQues.classList.remove('active');
+          openQuestionEditorForNew();
+        });
+
+        // Dept tabs
+        el.adminQuesDeptTabs.addEventListener('click', (e) => {
+          const tab = e.target.closest('.dept-tab');
+          if (!tab) return;
+          el.adminQuesDeptTabs.querySelectorAll('.dept-tab').forEach(b => b.classList.remove('active'));
+          tab.classList.add('active');
+          adminState.currentDeptQuestions = tab.getAttribute('data-dept');
+          renderQuestionsList();
+        });
+
+        // Search question
+        el.adminQuesSearchInput.addEventListener('input', () => {
+          renderQuestionsList();
+        });
+
+        el.btnCancelEditQues.addEventListener('click', () => {
+          el.questionEditModal.style.display = 'none';
+          el.tabModifyQues.click();
+        });
+
+        // Save question (Add or Edit)
+        el.btnSaveQuestion.addEventListener('click', async () => {
+          const text = el.qEditText.value.trim();
+          if (!text) {
+            showToast('Please enter the question prompt', 'error');
+            return;
+          }
+
+          const opts = [
+            { key: 'a', text: el.qOptA.value.trim() },
+            { key: 'b', text: el.qOptB.value.trim() },
+            { key: 'c', text: el.qOptC.value.trim() },
+            { key: 'd', text: el.qOptD.value.trim() },
+            { key: 'e', text: el.qOptE.value.trim() }
+          ];
+
+          const qData = {
+            id: adminState.editingQuestionId || `q_${el.qEditDeptSelect.value.toLowerCase()}_${Date.now().toString(36)}`,
+            dept: el.qEditDeptSelect.value,
+            question: text,
+            options: opts,
+            correctKey: el.qCorrectKeySelect.value
+          };
+
+          el.btnSaveQuestion.disabled = true;
+          el.btnSaveQuestion.textContent = 'Saving...';
+
+          try {
+            await window.dbService.saveQuestion(qData);
+            showToast(`✅ Saved question for ${qData.dept}! Live on verification quiz.`);
+            el.questionEditModal.style.display = 'none';
+            el.tabModifyQues.click();
+            await refreshAllData();
+          } catch (e) {
+            showToast('Error saving question: ' + e.message, 'error');
+          } finally {
+            el.btnSaveQuestion.disabled = false;
+            el.btnSaveQuestion.textContent = '💾 Save Question';
+          }
+        });
+      }
+
+      function openQuestionEditorForNew() {
+        adminState.editingQuestionId = null;
+        el.questionEditModal.style.display = 'block';
+        el.questionEditModalTitle.textContent = 'Add New Verification Question';
+        el.qEditDeptSelect.value = adminState.currentDeptQuestions;
+        el.qEditText.value = '';
+        el.qOptA.value = '';
+        el.qOptB.value = '';
+        el.qOptC.value = '';
+        el.qOptD.value = '';
+        el.qOptE.value = '';
+        el.qCorrectKeySelect.value = 'a';
+        window.scrollTo({ top: 350, behavior: 'smooth' });
+      }
+
+      function openQuestionEditorForEdit(q, dept) {
+        adminState.editingQuestionId = q.id;
+        el.questionEditModal.style.display = 'block';
+        el.questionEditModalTitle.textContent = `Edit Question (${dept})`;
+        el.qEditDeptSelect.value = dept;
+        el.qEditText.value = q.question || '';
+
+        const opts = q.options || [];
+        el.qOptA.value = (opts.find(o => o.key === 'a') || {}).text || '';
+        el.qOptB.value = (opts.find(o => o.key === 'b') || {}).text || '';
+        el.qOptC.value = (opts.find(o => o.key === 'c') || {}).text || '';
+        el.qOptD.value = (opts.find(o => o.key === 'd') || {}).text || '';
+        el.qOptE.value = (opts.find(o => o.key === 'e') || {}).text || '';
+        el.qCorrectKeySelect.value = q.correctKey || 'a';
+        window.scrollTo({ top: 350, behavior: 'smooth' });
+      }
+
+      function renderQuestionsList() {
+        el.adminQuestionsListContainer.innerHTML = '';
+        const dept = adminState.currentDeptQuestions;
+        const qList = (adminState.questionsPool[dept] || []);
+        const query = el.adminQuesSearchInput.value.toLowerCase().trim();
+
+        const filtered = qList.filter(q => !query || (q.question || '').toLowerCase().includes(query));
+
+        if (filtered.length === 0) {
+          el.adminQuestionsListContainer.innerHTML = `
+            <div class="card-glass" style="padding: 2.5rem; text-align: center;">
+              <p>No questions found for ${dept}. Click "Add New Question" above to create one!</p>
+            </div>
+          `;
+          return;
+        }
+
+        filtered.forEach((q, idx) => {
+          const card = document.createElement('div');
+          card.className = 'admin-question-card';
+
+          let optsHtml = '';
+          (q.options || []).forEach(opt => {
+            const isCorrect = opt.key.toLowerCase() === (q.correctKey || '').toLowerCase();
+            optsHtml += `
+              <div class="admin-opt-pill ${isCorrect ? 'correct' : ''}">
+                <strong>${opt.key.toUpperCase()}:</strong> ${escapeHtml(opt.text)} ${isCorrect ? '✓ (Correct)' : ''}
+              </div>
+            `;
+          });
+
+          card.innerHTML = `
+            <div class="admin-q-header">
+              <div>
+                <span class="question-num-badge">${dept} • Question ${idx + 1}</span>
+                <h4 style="margin-top: 0.35rem; font-size: 1.05rem;">${escapeHtml(q.question)}</h4>
+              </div>
+              <div style="display: flex; gap: 0.45rem;">
+                <button type="button" class="btn btn-secondary btn-sm btn-edit-q">✏️ Edit</button>
+                <button type="button" class="btn btn-secondary btn-sm btn-del-q" style="color: var(--star-red);">🗑️ Delete</button>
+              </div>
+            </div>
+            <div class="admin-q-options-list">
+              ${optsHtml}
+            </div>
+          `;
+
+          card.querySelector('.btn-edit-q').addEventListener('click', () => {
+            openQuestionEditorForEdit(q, dept);
+          });
+
+          card.querySelector('.btn-del-q').addEventListener('click', async () => {
+            if (confirm('Delete this question from live quiz pool?')) {
+              await window.dbService.deleteQuestion(q.id, dept);
+              showToast('🗑️ Question deleted from live quiz pool.');
+              await refreshAllData();
+            }
+          });
+
+          el.adminQuestionsListContainer.appendChild(card);
+        });
+      }
+
+      // =========================================================================
+      // SETTINGS & DEPARTMENTS (Page 2C)
+      // =========================================================================
+
+      function initSettingsManagement() {
+        el.btnAddDept.addEventListener('click', () => {
+          const code = el.newDeptInput.value.trim().toUpperCase();
+          if (!code) return;
+          if (!adminState.settings.activeDepts.includes(code)) {
+            adminState.settings.activeDepts.push(code);
+            renderSettingsUI();
+            el.newDeptInput.value = '';
+            showToast(`Added ${code} to departments list.`);
+          }
+        });
+
+        el.btnSavePortalSettings.addEventListener('click', async () => {
+          // Collect checked depts
+          const checked = [];
+          el.activeDeptsCheckboxes.querySelectorAll('input[type="checkbox"]:checked').forEach(cb => {
+            checked.push(cb.value);
+          });
+
+          const newSettings = {
+            minCorrect: Number(el.settingMinCorrect.value) || 4,
+            activeDepts: checked.length > 0 ? checked : ['CSE', 'EEE', 'CE']
+          };
+
+          el.btnSavePortalSettings.disabled = true;
+          el.btnSavePortalSettings.textContent = 'Saving...';
+
+          try {
+            await window.dbService.saveSettings(newSettings);
+            adminState.settings = newSettings;
+            showToast(`✅ Saved! Passing score is now ${newSettings.minCorrect}/5 and active depts updated.`);
+            await refreshAllData();
+          } catch (e) {
+            showToast('Error saving settings: ' + e.message, 'error');
+          } finally {
+            el.btnSavePortalSettings.disabled = false;
+            el.btnSavePortalSettings.textContent = '💾 Save Settings to Live Site';
+          }
+        });
+      }
+
+      function renderSettingsUI() {
+        el.settingMinCorrect.value = String(adminState.settings.minCorrect || 4);
+
+        el.activeDeptsCheckboxes.innerHTML = '';
+        const allPossible = Array.from(new Set(['CSE', 'EEE', 'CE', 'ME', 'BME', 'IPE', 'MME', 'NCE', 'NAME', 'URP', 'WRE', ...(adminState.settings.activeDepts || [])]));
+
+        allPossible.forEach(dept => {
+          const isChecked = (adminState.settings.activeDepts || []).includes(dept);
+          const label = document.createElement('label');
+          label.style.display = 'inline-flex';
+          label.style.alignItems = 'center';
+          label.style.gap = '0.45rem';
+          label.style.background = 'var(--bg-input)';
+          label.style.padding = '0.45rem 0.85rem';
+          label.style.borderRadius = 'var(--radius-full)';
+          label.style.border = '1px solid var(--border-medium)';
+          label.style.cursor = 'pointer';
+
+          label.innerHTML = `
+            <input type="checkbox" value="${dept}" ${isChecked ? 'checked' : ''} style="cursor: pointer;">
+            <strong style="font-size: 0.88rem;">${dept}</strong>
+          `;
+          el.activeDeptsCheckboxes.appendChild(label);
+        });
+      }
+
+      // =========================================================================
+      // UTILITIES
+      // =========================================================================
+
+      function getDeptFullName(code) {
+        const map = {
+          CSE: 'Computer Science and Engineering',
+          EEE: 'Electrical and Electronic Engineering',
+          CE: 'Civil Engineering',
+          ME: 'Mechanical Engineering',
+          BME: 'Biomedical Engineering',
+          IPE: 'Industrial & Production Engineering',
+          MME: 'Materials & Metallurgical Engineering',
+          NCE: 'Nanomaterials & Ceramic Engineering',
+          NAME: 'Naval Architecture & Marine Engineering',
+          URP: 'Urban & Regional Planning',
+          WRE: 'Water Resources Engineering'
+        };
+        return map[code] || `${code} Department`;
+      }
+
+      let toastTimer = null;
+      function showToast(msg, type = 'success') {
+        clearTimeout(toastTimer);
+        el.adminToastPopup.textContent = msg;
+        el.adminToastPopup.className = `toast-popup visible ${type}`;
+        toastTimer = setTimeout(() => {
+          el.adminToastPopup.classList.remove('visible');
+        }, 4000);
+      }
+
+      function escapeHtml(str) {
+        if (!str) return '';
+        return String(str)
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;')
+          .replace(/'/g, '&#039;');
+      }
+
+      function initAdminApp() {
+        initTheme();
+        initDatabase();
+        setupNavigationListeners();
+        initTeacherManagement();
+        initQuestionsManagement();
+        initSettingsManagement();
+      }
+
+      // Entry
+      document.addEventListener('DOMContentLoaded', () => {
+        initAuth();
+      });
+    })();
+  </script>
+</body>
+</html>

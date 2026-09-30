@@ -1,5 +1,6 @@
 // Firebase Configuration and Database Service
 // Integrated with user's megamindratings project + resilient LocalStorage fallback
+// Supports Admin modifications (Teachers, Verification Questions, Settings)
 
 (function () {
   const FIREBASE_CONFIG = {
@@ -11,7 +12,9 @@
     appId: "1:343564257626:web:8ae672e7d5e44ea2458b63"
   };
 
-  const STORAGE_KEY_TEACHERS = 'buet_eval_teachers_v2';
+  const STORAGE_KEY_CUSTOM_TEACHERS = 'buet_custom_teachers_v1';
+  const STORAGE_KEY_CUSTOM_QUESTIONS = 'buet_custom_questions_v1';
+  const STORAGE_KEY_SETTINGS = 'buet_portal_settings_v1';
   const STORAGE_KEY_LOCAL_REVIEWS = 'buet_eval_reviews_v2';
 
   class DatabaseService {
@@ -44,7 +47,7 @@
       try {
         const { initializeApp, getApps } = await import('https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js');
         const {
-          getFirestore, collection, getDocs, doc, setDoc, addDoc
+          getFirestore, collection, getDocs, doc, setDoc, getDoc, addDoc, deleteDoc
         } = await import('https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js');
 
         let app;
@@ -56,7 +59,7 @@
         }
 
         this.db = getFirestore(app);
-        this.firestoreOps = { collection, getDocs, doc, setDoc, addDoc };
+        this.firestoreOps = { collection, getDocs, doc, setDoc, getDoc, addDoc, deleteDoc };
         this.isFirebaseActive = true;
         this.connectionStatus = 'online';
         this.notifyStatus();
@@ -97,9 +100,13 @@
       }
     }
 
+    // =========================================================================
+    // TEACHERS API (Base directory + Admin modifications)
+    // =========================================================================
+
     // Returns all teachers with their calculated stats and review list
     async getTeachers() {
-      // 1. Start with authentic directory of 271 BUET faculty
+      // 1. Base directory (277 verified BUET faculty records)
       const baseTeachers = (window.INITIAL_TEACHERS || []).map(t => ({
         ...t,
         stats: {
@@ -116,7 +123,60 @@
       const teacherMap = new Map();
       baseTeachers.forEach(t => teacherMap.set(t.id, t));
 
-      // 2. Fetch reviews: from Firestore if active, and also merge local reviews
+      // 2. Fetch custom/modified teachers from Firestore
+      if (this.isFirebaseActive && this.db) {
+        try {
+          const { collection, getDocs } = this.firestoreOps;
+          const teachersSnap = await getDocs(collection(this.db, 'teachers'));
+          teachersSnap.forEach(docSnap => {
+            const data = docSnap.data();
+            if (data.deleted) {
+              teacherMap.delete(docSnap.id);
+            } else if (teacherMap.has(docSnap.id)) {
+              const existing = teacherMap.get(docSnap.id);
+              Object.assign(existing, data);
+            } else {
+              teacherMap.set(docSnap.id, {
+                ...data,
+                id: docSnap.id,
+                stats: {
+                  avgScore: 0.0,
+                  yellowStars: 0,
+                  redStars: 0,
+                  zeroStars: 0,
+                  totalReviews: 0,
+                  netScore: 0
+                },
+                reviews: []
+              });
+            }
+          });
+        } catch (e) {
+          console.warn('Could not read teachers collection from Firestore:', e);
+        }
+      }
+
+      // Merge local custom/modified teachers from localStorage fallback
+      try {
+        const localCustom = JSON.parse(localStorage.getItem(STORAGE_KEY_CUSTOM_TEACHERS) || '{}');
+        Object.keys(localCustom).forEach(id => {
+          const data = localCustom[id];
+          if (data.deleted) {
+            teacherMap.delete(id);
+          } else if (teacherMap.has(id)) {
+            Object.assign(teacherMap.get(id), data);
+          } else {
+            teacherMap.set(id, {
+              ...data,
+              id: id,
+              stats: { avgScore: 0, yellowStars: 0, redStars: 0, zeroStars: 0, totalReviews: 0, netScore: 0 },
+              reviews: []
+            });
+          }
+        });
+      } catch (e) { }
+
+      // 3. Fetch reviews from Firestore
       let allReviews = [];
 
       if (this.isFirebaseActive && this.db) {
@@ -141,7 +201,7 @@
         }
       }
 
-      // 3. Attach reviews to respective teachers
+      // 4. Attach reviews to respective teachers
       allReviews.forEach(rev => {
         const teacher = teacherMap.get(rev.teacherId);
         if (teacher) {
@@ -149,7 +209,7 @@
         }
       });
 
-      // 4. Calculate metrics for each teacher based on user ratings (+5 to -5)
+      // 5. Calculate metrics for each teacher based on user ratings (+5 to -5)
       teacherMap.forEach(t => {
         this.calculateTeacherMetrics(t);
       });
@@ -199,6 +259,237 @@
         netScore: netScore
       };
     }
+
+    // Save or update teacher (Admin)
+    async saveTeacher(teacherData) {
+      const id = teacherData.id || `${(teacherData.deptCode || 'GEN').toLowerCase()}-${Date.now().toString(36)}`;
+      const cleanData = {
+        id,
+        name: (teacherData.name || '').trim(),
+        dept: (teacherData.dept || '').trim(),
+        deptCode: (teacherData.deptCode || 'CSE').trim().toUpperCase(),
+        designation: (teacherData.designation || 'Lecturer').trim(),
+        location: (teacherData.location || 'BUET Campus').trim(),
+        updatedAt: Date.now()
+      };
+
+      // Save locally
+      try {
+        const local = JSON.parse(localStorage.getItem(STORAGE_KEY_CUSTOM_TEACHERS) || '{}');
+        local[id] = cleanData;
+        localStorage.setItem(STORAGE_KEY_CUSTOM_TEACHERS, JSON.stringify(local));
+      } catch (e) { }
+
+      // Save to Firestore
+      if (this.isFirebaseActive && this.db) {
+        try {
+          const { doc, setDoc } = this.firestoreOps;
+          await setDoc(doc(this.db, 'teachers', id), cleanData, { merge: true });
+        } catch (e) {
+          console.warn('Failed to save teacher to Firestore:', e);
+        }
+      }
+
+      return cleanData;
+    }
+
+    // Delete teacher (Admin)
+    async deleteTeacher(teacherId) {
+      // Local
+      try {
+        const local = JSON.parse(localStorage.getItem(STORAGE_KEY_CUSTOM_TEACHERS) || '{}');
+        local[teacherId] = { deleted: true };
+        localStorage.setItem(STORAGE_KEY_CUSTOM_TEACHERS, JSON.stringify(local));
+      } catch (e) { }
+
+      // Firestore
+      if (this.isFirebaseActive && this.db) {
+        try {
+          const { doc, setDoc } = this.firestoreOps;
+          await setDoc(doc(this.db, 'teachers', teacherId), { deleted: true }, { merge: true });
+        } catch (e) {
+          console.warn('Failed to mark teacher deleted in Firestore:', e);
+        }
+      }
+
+      return true;
+    }
+
+    // =========================================================================
+    // VERIFICATION QUESTIONS API (Base questions + Admin modifications)
+    // =========================================================================
+
+    async getQuestions() {
+      // Deep clone default questions
+      const base = JSON.parse(JSON.stringify(window.DEPARTMENT_QUESTIONS || {}));
+
+      // Fetch custom/edited questions from Firestore
+      if (this.isFirebaseActive && this.db) {
+        try {
+          const { collection, getDocs } = this.firestoreOps;
+          const snap = await getDocs(collection(this.db, 'questions'));
+          snap.forEach(docSnap => {
+            const data = docSnap.data();
+            const dept = data.dept || 'CSE';
+            if (!base[dept]) base[dept] = [];
+
+            if (data.deleted) {
+              base[dept] = base[dept].filter(q => q.id !== docSnap.id);
+            } else {
+              const existingIdx = base[dept].findIndex(q => q.id === docSnap.id);
+              if (existingIdx >= 0) {
+                base[dept][existingIdx] = { ...data, id: docSnap.id };
+              } else {
+                base[dept].push({ ...data, id: docSnap.id });
+              }
+            }
+          });
+        } catch (e) {
+          console.warn('Could not read questions from Firestore:', e);
+        }
+      }
+
+      // Merge local custom questions
+      try {
+        const localQuestions = JSON.parse(localStorage.getItem(STORAGE_KEY_CUSTOM_QUESTIONS) || '{}');
+        Object.keys(localQuestions).forEach(id => {
+          const data = localQuestions[id];
+          const dept = data.dept || 'CSE';
+          if (!base[dept]) base[dept] = [];
+
+          if (data.deleted) {
+            base[dept] = base[dept].filter(q => q.id !== id);
+          } else {
+            const existingIdx = base[dept].findIndex(q => q.id === id);
+            if (existingIdx >= 0) {
+              base[dept][existingIdx] = { ...data, id };
+            } else {
+              base[dept].push({ ...data, id });
+            }
+          }
+        });
+      } catch (e) { }
+
+      return base;
+    }
+
+    async getQuestionsForDept(dept) {
+      const allQ = await this.getQuestions();
+      const pool = allQ[dept] || allQ['CSE'] || [];
+      const shuffled = [...pool].sort(() => 0.5 - Math.random());
+      return shuffled.slice(0, 5);
+    }
+
+    // Save or update question (Admin)
+    async saveQuestion(questionData) {
+      const id = questionData.id || `q_${(questionData.dept || 'cse').toLowerCase()}_${Date.now().toString(36)}`;
+      const cleanData = {
+        id,
+        dept: (questionData.dept || 'CSE').trim().toUpperCase(),
+        question: (questionData.question || '').trim(),
+        options: questionData.options || [],
+        correctKey: (questionData.correctKey || 'a').trim().toLowerCase(),
+        updatedAt: Date.now()
+      };
+
+      // Local
+      try {
+        const local = JSON.parse(localStorage.getItem(STORAGE_KEY_CUSTOM_QUESTIONS) || '{}');
+        local[id] = cleanData;
+        localStorage.setItem(STORAGE_KEY_CUSTOM_QUESTIONS, JSON.stringify(local));
+      } catch (e) { }
+
+      // Firestore
+      if (this.isFirebaseActive && this.db) {
+        try {
+          const { doc, setDoc } = this.firestoreOps;
+          await setDoc(doc(this.db, 'questions', id), cleanData, { merge: true });
+        } catch (e) {
+          console.warn('Failed to save question to Firestore:', e);
+        }
+      }
+
+      return cleanData;
+    }
+
+    // Delete question (Admin)
+    async deleteQuestion(questionId, dept) {
+      try {
+        const local = JSON.parse(localStorage.getItem(STORAGE_KEY_CUSTOM_QUESTIONS) || '{}');
+        local[questionId] = { deleted: true, dept };
+        localStorage.setItem(STORAGE_KEY_CUSTOM_QUESTIONS, JSON.stringify(local));
+      } catch (e) { }
+
+      if (this.isFirebaseActive && this.db) {
+        try {
+          const { doc, setDoc } = this.firestoreOps;
+          await setDoc(doc(this.db, 'questions', questionId), { deleted: true, dept }, { merge: true });
+        } catch (e) {
+          console.warn('Failed to delete question from Firestore:', e);
+        }
+      }
+
+      return true;
+    }
+
+    // =========================================================================
+    // PORTAL SETTINGS API (Admin: minCorrect, active departments)
+    // =========================================================================
+
+    async getSettings() {
+      const defaultSettings = {
+        minCorrect: 4,
+        activeDepts: ['CSE', 'EEE', 'CE']
+      };
+
+      // Firestore
+      if (this.isFirebaseActive && this.db) {
+        try {
+          const { doc, getDoc } = this.firestoreOps;
+          const snap = await getDoc(doc(this.db, 'settings', 'general'));
+          if (snap.exists()) {
+            return { ...defaultSettings, ...snap.data() };
+          }
+        } catch (e) {
+          console.warn('Could not read settings from Firestore:', e);
+        }
+      }
+
+      // Local
+      try {
+        const local = JSON.parse(localStorage.getItem(STORAGE_KEY_SETTINGS) || '{}');
+        return { ...defaultSettings, ...local };
+      } catch (e) {
+        return defaultSettings;
+      }
+    }
+
+    async saveSettings(settingsData) {
+      const cleanData = {
+        minCorrect: Number(settingsData.minCorrect) || 4,
+        activeDepts: settingsData.activeDepts || ['CSE', 'EEE', 'CE'],
+        updatedAt: Date.now()
+      };
+
+      try {
+        localStorage.setItem(STORAGE_KEY_SETTINGS, JSON.stringify(cleanData));
+      } catch (e) { }
+
+      if (this.isFirebaseActive && this.db) {
+        try {
+          const { doc, setDoc } = this.firestoreOps;
+          await setDoc(doc(this.db, 'settings', 'general'), cleanData, { merge: true });
+        } catch (e) {
+          console.warn('Failed to save settings to Firestore:', e);
+        }
+      }
+
+      return cleanData;
+    }
+
+    // =========================================================================
+    // REVIEWS API
+    // =========================================================================
 
     // Add a review for a teacher
     async addReview(teacherId, reviewData) {

@@ -150,7 +150,25 @@
     }
 
     // Connect to Firebase Cloud Database (or LocalStorage fallback)
-    initDatabase();
+    await initDatabase();
+
+    // Load portal settings (verification pass rate, active depts)
+    if (window.dbService && window.dbService.getSettings) {
+      state.settings = await window.dbService.getSettings();
+      if (state.settings && state.settings.activeDepts && dom.deptSelectDropdown) {
+        const cur = dom.deptSelectDropdown.value;
+        dom.deptSelectDropdown.innerHTML = '';
+        state.settings.activeDepts.forEach(d => {
+          const opt = document.createElement('option');
+          opt.value = d;
+          opt.textContent = `${d} Department`;
+          dom.deptSelectDropdown.appendChild(opt);
+        });
+        if (state.settings.activeDepts.includes(cur)) {
+          dom.deptSelectDropdown.value = cur;
+        }
+      }
+    }
 
     // Initial page: if user is already verified, show directory; else show Welcome (Page 1)
     if (window.identityManager && window.identityManager.isVerified()) {
@@ -503,10 +521,14 @@
   // PAGE 2: VERIFICATION CHALLENGE (5 QUESTIONS, NO ANSWERS SHOWN UNTIL FINAL)
   // ==========================================================================
 
-  function startVerificationQuiz(dept) {
+  async function startVerificationQuiz(dept) {
     state.selectedDept = dept;
     state.quizAnswers = {};
-    state.quizQuestions = window.getQuestionsForDept ? window.getQuestionsForDept(dept) : [];
+    if (window.dbService && window.dbService.getQuestionsForDept) {
+      state.quizQuestions = await window.dbService.getQuestionsForDept(dept);
+    } else {
+      state.quizQuestions = window.getQuestionsForDept ? window.getQuestionsForDept(dept) : [];
+    }
 
     dom.quizDeptDisplay.textContent = `Dept: ${dept}`;
     dom.quizQuestionsArea.style.display = 'block';
@@ -582,8 +604,10 @@
     dom.quizQuestionsArea.style.display = 'none';
     dom.quizResultScreen.style.display = 'block';
 
-    if (score >= 4) {
-      // Verification Passed (4 or 5 out of 5)
+    const minRequired = (state.settings && state.settings.minCorrect) || 4;
+
+    if (score >= minRequired) {
+      // Verification Passed (meets required threshold)
       dom.resultSuccessBox.style.display = 'block';
       dom.resultFailBox.style.display = 'none';
       dom.resultScoreTextSuccess.textContent = `You scored ${score} out of 5! You are verified as a genuine BUET-ian.`;
@@ -596,10 +620,10 @@
       dom.anonAliasInput.value = window.identityManager.getAlias();
       dom.currentMascotPreview.textContent = window.identityManager.getAvatar();
     } else {
-      // Verification Failed (< 4 out of 5)
+      // Verification Failed (< minRequired)
       dom.resultSuccessBox.style.display = 'none';
       dom.resultFailBox.style.display = 'block';
-      dom.resultScoreTextFail.textContent = `You scored ${score} out of 5 correct. A minimum of 4 out of 5 is required to verify BUET student status.`;
+      dom.resultScoreTextFail.textContent = `You scored ${score} out of 5 correct. A minimum of ${minRequired} out of 5 is required to verify BUET student status.`;
     }
   }
 
