@@ -1946,3 +1946,36 @@ a:hover {
     flex-direction: column;
   }
 }
+
+/* ==========================================================================
+   THANKS FOR THE REVIEW BOX & FROZEN BADGE (Update 1)
+   ========================================================================== */
+
+.review-thanks-box {
+  text-align: center;
+  padding: 3rem 1.5rem;
+  animation: fadeIn 0.4s ease forwards;
+}
+
+.thanks-icon {
+  font-size: 3.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.thanks-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.thanks-desc {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+}
+
+.user-identity-badge.frozen {
+  cursor: default;
+  pointer-events: none;
+}
+

@@ -408,422 +408,6 @@
     "location": "ECE Building, West Wing"
   },
   {
-    "id": "eee-052",
-    "name": "Dr. Md. Saifur Rahman",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing"
-  },
-  {
-    "id": "eee-053",
-    "name": "Dr. Md. Shafiqul Islam",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing"
-  },
-  {
-    "id": "eee-054",
-    "name": "Dr. Md. Kamrul Hasan",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing"
-  },
-  {
-    "id": "eee-055",
-    "name": "Dr. Md. Aynal Haque",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing"
-  },
-  {
-    "id": "eee-056",
-    "name": "Dr. A. B. M. Harun-Ur-Rashid",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing"
-  },
-  {
-    "id": "eee-057",
-    "name": "Dr. Sharif Mohammad Mominuzzaman",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing"
-  },
-  {
-    "id": "eee-058",
-    "name": "Dr. Mohammad Jahangir Alam",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing"
-  },
-  {
-    "id": "eee-059",
-    "name": "Dr. Md. Shah Alam",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing"
-  },
-  {
-    "id": "eee-060",
-    "name": "Dr. Md. Ziaur Rahman Khan",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing"
-  },
-  {
-    "id": "eee-061",
-    "name": "Dr. Mohammed Imamul Hassan Bhuiyan",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing"
-  },
-  {
-    "id": "eee-062",
-    "name": "Dr. Shaikh Anowarul Fattah",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing"
-  },
-  {
-    "id": "eee-063",
-    "name": "Dr. Md. Nasim Ahmed Dewan",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing"
-  },
-  {
-    "id": "eee-064",
-    "name": "Dr. S. M. Mahbubur Rahman",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing"
-  },
-  {
-    "id": "eee-065",
-    "name": "Dr. Muhammad Anisuzzaman Talukder",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing"
-  },
-  {
-    "id": "eee-066",
-    "name": "Dr. Mohammad Ariful Haque",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing"
-  },
-  {
-    "id": "eee-067",
-    "name": "Dr. Abdul Hasib Chowdhury",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing"
-  },
-  {
-    "id": "eee-068",
-    "name": "Dr. Farseem Mannan Mohammedy",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing"
-  },
-  {
-    "id": "eee-069",
-    "name": "Dr. Mohammad Faisal",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing"
-  },
-  {
-    "id": "eee-070",
-    "name": "Dr. Samia Subrina",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing"
-  },
-  {
-    "id": "eee-071",
-    "name": "Dr. Md. Forkan Uddin",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing"
-  },
-  {
-    "id": "eee-072",
-    "name": "Dr. Lutfa Akter",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing"
-  },
-  {
-    "id": "eee-073",
-    "name": "Dr. Md. Kawsar Alam",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing"
-  },
-  {
-    "id": "eee-074",
-    "name": "Dr. Md. Zahurul Islam",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing"
-  },
-  {
-    "id": "eee-075",
-    "name": "Dr. Md. Shamim Reza",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing"
-  },
-  {
-    "id": "eee-076",
-    "name": "Dr. Apratim Roy",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing"
-  },
-  {
-    "id": "eee-077",
-    "name": "Dr. Mahbub Alam",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing"
-  },
-  {
-    "id": "eee-078",
-    "name": "Dr. Hafiz Imtiaz",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing"
-  },
-  {
-    "id": "eee-079",
-    "name": "Dr. Ahmed Zubair Associate",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing"
-  },
-  {
-    "id": "eee-080",
-    "name": "Dr. Shaikh Asif Mahmood Associate",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing"
-  },
-  {
-    "id": "eee-081",
-    "name": "Dr. Hamidur Rahman Associate",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing"
-  },
-  {
-    "id": "eee-082",
-    "name": "Dr. Md. Asiful Islam Associate",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing"
-  },
-  {
-    "id": "eee-083",
-    "name": "Dr. Sajid Muhaimin Choudhury Associate",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing"
-  },
-  {
-    "id": "eee-084",
-    "name": "Dr. Muhammad Abdullah Arafat Associate",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing"
-  },
-  {
-    "id": "eee-085",
-    "name": "Dr. Ehsanur Rahman Associate",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing"
-  },
-  {
-    "id": "eee-086",
-    "name": "Yeasir Arafat Assistant",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing"
-  },
-  {
-    "id": "eee-087",
-    "name": "Dr. Nadim Chowdhury Assistant",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing"
-  },
-  {
-    "id": "eee-088",
-    "name": "Dr. Orchi Hassan Assistant",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing"
-  },
-  {
-    "id": "eee-089",
-    "name": "Dr. Maruf Ahmed Assistant",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing"
-  },
-  {
-    "id": "eee-090",
-    "name": "Dr. Md. Hadiur Rahman Khan Assistant",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing"
-  },
-  {
-    "id": "eee-091",
-    "name": "Dr. Md. Irfan Khan Assistant",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing"
-  },
-  {
-    "id": "eee-092",
-    "name": "Asikur Rahman Jowel Assistant",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing"
-  },
-  {
-    "id": "eee-093",
-    "name": "Iftekharul Islam Emon Assistant",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing"
-  },
-  {
-    "id": "eee-094",
-    "name": "Nafis Sadik Assistant",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing"
-  },
-  {
-    "id": "eee-095",
-    "name": "Dr. Md. Mohsinur Rahman Adnan Assistant",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing"
-  },
-  {
-    "id": "eee-096",
-    "name": "Sadman Sakib Ahbab",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Lecturer",
-    "location": "ECE Building, East Wing"
-  },
-  {
-    "id": "eee-097",
-    "name": "Sadat Tahmeed Azad",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Lecturer",
-    "location": "ECE Building, East Wing"
-  },
-  {
-    "id": "eee-098",
-    "name": "Md. Jawad Ul Islam",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Lecturer",
-    "location": "ECE Building, East Wing"
-  },
-  {
-    "id": "eee-099",
-    "name": "Md. Ehsanul Karim",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Lecturer",
-    "location": "ECE Building, East Wing"
-  },
-  {
-    "id": "eee-100",
-    "name": "Tanushri Medha Kundu",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Lecturer",
-    "location": "ECE Building, East Wing"
-  },
-  {
-    "id": "eee-101",
-    "name": "Rafid Hassan Palash",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Lecturer",
-    "location": "ECE Building, East Wing"
-  },
-  {
-    "id": "eee-102",
-    "name": "Khairul Islam",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Lecturer",
-    "location": "ECE Building, East Wing"
-  },
-  {
-    "id": "eee-103",
-    "name": "Md. Kamrul Hasan",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Lecturer",
-    "location": "ECE Building, East Wing"
-  },
-  {
     "id": "ce-104",
     "name": "Dr. A. B. M. Badruzzaman",
     "dept": "Civil Engineering",
@@ -2166,5 +1750,469 @@
     "deptCode": "NCE",
     "designation": "Lecturer",
     "location": "Old Academic Building (OBE)"
+  },
+  {
+    "id": "eee-001",
+    "name": "Dr. Sharif Mohammad Mominuzzaman",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-002",
+    "name": "Dr. Md. Saifur Rahman",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-003",
+    "name": "Dr. Md. Shafiqul Islam",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-004",
+    "name": "Dr. Md. Kamrul Hasan",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-005",
+    "name": "Dr. Md. Aynal Haque",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-006",
+    "name": "Dr. A. B. M. Harun-Ur-Rashid",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-007",
+    "name": "Dr. Mohammad Jahangir Alam",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-008",
+    "name": "Dr. Md. Shah Alam",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-009",
+    "name": "Dr. Md. Ziaur Rahman Khan",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-010",
+    "name": "Dr. Mohammed Imamul Hassan Bhuiyan",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-011",
+    "name": "Dr. Md. Nasim Ahmed Dewan",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-012",
+    "name": "Dr. Celia Shahnaz",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-013",
+    "name": "Dr. S. M. Mahbubur Rahman",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-014",
+    "name": "Dr. Muhammad Anisuzzaman Talukder",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-015",
+    "name": "Dr. Mohammad Ariful Haque",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-016",
+    "name": "Dr. Abdul Hasib Chowdhury",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-017",
+    "name": "Dr. Farseem Mannan Mohammedy",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-018",
+    "name": "Dr. Mohammad Faisal",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-019",
+    "name": "Dr. Samia Subrina",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-020",
+    "name": "Dr. Md. Forkan Uddin",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-021",
+    "name": "Dr. Lutfa Akter",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-022",
+    "name": "Dr. Md. Kawsar Alam",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-023",
+    "name": "Dr. Md. Zahurul Islam",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-024",
+    "name": "Dr. Md. Shamim Reza",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-025",
+    "name": "Dr. Apratim Roy",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-026",
+    "name": "Dr. Mahbub Alam",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-027",
+    "name": "Dr. Md Zunaid Baten",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-028",
+    "name": "Dr. Ahmed Zubair",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-029",
+    "name": "Dr. Hafiz Imtiaz",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-030",
+    "name": "Dr. Shaikh Asif Mahmood",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-031",
+    "name": "Dr. Hamidur Rahman",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-032",
+    "name": "Dr. Md. Asiful Islam",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-033",
+    "name": "Dr. Sajid Muhaimin Choudhury",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-034",
+    "name": "Dr. Muhammad Abdullah Arafat",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-035",
+    "name": "Yeasir Arafat",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Associate Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-036",
+    "name": "Dr. Nadim Chowdhury",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Associate Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-037",
+    "name": "Dr. Ehsanur Rahman",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Associate Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-038",
+    "name": "Dr. Orchi Hassan",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Associate Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-039",
+    "name": "Dr. Maruf Ahmed",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Assistant Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-040",
+    "name": "Dr. Zabir Ahmed",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Assistant Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-041",
+    "name": "Dr. Md. Sadman Sakib Rahman",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Assistant Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-042",
+    "name": "Dr. Md. Hadiur Rahman Khan",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Assistant Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-043",
+    "name": "Dr. Md. Irfan Khan",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Assistant Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-044",
+    "name": "Asikur Rahman Jowel",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Assistant Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-045",
+    "name": "Iftekharul Islam Emon",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Assistant Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-046",
+    "name": "Sadman Sakib Ahbab",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Assistant Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-047",
+    "name": "Nafis Sadik",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Assistant Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-048",
+    "name": "Dr. Md. Mohsinur Rahman Adnan",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Assistant Professor",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-049",
+    "name": "Sadat Tahmeed Azad",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Lecturer",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-050",
+    "name": "Azazul Islam",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Lecturer",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-051",
+    "name": "Md. Jawad Ul Islam",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Lecturer",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-052",
+    "name": "Md. Ehsanul Karim",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Lecturer",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-053",
+    "name": "Tanushri Medha Kundu",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Lecturer",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-054",
+    "name": "Rafid Hassan Palash",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Lecturer",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-055",
+    "name": "Khairul Islam",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Lecturer",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-056",
+    "name": "Md. Kamrul Hasan",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Lecturer",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-057",
+    "name": "Md. Hasib Ur Rashid",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Lecturer",
+    "location": "ECE Building, East Wing"
+  },
+  {
+    "id": "eee-058",
+    "name": "Soumik Saha",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Lecturer",
+    "location": "ECE Building, East Wing"
   }
 ]

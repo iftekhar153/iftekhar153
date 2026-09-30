@@ -919,949 +919,13 @@ window.INITIAL_TEACHERS = [
     "reviews": []
   },
   {
-    "id": "eee-052",
-    "name": "Dr. Md. Saifur Rahman",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing",
-    "avatarColor": "#F59E0B",
-    "stats": {
-      "avgScore": 0.0,
-      "yellowStars": 0,
-      "redStars": 0,
-      "zeroStars": 0,
-      "totalReviews": 0,
-      "netScore": 0
-    },
-    "reviews": []
-  },
-  {
-    "id": "eee-053",
-    "name": "Dr. Md. Shafiqul Islam",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing",
-    "avatarColor": "#EC4899",
-    "stats": {
-      "avgScore": 0.0,
-      "yellowStars": 0,
-      "redStars": 0,
-      "zeroStars": 0,
-      "totalReviews": 0,
-      "netScore": 0
-    },
-    "reviews": []
-  },
-  {
-    "id": "eee-054",
-    "name": "Dr. Md. Kamrul Hasan",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing",
-    "avatarColor": "#06B6D4",
-    "stats": {
-      "avgScore": 0.0,
-      "yellowStars": 0,
-      "redStars": 0,
-      "zeroStars": 0,
-      "totalReviews": 0,
-      "netScore": 0
-    },
-    "reviews": []
-  },
-  {
-    "id": "eee-055",
-    "name": "Dr. Md. Aynal Haque",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing",
-    "avatarColor": "#6366F1",
-    "stats": {
-      "avgScore": 0.0,
-      "yellowStars": 0,
-      "redStars": 0,
-      "zeroStars": 0,
-      "totalReviews": 0,
-      "netScore": 0
-    },
-    "reviews": []
-  },
-  {
-    "id": "eee-056",
-    "name": "Dr. A. B. M. Harun-Ur-Rashid",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing",
-    "avatarColor": "#14B8A6",
-    "stats": {
-      "avgScore": 0.0,
-      "yellowStars": 0,
-      "redStars": 0,
-      "zeroStars": 0,
-      "totalReviews": 0,
-      "netScore": 0
-    },
-    "reviews": []
-  },
-  {
-    "id": "eee-057",
-    "name": "Dr. Sharif Mohammad Mominuzzaman",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing",
-    "avatarColor": "#3B82F6",
-    "stats": {
-      "avgScore": 0.0,
-      "yellowStars": 0,
-      "redStars": 0,
-      "zeroStars": 0,
-      "totalReviews": 0,
-      "netScore": 0
-    },
-    "reviews": []
-  },
-  {
-    "id": "eee-058",
-    "name": "Dr. Mohammad Jahangir Alam",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing",
-    "avatarColor": "#10B981",
-    "stats": {
-      "avgScore": 0.0,
-      "yellowStars": 0,
-      "redStars": 0,
-      "zeroStars": 0,
-      "totalReviews": 0,
-      "netScore": 0
-    },
-    "reviews": []
-  },
-  {
-    "id": "eee-059",
-    "name": "Dr. Md. Shah Alam",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing",
-    "avatarColor": "#8B5CF6",
-    "stats": {
-      "avgScore": 0.0,
-      "yellowStars": 0,
-      "redStars": 0,
-      "zeroStars": 0,
-      "totalReviews": 0,
-      "netScore": 0
-    },
-    "reviews": []
-  },
-  {
-    "id": "eee-060",
-    "name": "Dr. Md. Ziaur Rahman Khan",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing",
-    "avatarColor": "#F59E0B",
-    "stats": {
-      "avgScore": 0.0,
-      "yellowStars": 0,
-      "redStars": 0,
-      "zeroStars": 0,
-      "totalReviews": 0,
-      "netScore": 0
-    },
-    "reviews": []
-  },
-  {
-    "id": "eee-061",
-    "name": "Dr. Mohammed Imamul Hassan Bhuiyan",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing",
-    "avatarColor": "#EC4899",
-    "stats": {
-      "avgScore": 0.0,
-      "yellowStars": 0,
-      "redStars": 0,
-      "zeroStars": 0,
-      "totalReviews": 0,
-      "netScore": 0
-    },
-    "reviews": []
-  },
-  {
-    "id": "eee-062",
-    "name": "Dr. Shaikh Anowarul Fattah",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing",
-    "avatarColor": "#06B6D4",
-    "stats": {
-      "avgScore": 0.0,
-      "yellowStars": 0,
-      "redStars": 0,
-      "zeroStars": 0,
-      "totalReviews": 0,
-      "netScore": 0
-    },
-    "reviews": []
-  },
-  {
-    "id": "eee-063",
-    "name": "Dr. Md. Nasim Ahmed Dewan",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing",
-    "avatarColor": "#6366F1",
-    "stats": {
-      "avgScore": 0.0,
-      "yellowStars": 0,
-      "redStars": 0,
-      "zeroStars": 0,
-      "totalReviews": 0,
-      "netScore": 0
-    },
-    "reviews": []
-  },
-  {
-    "id": "eee-064",
-    "name": "Dr. S. M. Mahbubur Rahman",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing",
-    "avatarColor": "#14B8A6",
-    "stats": {
-      "avgScore": 0.0,
-      "yellowStars": 0,
-      "redStars": 0,
-      "zeroStars": 0,
-      "totalReviews": 0,
-      "netScore": 0
-    },
-    "reviews": []
-  },
-  {
-    "id": "eee-065",
-    "name": "Dr. Muhammad Anisuzzaman Talukder",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing",
-    "avatarColor": "#3B82F6",
-    "stats": {
-      "avgScore": 0.0,
-      "yellowStars": 0,
-      "redStars": 0,
-      "zeroStars": 0,
-      "totalReviews": 0,
-      "netScore": 0
-    },
-    "reviews": []
-  },
-  {
-    "id": "eee-066",
-    "name": "Dr. Mohammad Ariful Haque",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing",
-    "avatarColor": "#10B981",
-    "stats": {
-      "avgScore": 0.0,
-      "yellowStars": 0,
-      "redStars": 0,
-      "zeroStars": 0,
-      "totalReviews": 0,
-      "netScore": 0
-    },
-    "reviews": []
-  },
-  {
-    "id": "eee-067",
-    "name": "Dr. Abdul Hasib Chowdhury",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing",
-    "avatarColor": "#8B5CF6",
-    "stats": {
-      "avgScore": 0.0,
-      "yellowStars": 0,
-      "redStars": 0,
-      "zeroStars": 0,
-      "totalReviews": 0,
-      "netScore": 0
-    },
-    "reviews": []
-  },
-  {
-    "id": "eee-068",
-    "name": "Dr. Farseem Mannan Mohammedy",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing",
-    "avatarColor": "#F59E0B",
-    "stats": {
-      "avgScore": 0.0,
-      "yellowStars": 0,
-      "redStars": 0,
-      "zeroStars": 0,
-      "totalReviews": 0,
-      "netScore": 0
-    },
-    "reviews": []
-  },
-  {
-    "id": "eee-069",
-    "name": "Dr. Mohammad Faisal",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing",
-    "avatarColor": "#EC4899",
-    "stats": {
-      "avgScore": 0.0,
-      "yellowStars": 0,
-      "redStars": 0,
-      "zeroStars": 0,
-      "totalReviews": 0,
-      "netScore": 0
-    },
-    "reviews": []
-  },
-  {
-    "id": "eee-070",
-    "name": "Dr. Samia Subrina",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing",
-    "avatarColor": "#06B6D4",
-    "stats": {
-      "avgScore": 0.0,
-      "yellowStars": 0,
-      "redStars": 0,
-      "zeroStars": 0,
-      "totalReviews": 0,
-      "netScore": 0
-    },
-    "reviews": []
-  },
-  {
-    "id": "eee-071",
-    "name": "Dr. Md. Forkan Uddin",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing",
-    "avatarColor": "#6366F1",
-    "stats": {
-      "avgScore": 0.0,
-      "yellowStars": 0,
-      "redStars": 0,
-      "zeroStars": 0,
-      "totalReviews": 0,
-      "netScore": 0
-    },
-    "reviews": []
-  },
-  {
-    "id": "eee-072",
-    "name": "Dr. Lutfa Akter",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing",
-    "avatarColor": "#14B8A6",
-    "stats": {
-      "avgScore": 0.0,
-      "yellowStars": 0,
-      "redStars": 0,
-      "zeroStars": 0,
-      "totalReviews": 0,
-      "netScore": 0
-    },
-    "reviews": []
-  },
-  {
-    "id": "eee-073",
-    "name": "Dr. Md. Kawsar Alam",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing",
-    "avatarColor": "#3B82F6",
-    "stats": {
-      "avgScore": 0.0,
-      "yellowStars": 0,
-      "redStars": 0,
-      "zeroStars": 0,
-      "totalReviews": 0,
-      "netScore": 0
-    },
-    "reviews": []
-  },
-  {
-    "id": "eee-074",
-    "name": "Dr. Md. Zahurul Islam",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing",
-    "avatarColor": "#10B981",
-    "stats": {
-      "avgScore": 0.0,
-      "yellowStars": 0,
-      "redStars": 0,
-      "zeroStars": 0,
-      "totalReviews": 0,
-      "netScore": 0
-    },
-    "reviews": []
-  },
-  {
-    "id": "eee-075",
-    "name": "Dr. Md. Shamim Reza",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing",
-    "avatarColor": "#8B5CF6",
-    "stats": {
-      "avgScore": 0.0,
-      "yellowStars": 0,
-      "redStars": 0,
-      "zeroStars": 0,
-      "totalReviews": 0,
-      "netScore": 0
-    },
-    "reviews": []
-  },
-  {
-    "id": "eee-076",
-    "name": "Dr. Apratim Roy",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing",
-    "avatarColor": "#F59E0B",
-    "stats": {
-      "avgScore": 0.0,
-      "yellowStars": 0,
-      "redStars": 0,
-      "zeroStars": 0,
-      "totalReviews": 0,
-      "netScore": 0
-    },
-    "reviews": []
-  },
-  {
-    "id": "eee-077",
-    "name": "Dr. Mahbub Alam",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing",
-    "avatarColor": "#EC4899",
-    "stats": {
-      "avgScore": 0.0,
-      "yellowStars": 0,
-      "redStars": 0,
-      "zeroStars": 0,
-      "totalReviews": 0,
-      "netScore": 0
-    },
-    "reviews": []
-  },
-  {
-    "id": "eee-078",
-    "name": "Dr. Hafiz Imtiaz",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing",
-    "avatarColor": "#06B6D4",
-    "stats": {
-      "avgScore": 0.0,
-      "yellowStars": 0,
-      "redStars": 0,
-      "zeroStars": 0,
-      "totalReviews": 0,
-      "netScore": 0
-    },
-    "reviews": []
-  },
-  {
-    "id": "eee-079",
-    "name": "Dr. Ahmed Zubair Associate",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing",
-    "avatarColor": "#6366F1",
-    "stats": {
-      "avgScore": 0.0,
-      "yellowStars": 0,
-      "redStars": 0,
-      "zeroStars": 0,
-      "totalReviews": 0,
-      "netScore": 0
-    },
-    "reviews": []
-  },
-  {
-    "id": "eee-080",
-    "name": "Dr. Shaikh Asif Mahmood Associate",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing",
-    "avatarColor": "#14B8A6",
-    "stats": {
-      "avgScore": 0.0,
-      "yellowStars": 0,
-      "redStars": 0,
-      "zeroStars": 0,
-      "totalReviews": 0,
-      "netScore": 0
-    },
-    "reviews": []
-  },
-  {
-    "id": "eee-081",
-    "name": "Dr. Hamidur Rahman Associate",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing",
-    "avatarColor": "#3B82F6",
-    "stats": {
-      "avgScore": 0.0,
-      "yellowStars": 0,
-      "redStars": 0,
-      "zeroStars": 0,
-      "totalReviews": 0,
-      "netScore": 0
-    },
-    "reviews": []
-  },
-  {
-    "id": "eee-082",
-    "name": "Dr. Md. Asiful Islam Associate",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing",
-    "avatarColor": "#10B981",
-    "stats": {
-      "avgScore": 0.0,
-      "yellowStars": 0,
-      "redStars": 0,
-      "zeroStars": 0,
-      "totalReviews": 0,
-      "netScore": 0
-    },
-    "reviews": []
-  },
-  {
-    "id": "eee-083",
-    "name": "Dr. Sajid Muhaimin Choudhury Associate",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing",
-    "avatarColor": "#8B5CF6",
-    "stats": {
-      "avgScore": 0.0,
-      "yellowStars": 0,
-      "redStars": 0,
-      "zeroStars": 0,
-      "totalReviews": 0,
-      "netScore": 0
-    },
-    "reviews": []
-  },
-  {
-    "id": "eee-084",
-    "name": "Dr. Muhammad Abdullah Arafat Associate",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing",
-    "avatarColor": "#F59E0B",
-    "stats": {
-      "avgScore": 0.0,
-      "yellowStars": 0,
-      "redStars": 0,
-      "zeroStars": 0,
-      "totalReviews": 0,
-      "netScore": 0
-    },
-    "reviews": []
-  },
-  {
-    "id": "eee-085",
-    "name": "Dr. Ehsanur Rahman Associate",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing",
-    "avatarColor": "#EC4899",
-    "stats": {
-      "avgScore": 0.0,
-      "yellowStars": 0,
-      "redStars": 0,
-      "zeroStars": 0,
-      "totalReviews": 0,
-      "netScore": 0
-    },
-    "reviews": []
-  },
-  {
-    "id": "eee-086",
-    "name": "Yeasir Arafat Assistant",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing",
-    "avatarColor": "#06B6D4",
-    "stats": {
-      "avgScore": 0.0,
-      "yellowStars": 0,
-      "redStars": 0,
-      "zeroStars": 0,
-      "totalReviews": 0,
-      "netScore": 0
-    },
-    "reviews": []
-  },
-  {
-    "id": "eee-087",
-    "name": "Dr. Nadim Chowdhury Assistant",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing",
-    "avatarColor": "#6366F1",
-    "stats": {
-      "avgScore": 0.0,
-      "yellowStars": 0,
-      "redStars": 0,
-      "zeroStars": 0,
-      "totalReviews": 0,
-      "netScore": 0
-    },
-    "reviews": []
-  },
-  {
-    "id": "eee-088",
-    "name": "Dr. Orchi Hassan Assistant",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing",
-    "avatarColor": "#14B8A6",
-    "stats": {
-      "avgScore": 0.0,
-      "yellowStars": 0,
-      "redStars": 0,
-      "zeroStars": 0,
-      "totalReviews": 0,
-      "netScore": 0
-    },
-    "reviews": []
-  },
-  {
-    "id": "eee-089",
-    "name": "Dr. Maruf Ahmed Assistant",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing",
-    "avatarColor": "#3B82F6",
-    "stats": {
-      "avgScore": 0.0,
-      "yellowStars": 0,
-      "redStars": 0,
-      "zeroStars": 0,
-      "totalReviews": 0,
-      "netScore": 0
-    },
-    "reviews": []
-  },
-  {
-    "id": "eee-090",
-    "name": "Dr. Md. Hadiur Rahman Khan Assistant",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing",
-    "avatarColor": "#10B981",
-    "stats": {
-      "avgScore": 0.0,
-      "yellowStars": 0,
-      "redStars": 0,
-      "zeroStars": 0,
-      "totalReviews": 0,
-      "netScore": 0
-    },
-    "reviews": []
-  },
-  {
-    "id": "eee-091",
-    "name": "Dr. Md. Irfan Khan Assistant",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing",
-    "avatarColor": "#8B5CF6",
-    "stats": {
-      "avgScore": 0.0,
-      "yellowStars": 0,
-      "redStars": 0,
-      "zeroStars": 0,
-      "totalReviews": 0,
-      "netScore": 0
-    },
-    "reviews": []
-  },
-  {
-    "id": "eee-092",
-    "name": "Asikur Rahman Jowel Assistant",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing",
-    "avatarColor": "#F59E0B",
-    "stats": {
-      "avgScore": 0.0,
-      "yellowStars": 0,
-      "redStars": 0,
-      "zeroStars": 0,
-      "totalReviews": 0,
-      "netScore": 0
-    },
-    "reviews": []
-  },
-  {
-    "id": "eee-093",
-    "name": "Iftekharul Islam Emon Assistant",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing",
-    "avatarColor": "#EC4899",
-    "stats": {
-      "avgScore": 0.0,
-      "yellowStars": 0,
-      "redStars": 0,
-      "zeroStars": 0,
-      "totalReviews": 0,
-      "netScore": 0
-    },
-    "reviews": []
-  },
-  {
-    "id": "eee-094",
-    "name": "Nafis Sadik Assistant",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing",
-    "avatarColor": "#06B6D4",
-    "stats": {
-      "avgScore": 0.0,
-      "yellowStars": 0,
-      "redStars": 0,
-      "zeroStars": 0,
-      "totalReviews": 0,
-      "netScore": 0
-    },
-    "reviews": []
-  },
-  {
-    "id": "eee-095",
-    "name": "Dr. Md. Mohsinur Rahman Adnan Assistant",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Professor",
-    "location": "ECE Building, East Wing",
-    "avatarColor": "#6366F1",
-    "stats": {
-      "avgScore": 0.0,
-      "yellowStars": 0,
-      "redStars": 0,
-      "zeroStars": 0,
-      "totalReviews": 0,
-      "netScore": 0
-    },
-    "reviews": []
-  },
-  {
-    "id": "eee-096",
-    "name": "Sadman Sakib Ahbab",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Lecturer",
-    "location": "ECE Building, East Wing",
-    "avatarColor": "#14B8A6",
-    "stats": {
-      "avgScore": 0.0,
-      "yellowStars": 0,
-      "redStars": 0,
-      "zeroStars": 0,
-      "totalReviews": 0,
-      "netScore": 0
-    },
-    "reviews": []
-  },
-  {
-    "id": "eee-097",
-    "name": "Sadat Tahmeed Azad",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Lecturer",
-    "location": "ECE Building, East Wing",
-    "avatarColor": "#3B82F6",
-    "stats": {
-      "avgScore": 0.0,
-      "yellowStars": 0,
-      "redStars": 0,
-      "zeroStars": 0,
-      "totalReviews": 0,
-      "netScore": 0
-    },
-    "reviews": []
-  },
-  {
-    "id": "eee-098",
-    "name": "Md. Jawad Ul Islam",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Lecturer",
-    "location": "ECE Building, East Wing",
-    "avatarColor": "#10B981",
-    "stats": {
-      "avgScore": 0.0,
-      "yellowStars": 0,
-      "redStars": 0,
-      "zeroStars": 0,
-      "totalReviews": 0,
-      "netScore": 0
-    },
-    "reviews": []
-  },
-  {
-    "id": "eee-099",
-    "name": "Md. Ehsanul Karim",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Lecturer",
-    "location": "ECE Building, East Wing",
-    "avatarColor": "#8B5CF6",
-    "stats": {
-      "avgScore": 0.0,
-      "yellowStars": 0,
-      "redStars": 0,
-      "zeroStars": 0,
-      "totalReviews": 0,
-      "netScore": 0
-    },
-    "reviews": []
-  },
-  {
-    "id": "eee-100",
-    "name": "Tanushri Medha Kundu",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Lecturer",
-    "location": "ECE Building, East Wing",
-    "avatarColor": "#F59E0B",
-    "stats": {
-      "avgScore": 0.0,
-      "yellowStars": 0,
-      "redStars": 0,
-      "zeroStars": 0,
-      "totalReviews": 0,
-      "netScore": 0
-    },
-    "reviews": []
-  },
-  {
-    "id": "eee-101",
-    "name": "Rafid Hassan Palash",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Lecturer",
-    "location": "ECE Building, East Wing",
-    "avatarColor": "#EC4899",
-    "stats": {
-      "avgScore": 0.0,
-      "yellowStars": 0,
-      "redStars": 0,
-      "zeroStars": 0,
-      "totalReviews": 0,
-      "netScore": 0
-    },
-    "reviews": []
-  },
-  {
-    "id": "eee-102",
-    "name": "Khairul Islam",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Lecturer",
-    "location": "ECE Building, East Wing",
-    "avatarColor": "#06B6D4",
-    "stats": {
-      "avgScore": 0.0,
-      "yellowStars": 0,
-      "redStars": 0,
-      "zeroStars": 0,
-      "totalReviews": 0,
-      "netScore": 0
-    },
-    "reviews": []
-  },
-  {
-    "id": "eee-103",
-    "name": "Md. Kamrul Hasan",
-    "dept": "Electrical and Electronic Engineering",
-    "deptCode": "EEE",
-    "designation": "Lecturer",
-    "location": "ECE Building, East Wing",
-    "avatarColor": "#6366F1",
-    "stats": {
-      "avgScore": 0.0,
-      "yellowStars": 0,
-      "redStars": 0,
-      "zeroStars": 0,
-      "totalReviews": 0,
-      "netScore": 0
-    },
-    "reviews": []
-  },
-  {
     "id": "ce-104",
     "name": "Dr. A. B. M. Badruzzaman",
     "dept": "Civil Engineering",
     "deptCode": "CE",
     "designation": "Professor",
     "location": "Civil Building",
-    "avatarColor": "#14B8A6",
+    "avatarColor": "#F59E0B",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -1879,7 +943,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Professor",
     "location": "Civil Building",
-    "avatarColor": "#3B82F6",
+    "avatarColor": "#EC4899",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -1897,7 +961,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Professor",
     "location": "Civil Building",
-    "avatarColor": "#10B981",
+    "avatarColor": "#06B6D4",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -1915,7 +979,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Professor",
     "location": "Civil Building",
-    "avatarColor": "#8B5CF6",
+    "avatarColor": "#6366F1",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -1933,7 +997,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Professor",
     "location": "Civil Building",
-    "avatarColor": "#F59E0B",
+    "avatarColor": "#14B8A6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -1951,7 +1015,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Professor",
     "location": "Civil Building",
-    "avatarColor": "#EC4899",
+    "avatarColor": "#3B82F6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -1969,7 +1033,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Professor",
     "location": "Civil Building",
-    "avatarColor": "#06B6D4",
+    "avatarColor": "#10B981",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -1987,7 +1051,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Professor",
     "location": "Civil Building",
-    "avatarColor": "#6366F1",
+    "avatarColor": "#8B5CF6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2005,7 +1069,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Professor",
     "location": "Civil Building",
-    "avatarColor": "#14B8A6",
+    "avatarColor": "#F59E0B",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2023,7 +1087,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Professor",
     "location": "Civil Building",
-    "avatarColor": "#3B82F6",
+    "avatarColor": "#EC4899",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2041,7 +1105,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Professor",
     "location": "Civil Building",
-    "avatarColor": "#10B981",
+    "avatarColor": "#06B6D4",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2059,7 +1123,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Professor",
     "location": "Civil Building",
-    "avatarColor": "#8B5CF6",
+    "avatarColor": "#6366F1",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2077,7 +1141,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Professor",
     "location": "Civil Building",
-    "avatarColor": "#F59E0B",
+    "avatarColor": "#14B8A6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2095,7 +1159,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Professor",
     "location": "Civil Building",
-    "avatarColor": "#EC4899",
+    "avatarColor": "#3B82F6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2113,7 +1177,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Professor",
     "location": "Civil Building",
-    "avatarColor": "#06B6D4",
+    "avatarColor": "#10B981",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2131,7 +1195,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Professor",
     "location": "Civil Building",
-    "avatarColor": "#6366F1",
+    "avatarColor": "#8B5CF6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2149,7 +1213,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Professor",
     "location": "Civil Building",
-    "avatarColor": "#14B8A6",
+    "avatarColor": "#F59E0B",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2167,7 +1231,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Professor",
     "location": "Civil Building",
-    "avatarColor": "#3B82F6",
+    "avatarColor": "#EC4899",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2185,7 +1249,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Professor",
     "location": "Civil Building",
-    "avatarColor": "#10B981",
+    "avatarColor": "#06B6D4",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2203,7 +1267,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Professor",
     "location": "Civil Building",
-    "avatarColor": "#8B5CF6",
+    "avatarColor": "#6366F1",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2221,7 +1285,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Professor",
     "location": "Civil Building",
-    "avatarColor": "#F59E0B",
+    "avatarColor": "#14B8A6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2239,7 +1303,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Professor",
     "location": "Civil Building",
-    "avatarColor": "#EC4899",
+    "avatarColor": "#3B82F6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2257,7 +1321,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Professor",
     "location": "Civil Building",
-    "avatarColor": "#06B6D4",
+    "avatarColor": "#10B981",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2275,7 +1339,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Professor",
     "location": "Civil Building",
-    "avatarColor": "#6366F1",
+    "avatarColor": "#8B5CF6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2293,7 +1357,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Professor",
     "location": "Civil Building",
-    "avatarColor": "#14B8A6",
+    "avatarColor": "#F59E0B",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2311,7 +1375,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Professor",
     "location": "Civil Building",
-    "avatarColor": "#3B82F6",
+    "avatarColor": "#EC4899",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2329,7 +1393,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Professor",
     "location": "Civil Building",
-    "avatarColor": "#10B981",
+    "avatarColor": "#06B6D4",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2347,7 +1411,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Professor",
     "location": "Civil Building",
-    "avatarColor": "#8B5CF6",
+    "avatarColor": "#6366F1",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2365,7 +1429,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Professor",
     "location": "Civil Building",
-    "avatarColor": "#F59E0B",
+    "avatarColor": "#14B8A6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2383,7 +1447,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Professor",
     "location": "Civil Building",
-    "avatarColor": "#EC4899",
+    "avatarColor": "#3B82F6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2401,7 +1465,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Professor",
     "location": "Civil Building",
-    "avatarColor": "#06B6D4",
+    "avatarColor": "#10B981",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2419,7 +1483,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Professor",
     "location": "Civil Building",
-    "avatarColor": "#6366F1",
+    "avatarColor": "#8B5CF6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2437,7 +1501,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Professor",
     "location": "Civil Building",
-    "avatarColor": "#14B8A6",
+    "avatarColor": "#F59E0B",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2455,7 +1519,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Professor",
     "location": "Civil Building",
-    "avatarColor": "#3B82F6",
+    "avatarColor": "#EC4899",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2473,7 +1537,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Professor",
     "location": "Civil Building",
-    "avatarColor": "#10B981",
+    "avatarColor": "#06B6D4",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2491,7 +1555,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Professor",
     "location": "Civil Building",
-    "avatarColor": "#8B5CF6",
+    "avatarColor": "#6366F1",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2509,7 +1573,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Professor",
     "location": "Civil Building",
-    "avatarColor": "#F59E0B",
+    "avatarColor": "#14B8A6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2527,7 +1591,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Professor",
     "location": "Civil Building",
-    "avatarColor": "#EC4899",
+    "avatarColor": "#3B82F6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2545,7 +1609,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Professor",
     "location": "Civil Building",
-    "avatarColor": "#06B6D4",
+    "avatarColor": "#10B981",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2563,7 +1627,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Professor",
     "location": "Civil Building",
-    "avatarColor": "#6366F1",
+    "avatarColor": "#8B5CF6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2581,7 +1645,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Professor",
     "location": "Civil Building",
-    "avatarColor": "#14B8A6",
+    "avatarColor": "#F59E0B",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2599,7 +1663,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Professor",
     "location": "Civil Building",
-    "avatarColor": "#3B82F6",
+    "avatarColor": "#EC4899",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2617,7 +1681,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Professor",
     "location": "Civil Building",
-    "avatarColor": "#10B981",
+    "avatarColor": "#06B6D4",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2635,7 +1699,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Lecturer",
     "location": "Civil Building",
-    "avatarColor": "#8B5CF6",
+    "avatarColor": "#6366F1",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2653,7 +1717,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Lecturer",
     "location": "Civil Building",
-    "avatarColor": "#F59E0B",
+    "avatarColor": "#14B8A6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2671,7 +1735,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Lecturer",
     "location": "Civil Building",
-    "avatarColor": "#EC4899",
+    "avatarColor": "#3B82F6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2689,7 +1753,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Lecturer",
     "location": "Civil Building",
-    "avatarColor": "#06B6D4",
+    "avatarColor": "#10B981",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2707,7 +1771,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Lecturer",
     "location": "Civil Building",
-    "avatarColor": "#6366F1",
+    "avatarColor": "#8B5CF6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2725,7 +1789,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Lecturer",
     "location": "Civil Building",
-    "avatarColor": "#14B8A6",
+    "avatarColor": "#F59E0B",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2743,7 +1807,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Lecturer",
     "location": "Civil Building",
-    "avatarColor": "#3B82F6",
+    "avatarColor": "#EC4899",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2761,7 +1825,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Lecturer",
     "location": "Civil Building",
-    "avatarColor": "#10B981",
+    "avatarColor": "#06B6D4",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2779,7 +1843,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Lecturer",
     "location": "Civil Building",
-    "avatarColor": "#8B5CF6",
+    "avatarColor": "#6366F1",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2797,7 +1861,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Lecturer",
     "location": "Civil Building",
-    "avatarColor": "#F59E0B",
+    "avatarColor": "#14B8A6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2815,7 +1879,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "CE",
     "designation": "Lecturer",
     "location": "Civil Building",
-    "avatarColor": "#EC4899",
+    "avatarColor": "#3B82F6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2833,7 +1897,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "ME",
     "designation": "Professor",
     "location": "Mechanical Building",
-    "avatarColor": "#06B6D4",
+    "avatarColor": "#10B981",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2851,7 +1915,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "ME",
     "designation": "Professor",
     "location": "Mechanical Building",
-    "avatarColor": "#6366F1",
+    "avatarColor": "#8B5CF6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2869,7 +1933,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "ME",
     "designation": "Professor",
     "location": "Mechanical Building",
-    "avatarColor": "#14B8A6",
+    "avatarColor": "#F59E0B",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2887,7 +1951,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "ME",
     "designation": "Professor",
     "location": "Mechanical Building",
-    "avatarColor": "#3B82F6",
+    "avatarColor": "#EC4899",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2905,7 +1969,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "ME",
     "designation": "Professor",
     "location": "Mechanical Building",
-    "avatarColor": "#10B981",
+    "avatarColor": "#06B6D4",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2923,7 +1987,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "ME",
     "designation": "Professor",
     "location": "Mechanical Building",
-    "avatarColor": "#8B5CF6",
+    "avatarColor": "#6366F1",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2941,7 +2005,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "ME",
     "designation": "Professor",
     "location": "Mechanical Building",
-    "avatarColor": "#F59E0B",
+    "avatarColor": "#14B8A6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2959,7 +2023,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "ME",
     "designation": "Professor",
     "location": "Mechanical Building",
-    "avatarColor": "#EC4899",
+    "avatarColor": "#3B82F6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2977,7 +2041,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "ME",
     "designation": "Professor",
     "location": "Mechanical Building",
-    "avatarColor": "#06B6D4",
+    "avatarColor": "#10B981",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -2995,7 +2059,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "ME",
     "designation": "Professor",
     "location": "Mechanical Building",
-    "avatarColor": "#6366F1",
+    "avatarColor": "#8B5CF6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3013,7 +2077,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "ME",
     "designation": "Professor",
     "location": "Mechanical Building",
-    "avatarColor": "#14B8A6",
+    "avatarColor": "#F59E0B",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3031,7 +2095,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "ME",
     "designation": "Professor",
     "location": "Mechanical Building",
-    "avatarColor": "#3B82F6",
+    "avatarColor": "#EC4899",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3049,7 +2113,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "ME",
     "designation": "Professor",
     "location": "Mechanical Building",
-    "avatarColor": "#10B981",
+    "avatarColor": "#06B6D4",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3067,7 +2131,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "ME",
     "designation": "Professor",
     "location": "Mechanical Building",
-    "avatarColor": "#8B5CF6",
+    "avatarColor": "#6366F1",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3085,7 +2149,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "ME",
     "designation": "Professor",
     "location": "Mechanical Building",
-    "avatarColor": "#F59E0B",
+    "avatarColor": "#14B8A6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3103,7 +2167,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "ME",
     "designation": "Professor",
     "location": "Mechanical Building",
-    "avatarColor": "#EC4899",
+    "avatarColor": "#3B82F6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3121,7 +2185,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "ME",
     "designation": "Professor",
     "location": "Mechanical Building",
-    "avatarColor": "#06B6D4",
+    "avatarColor": "#10B981",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3139,7 +2203,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "ME",
     "designation": "Professor",
     "location": "Mechanical Building",
-    "avatarColor": "#6366F1",
+    "avatarColor": "#8B5CF6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3157,7 +2221,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "ME",
     "designation": "Professor",
     "location": "Mechanical Building",
-    "avatarColor": "#14B8A6",
+    "avatarColor": "#F59E0B",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3175,7 +2239,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "ME",
     "designation": "Professor",
     "location": "Mechanical Building",
-    "avatarColor": "#3B82F6",
+    "avatarColor": "#EC4899",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3193,7 +2257,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "ME",
     "designation": "Professor",
     "location": "Mechanical Building",
-    "avatarColor": "#10B981",
+    "avatarColor": "#06B6D4",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3211,7 +2275,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "ME",
     "designation": "Professor",
     "location": "Mechanical Building",
-    "avatarColor": "#8B5CF6",
+    "avatarColor": "#6366F1",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3229,7 +2293,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "ME",
     "designation": "Professor",
     "location": "Mechanical Building",
-    "avatarColor": "#F59E0B",
+    "avatarColor": "#14B8A6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3247,7 +2311,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "ME",
     "designation": "Professor",
     "location": "Mechanical Building",
-    "avatarColor": "#EC4899",
+    "avatarColor": "#3B82F6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3265,7 +2329,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "ME",
     "designation": "Professor",
     "location": "Mechanical Building",
-    "avatarColor": "#06B6D4",
+    "avatarColor": "#10B981",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3283,7 +2347,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "ME",
     "designation": "Lecturer",
     "location": "Mechanical Building",
-    "avatarColor": "#6366F1",
+    "avatarColor": "#8B5CF6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3301,7 +2365,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "ME",
     "designation": "Lecturer",
     "location": "Mechanical Building",
-    "avatarColor": "#14B8A6",
+    "avatarColor": "#F59E0B",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3319,7 +2383,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "ME",
     "designation": "Lecturer",
     "location": "Mechanical Building",
-    "avatarColor": "#3B82F6",
+    "avatarColor": "#EC4899",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3337,7 +2401,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "IPE",
     "designation": "Professor",
     "location": "Mechanical Building",
-    "avatarColor": "#10B981",
+    "avatarColor": "#06B6D4",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3355,7 +2419,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "IPE",
     "designation": "Professor",
     "location": "Mechanical Building",
-    "avatarColor": "#8B5CF6",
+    "avatarColor": "#6366F1",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3373,7 +2437,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "IPE",
     "designation": "Professor",
     "location": "Mechanical Building",
-    "avatarColor": "#F59E0B",
+    "avatarColor": "#14B8A6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3391,7 +2455,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "IPE",
     "designation": "Professor",
     "location": "Mechanical Building",
-    "avatarColor": "#EC4899",
+    "avatarColor": "#3B82F6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3409,7 +2473,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "IPE",
     "designation": "Professor",
     "location": "Mechanical Building",
-    "avatarColor": "#06B6D4",
+    "avatarColor": "#10B981",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3427,7 +2491,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "IPE",
     "designation": "Professor",
     "location": "Mechanical Building",
-    "avatarColor": "#6366F1",
+    "avatarColor": "#8B5CF6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3445,7 +2509,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "IPE",
     "designation": "Professor",
     "location": "Mechanical Building",
-    "avatarColor": "#14B8A6",
+    "avatarColor": "#F59E0B",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3463,7 +2527,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "IPE",
     "designation": "Professor",
     "location": "Mechanical Building",
-    "avatarColor": "#3B82F6",
+    "avatarColor": "#EC4899",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3481,7 +2545,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "IPE",
     "designation": "Professor",
     "location": "Mechanical Building",
-    "avatarColor": "#10B981",
+    "avatarColor": "#06B6D4",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3499,7 +2563,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "IPE",
     "designation": "Professor",
     "location": "Mechanical Building",
-    "avatarColor": "#8B5CF6",
+    "avatarColor": "#6366F1",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3517,7 +2581,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "IPE",
     "designation": "Professor",
     "location": "Mechanical Building",
-    "avatarColor": "#F59E0B",
+    "avatarColor": "#14B8A6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3535,7 +2599,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "IPE",
     "designation": "Professor",
     "location": "Mechanical Building",
-    "avatarColor": "#EC4899",
+    "avatarColor": "#3B82F6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3553,7 +2617,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "IPE",
     "designation": "Lecturer",
     "location": "Mechanical Building",
-    "avatarColor": "#06B6D4",
+    "avatarColor": "#10B981",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3571,7 +2635,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "BME",
     "designation": "Professor",
     "location": "ECE Building, 10th-11th Floor",
-    "avatarColor": "#6366F1",
+    "avatarColor": "#8B5CF6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3589,7 +2653,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "BME",
     "designation": "Professor",
     "location": "ECE Building, 10th-11th Floor",
-    "avatarColor": "#14B8A6",
+    "avatarColor": "#F59E0B",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3607,7 +2671,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "BME",
     "designation": "Professor",
     "location": "ECE Building, 10th-11th Floor",
-    "avatarColor": "#3B82F6",
+    "avatarColor": "#EC4899",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3625,7 +2689,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "BME",
     "designation": "Professor",
     "location": "ECE Building, 10th-11th Floor",
-    "avatarColor": "#10B981",
+    "avatarColor": "#06B6D4",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3643,7 +2707,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "BME",
     "designation": "Professor",
     "location": "ECE Building, 10th-11th Floor",
-    "avatarColor": "#8B5CF6",
+    "avatarColor": "#6366F1",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3661,7 +2725,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "BME",
     "designation": "Lecturer",
     "location": "ECE Building, 10th-11th Floor",
-    "avatarColor": "#F59E0B",
+    "avatarColor": "#14B8A6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3679,7 +2743,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "BME",
     "designation": "Lecturer",
     "location": "ECE Building, 10th-11th Floor",
-    "avatarColor": "#EC4899",
+    "avatarColor": "#3B82F6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3697,7 +2761,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "BME",
     "designation": "Lecturer",
     "location": "ECE Building, 10th-11th Floor",
-    "avatarColor": "#06B6D4",
+    "avatarColor": "#10B981",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3715,7 +2779,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "BME",
     "designation": "Lecturer",
     "location": "ECE Building, 10th-11th Floor",
-    "avatarColor": "#6366F1",
+    "avatarColor": "#8B5CF6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3733,7 +2797,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "BME",
     "designation": "Lecturer",
     "location": "ECE Building, 10th-11th Floor",
-    "avatarColor": "#14B8A6",
+    "avatarColor": "#F59E0B",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3751,7 +2815,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "BME",
     "designation": "Lecturer",
     "location": "ECE Building, 10th-11th Floor",
-    "avatarColor": "#3B82F6",
+    "avatarColor": "#EC4899",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3769,7 +2833,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "BME",
     "designation": "Lecturer",
     "location": "ECE Building, 10th-11th Floor",
-    "avatarColor": "#10B981",
+    "avatarColor": "#06B6D4",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3787,7 +2851,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "MME",
     "designation": "Professor",
     "location": "Old Academic Building (OAB)",
-    "avatarColor": "#8B5CF6",
+    "avatarColor": "#6366F1",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3805,7 +2869,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "MME",
     "designation": "Professor",
     "location": "Old Academic Building (OAB)",
-    "avatarColor": "#F59E0B",
+    "avatarColor": "#14B8A6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3823,7 +2887,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "MME",
     "designation": "Professor",
     "location": "Old Academic Building (OAB)",
-    "avatarColor": "#EC4899",
+    "avatarColor": "#3B82F6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3841,7 +2905,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "MME",
     "designation": "Professor",
     "location": "Old Academic Building (OAB)",
-    "avatarColor": "#06B6D4",
+    "avatarColor": "#10B981",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3859,7 +2923,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "MME",
     "designation": "Professor",
     "location": "Old Academic Building (OAB)",
-    "avatarColor": "#6366F1",
+    "avatarColor": "#8B5CF6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3877,7 +2941,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "MME",
     "designation": "Professor",
     "location": "Old Academic Building (OAB)",
-    "avatarColor": "#14B8A6",
+    "avatarColor": "#F59E0B",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3895,7 +2959,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "MME",
     "designation": "Professor",
     "location": "Old Academic Building (OAB)",
-    "avatarColor": "#3B82F6",
+    "avatarColor": "#EC4899",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3913,7 +2977,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "MME",
     "designation": "Professor",
     "location": "Old Academic Building (OAB)",
-    "avatarColor": "#10B981",
+    "avatarColor": "#06B6D4",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3931,7 +2995,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "MME",
     "designation": "Professor",
     "location": "Old Academic Building (OAB)",
-    "avatarColor": "#8B5CF6",
+    "avatarColor": "#6366F1",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3949,7 +3013,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "MME",
     "designation": "Professor",
     "location": "Old Academic Building (OAB)",
-    "avatarColor": "#F59E0B",
+    "avatarColor": "#14B8A6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3967,7 +3031,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "MME",
     "designation": "Professor",
     "location": "Old Academic Building (OAB)",
-    "avatarColor": "#EC4899",
+    "avatarColor": "#3B82F6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -3985,7 +3049,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "MME",
     "designation": "Professor",
     "location": "Old Academic Building (OAB)",
-    "avatarColor": "#06B6D4",
+    "avatarColor": "#10B981",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -4003,7 +3067,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "MME",
     "designation": "Professor",
     "location": "Old Academic Building (OAB)",
-    "avatarColor": "#6366F1",
+    "avatarColor": "#8B5CF6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -4021,7 +3085,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "MME",
     "designation": "Professor",
     "location": "Old Academic Building (OAB)",
-    "avatarColor": "#14B8A6",
+    "avatarColor": "#F59E0B",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -4039,7 +3103,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "MME",
     "designation": "Professor",
     "location": "Old Academic Building (OAB)",
-    "avatarColor": "#3B82F6",
+    "avatarColor": "#EC4899",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -4057,7 +3121,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "URP",
     "designation": "Professor",
     "location": "Architecture & Planning Building",
-    "avatarColor": "#10B981",
+    "avatarColor": "#06B6D4",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -4075,7 +3139,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "URP",
     "designation": "Professor",
     "location": "Architecture & Planning Building",
-    "avatarColor": "#8B5CF6",
+    "avatarColor": "#6366F1",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -4093,7 +3157,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "URP",
     "designation": "Professor",
     "location": "Architecture & Planning Building",
-    "avatarColor": "#F59E0B",
+    "avatarColor": "#14B8A6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -4111,7 +3175,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "URP",
     "designation": "Professor",
     "location": "Architecture & Planning Building",
-    "avatarColor": "#EC4899",
+    "avatarColor": "#3B82F6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -4129,7 +3193,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "URP",
     "designation": "Professor",
     "location": "Architecture & Planning Building",
-    "avatarColor": "#06B6D4",
+    "avatarColor": "#10B981",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -4147,7 +3211,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "URP",
     "designation": "Professor",
     "location": "Architecture & Planning Building",
-    "avatarColor": "#6366F1",
+    "avatarColor": "#8B5CF6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -4165,7 +3229,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "URP",
     "designation": "Professor",
     "location": "Architecture & Planning Building",
-    "avatarColor": "#14B8A6",
+    "avatarColor": "#F59E0B",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -4183,7 +3247,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "URP",
     "designation": "Professor",
     "location": "Architecture & Planning Building",
-    "avatarColor": "#3B82F6",
+    "avatarColor": "#EC4899",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -4201,7 +3265,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "URP",
     "designation": "Lecturer",
     "location": "Architecture & Planning Building",
-    "avatarColor": "#10B981",
+    "avatarColor": "#06B6D4",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -4219,7 +3283,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "URP",
     "designation": "Lecturer",
     "location": "Architecture & Planning Building",
-    "avatarColor": "#8B5CF6",
+    "avatarColor": "#6366F1",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -4237,7 +3301,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "URP",
     "designation": "Lecturer",
     "location": "Architecture & Planning Building",
-    "avatarColor": "#F59E0B",
+    "avatarColor": "#14B8A6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -4255,7 +3319,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "URP",
     "designation": "Lecturer",
     "location": "Architecture & Planning Building",
-    "avatarColor": "#EC4899",
+    "avatarColor": "#3B82F6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -4273,7 +3337,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "URP",
     "designation": "Lecturer",
     "location": "Architecture & Planning Building",
-    "avatarColor": "#06B6D4",
+    "avatarColor": "#10B981",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -4291,7 +3355,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "URP",
     "designation": "Lecturer",
     "location": "Architecture & Planning Building",
-    "avatarColor": "#6366F1",
+    "avatarColor": "#8B5CF6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -4309,7 +3373,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "URP",
     "designation": "Lecturer",
     "location": "Architecture & Planning Building",
-    "avatarColor": "#14B8A6",
+    "avatarColor": "#F59E0B",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -4327,7 +3391,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "NAME",
     "designation": "Professor",
     "location": "Civil / NAME Building",
-    "avatarColor": "#3B82F6",
+    "avatarColor": "#EC4899",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -4345,7 +3409,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "NAME",
     "designation": "Professor",
     "location": "Civil / NAME Building",
-    "avatarColor": "#10B981",
+    "avatarColor": "#06B6D4",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -4363,7 +3427,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "NAME",
     "designation": "Professor",
     "location": "Civil / NAME Building",
-    "avatarColor": "#8B5CF6",
+    "avatarColor": "#6366F1",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -4381,7 +3445,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "NAME",
     "designation": "Professor",
     "location": "Civil / NAME Building",
-    "avatarColor": "#F59E0B",
+    "avatarColor": "#14B8A6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -4399,7 +3463,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "NAME",
     "designation": "Professor",
     "location": "Civil / NAME Building",
-    "avatarColor": "#EC4899",
+    "avatarColor": "#3B82F6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -4417,7 +3481,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "NAME",
     "designation": "Professor",
     "location": "Civil / NAME Building",
-    "avatarColor": "#06B6D4",
+    "avatarColor": "#10B981",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -4435,7 +3499,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "NAME",
     "designation": "Professor",
     "location": "Civil / NAME Building",
-    "avatarColor": "#6366F1",
+    "avatarColor": "#8B5CF6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -4453,7 +3517,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "NAME",
     "designation": "Lecturer",
     "location": "Civil / NAME Building",
-    "avatarColor": "#14B8A6",
+    "avatarColor": "#F59E0B",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -4471,7 +3535,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "NAME",
     "designation": "Lecturer",
     "location": "Civil / NAME Building",
-    "avatarColor": "#3B82F6",
+    "avatarColor": "#EC4899",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -4489,7 +3553,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "NAME",
     "designation": "Lecturer",
     "location": "Civil / NAME Building",
-    "avatarColor": "#10B981",
+    "avatarColor": "#06B6D4",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -4507,7 +3571,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "WRE",
     "designation": "Professor",
     "location": "Civil Building",
-    "avatarColor": "#8B5CF6",
+    "avatarColor": "#6366F1",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -4525,7 +3589,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "WRE",
     "designation": "Professor",
     "location": "Civil Building",
-    "avatarColor": "#F59E0B",
+    "avatarColor": "#14B8A6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -4543,7 +3607,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "WRE",
     "designation": "Professor",
     "location": "Civil Building",
-    "avatarColor": "#EC4899",
+    "avatarColor": "#3B82F6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -4561,7 +3625,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "WRE",
     "designation": "Professor",
     "location": "Civil Building",
-    "avatarColor": "#06B6D4",
+    "avatarColor": "#10B981",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -4579,7 +3643,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "WRE",
     "designation": "Professor",
     "location": "Civil Building",
-    "avatarColor": "#6366F1",
+    "avatarColor": "#8B5CF6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -4597,7 +3661,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "WRE",
     "designation": "Professor",
     "location": "Civil Building",
-    "avatarColor": "#14B8A6",
+    "avatarColor": "#F59E0B",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -4615,7 +3679,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "WRE",
     "designation": "Professor",
     "location": "Civil Building",
-    "avatarColor": "#3B82F6",
+    "avatarColor": "#EC4899",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -4633,7 +3697,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "WRE",
     "designation": "Professor",
     "location": "Civil Building",
-    "avatarColor": "#10B981",
+    "avatarColor": "#06B6D4",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -4651,7 +3715,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "WRE",
     "designation": "Lecturer",
     "location": "Civil Building",
-    "avatarColor": "#8B5CF6",
+    "avatarColor": "#6366F1",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -4669,7 +3733,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "WRE",
     "designation": "Lecturer",
     "location": "Civil Building",
-    "avatarColor": "#F59E0B",
+    "avatarColor": "#14B8A6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -4687,7 +3751,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "WRE",
     "designation": "Lecturer",
     "location": "Civil Building",
-    "avatarColor": "#EC4899",
+    "avatarColor": "#3B82F6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -4705,7 +3769,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "WRE",
     "designation": "Lecturer",
     "location": "Civil Building",
-    "avatarColor": "#06B6D4",
+    "avatarColor": "#10B981",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -4723,7 +3787,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "NCE",
     "designation": "Professor",
     "location": "Old Academic Building (OBE)",
-    "avatarColor": "#6366F1",
+    "avatarColor": "#8B5CF6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -4741,7 +3805,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "NCE",
     "designation": "Professor",
     "location": "Old Academic Building (OBE)",
-    "avatarColor": "#14B8A6",
+    "avatarColor": "#F59E0B",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -4759,7 +3823,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "NCE",
     "designation": "Professor",
     "location": "Old Academic Building (OBE)",
-    "avatarColor": "#3B82F6",
+    "avatarColor": "#EC4899",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -4777,7 +3841,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "NCE",
     "designation": "Professor",
     "location": "Old Academic Building (OBE)",
-    "avatarColor": "#10B981",
+    "avatarColor": "#06B6D4",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -4795,7 +3859,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "NCE",
     "designation": "Professor",
     "location": "Old Academic Building (OBE)",
-    "avatarColor": "#8B5CF6",
+    "avatarColor": "#6366F1",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -4813,7 +3877,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "NCE",
     "designation": "Professor",
     "location": "Old Academic Building (OBE)",
-    "avatarColor": "#F59E0B",
+    "avatarColor": "#14B8A6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -4831,7 +3895,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "NCE",
     "designation": "Professor",
     "location": "Old Academic Building (OBE)",
-    "avatarColor": "#EC4899",
+    "avatarColor": "#3B82F6",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -4849,7 +3913,7 @@ window.INITIAL_TEACHERS = [
     "deptCode": "NCE",
     "designation": "Lecturer",
     "location": "Old Academic Building (OBE)",
-    "avatarColor": "#06B6D4",
+    "avatarColor": "#10B981",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,
@@ -4867,7 +3931,1051 @@ window.INITIAL_TEACHERS = [
     "deptCode": "NCE",
     "designation": "Lecturer",
     "location": "Old Academic Building (OBE)",
+    "avatarColor": "#8B5CF6",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-001",
+    "name": "Dr. Sharif Mohammad Mominuzzaman",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#F59E0B",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-002",
+    "name": "Dr. Md. Saifur Rahman",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#EC4899",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-003",
+    "name": "Dr. Md. Shafiqul Islam",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#06B6D4",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-004",
+    "name": "Dr. Md. Kamrul Hasan",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing",
     "avatarColor": "#6366F1",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-005",
+    "name": "Dr. Md. Aynal Haque",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#14B8A6",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-006",
+    "name": "Dr. A. B. M. Harun-Ur-Rashid",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#3B82F6",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-007",
+    "name": "Dr. Mohammad Jahangir Alam",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#10B981",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-008",
+    "name": "Dr. Md. Shah Alam",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#8B5CF6",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-009",
+    "name": "Dr. Md. Ziaur Rahman Khan",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#F59E0B",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-010",
+    "name": "Dr. Mohammed Imamul Hassan Bhuiyan",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#EC4899",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-011",
+    "name": "Dr. Md. Nasim Ahmed Dewan",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#06B6D4",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-012",
+    "name": "Dr. Celia Shahnaz",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#6366F1",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-013",
+    "name": "Dr. S. M. Mahbubur Rahman",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#14B8A6",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-014",
+    "name": "Dr. Muhammad Anisuzzaman Talukder",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#3B82F6",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-015",
+    "name": "Dr. Mohammad Ariful Haque",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#10B981",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-016",
+    "name": "Dr. Abdul Hasib Chowdhury",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#8B5CF6",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-017",
+    "name": "Dr. Farseem Mannan Mohammedy",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#F59E0B",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-018",
+    "name": "Dr. Mohammad Faisal",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#EC4899",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-019",
+    "name": "Dr. Samia Subrina",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#06B6D4",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-020",
+    "name": "Dr. Md. Forkan Uddin",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#6366F1",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-021",
+    "name": "Dr. Lutfa Akter",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#14B8A6",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-022",
+    "name": "Dr. Md. Kawsar Alam",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#3B82F6",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-023",
+    "name": "Dr. Md. Zahurul Islam",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#10B981",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-024",
+    "name": "Dr. Md. Shamim Reza",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#8B5CF6",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-025",
+    "name": "Dr. Apratim Roy",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#F59E0B",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-026",
+    "name": "Dr. Mahbub Alam",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#EC4899",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-027",
+    "name": "Dr. Md Zunaid Baten",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#06B6D4",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-028",
+    "name": "Dr. Ahmed Zubair",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#6366F1",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-029",
+    "name": "Dr. Hafiz Imtiaz",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#14B8A6",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-030",
+    "name": "Dr. Shaikh Asif Mahmood",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#3B82F6",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-031",
+    "name": "Dr. Hamidur Rahman",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#10B981",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-032",
+    "name": "Dr. Md. Asiful Islam",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#8B5CF6",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-033",
+    "name": "Dr. Sajid Muhaimin Choudhury",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#F59E0B",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-034",
+    "name": "Dr. Muhammad Abdullah Arafat",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Professor",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#EC4899",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-035",
+    "name": "Yeasir Arafat",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Associate Professor",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#06B6D4",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-036",
+    "name": "Dr. Nadim Chowdhury",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Associate Professor",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#6366F1",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-037",
+    "name": "Dr. Ehsanur Rahman",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Associate Professor",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#14B8A6",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-038",
+    "name": "Dr. Orchi Hassan",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Associate Professor",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#3B82F6",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-039",
+    "name": "Dr. Maruf Ahmed",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Assistant Professor",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#10B981",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-040",
+    "name": "Dr. Zabir Ahmed",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Assistant Professor",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#8B5CF6",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-041",
+    "name": "Dr. Md. Sadman Sakib Rahman",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Assistant Professor",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#F59E0B",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-042",
+    "name": "Dr. Md. Hadiur Rahman Khan",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Assistant Professor",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#EC4899",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-043",
+    "name": "Dr. Md. Irfan Khan",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Assistant Professor",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#06B6D4",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-044",
+    "name": "Asikur Rahman Jowel",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Assistant Professor",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#6366F1",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-045",
+    "name": "Iftekharul Islam Emon",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Assistant Professor",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#14B8A6",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-046",
+    "name": "Sadman Sakib Ahbab",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Assistant Professor",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#3B82F6",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-047",
+    "name": "Nafis Sadik",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Assistant Professor",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#10B981",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-048",
+    "name": "Dr. Md. Mohsinur Rahman Adnan",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Assistant Professor",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#8B5CF6",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-049",
+    "name": "Sadat Tahmeed Azad",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Lecturer",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#F59E0B",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-050",
+    "name": "Azazul Islam",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Lecturer",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#EC4899",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-051",
+    "name": "Md. Jawad Ul Islam",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Lecturer",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#06B6D4",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-052",
+    "name": "Md. Ehsanul Karim",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Lecturer",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#6366F1",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-053",
+    "name": "Tanushri Medha Kundu",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Lecturer",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#14B8A6",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-054",
+    "name": "Rafid Hassan Palash",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Lecturer",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#3B82F6",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-055",
+    "name": "Khairul Islam",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Lecturer",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#10B981",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-056",
+    "name": "Md. Kamrul Hasan",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Lecturer",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#8B5CF6",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-057",
+    "name": "Md. Hasib Ur Rashid",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Lecturer",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#F59E0B",
+    "stats": {
+      "avgScore": 0.0,
+      "yellowStars": 0,
+      "redStars": 0,
+      "zeroStars": 0,
+      "totalReviews": 0,
+      "netScore": 0
+    },
+    "reviews": []
+  },
+  {
+    "id": "eee-058",
+    "name": "Soumik Saha",
+    "dept": "Electrical and Electronic Engineering",
+    "deptCode": "EEE",
+    "designation": "Lecturer",
+    "location": "ECE Building, East Wing",
+    "avatarColor": "#EC4899",
     "stats": {
       "avgScore": 0.0,
       "yellowStars": 0,

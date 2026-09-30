@@ -10,7 +10,7 @@ Built strictly according to [`website page model.docx`](file:///d:/Downloads_Fro
   - **Red Stars (-1 to -5)** for strictness, tough quizzes, & heavy scrutiny
 - **Day / Night Mode Toggle** (Light & Dark themes persisted in `localStorage`)
 - **Anonymous Identity System** (Random or custom anonymous handles + avatar mascots)
-- **271 Authentic BUET Faculty Directory Records** (Across CSE, EEE, CE, ME, and more)
+- **277 Authentic BUET Faculty Directory Records** (including updated 58 EEE faculty members from official BUET directory PDF)
 - **Google Firebase Firestore** integration (`megamindratings` project) with resilient offline `localStorage` fallback.
 
 ---

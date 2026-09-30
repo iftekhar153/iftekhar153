@@ -123,7 +123,13 @@
       reviewsCountBadge: document.getElementById('reviewsCountBadge'),
       reviewFilterPills: document.getElementById('reviewFilterPills'),
       othersReviewsList: document.getElementById('othersReviewsList'),
-      noReviewsNotice: document.getElementById('noReviewsNotice')
+      noReviewsNotice: document.getElementById('noReviewsNotice'),
+
+      // Update 1: Review box & thanks card
+      reviewSubmissionContainer: document.getElementById('reviewSubmissionContainer'),
+      reviewFormContent: document.getElementById('reviewFormContent'),
+      reviewThanksContent: document.getElementById('reviewThanksContent'),
+      thanksTeacherName: document.getElementById('thanksTeacherName')
     };
   }
 
@@ -284,7 +290,45 @@
   // ROUTING & PAGE NAVIGATION
   // ==========================================================================
 
+  // ==========================================================================
+  // ROUTING & NAVBAR VISIBILITY RULES (Update 1)
+  // ==========================================================================
+
+  function updateNavbarState(pageId) {
+    const isVerified = window.identityManager && window.identityManager.isVerified();
+
+    if (pageId === 'pageWelcome' || pageId === 'pageVerify') {
+      // 1st or 2nd page:
+      // "This option must not be seen by the user when he is in 1st or 2nd page"
+      if (dom.navDirectoryBtn) dom.navDirectoryBtn.style.display = 'none';
+      if (dom.navVerifyBtn) dom.navVerifyBtn.style.display = 'none';
+      if (dom.navUserBadge) dom.navUserBadge.style.display = 'none';
+    } else {
+      // 3rd or 4th page:
+      // "User can move between 3rd and 4th page."
+      if (dom.navDirectoryBtn) dom.navDirectoryBtn.style.display = 'inline-flex';
+      // "This must be gone in 3rd or 4th page"
+      if (dom.navVerifyBtn) dom.navVerifyBtn.style.display = 'none';
+      // "His name will be frozen and cant be edited anymore once he step in 3rd page."
+      if (dom.navUserBadge) {
+        dom.navUserBadge.style.display = 'inline-flex';
+        dom.navUserBadge.classList.add('frozen');
+        dom.navUserBadge.style.cursor = 'default';
+        dom.navUserBadge.style.pointerEvents = 'none';
+        dom.navUserBadge.title = 'Anonymous Student (Verified & Locked)';
+      }
+    }
+  }
+
   function navigateToPage(pageId) {
+    const isVerified = window.identityManager && window.identityManager.isVerified();
+
+    // RULE from Update 1:
+    // "Once he is verified , he will be taken to the 3rd page and he can no longer go back to the 1st or 2nd page."
+    if (isVerified && (pageId === 'pageWelcome' || pageId === 'pageVerify')) {
+      pageId = 'pageDirectory';
+    }
+
     const views = [dom.pageWelcome, dom.pageVerify, dom.pageDirectory, dom.pageReview];
     views.forEach(v => {
       if (v) v.classList.remove('active');
@@ -297,6 +341,8 @@
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
+    updateNavbarState(pageId);
+
     if (pageId === 'pageDirectory') {
       applyTeacherFilters();
     }
@@ -307,7 +353,7 @@
   // ==========================================================================
 
   function setupEventListeners() {
-    // Brand click: Home / Directory
+    // Brand click: If verified -> Page 3 (Directory); Else -> Page 1 (Welcome)
     dom.brandHomeBtn.addEventListener('click', () => {
       if (window.identityManager && window.identityManager.isVerified()) {
         navigateToPage('pageDirectory');
@@ -316,16 +362,9 @@
       }
     });
 
+    // Move between 3rd and 4th page
     dom.navDirectoryBtn.addEventListener('click', () => {
       navigateToPage('pageDirectory');
-    });
-
-    dom.navVerifyBtn.addEventListener('click', () => {
-      navigateToPage('pageWelcome');
-    });
-
-    dom.navUserBadge.addEventListener('click', () => {
-      navigateToPage('pageVerify');
     });
 
     // Page 1: Start Verification
@@ -733,6 +772,9 @@
   // PAGE 4: TEACHER EVALUATION & REVIEW SUBMISSION
   // ==========================================================================
 
+  // Track reviewed teachers in this session (Update 1)
+  const reviewedTeacherIds = new Set(JSON.parse(sessionStorage.getItem('buet_reviewed_teachers') || '[]'));
+
   function openTeacherReviewPage(teacher) {
     state.selectedTeacher = teacher;
     clearStarSelection();
@@ -743,6 +785,18 @@
     dom.reviewFilterPills.querySelectorAll('.rev-filter-pill').forEach(p => {
       p.classList.toggle('active', p.getAttribute('data-filter') === 'ALL');
     });
+
+    // Check if user already submitted a review for this teacher (Update 1)
+    if (reviewedTeacherIds.has(teacher.id)) {
+      if (dom.reviewFormContent) dom.reviewFormContent.style.display = 'none';
+      if (dom.reviewThanksContent) {
+        dom.reviewThanksContent.style.display = 'block';
+        if (dom.thanksTeacherName) dom.thanksTeacherName.textContent = teacher.name;
+      }
+    } else {
+      if (dom.reviewFormContent) dom.reviewFormContent.style.display = 'block';
+      if (dom.reviewThanksContent) dom.reviewThanksContent.style.display = 'none';
+    }
 
     renderTeacherReviewPage(teacher);
     navigateToPage('pageReview');
@@ -837,7 +891,20 @@
 
     try {
       const res = await window.dbService.addReview(state.selectedTeacher.id, reviewData);
-      showToast('🎉 Review submitted successfully! Thank you for evaluating.');
+      showToast('🎉 Thanks for the review!');
+
+      // Record this teacher as reviewed (Update 1)
+      reviewedTeacherIds.add(state.selectedTeacher.id);
+      sessionStorage.setItem('buet_reviewed_teachers', JSON.stringify(Array.from(reviewedTeacherIds)));
+
+      // RULE from Update 1:
+      // "Once an user submit their review only the star and review box will be gone and he will see 'thanks for the review'"
+      // "Only This will be gone when user click submit. He can still see the rest of the things in 4th page"
+      if (dom.reviewFormContent) dom.reviewFormContent.style.display = 'none';
+      if (dom.reviewThanksContent) {
+        dom.reviewThanksContent.style.display = 'block';
+        if (dom.thanksTeacherName) dom.thanksTeacherName.textContent = state.selectedTeacher.name;
+      }
 
       // Refresh directory and current teacher
       await loadTeachersDirectory();

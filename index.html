@@ -250,7 +250,7 @@
             </p>
           </div>
           <div class="directory-quick-stats">
-            <span class="stat-pill"><strong id="totalTeachersCount">271</strong> Faculty</span>
+            <span class="stat-pill"><strong id="totalTeachersCount">277</strong> Faculty</span>
             <span class="stat-pill"><strong id="totalReviewsCount">0</strong> Student Reviews</span>
           </div>
         </div>
@@ -368,124 +368,134 @@
         </div>
 
         <!-- 4th Page Review Form Section -->
-        <div class="review-submission-card card-glass">
-          <div class="card-title-wrap">
-            <h3 class="submission-title">
-              Comment your review for <span id="reviewTargetName" class="highlight-teacher">this teacher</span>
-            </h3>
-            <div class="author-posting-badge">
-              <span>Posting anonymously as:</span>
-              <strong id="submissionAuthorDisplay">🦊 WizardFox_42</strong>
+        <div id="reviewSubmissionContainer" class="review-submission-card card-glass">
+          <!-- Active Review Form (Will be replaced with thanks message upon submission) -->
+          <div id="reviewFormContent">
+            <div class="card-title-wrap">
+              <h3 class="submission-title">
+                Comment your review for <span id="reviewTargetName" class="highlight-teacher">this teacher</span>
+              </h3>
+              <div class="author-posting-badge">
+                <span>Posting anonymously as:</span>
+                <strong id="submissionAuthorDisplay">🦊 WizardFox_42</strong>
+              </div>
             </div>
-          </div>
 
-          <!-- The +5 to -5 Dual Star Rating Scale -->
-          <div class="rating-scale-section">
-            <div class="scale-instructions-wrap">
-              <label class="scale-label">
-                Select your Star Rating:
+            <!-- The +5 to -5 Dual Star Rating Scale -->
+            <div class="rating-scale-section">
+              <div class="scale-instructions-wrap">
+                <label class="scale-label">
+                  Select your Star Rating:
+                </label>
+                <span class="scale-note">
+                  (Yellow Star: Good Review • Red Star: Bad Review • Scale: +5 to -5 or 0)
+                </span>
+              </div>
+
+              <!-- The 11-step interactive button/star bar -->
+              <div class="scale-buttons-grid" id="starScaleContainer">
+                <!-- +5 to +1: Yellow Stars -->
+                <button type="button" class="scale-star-btn btn-star-yellow" data-rating="5" title="+5 Yellow Stars (Outstanding)">
+                  <span class="scale-num">+5</span>
+                  <span class="scale-stars-row">★★★★★</span>
+                  <span class="scale-type">Yellow</span>
+                </button>
+                <button type="button" class="scale-star-btn btn-star-yellow" data-rating="4" title="+4 Yellow Stars (Excellent)">
+                  <span class="scale-num">+4</span>
+                  <span class="scale-stars-row">★★★★</span>
+                  <span class="scale-type">Yellow</span>
+                </button>
+                <button type="button" class="scale-star-btn btn-star-yellow" data-rating="3" title="+3 Yellow Stars (Very Good)">
+                  <span class="scale-num">+3</span>
+                  <span class="scale-stars-row">★★★</span>
+                  <span class="scale-type">Yellow</span>
+                </button>
+                <button type="button" class="scale-star-btn btn-star-yellow" data-rating="2" title="+2 Yellow Stars (Good)">
+                  <span class="scale-num">+2</span>
+                  <span class="scale-stars-row">★★</span>
+                  <span class="scale-type">Yellow</span>
+                </button>
+                <button type="button" class="scale-star-btn btn-star-yellow" data-rating="1" title="+1 Yellow Star (Decent)">
+                  <span class="scale-num">+1</span>
+                  <span class="scale-stars-row">★</span>
+                  <span class="scale-type">Yellow</span>
+                </button>
+
+                <!-- 0: White / Neutral Star -->
+                <button type="button" class="scale-star-btn btn-star-zero" data-rating="0" title="0 Star (Neutral / Indifferent)">
+                  <span class="scale-num">0</span>
+                  <span class="scale-stars-row">☆</span>
+                  <span class="scale-type">Neutral</span>
+                </button>
+
+                <!-- -1 to -5: Red Stars -->
+                <button type="button" class="scale-star-btn btn-star-red" data-rating="-1" title="-1 Red Star (Minor Strictness)">
+                  <span class="scale-num">-1</span>
+                  <span class="scale-stars-row">★</span>
+                  <span class="scale-type">Red</span>
+                </button>
+                <button type="button" class="scale-star-btn btn-star-red" data-rating="-2" title="-2 Red Stars (Strict Attendance / Tough)">
+                  <span class="scale-num">-2</span>
+                  <span class="scale-stars-row">★★</span>
+                  <span class="scale-type">Red</span>
+                </button>
+                <button type="button" class="scale-star-btn btn-star-red" data-rating="-3" title="-3 Red Stars (Harsh Quizzes)">
+                  <span class="scale-num">-3</span>
+                  <span class="scale-stars-row">★★★</span>
+                  <span class="scale-type">Red</span>
+                </button>
+                <button type="button" class="scale-star-btn btn-star-red" data-rating="-4" title="-4 Red Stars (Brutal Grading)">
+                  <span class="scale-num">-4</span>
+                  <span class="scale-stars-row">★★★★</span>
+                  <span class="scale-type">Red</span>
+                </button>
+                <button type="button" class="scale-star-btn btn-star-red" data-rating="-5" title="-5 Red Stars (Extreme Scrutiny)">
+                  <span class="scale-num">-5</span>
+                  <span class="scale-stars-row">★★★★★</span>
+                  <span class="scale-type">Red</span>
+                </button>
+              </div>
+
+              <!-- Current Rating Display Feedback -->
+              <div class="selected-rating-feedback">
+                <span class="feedback-prefix">Current Selection:</span>
+                <strong id="ratingFeedbackText" class="feedback-value">No star selected yet</strong>
+                <button type="button" id="clearRatingBtn" class="btn-clear-selection" style="display: none;">Deselect</button>
+              </div>
+            </div>
+
+            <!-- Course Code Field (Optional) -->
+            <div class="form-group">
+              <label for="reviewCourseCode" class="form-label">
+                Course Code <span class="label-optional">(Optional, e.g. CSE 101, EEE 205, CE 103)</span>:
               </label>
-              <span class="scale-note">
-                (Yellow Star: Good Review • Red Star: Bad Review • Scale: +5 to -5 or 0)
-              </span>
+              <input type="text" id="reviewCourseCode" class="form-input" placeholder="e.g. CSE 101">
             </div>
 
-            <!-- The 11-step interactive button/star bar -->
-            <div class="scale-buttons-grid" id="starScaleContainer">
-              <!-- +5 to +1: Yellow Stars -->
-              <button type="button" class="scale-star-btn btn-star-yellow" data-rating="5" title="+5 Yellow Stars (Outstanding)">
-                <span class="scale-num">+5</span>
-                <span class="scale-stars-row">★★★★★</span>
-                <span class="scale-type">Yellow</span>
-              </button>
-              <button type="button" class="scale-star-btn btn-star-yellow" data-rating="4" title="+4 Yellow Stars (Excellent)">
-                <span class="scale-num">+4</span>
-                <span class="scale-stars-row">★★★★</span>
-                <span class="scale-type">Yellow</span>
-              </button>
-              <button type="button" class="scale-star-btn btn-star-yellow" data-rating="3" title="+3 Yellow Stars (Very Good)">
-                <span class="scale-num">+3</span>
-                <span class="scale-stars-row">★★★</span>
-                <span class="scale-type">Yellow</span>
-              </button>
-              <button type="button" class="scale-star-btn btn-star-yellow" data-rating="2" title="+2 Yellow Stars (Good)">
-                <span class="scale-num">+2</span>
-                <span class="scale-stars-row">★★</span>
-                <span class="scale-type">Yellow</span>
-              </button>
-              <button type="button" class="scale-star-btn btn-star-yellow" data-rating="1" title="+1 Yellow Star (Decent)">
-                <span class="scale-num">+1</span>
-                <span class="scale-stars-row">★</span>
-                <span class="scale-type">Yellow</span>
-              </button>
-
-              <!-- 0: White / Neutral Star -->
-              <button type="button" class="scale-star-btn btn-star-zero" data-rating="0" title="0 Star (Neutral / Indifferent)">
-                <span class="scale-num">0</span>
-                <span class="scale-stars-row">☆</span>
-                <span class="scale-type">Neutral</span>
-              </button>
-
-              <!-- -1 to -5: Red Stars -->
-              <button type="button" class="scale-star-btn btn-star-red" data-rating="-1" title="-1 Red Star (Minor Strictness)">
-                <span class="scale-num">-1</span>
-                <span class="scale-stars-row">★</span>
-                <span class="scale-type">Red</span>
-              </button>
-              <button type="button" class="scale-star-btn btn-star-red" data-rating="-2" title="-2 Red Stars (Strict Attendance / Tough)">
-                <span class="scale-num">-2</span>
-                <span class="scale-stars-row">★★</span>
-                <span class="scale-type">Red</span>
-              </button>
-              <button type="button" class="scale-star-btn btn-star-red" data-rating="-3" title="-3 Red Stars (Harsh Quizzes)">
-                <span class="scale-num">-3</span>
-                <span class="scale-stars-row">★★★</span>
-                <span class="scale-type">Red</span>
-              </button>
-              <button type="button" class="scale-star-btn btn-star-red" data-rating="-4" title="-4 Red Stars (Brutal Grading)">
-                <span class="scale-num">-4</span>
-                <span class="scale-stars-row">★★★★</span>
-                <span class="scale-type">Red</span>
-              </button>
-              <button type="button" class="scale-star-btn btn-star-red" data-rating="-5" title="-5 Red Stars (Extreme Scrutiny)">
-                <span class="scale-num">-5</span>
-                <span class="scale-stars-row">★★★★★</span>
-                <span class="scale-type">Red</span>
-              </button>
+            <!-- Comment Box -->
+            <div class="form-group">
+              <div class="label-char-flex">
+                <label for="reviewCommentText" class="form-label">
+                  Comment Box <span class="required-asterisk">*</span>:
+                </label>
+                <span id="commentCharCount" class="char-counter">0 / 600</span>
+              </div>
+              <textarea id="reviewCommentText" class="form-textarea" rows="4" maxlength="600" placeholder="Write your honest, constructive anonymous review regarding lectures, exams, grading, consultation, and coursework..."></textarea>
             </div>
 
-            <!-- Current Rating Display Feedback -->
-            <div class="selected-rating-feedback">
-              <span class="feedback-prefix">Current Selection:</span>
-              <strong id="ratingFeedbackText" class="feedback-value">No star selected yet</strong>
-              <button type="button" id="clearRatingBtn" class="btn-clear-selection" style="display: none;">Deselect</button>
+            <!-- Submit Button -->
+            <div class="submit-action-row">
+              <button id="submitReviewBtn" class="btn btn-success btn-large">
+                <span>Submit</span>
+              </button>
             </div>
           </div>
 
-          <!-- Course Code Field (Optional) -->
-          <div class="form-group">
-            <label for="reviewCourseCode" class="form-label">
-              Course Code <span class="label-optional">(Optional, e.g. CSE 101, EEE 205, CE 103)</span>:
-            </label>
-            <input type="text" id="reviewCourseCode" class="form-input" placeholder="e.g. CSE 101">
-          </div>
-
-          <!-- Comment Box -->
-          <div class="form-group">
-            <div class="label-char-flex">
-              <label for="reviewCommentText" class="form-label">
-                Comment Box <span class="required-asterisk">*</span>:
-              </label>
-              <span id="commentCharCount" class="char-counter">0 / 600</span>
-            </div>
-            <textarea id="reviewCommentText" class="form-textarea" rows="4" maxlength="600" placeholder="Write your honest, constructive anonymous review regarding lectures, exams, grading, consultation, and coursework..."></textarea>
-          </div>
-
-          <!-- Submit Button -->
-          <div class="submit-action-row">
-            <button id="submitReviewBtn" class="btn btn-success btn-large">
-              <span>Submit</span>
-            </button>
+          <!-- Thanks for the review Box (Appears after submission) -->
+          <div id="reviewThanksContent" class="review-thanks-box" style="display: none;">
+            <div class="thanks-icon">🎉</div>
+            <h3 class="thanks-title">Thanks for the review</h3>
+            <p class="thanks-desc">Your anonymous review for <strong id="thanksTeacherName" class="highlight-teacher">Teacher</strong> has been recorded.</p>
           </div>
         </div>
 
