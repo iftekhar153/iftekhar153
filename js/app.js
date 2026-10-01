@@ -836,7 +836,7 @@
     card.innerHTML = `
       <div class="teacher-card-n1-header">
         <div class="teacher-ranking-name-wrap">
-          <span class="teacher-ranking-label">Ranking ${ranking}:</span>
+          <span class="teacher-ranking-label ${scoreClass === 'negative' ? 'negative' : ''}">Rank ${ranking}:</span>
           <h3 class="teacher-card-name">${escapeHtml(teacher.name)}</h3>
         </div>
         <div class="card-score-badge ${scoreClass}" title="Average Star Score: ${formattedScore} (+5 to -5 scale)">
@@ -861,7 +861,7 @@
 
       <div class="teacher-card-footer-row">
         <span class="total-reviews-count-text">
-          [Total reviews till that time: <strong>${totalRev}</strong>]
+          Total reviews: <strong>${totalRev}</strong>
         </span>
         <span class="card-action-link">
           Rate &amp; View Reviews &rarr;
