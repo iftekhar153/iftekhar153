@@ -1078,10 +1078,10 @@ a:hover {
   box-shadow: 0 2px 10px rgba(59, 130, 246, 0.35);
 }
 
-/* Teachers Grid */
+/* Teachers Grid — N*1 Column View (Do 6) */
 .teachers-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: 1fr;
   gap: 1.25rem;
 }
 
@@ -1092,8 +1092,7 @@ a:hover {
   padding: 1.35rem 1.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 1rem;
+  gap: 0.85rem;
   box-shadow: var(--shadow-sm);
   cursor: pointer;
   transition: all var(--transition-normal);
@@ -1103,15 +1102,123 @@ a:hover {
 
 .teacher-card:hover {
   border-color: var(--border-strong);
-  transform: translateY(-3px);
+  transform: translateY(-2px);
   box-shadow: var(--shadow-md);
 }
 
-.teacher-card-top {
+/* N*1 Card Structure (Do 6) */
+.teacher-card-n1-header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  gap: 0.75rem;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.teacher-ranking-name-wrap {
+  display: flex;
+  align-items: baseline;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+}
+
+.teacher-ranking-label {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--accent-cyan);
+  letter-spacing: -0.01em;
+}
+
+.teacher-card-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.teacher-card-meta-line {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  flex-wrap: wrap;
+}
+
+.teacher-desig {
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.meta-separator {
+  color: var(--text-muted);
+}
+
+.teacher-dept-name {
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+/* Recent Review Block (Do 6) */
+.teacher-recent-review-block {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-left: 3px solid var(--accent-cyan);
+  border-radius: var(--radius-md);
+  padding: 0.85rem 1.15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.recent-review-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.recent-review-badge {
+  font-size: 0.76rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent-cyan);
+}
+
+.recent-review-meta {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.recent-review-quote {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+  font-style: italic;
+  word-break: break-word;
+}
+
+/* Bottom Footer (Do 6) */
+.teacher-card-footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 0.75rem;
+  font-size: 0.84rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.total-reviews-count-text {
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.total-reviews-count-text strong {
+  color: var(--text-primary);
 }
 
 .teacher-dept-pill {
@@ -1154,38 +1261,6 @@ a:hover {
   background: var(--star-zero-bg);
   color: var(--star-zero);
   border: 1px solid var(--star-zero-border);
-}
-
-.teacher-card-body h3 {
-  font-size: 1.15rem;
-  font-weight: 700;
-  margin-bottom: 0.25rem;
-  color: var(--text-primary);
-}
-
-.teacher-desig {
-  font-size: 0.85rem;
-  color: var(--text-secondary);
-  margin-bottom: 0.25rem;
-}
-
-.teacher-dept-name {
-  font-size: 0.8rem;
-  color: var(--text-muted);
-}
-
-.teacher-card-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-top: 1px solid var(--border-subtle);
-  padding-top: 0.85rem;
-  font-size: 0.82rem;
-}
-
-.review-count-stat {
-  color: var(--text-secondary);
-  font-weight: 600;
 }
 
 .card-action-link {
@@ -1978,4 +2053,615 @@ a:hover {
   cursor: default;
   pointer-events: none;
 }
+
+/* ==========================================================================
+   SERVER MAINTENANCE NOTICE (Do 5)
+   ========================================================================== */
+
+.maintenance-notice-box {
+  background: rgba(245, 158, 11, 0.12);
+  border: 1.5px solid rgba(245, 158, 11, 0.45);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.75rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  text-align: left;
+  animation: fadeIn 0.3s ease;
+}
+
+.maintenance-notice-icon {
+  font-size: 2.25rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.maintenance-notice-content {
+  flex: 1;
+}
+
+.maintenance-notice-title {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #f59e0b;
+  margin-bottom: 0.35rem;
+}
+
+.maintenance-notice-text {
+  font-size: 0.94rem;
+  color: var(--text-primary);
+  line-height: 1.55;
+  font-weight: 500;
+}
+
+.disabled-maintenance {
+  opacity: 0.45 !important;
+  cursor: not-allowed !important;
+  pointer-events: none !important;
+  filter: grayscale(0.5);
+}
+
+/* ==========================================================================
+   MODIFICATION SUGGESTION BOX (Do 9)
+   ========================================================================== */
+
+.modification-suggestion-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem 1.75rem;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border-medium);
+  background: var(--bg-card);
+  margin-top: 1.75rem;
+  flex-wrap: wrap;
+  box-shadow: var(--shadow-sm);
+}
+
+.suggestion-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+  min-width: 260px;
+}
+
+.suggestion-icon {
+  font-size: 2rem;
+  background: rgba(56, 189, 248, 0.12);
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  flex-shrink: 0;
+}
+
+.suggestion-title {
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.suggestion-desc {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.btn-suggestion {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  white-space: nowrap;
+  padding: 0.75rem 1.35rem;
+  font-weight: 700;
+  font-size: 0.92rem;
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  flex-shrink: 0;
+  background: var(--bg-surface);
+  border: 1.5px solid var(--accent-cyan);
+  color: var(--accent-cyan);
+  transition: all var(--transition-fast);
+}
+
+.btn-suggestion:hover {
+  background: var(--accent-cyan);
+  color: #090d16;
+  box-shadow: 0 4px 16px var(--accent-cyan-glow);
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   DEVICE & SCREEN RESPONSIVE OPTIMIZATION (Do 10)
+   Covers Mobile (<=680px), Tablet (681px-1024px), and PC (>1024px)
+   ========================================================================== */
+
+/* ---------- MOBILE OPTIMIZATIONS (Screen width <= 680px or data-device="mobile") ---------- */
+@media (max-width: 680px), [data-device="mobile"] body {
+  /* Prevent horizontal overflow */
+  body {
+    overflow-x: hidden;
+  }
+
+  .app-container {
+    padding: 1rem 0.75rem 2.5rem;
+  }
+
+  /* Global Navbar */
+  .global-navbar {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .nav-wrapper {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .brand-headings .brand-tagline {
+    display: none;
+  }
+
+  .brand-headings .brand-title {
+    font-size: 0.95rem;
+    letter-spacing: 0;
+  }
+
+  .brand-crest {
+    font-size: 1.4rem;
+  }
+
+  .nav-actions {
+    gap: 0.4rem;
+  }
+
+  .theme-toggle-btn {
+    padding: 0.35rem 0.65rem;
+  }
+
+  .user-identity-badge {
+    padding: 0.3rem 0.65rem;
+    font-size: 0.78rem;
+  }
+
+  /* PAGE 1: Welcome */
+  .welcome-card {
+    padding: 1.5rem 1rem;
+    border-radius: var(--radius-lg);
+  }
+
+  .welcome-title {
+    font-size: 1.45rem;
+    line-height: 1.3;
+    margin-bottom: 0.75rem;
+  }
+
+  .welcome-lead {
+    font-size: 0.88rem;
+    line-height: 1.55;
+    margin-bottom: 1.25rem;
+  }
+
+  .dept-select-wrap {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: stretch;
+  }
+
+  .dept-select-label {
+    font-size: 0.82rem;
+  }
+
+  .dept-dropdown {
+    width: 100%;
+    font-size: 0.92rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .btn-large {
+    width: 100%;
+    padding: 0.85rem 1.2rem;
+    font-size: 0.95rem;
+    justify-content: center;
+  }
+
+  .maintenance-notice-box {
+    padding: 1rem 1rem;
+    gap: 0.75rem;
+  }
+
+  .maintenance-notice-icon {
+    font-size: 1.75rem;
+  }
+
+  .maintenance-notice-title {
+    font-size: 0.95rem;
+  }
+
+  .maintenance-notice-text {
+    font-size: 0.84rem;
+  }
+
+  /* PAGE 2: Verification Challenge */
+  .verify-container {
+    padding: 1.25rem 0.85rem;
+    border-radius: var(--radius-lg);
+  }
+
+  .quiz-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .quiz-title {
+    font-size: 1.35rem;
+  }
+
+  .quiz-instruction {
+    font-size: 0.86rem;
+  }
+
+  .question-card {
+    padding: 1rem 0.85rem;
+  }
+
+  .question-num-badge {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.55rem;
+  }
+
+  .question-title-text {
+    font-size: 0.92rem;
+    line-height: 1.45;
+  }
+
+  .options-grid {
+    grid-template-columns: 1fr !important;
+    gap: 0.55rem;
+  }
+
+  .option-btn {
+    padding: 0.65rem 0.85rem;
+    font-size: 0.86rem;
+    min-height: auto;
+  }
+
+  .alias-input-row {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .alias-input-wrapper {
+    width: 100%;
+  }
+
+  .mascot-options-row {
+    gap: 0.4rem;
+  }
+
+  .mascot-btn {
+    font-size: 1.25rem;
+    padding: 0.35rem 0.55rem;
+  }
+
+  /* PAGE 3: Directory */
+  .directory-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.65rem;
+  }
+
+  .main-title {
+    font-size: 1.45rem;
+    line-height: 1.25;
+  }
+
+  .directory-quick-stats {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .stat-pill {
+    font-size: 0.76rem;
+    padding: 0.35rem 0.65rem;
+  }
+
+  .search-filter-card {
+    padding: 1rem 0.85rem;
+    border-radius: var(--radius-lg);
+  }
+
+  .search-row {
+    flex-direction: column;
+    gap: 0.65rem;
+  }
+
+  .search-input-wrap {
+    min-width: 0;
+    width: 100%;
+    padding: 0.65rem 0.85rem;
+  }
+
+  .sort-select-wrap {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .sort-select {
+    flex: 1;
+    width: 100%;
+    font-size: 0.84rem;
+    padding: 0.65rem 0.75rem;
+  }
+
+  .dept-tabs-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 0.4rem;
+  }
+
+  .dept-tab {
+    padding: 0.35rem 0.75rem;
+    font-size: 0.76rem;
+  }
+
+  /* N*1 Teacher Card Mobile */
+  .teacher-card-n1 {
+    padding: 1rem 0.85rem;
+    gap: 0.65rem;
+  }
+
+  .teacher-card-n1-header {
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .teacher-ranking-name-wrap {
+    gap: 0.4rem;
+  }
+
+  .teacher-ranking-label {
+    font-size: 0.95rem;
+  }
+
+  .teacher-card-name {
+    font-size: 1.05rem;
+    line-height: 1.3;
+  }
+
+  .card-score-badge {
+    font-size: 0.82rem;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .teacher-card-meta-line {
+    font-size: 0.8rem;
+    gap: 0.35rem;
+  }
+
+  .teacher-recent-review-block {
+    padding: 0.65rem 0.8rem;
+  }
+
+  .recent-review-badge {
+    font-size: 0.7rem;
+  }
+
+  .recent-review-quote {
+    font-size: 0.82rem;
+  }
+
+  .teacher-card-footer-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+  }
+
+  .total-reviews-count-text {
+    font-size: 0.78rem;
+  }
+
+  .card-action-link {
+    font-size: 0.82rem;
+  }
+
+  .modification-suggestion-box {
+    padding: 1.15rem 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .suggestion-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.65rem;
+    min-width: 0;
+  }
+
+  .suggestion-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+
+  .suggestion-title {
+    font-size: 0.95rem;
+  }
+
+  .suggestion-desc {
+    font-size: 0.82rem;
+  }
+
+  .btn-suggestion {
+    width: 100%;
+    justify-content: center;
+    padding: 0.7rem 1rem;
+    font-size: 0.86rem;
+  }
+
+  .pagination-bar {
+    gap: 0.65rem;
+    flex-wrap: wrap;
+  }
+
+  .page-indicator {
+    font-size: 0.78rem;
+  }
+
+  /* PAGE 4: Teacher Evaluation Mobile */
+  .teacher-profile-card {
+    padding: 1.25rem 0.85rem;
+  }
+
+  .profile-header-flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.75rem;
+  }
+
+  .profile-avatar {
+    width: 60px;
+    height: 60px;
+    font-size: 2.2rem;
+  }
+
+  .profile-teacher-name {
+    font-size: 1.35rem;
+  }
+
+  .profile-designation {
+    font-size: 0.86rem;
+  }
+
+  .profile-score-display {
+    width: 100%;
+    padding: 0.65rem;
+  }
+
+  .ratings-breakdown-row {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .review-submission-card {
+    padding: 1.25rem 0.85rem;
+  }
+
+  /* 11 Star Scale Buttons on Mobile: Clean 2 rows */
+  .scale-buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr) !important;
+    gap: 0.35rem !important;
+  }
+
+  .scale-star-btn {
+    min-height: 42px;
+    padding: 0.25rem 0.2rem;
+    font-size: 0.82rem;
+  }
+
+  .star-btn-score {
+    font-size: 0.88rem;
+  }
+
+  .star-btn-symbol {
+    font-size: 0.75rem;
+  }
+
+  .rating-feedback-display {
+    padding: 0.65rem 0.85rem;
+    font-size: 0.82rem;
+  }
+
+  .review-filters-bar {
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .rev-filter-pill {
+    padding: 0.35rem 0.65rem;
+    font-size: 0.76rem;
+  }
+
+  .review-item-card {
+    padding: 1rem 0.85rem;
+  }
+
+  .review-item-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+  }
+
+  .review-rating-pill {
+    align-self: flex-start;
+    font-size: 0.78rem;
+    padding: 0.25rem 0.55rem;
+  }
+}
+
+/* ---------- TABLET OPTIMIZATIONS (681px - 1024px or data-device="tablet") ---------- */
+@media (min-width: 681px) and (max-width: 1024px), [data-device="tablet"] body {
+  .app-container {
+    padding: 1.5rem 1.25rem 3rem;
+  }
+
+  .main-title {
+    font-size: 1.85rem;
+  }
+
+  .welcome-title {
+    font-size: 1.75rem;
+  }
+
+  .scale-buttons-grid {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0.5rem;
+  }
+
+  .search-row {
+    flex-wrap: wrap;
+  }
+
+  .search-input-wrap {
+    flex: 1 1 300px;
+  }
+
+  .dept-tabs-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .teacher-card-n1 {
+    padding: 1.25rem 1.35rem;
+  }
+
+  .modification-suggestion-box {
+    padding: 1.35rem 1.5rem;
+  }
+}
+
+/* ---------- PC / DESKTOP OPTIMIZATIONS (> 1024px or data-device="pc") ---------- */
+@media (min-width: 1025px), [data-device="pc"] body {
+  .app-container {
+    padding: 2rem 1.5rem 4rem;
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+
+  .scale-buttons-grid {
+    grid-template-columns: repeat(11, 1fr);
+  }
+}
+
 
