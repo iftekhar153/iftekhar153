@@ -185,7 +185,11 @@
           const reviewsSnap = await getDocs(collection(this.db, 'reviews'));
           reviewsSnap.forEach(docSnap => {
             const rData = docSnap.data();
-            allReviews.push({ id: docSnap.id, ...rData });
+            allReviews.push({
+              ...rData,
+              firestoreDocId: docSnap.id,
+              id: rData.id || docSnap.id
+            });
           });
         } catch (e) {
           console.warn('Could not read from Firestore, falling back to local reviews:', e);
@@ -433,13 +437,14 @@
     }
 
     // =========================================================================
-    // PORTAL SETTINGS API (Admin: minCorrect, active departments)
+    // PORTAL SETTINGS API (Admin: minCorrect, active departments, maintenance)
     // =========================================================================
 
     async getSettings() {
       const defaultSettings = {
         minCorrect: 4,
-        activeDepts: ['CSE', 'EEE', 'CE']
+        activeDepts: ['CSE', 'EEE', 'CE'],
+        maintenanceMode: false
       };
 
       // Firestore
@@ -468,6 +473,7 @@
       const cleanData = {
         minCorrect: Number(settingsData.minCorrect) || 4,
         activeDepts: settingsData.activeDepts || ['CSE', 'EEE', 'CE'],
+        maintenanceMode: Boolean(settingsData.maintenanceMode),
         updatedAt: Date.now()
       };
 
@@ -490,6 +496,76 @@
     // =========================================================================
     // REVIEWS API
     // =========================================================================
+
+    // Fetch all student reviews across all teachers (Admin)
+    async getAllReviews() {
+      let allReviews = [];
+
+      if (this.isFirebaseActive && this.db) {
+        try {
+          const { collection, getDocs } = this.firestoreOps;
+          const snap = await getDocs(collection(this.db, 'reviews'));
+          snap.forEach(docSnap => {
+            const rData = docSnap.data();
+            allReviews.push({
+              ...rData,
+              firestoreDocId: docSnap.id,
+              id: rData.id || docSnap.id
+            });
+          });
+        } catch (e) {
+          console.warn('Could not read reviews from Firestore:', e);
+        }
+      }
+
+      // Merge local reviews (avoid duplicates)
+      const localReviews = this.getLocalReviews();
+      const existingIds = new Set(allReviews.map(r => r.id || r.firestoreDocId));
+      for (const lr of localReviews) {
+        if (!existingIds.has(lr.id)) {
+          allReviews.push(lr);
+        }
+      }
+
+      // Sort newest first
+      allReviews.sort((a, b) => (b.timestamp || 0) - (a.timestamp || 0));
+      return allReviews;
+    }
+
+    // Delete a review by reviewId and/or firestoreDocId (Admin)
+    async deleteReview(reviewId, firestoreDocId) {
+      // 1. Remove from local storage
+      try {
+        const local = this.getLocalReviews();
+        const updated = local.filter(r => r.id !== reviewId && r.firestoreDocId !== firestoreDocId);
+        this.saveLocalReviews(updated);
+      } catch (e) { }
+
+      // 2. Remove from Firestore
+      if (this.isFirebaseActive && this.db) {
+        try {
+          const { doc, deleteDoc, collection, getDocs } = this.firestoreOps;
+          if (firestoreDocId) {
+            await deleteDoc(doc(this.db, 'reviews', firestoreDocId));
+          } else if (reviewId) {
+            try {
+              await deleteDoc(doc(this.db, 'reviews', reviewId));
+            } catch (err) {}
+            // Also delete any doc in 'reviews' where data().id == reviewId
+            const snap = await getDocs(collection(this.db, 'reviews'));
+            for (const d of snap.docs) {
+              if (d.data().id === reviewId || d.id === reviewId) {
+                await deleteDoc(doc(this.db, 'reviews', d.id));
+              }
+            }
+          }
+        } catch (e) {
+          console.warn('Failed to delete review from Firestore:', e);
+        }
+      }
+
+      return true;
+    }
 
     // Add a review for a teacher
     async addReview(teacherId, reviewData) {
@@ -524,7 +600,10 @@
       if (this.isFirebaseActive && this.db) {
         try {
           const { collection, addDoc } = this.firestoreOps;
-          await addDoc(collection(this.db, 'reviews'), review);
+          const docRef = await addDoc(collection(this.db, 'reviews'), review);
+          if (docRef && docRef.id) {
+            review.firestoreDocId = docRef.id;
+          }
           firestoreSaved = true;
         } catch (e) {
           console.warn('Failed to write review to Firestore, saved locally:', e);

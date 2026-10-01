@@ -17,9 +17,10 @@
     searchQuery: '',
     sortMode: 'HIGHEST_STAR',
     page: 1,
-    pageSize: 18,
+    pageSize: 40, // 40 teachers max at once (Do 6)
     selectedRating: null, // number between -5 and +5, or null
-    reviewsFilter: 'ALL'
+    reviewsFilter: 'ALL',
+    maintenanceMode: false // Server maintenance flag (Do 5)
   };
 
   const RATING_DESCRIPTIONS = {
@@ -65,6 +66,7 @@
       // Page 1: Welcome
       deptSelectDropdown: document.getElementById('deptSelectDropdown'),
       startVerificationBtn: document.getElementById('startVerificationBtn'),
+      serverMaintenanceNotice: document.getElementById('serverMaintenanceNotice'), // (Do 5)
 
       // Page 2: Quiz
       quizDeptDisplay: document.getElementById('quizDeptDisplay'),
@@ -137,7 +139,29 @@
   // INITIALIZATION
   // ==========================================================================
 
+  // ==========================================================================
+  // DEVICE DETECTION & RESPONSIVE ADAPTATION (Do 10)
+  // ==========================================================================
+
+  function initDeviceDetection() {
+    function detectDevice() {
+      const w = window.innerWidth;
+      let device = 'pc';
+      if (w <= 680) {
+        device = 'mobile';
+      } else if (w <= 1024) {
+        device = 'tablet';
+      } else {
+        device = 'pc';
+      }
+      document.documentElement.setAttribute('data-device', device);
+    }
+    window.addEventListener('resize', detectDevice);
+    detectDevice();
+  }
+
   async function initApp() {
+    initDeviceDetection();
     cacheDomElements();
     initTheme();
     initIdentity();
@@ -152,9 +176,12 @@
     // Connect to Firebase Cloud Database (or LocalStorage fallback)
     await initDatabase();
 
-    // Load portal settings (verification pass rate, active depts)
+    // Load portal settings (verification pass rate, active depts, maintenance mode)
     if (window.dbService && window.dbService.getSettings) {
       state.settings = await window.dbService.getSettings();
+      state.maintenanceMode = Boolean(state.settings && state.settings.maintenanceMode);
+      applyMaintenanceModeUI();
+
       if (state.settings && state.settings.activeDepts && dom.deptSelectDropdown) {
         const cur = dom.deptSelectDropdown.value;
         dom.deptSelectDropdown.innerHTML = '';
@@ -170,8 +197,10 @@
       }
     }
 
-    // Initial page: if user is already verified, show directory; else show Welcome (Page 1)
-    if (window.identityManager && window.identityManager.isVerified()) {
+    // Initial page: if maintenance mode active, always show Page 1
+    if (state.maintenanceMode) {
+      navigateToPage('pageWelcome');
+    } else if (window.identityManager && window.identityManager.isVerified()) {
       navigateToPage('pageDirectory');
     } else {
       navigateToPage('pageWelcome');
@@ -256,25 +285,40 @@
   // ==========================================================================
 
   async function initDatabase() {
-    dom.dbStatusBadge.className = 'status-badge';
-    dom.dbStatusText.textContent = 'Connecting...';
+    if (dom.dbStatusBadge) dom.dbStatusBadge.className = 'status-badge';
+    if (dom.dbStatusText) dom.dbStatusText.textContent = 'Connecting...';
 
     window.addEventListener('buet-db-status', (e) => {
       const { online } = e.detail;
-      if (online) {
-        dom.dbStatusBadge.className = 'status-badge online';
-        dom.dbStatusText.textContent = 'Firebase Cloud Live';
-        dom.dbStatusBadge.title = 'Connected to Google Firebase Firestore (megamindratings)';
-      } else {
-        dom.dbStatusBadge.className = 'status-badge offline';
-        dom.dbStatusText.textContent = 'Local Database';
-        dom.dbStatusBadge.title = 'Running in offline LocalStorage mode';
+      if (dom.dbStatusBadge && dom.dbStatusText) {
+        if (online) {
+          dom.dbStatusBadge.className = 'status-badge online';
+          dom.dbStatusText.textContent = 'Firebase Cloud Live';
+          dom.dbStatusBadge.title = 'Connected to Google Firebase Firestore (megamindratings)';
+        } else {
+          dom.dbStatusBadge.className = 'status-badge offline';
+          dom.dbStatusText.textContent = 'Local Database';
+          dom.dbStatusBadge.title = 'Running in offline LocalStorage mode';
+        }
       }
     });
 
     if (window.dbService) {
       await window.dbService.initFirebase();
       await loadTeachersDirectory();
+    }
+  }
+
+  function applyMaintenanceModeUI() {
+    if (dom.serverMaintenanceNotice) {
+      dom.serverMaintenanceNotice.style.display = state.maintenanceMode ? 'block' : 'none';
+    }
+    if (dom.startVerificationBtn) {
+      if (state.maintenanceMode) {
+        dom.startVerificationBtn.classList.add('disabled-maintenance');
+      } else {
+        dom.startVerificationBtn.classList.remove('disabled-maintenance');
+      }
     }
   }
 
@@ -339,11 +383,16 @@
   }
 
   function navigateToPage(pageId) {
+    // If server maintenance is active, lock on welcome page with notice (Do 5)
+    if (state.maintenanceMode) {
+      pageId = 'pageWelcome';
+    }
+
     const isVerified = window.identityManager && window.identityManager.isVerified();
 
     // RULE from Update 1:
     // "Once he is verified , he will be taken to the 3rd page and he can no longer go back to the 1st or 2nd page."
-    if (isVerified && (pageId === 'pageWelcome' || pageId === 'pageVerify')) {
+    if (!state.maintenanceMode && isVerified && (pageId === 'pageWelcome' || pageId === 'pageVerify')) {
       pageId = 'pageDirectory';
     }
 
@@ -387,6 +436,10 @@
 
     // Page 1: Start Verification
     dom.startVerificationBtn.addEventListener('click', () => {
+      if (state.maintenanceMode) {
+        showToast('Website is currently under maintenance. Reviews are temporarily paused.', 'error');
+        return;
+      }
       const dept = dom.deptSelectDropdown.value;
       state.selectedDept = dept;
       startVerificationQuiz(dept);
@@ -623,7 +676,7 @@
       // Verification Failed (< minRequired)
       dom.resultSuccessBox.style.display = 'none';
       dom.resultFailBox.style.display = 'block';
-      dom.resultScoreTextFail.textContent = `You scored ${score} out of 5 correct. A minimum of ${minRequired} out of 5 is required to verify BUET student status.`;
+      dom.resultScoreTextFail.textContent = 'try to ans correctly all the question';
     }
   }
 
@@ -736,13 +789,14 @@
 
     dom.teachersListGrid.innerHTML = '';
 
-    paginated.forEach(teacher => {
-      const card = createTeacherCard(teacher);
+    paginated.forEach((teacher, idx) => {
+      const ranking = startIdx + idx + 1;
+      const card = createTeacherCard(teacher, ranking);
       dom.teachersListGrid.appendChild(card);
     });
   }
 
-  function createTeacherCard(teacher) {
+  function createTeacherCard(teacher, ranking) {
     const stats = teacher.stats || { avgScore: 0, totalReviews: 0, yellowStars: 0, redStars: 0, zeroStars: 0 };
     const avg = stats.avgScore || 0;
     const totalRev = stats.totalReviews || 0;
@@ -756,28 +810,58 @@
       scoreClass = 'negative';
     }
 
+    // Determine the most recent review (Do 6)
+    let recentReviewSnippet = 'No reviews yet. Be the first to evaluate!';
+    let recentReviewAuthor = '';
+    if (teacher.reviews && teacher.reviews.length > 0) {
+      const latest = teacher.reviews[0];
+      const commentText = (latest.comment || '').trim();
+      const scoreNum = Number(latest.score || 0);
+      const starStr = scoreNum > 0 ? `+${scoreNum}★` : `${scoreNum}★`;
+      const author = latest.author || 'Anonymous Student';
+
+      if (commentText) {
+        recentReviewSnippet = `"${escapeHtml(commentText)}"`;
+        recentReviewAuthor = `— ${escapeHtml(author)} (${starStr})`;
+      } else {
+        recentReviewSnippet = `Rated ${starStr} (No written comment)`;
+        recentReviewAuthor = `— ${escapeHtml(author)}`;
+      }
+    }
+
     const card = document.createElement('div');
-    card.className = 'teacher-card';
+    card.className = 'teacher-card teacher-card-n1';
     card.setAttribute('data-id', teacher.id);
 
     card.innerHTML = `
-      <div class="teacher-card-top">
-        <span class="teacher-dept-pill">${teacher.deptCode || 'BUET'}</span>
+      <div class="teacher-card-n1-header">
+        <div class="teacher-ranking-name-wrap">
+          <span class="teacher-ranking-label">Ranking ${ranking}:</span>
+          <h3 class="teacher-card-name">${escapeHtml(teacher.name)}</h3>
+        </div>
         <div class="card-score-badge ${scoreClass}" title="Average Star Score: ${formattedScore} (+5 to -5 scale)">
           <span>${formattedScore}</span>
           <span>★</span>
         </div>
       </div>
 
-      <div class="teacher-card-body">
-        <h3>${escapeHtml(teacher.name)}</h3>
-        <p class="teacher-desig">${escapeHtml(teacher.designation || 'Faculty Member')}</p>
-        <p class="teacher-dept-name">${escapeHtml(teacher.dept || '')}</p>
+      <div class="teacher-card-meta-line">
+        <span class="teacher-desig">${escapeHtml(teacher.designation || 'Faculty Member')}</span>
+        <span class="meta-separator">&bull;</span>
+        <span class="teacher-dept-name">${escapeHtml(teacher.dept || teacher.deptCode || 'BUET')}</span>
       </div>
 
-      <div class="teacher-card-bottom">
-        <span class="review-count-stat">
-          ${totalRev === 0 ? 'No reviews yet' : `${totalRev} review${totalRev > 1 ? 's' : ''}`}
+      <div class="teacher-recent-review-block">
+        <div class="recent-review-heading">
+          <span class="recent-review-badge">The most recent review</span>
+          ${recentReviewAuthor ? `<span class="recent-review-meta">${recentReviewAuthor}</span>` : ''}
+        </div>
+        <div class="recent-review-quote">${recentReviewSnippet}</div>
+      </div>
+
+      <div class="teacher-card-footer-row">
+        <span class="total-reviews-count-text">
+          [Total reviews till that time: <strong>${totalRev}</strong>]
         </span>
         <span class="card-action-link">
           Rate &amp; View Reviews &rarr;
