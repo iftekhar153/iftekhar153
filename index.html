@@ -29,12 +29,6 @@
       </div>
 
       <div class="nav-actions">
-        <!-- Live Connection Status Badge -->
-        <div id="dbStatusBadge" class="status-badge" title="Firebase Firestore Cloud Database Status">
-          <span class="status-dot"></span>
-          <span id="dbStatusText">Connecting...</span>
-        </div>
-
         <!-- Anonymous Identity Badge -->
         <div id="navUserBadge" class="user-identity-badge" title="Your Anonymous Handle">
           <span id="navUserMascot" class="user-mascot">🦊</span>
@@ -67,6 +61,17 @@
          ======================================================== -->
     <section id="pageWelcome" class="page-view active">
       <div class="welcome-card card-glass">
+        <!-- Server Maintenance Notice (Do 5) -->
+        <div id="serverMaintenanceNotice" class="maintenance-notice-box" style="display: none;">
+          <div class="maintenance-icon">🚧</div>
+          <div class="maintenance-text-wrap">
+            <h3 class="maintenance-title">Website Under Maintenance</h3>
+            <p class="maintenance-msg">
+              the website is being going through some modification. The modification will be completed soon. Please check the site after sometimes. Thank you for your patient
+            </p>
+          </div>
+        </div>
+
         <div class="welcome-badge">
           <span>🛡️</span>
           <span>BUET Student Verification Protocol</span>
@@ -141,8 +146,7 @@
             <span class="quiz-step-tag">Step 2: BUET Verification</span>
             <h2 class="quiz-title">Campus Verification Challenge</h2>
             <p class="quiz-desc">
-              Answer the following 5 questions according to your department. 
-              <strong>4 out of 5 correct answers</strong> will verify you as a legal BUET-ian.
+              try to ans correctly all the question
             </p>
           </div>
           <div class="dept-pill-badge">
@@ -217,7 +221,7 @@
             <div class="result-icon-large">⚠️</div>
             <h3 class="result-title">Verification Incomplete</h3>
             <p id="resultScoreTextFail" class="result-score-text">
-              You got 2 out of 5 correct. A minimum of 4 out of 5 is required to ensure genuine BUET student reviews.
+              try to ans correctly all the question
             </p>
             <p class="fail-hint">
               Don't worry! Review the campus trivia and try again with 5 fresh questions.
@@ -245,9 +249,6 @@
         <div class="directory-header">
           <div>
             <h1 class="main-title">BUET TEACHER EVALUATION</h1>
-            <p class="main-subtitle">
-              List of the teachers (from highest star to lowest)
-            </p>
           </div>
           <div class="directory-quick-stats">
             <span class="stat-pill"><strong id="totalTeachersCount">277</strong> Faculty</span>
@@ -309,6 +310,22 @@
           <button id="prevPageBtn" class="btn btn-secondary btn-sm">&larr; Previous</button>
           <span id="pageIndicatorText" class="page-indicator">Page 1 of 1</span>
           <button id="nextPageBtn" class="btn btn-secondary btn-sm">Next &rarr;</button>
+        </div>
+
+        <!-- Modification Suggestion Box (Do 9) -->
+        <div class="modification-suggestion-box card-glass">
+          <div class="suggestion-info">
+            <span class="suggestion-icon">💡</span>
+            <div class="suggestion-text">
+              <h4 class="suggestion-title">Have suggestions or teacher information updates?</h4>
+              <p class="suggestion-desc">Notice any outdated teacher designations, missing faculty, or have suggestions to improve the portal? Submit your suggestions directly to us.</p>
+            </div>
+          </div>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfEAjXBcUDrhL5VdNp9N0VfVx5GM3fgK5dObsllNAQgDc6t-w/viewform?usp=publish-editor" 
+             target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-suggestion" title="Send modification suggestion via Google Form">
+            <span>📝 Send Modification Suggestion</span>
+            <span>&rarr;</span>
+          </a>
         </div>
       </div>
     </section>
