@@ -1130,6 +1130,10 @@ a:hover {
   letter-spacing: -0.01em;
 }
 
+.teacher-ranking-label.negative {
+  color: var(--star-red) !important;
+}
+
 .teacher-card-name {
   font-size: 1.25rem;
   font-weight: 700;
@@ -2194,14 +2198,19 @@ a:hover {
     padding: 1rem 0.75rem 2.5rem;
   }
 
-  /* Global Navbar */
+  /* Global Navbar Mobile - Column View for options (Do 3) */
   .global-navbar {
-    padding: 0.5rem 0.75rem;
+    padding: 0.65rem 0.85rem;
   }
 
   .nav-wrapper {
-    flex-wrap: wrap;
-    gap: 0.5rem;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.6rem;
+  }
+
+  .nav-brand {
+    justify-content: center;
   }
 
   .brand-headings .brand-tagline {
@@ -2218,16 +2227,33 @@ a:hover {
   }
 
   .nav-actions {
-    gap: 0.4rem;
-  }
-
-  .theme-toggle-btn {
-    padding: 0.35rem 0.65rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: stretch;
+    gap: 0.45rem;
   }
 
   .user-identity-badge {
-    padding: 0.3rem 0.65rem;
-    font-size: 0.78rem;
+    width: 100%;
+    justify-content: center;
+    padding: 0.45rem 0.85rem;
+    font-size: 0.86rem;
+  }
+
+  .user-identity-badge .user-name {
+    max-width: none !important;
+    overflow: visible !important;
+    text-overflow: unset !important;
+    white-space: normal !important;
+  }
+
+  .nav-link-btn,
+  .theme-toggle-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 0.48rem 0.85rem;
+    font-size: 0.85rem;
   }
 
   /* PAGE 1: Welcome */
@@ -2430,6 +2456,10 @@ a:hover {
 
   .teacher-ranking-label {
     font-size: 0.95rem;
+  }
+
+  .teacher-ranking-label.negative {
+    color: var(--star-red) !important;
   }
 
   .teacher-card-name {
